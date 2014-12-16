@@ -80,7 +80,7 @@
 
 .field public static a:[I
 
-.field public static final a:[Lbf;
+.field public static final a:[LlangArray;
 
 .field public static final a:[Ljavax/microedition/lcdui/Image;
 
@@ -413,9 +413,9 @@
 
     const/16 v0, 0x65
 
-    new-array v0, v0, [Lbf;
+    new-array v0, v0, [LlangArray;
 
-    sput-object v0, LopmCanvas;->a:[Lbf;
+    sput-object v0, LopmCanvas;->a:[LlangArray;
 
     const-string v0, ""
 
@@ -1996,7 +1996,7 @@
 
     iget-object v0, p0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     sget v4, LopmCanvas;->f:I
 
@@ -2011,13 +2011,13 @@
     if-ne v0, v3, :cond_4
 
     :cond_0
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v3, LopmCanvas;->f:I
 
     aget-object v0, v0, v3
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x17
 
@@ -2087,7 +2087,7 @@
 .method public static a()Ljava/lang/String;
     .locals 3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->f:I
 
@@ -6478,7 +6478,7 @@
 
     if-eqz v0, :cond_5
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/4 v1, 0x4
 
@@ -7042,7 +7042,7 @@
     goto/16 :goto_0
 
     :cond_1f
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->f:I
 
@@ -7090,7 +7090,7 @@
     goto/16 :goto_0
 
     :cond_24
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->h:I
 
@@ -7386,7 +7386,7 @@
 
     if-eq v0, v1, :cond_20
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->g:I
 
@@ -7471,7 +7471,7 @@
 
     if-eqz v1, :cond_3
 
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     sget v2, LopmCanvas;->h:I
 
@@ -7490,7 +7490,7 @@
     goto :goto_0
 
     :cond_4
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     sget v2, LopmCanvas;->g:I
 
@@ -7503,7 +7503,7 @@
     goto :goto_1
 
     :cond_5
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     sget v2, LopmCanvas;->f:I
 
@@ -7572,7 +7572,7 @@
 
     iget-object v1, p0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     aget-object v2, v2, p4
 
@@ -7694,7 +7694,7 @@
 
     iget-object v1, p0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     aget-object v3, v3, p4
 
@@ -17621,7 +17621,7 @@
     goto/16 :goto_0
 
     :cond_1c
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->f:I
 
@@ -17671,7 +17671,7 @@
     goto/16 :goto_0
 
     :cond_1e
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->h:I
 
@@ -17711,7 +17711,7 @@
     goto/16 :goto_0
 
     :cond_20
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->g:I
 
@@ -17755,7 +17755,7 @@
     goto/16 :goto_0
 
     :cond_22
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->f:I
 
@@ -17788,7 +17788,7 @@
 
     if-gt p1, v0, :cond_24
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->E:I
 
@@ -17821,7 +17821,7 @@
 
     if-gt p1, v0, :cond_25
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->F:I
 
@@ -17854,7 +17854,7 @@
 
     if-gt p1, v0, :cond_26
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->G:I
 
@@ -17887,7 +17887,7 @@
 
     if-gt p1, v0, :cond_27
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->H:I
 
@@ -17920,7 +17920,7 @@
 
     if-gt p1, v0, :cond_28
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->J:I
 
@@ -17953,7 +17953,7 @@
 
     if-gt p1, v0, :cond_29
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->K:I
 
@@ -17986,7 +17986,7 @@
 
     if-gt p1, v0, :cond_2a
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->L:I
 
@@ -18019,7 +18019,7 @@
 
     if-gt p1, v0, :cond_2b
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->M:I
 
@@ -18050,7 +18050,7 @@
 
     if-gt p1, v0, :cond_2c
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->I:I
 
@@ -18083,7 +18083,7 @@
 
     if-gt p1, v0, :cond_2d
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->N:I
 
@@ -25885,7 +25885,7 @@
 
     if-eqz v1, :cond_45
 
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v2, 0xa
 
@@ -25927,7 +25927,7 @@
 
     if-eqz v0, :cond_46
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     sget v1, LopmCanvas;->f:I
 
@@ -26804,7 +26804,7 @@
 
     check-cast v0, LopmTextBox;
 
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x27
 
@@ -26821,7 +26821,7 @@
     return v2
 
     :cond_1
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x28
 
@@ -26836,7 +26836,7 @@
     goto :goto_0
 
     :cond_2
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x29
 
@@ -26844,7 +26844,7 @@
 
     if-eq p1, v1, :cond_3
 
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x4f
 
@@ -26853,7 +26853,7 @@
     if-ne p1, v1, :cond_5
 
     :cond_3
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x4f
 
@@ -26878,7 +26878,7 @@
     goto :goto_1
 
     :cond_5
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x44
 
@@ -26895,7 +26895,7 @@
     goto :goto_0
 
     :cond_6
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x2a
 
@@ -26910,7 +26910,7 @@
     goto :goto_0
 
     :cond_7
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x2b
 
@@ -26925,7 +26925,7 @@
     goto :goto_0
 
     :cond_8
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x2c
 
@@ -26938,7 +26938,7 @@
     goto :goto_0
 
     :cond_9
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x30
 
@@ -26951,7 +26951,7 @@
     goto :goto_0
 
     :cond_a
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x31
 
@@ -26964,7 +26964,7 @@
     goto/16 :goto_0
 
     :cond_b
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x33
 
@@ -27084,7 +27084,7 @@
     goto :goto_2
 
     :cond_e
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x2d
 
@@ -27103,7 +27103,7 @@
     goto/16 :goto_0
 
     :cond_f
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x45
 
@@ -27126,7 +27126,7 @@
     goto/16 :goto_0
 
     :cond_10
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x4b
 
@@ -27139,7 +27139,7 @@
     goto/16 :goto_0
 
     :cond_11
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x2e
 
@@ -27152,7 +27152,7 @@
     goto/16 :goto_0
 
     :cond_12
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x2f
 
@@ -27165,7 +27165,7 @@
     goto/16 :goto_0
 
     :cond_13
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x32
 
@@ -27237,7 +27237,7 @@
 
     iget-object v0, p0, LopmCanvas;->a:Ljavax/microedition/lcdui/TextBox;
 
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     aget-object v1, v1, v6
 
@@ -27245,7 +27245,7 @@
 
     iget-object v0, p0, LopmCanvas;->a:Ljavax/microedition/lcdui/TextBox;
 
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     aget-object v1, v1, v7
 
@@ -27264,7 +27264,7 @@
     goto/16 :goto_0
 
     :cond_16
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0xb
 
@@ -27306,7 +27306,7 @@
     goto/16 :goto_0
 
     :cond_18
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x3a
 
@@ -27370,7 +27370,7 @@
     goto/16 :goto_0
 
     :cond_1a
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x3f
 
@@ -27383,7 +27383,7 @@
     goto/16 :goto_0
 
     :cond_1b
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v4, 0x40
 
@@ -27590,7 +27590,7 @@
 
     if-eqz v2, :cond_2
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     sget v3, LopmCanvas;->f:I
 
@@ -27600,7 +27600,7 @@
 
     move-result-object v2
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     sget v4, LopmCanvas;->h:I
 
@@ -27680,13 +27680,13 @@
     const/4 v2, 0x0
 
     :goto_1
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     array-length v3, v3
 
     if-ge v2, v3, :cond_20
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     aget-object v3, v3, v2
 
@@ -27700,7 +27700,7 @@
 
     if-eq v2, v3, :cond_5
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     aget-object v3, v3, v2
 
@@ -28458,7 +28458,7 @@
 
     :cond_1e
     :goto_d
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     aget-object v3, v3, v2
 
@@ -28496,7 +28496,7 @@
 
     if-eqz v2, :cond_21
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0xe
 
@@ -28850,7 +28850,7 @@
 
     move-result-object v15
 
-    sget-object v4, LopmCanvas;->a:[Lbf;
+    sget-object v4, LopmCanvas;->a:[LlangArray;
 
     sget v6, LopmCanvas;->g:I
 
@@ -28860,7 +28860,7 @@
 
     move-result-object v7
 
-    sget-object v4, LopmCanvas;->a:[Lbf;
+    sget-object v4, LopmCanvas;->a:[LlangArray;
 
     sget v6, LopmCanvas;->h:I
 
@@ -29215,7 +29215,7 @@
 
     iget-object v4, v0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     sget v9, LopmCanvas;->f:I
 
@@ -29232,13 +29232,13 @@
     if-ne v4, v6, :cond_3e
 
     :cond_37
-    sget-object v4, LopmCanvas;->a:[Lbf;
+    sget-object v4, LopmCanvas;->a:[LlangArray;
 
     sget v6, LopmCanvas;->f:I
 
     aget-object v4, v4, v6
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v9, 0x17
 
@@ -29293,7 +29293,7 @@
 
     iget-object v4, v0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     sget v9, LopmCanvas;->g:I
 
@@ -29310,13 +29310,13 @@
     if-ne v4, v6, :cond_41
 
     :cond_39
-    sget-object v4, LopmCanvas;->a:[Lbf;
+    sget-object v4, LopmCanvas;->a:[LlangArray;
 
     sget v6, LopmCanvas;->g:I
 
     aget-object v4, v4, v6
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v9, 0x17
 
@@ -29324,13 +29324,13 @@
 
     if-eq v4, v6, :cond_41
 
-    sget-object v4, LopmCanvas;->a:[Lbf;
+    sget-object v4, LopmCanvas;->a:[LlangArray;
 
     sget v6, LopmCanvas;->g:I
 
     aget-object v4, v4, v6
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v9, 0x1c
 
@@ -29432,7 +29432,7 @@
 
     iget-object v4, v0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     sget v9, LopmCanvas;->h:I
 
@@ -29449,13 +29449,13 @@
     if-ne v4, v6, :cond_45
 
     :cond_3b
-    sget-object v4, LopmCanvas;->a:[Lbf;
+    sget-object v4, LopmCanvas;->a:[LlangArray;
 
     sget v6, LopmCanvas;->h:I
 
     aget-object v4, v4, v6
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v9, 0x17
 
@@ -34530,7 +34530,7 @@
 
     if-eq v0, v2, :cond_1
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     aget-object v0, v0, v2
 
@@ -34578,7 +34578,7 @@
     if-eq v0, v1, :cond_0
 
     :cond_2
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     aget-object v0, v0, v2
 
@@ -34639,7 +34639,7 @@
 
     sget v1, LopmCanvas;->f:I
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     array-length v2, v2
 
@@ -34672,14 +34672,14 @@
 
     :cond_2
     :try_start_2
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     sget v2, LopmCanvas;->f:I
 
     aget-object v1, v1, v2
 
     :goto_1
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/4 v5, 0x3
 
@@ -34756,7 +34756,7 @@
 
     sget v1, LopmCanvas;->h:I
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     array-length v2, v2
 
@@ -34779,7 +34779,7 @@
     goto/16 :goto_0
 
     :cond_6
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     sget v2, LopmCanvas;->h:I
 
@@ -34792,7 +34792,7 @@
 
     if-eqz v2, :cond_8
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/4 v5, 0x4
 
@@ -34811,7 +34811,7 @@
     iput-boolean v2, p0, LopmCanvas;->A:Z
 
     :cond_8
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v5, 0xe
 
@@ -34854,7 +34854,7 @@
 
     if-eqz v2, :cond_c
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v5, 0xa
 
@@ -34931,7 +34931,7 @@
 
     if-eqz v2, :cond_11
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v5, 0x9
 
@@ -35053,7 +35053,7 @@
     if-nez v2, :cond_0
 
     :cond_10
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v5, 0xb
 
@@ -35151,7 +35151,7 @@
     goto/16 :goto_0
 
     :cond_16
-    sget-object v5, LopmCanvas;->a:[Lbf;
+    sget-object v5, LopmCanvas;->a:[LlangArray;
 
     const/16 v6, 0xa
 
@@ -35202,7 +35202,7 @@
     goto/16 :goto_0
 
     :cond_19
-    sget-object v5, LopmCanvas;->a:[Lbf;
+    sget-object v5, LopmCanvas;->a:[LlangArray;
 
     const/16 v6, 0x9
 
@@ -35227,7 +35227,7 @@
 
     if-eqz v2, :cond_1c
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x9
 
@@ -35263,7 +35263,7 @@
     goto/16 :goto_0
 
     :cond_1c
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x9
 
@@ -35319,7 +35319,7 @@
     goto/16 :goto_0
 
     :cond_1e
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v5, 0x9
 
@@ -35331,7 +35331,7 @@
 
     if-eq v1, v2, :cond_1f
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v5, 0x13
 
@@ -35372,7 +35372,7 @@
 
     iget v6, v2, LopmTextBox;->b:I
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x9
 
@@ -35465,7 +35465,7 @@
     goto :goto_5
 
     :cond_22
-    sget-object v4, LopmCanvas;->a:[Lbf;
+    sget-object v4, LopmCanvas;->a:[LlangArray;
 
     const/16 v5, 0x13
 
@@ -35587,7 +35587,7 @@
     goto/16 :goto_0
 
     :cond_2a
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0xf
 
@@ -35604,7 +35604,7 @@
     goto/16 :goto_0
 
     :cond_2b
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x12
 
@@ -35733,7 +35733,7 @@
     goto/16 :goto_0
 
     :cond_32
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/4 v3, 0x4
 
@@ -35798,7 +35798,7 @@
 
     if-eqz v0, :cond_3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v1, 0x9
 
@@ -35880,7 +35880,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v1, 0xa
 
@@ -39341,7 +39341,7 @@
 
     iget-object v1, p0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v0, 0x57
 
@@ -39351,7 +39351,7 @@
 
     iget-object v1, p0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v0, 0x58
 
@@ -39361,7 +39361,7 @@
 
     iget-object v1, p0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v0, 0x59
 
@@ -39371,7 +39371,7 @@
 
     iget-object v1, p0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v2, LopmCanvas;->a:[Lbf;
+    sget-object v2, LopmCanvas;->a:[LlangArray;
 
     const/16 v0, 0x5a
 
@@ -39423,7 +39423,7 @@
 
     iget-object v0, p0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/4 v2, 0x4
 
@@ -39433,7 +39433,7 @@
 
     iget-object v0, p0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v2, 0xc
 
@@ -39443,7 +39443,7 @@
 
     iget-object v0, p0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v1, LopmCanvas;->a:[Lbf;
+    sget-object v1, LopmCanvas;->a:[LlangArray;
 
     const/16 v2, 0x4e
 
@@ -40430,7 +40430,7 @@
 
     if-eqz v0, :cond_7
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0xa
 
@@ -40438,7 +40438,7 @@
 
     if-eqz v0, :cond_6
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0xa
 
@@ -40447,7 +40447,7 @@
     invoke-virtual {p0, v0}, LopmCanvas;->removeCommand(Ljavax/microedition/lcdui/Command;)V
 
     :cond_6
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/4 v3, 0x7
 
@@ -40455,7 +40455,7 @@
 
     if-eqz v0, :cond_7
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/4 v3, 0x7
 
@@ -40480,7 +40480,7 @@
     move v0, v4
 
     :cond_8
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x27
 
@@ -40500,7 +40500,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x29
 
@@ -40520,7 +40520,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x2a
 
@@ -40540,7 +40540,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x28
 
@@ -40560,7 +40560,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x2b
 
@@ -40580,7 +40580,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x2c
 
@@ -40600,7 +40600,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x2d
 
@@ -40620,7 +40620,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x30
 
@@ -40640,7 +40640,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x31
 
@@ -40660,7 +40660,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x32
 
@@ -40680,7 +40680,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x33
 
@@ -40700,7 +40700,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x2e
 
@@ -40720,7 +40720,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x2f
 
@@ -40740,7 +40740,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x3a
 
@@ -40760,7 +40760,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x3f
 
@@ -40780,7 +40780,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x40
 
@@ -40800,7 +40800,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x44
 
@@ -40820,7 +40820,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x45
 
@@ -40840,7 +40840,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x4b
 
@@ -40860,7 +40860,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x4f
 
@@ -40880,7 +40880,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0xf
 
@@ -40898,7 +40898,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x12
 
@@ -40916,7 +40916,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0xb
 
@@ -40940,7 +40940,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v6, LopmCanvas;->a:[Lbf;
+    sget-object v6, LopmCanvas;->a:[LlangArray;
 
     const/16 v7, 0x13
 
@@ -40958,7 +40958,7 @@
 
     aput-object v8, v6, v7
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     const/16 v6, 0x9
 
@@ -40984,7 +40984,7 @@
 
     aput-object v7, v3, v6
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     const/16 v6, 0xa
 
@@ -41010,7 +41010,7 @@
 
     aput-object v7, v3, v6
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     const/16 v6, 0xe
 
@@ -41036,7 +41036,7 @@
 
     aput-object v7, v3, v6
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     const/4 v6, 0x4
 
@@ -41060,7 +41060,7 @@
 
     aput-object v7, v3, v6
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/4 v3, 0x0
 
@@ -41086,7 +41086,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/4 v3, 0x1
 
@@ -41112,7 +41112,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x63
 
@@ -41138,7 +41138,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/4 v3, 0x2
 
@@ -41164,7 +41164,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x5d
 
@@ -41190,7 +41190,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x5e
 
@@ -41216,7 +41216,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x5f
 
@@ -41242,7 +41242,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x60
 
@@ -41268,7 +41268,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/4 v3, 0x3
 
@@ -41294,7 +41294,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x35
 
@@ -41320,7 +41320,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x36
 
@@ -41346,7 +41346,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x37
 
@@ -41372,7 +41372,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x38
 
@@ -41398,7 +41398,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x41
 
@@ -41424,7 +41424,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x46
 
@@ -41450,7 +41450,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x47
 
@@ -41476,7 +41476,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x48
 
@@ -41502,7 +41502,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x49
 
@@ -41528,7 +41528,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x4a
 
@@ -41554,7 +41554,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x4c
 
@@ -41580,7 +41580,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x4d
 
@@ -41606,7 +41606,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x61
 
@@ -41632,7 +41632,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x62
 
@@ -41658,7 +41658,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x5c
 
@@ -41684,7 +41684,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x64
 
@@ -41710,7 +41710,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x3b
 
@@ -41736,7 +41736,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x14
 
@@ -41762,7 +41762,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x15
 
@@ -41788,7 +41788,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x16
 
@@ -41814,7 +41814,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x25
 
@@ -41842,7 +41842,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x26
 
@@ -41868,7 +41868,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x1b
 
@@ -41894,7 +41894,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x1d
 
@@ -41920,7 +41920,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x18
 
@@ -41946,7 +41946,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x19
 
@@ -41972,7 +41972,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x1a
 
@@ -41998,7 +41998,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x24
 
@@ -42024,7 +42024,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/4 v3, 0x7
 
@@ -42050,7 +42050,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0xd
 
@@ -42072,7 +42072,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x42
 
@@ -42098,7 +42098,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x50
 
@@ -42124,7 +42124,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x11
 
@@ -42150,7 +42150,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0xc
 
@@ -42176,7 +42176,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/4 v3, 0x5
 
@@ -42202,7 +42202,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/4 v3, 0x6
 
@@ -42228,7 +42228,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x8
 
@@ -42254,7 +42254,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x3d
 
@@ -42274,7 +42274,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x3e
 
@@ -42294,7 +42294,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x5b
 
@@ -42314,7 +42314,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x51
 
@@ -42330,7 +42330,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x4e
 
@@ -42352,7 +42352,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x52
 
@@ -42374,7 +42374,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x53
 
@@ -42396,7 +42396,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x54
 
@@ -42418,7 +42418,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x55
 
@@ -42440,7 +42440,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x56
 
@@ -42462,7 +42462,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x57
 
@@ -42484,7 +42484,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x58
 
@@ -42506,7 +42506,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x59
 
@@ -42528,7 +42528,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x5a
 
@@ -42550,7 +42550,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x1c
 
@@ -42566,7 +42566,7 @@
 
     aput-object v6, v0, v3
 
-    sget-object v0, LopmCanvas;->a:[Lbf;
+    sget-object v0, LopmCanvas;->a:[LlangArray;
 
     const/16 v3, 0x17
 

@@ -6099,7 +6099,7 @@
 
     iget-object v0, v0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     sget v4, LopmCanvas;->f:I
 
@@ -6169,7 +6169,7 @@
 
     iget-object v0, v0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     sget v4, LopmCanvas;->g:I
 
@@ -6191,7 +6191,7 @@
 
     iget-object v0, v0, LopmCanvas;->a:Ljava/lang/Object;
 
-    sget-object v3, LopmCanvas;->a:[Lbf;
+    sget-object v3, LopmCanvas;->a:[LlangArray;
 
     sget v4, LopmCanvas;->h:I
 
