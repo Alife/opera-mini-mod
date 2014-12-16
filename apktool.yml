@@ -1,0 +1,10 @@
+version: 1.5.2
+apkFileName: microemu_mod.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+packageInfo:
+  cur_package: org.microemu.opm422
+  orig_package: org.microemu.opm422
+compressionType: false
