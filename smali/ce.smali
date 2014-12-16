@@ -254,7 +254,7 @@
 
 .field public a:J
 
-.field public a:Lbf;
+.field public a:LopmCommand;
 
 .field public a:Lbs;
 
@@ -286,7 +286,7 @@
 
 .field public b:LopmTextBox;
 
-.field public b:Lbf;
+.field public b:LopmCommand;
 
 .field public b:Lbi;
 
@@ -302,7 +302,7 @@
 
 .field public b:Ljavax/microedition/lcdui/TextBox;
 
-.field public c:Lbf;
+.field public c:LopmCommand;
 
 .field public c:Lbi;
 
@@ -549,23 +549,23 @@
 
     iput-boolean v7, p0, LopmCanvas;->y:Z
 
-    sput v2, Lbf;->a:I
+    sput v2, LopmCommand;->a:I
 
-    sput v1, Lbf;->b:I
+    sput v1, LopmCommand;->b:I
 
-    sput v6, Lbf;->c:I
+    sput v6, LopmCommand;->c:I
 
-    sput v1, Lbf;->d:I
+    sput v1, LopmCommand;->d:I
 
-    sput v0, Lbf;->e:I
+    sput v0, LopmCommand;->e:I
 
     sget-boolean v4, Lbz;->at:Z
 
     if-eqz v4, :cond_4
 
-    sput v6, Lbf;->f:I
+    sput v6, LopmCommand;->f:I
 
-    sput v3, Lbf;->g:I
+    sput v3, LopmCommand;->g:I
 
     :goto_0
     sget v4, Lbz;->ay:I
@@ -579,9 +579,9 @@
 
     if-eqz v0, :cond_1
 
-    sput v6, Lbf;->a:I
+    sput v6, LopmCommand;->a:I
 
-    sput v1, Lbf;->e:I
+    sput v1, LopmCommand;->e:I
 
     :cond_1
     invoke-static {}, Lbz;->d()Z
@@ -619,26 +619,26 @@
     return-void
 
     :cond_4
-    sput v3, Lbf;->f:I
+    sput v3, LopmCommand;->f:I
 
-    sput v6, Lbf;->g:I
+    sput v6, LopmCommand;->g:I
 
     goto :goto_0
 
     :pswitch_1
-    sput v6, Lbf;->d:I
+    sput v6, LopmCommand;->d:I
 
-    sput v6, Lbf;->e:I
+    sput v6, LopmCommand;->e:I
 
-    sput v1, Lbf;->b:I
+    sput v1, LopmCommand;->b:I
 
     sget-boolean v0, Lbz;->bJ:Z
 
     if-eqz v0, :cond_0
 
-    sput v2, Lbf;->d:I
+    sput v2, LopmCommand;->d:I
 
-    sput v6, Lbf;->a:I
+    sput v6, LopmCommand;->a:I
 
     goto :goto_1
 
@@ -650,32 +650,32 @@
     move v0, v1
 
     :cond_5
-    sput v0, Lbf;->b:I
+    sput v0, LopmCommand;->b:I
 
-    sput v6, Lbf;->d:I
+    sput v6, LopmCommand;->d:I
 
     :pswitch_3
-    sput v2, Lbf;->a:I
+    sput v2, LopmCommand;->a:I
 
     goto :goto_1
 
     :pswitch_4
-    sput v3, Lbf;->e:I
+    sput v3, LopmCommand;->e:I
 
     goto :goto_1
 
     :pswitch_5
-    sput v1, Lbf;->a:I
+    sput v1, LopmCommand;->a:I
 
-    sput v6, Lbf;->b:I
+    sput v6, LopmCommand;->b:I
 
-    sput v1, Lbf;->c:I
+    sput v1, LopmCommand;->c:I
 
     sget-boolean v0, Lbz;->cz:Z
 
     if-eqz v0, :cond_0
 
-    sput v3, Lbf;->e:I
+    sput v3, LopmCommand;->e:I
 
     goto :goto_1
 
@@ -699,9 +699,9 @@
     if-eq v4, v8, :cond_a
 
     :goto_2
-    sput v2, Lbf;->a:I
+    sput v2, LopmCommand;->a:I
 
-    sput v0, Lbf;->d:I
+    sput v0, LopmCommand;->d:I
 
     sget-boolean v2, Lbz;->at:Z
 
@@ -710,7 +710,7 @@
     move v2, v0
 
     :goto_3
-    sput v2, Lbf;->e:I
+    sput v2, LopmCommand;->e:I
 
     sget-boolean v2, Lbz;->at:Z
 
@@ -719,28 +719,28 @@
     move v2, v1
 
     :goto_4
-    sput v2, Lbf;->b:I
+    sput v2, LopmCommand;->b:I
 
-    sput v1, Lbf;->c:I
+    sput v1, LopmCommand;->c:I
 
     sget-boolean v2, Lbz;->aP:Z
 
     if-eqz v2, :cond_6
 
-    sput v6, Lbf;->e:I
+    sput v6, LopmCommand;->e:I
 
-    sput v0, Lbf;->b:I
+    sput v0, LopmCommand;->b:I
 
-    sput v6, Lbf;->c:I
+    sput v6, LopmCommand;->c:I
 
-    sput v0, Lbf;->f:I
+    sput v0, LopmCommand;->f:I
 
     :cond_6
     sget-boolean v0, Lbz;->cY:Z
 
     if-eqz v0, :cond_0
 
-    sput v1, Lbf;->a:I
+    sput v1, LopmCommand;->a:I
 
     goto/16 :goto_1
 
@@ -764,9 +764,9 @@
     if-eqz v0, :cond_0
 
     :cond_9
-    sput v2, Lbf;->e:I
+    sput v2, LopmCommand;->e:I
 
-    sput v1, Lbf;->a:I
+    sput v1, LopmCommand;->a:I
 
     goto/16 :goto_1
 
@@ -1718,37 +1718,37 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, LopmCanvas;->a:Lbf;
+    iget-object v0, p0, LopmCanvas;->a:LopmCommand;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, LopmCanvas;->a:Lbf;
+    iget-object v0, p0, LopmCanvas;->a:LopmCommand;
 
     invoke-virtual {p0, v0}, LopmCanvas;->removeCommand(Ljavax/microedition/lcdui/Command;)V
 
-    iput-object v1, p0, LopmCanvas;->a:Lbf;
+    iput-object v1, p0, LopmCanvas;->a:LopmCommand;
 
     :cond_0
-    iget-object v0, p0, LopmCanvas;->b:Lbf;
+    iget-object v0, p0, LopmCanvas;->b:LopmCommand;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, LopmCanvas;->b:Lbf;
+    iget-object v0, p0, LopmCanvas;->b:LopmCommand;
 
     invoke-virtual {p0, v0}, LopmCanvas;->removeCommand(Ljavax/microedition/lcdui/Command;)V
 
-    iput-object v1, p0, LopmCanvas;->b:Lbf;
+    iput-object v1, p0, LopmCanvas;->b:LopmCommand;
 
     :cond_1
-    iget-object v0, p0, LopmCanvas;->c:Lbf;
+    iget-object v0, p0, LopmCanvas;->c:LopmCommand;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, LopmCanvas;->c:Lbf;
+    iget-object v0, p0, LopmCanvas;->c:LopmCommand;
 
     invoke-virtual {p0, v0}, LopmCanvas;->removeCommand(Ljavax/microedition/lcdui/Command;)V
 
-    iput-object v1, p0, LopmCanvas;->c:Lbf;
+    iput-object v1, p0, LopmCanvas;->c:LopmCommand;
 
     :cond_2
     return-void
@@ -2093,7 +2093,7 @@
 
     aget-object v0, v0, v1
 
-    invoke-virtual {v0}, Lbf;->getLabel()Ljava/lang/String;
+    invoke-virtual {v0}, LopmCommand;->getLabel()Ljava/lang/String;
 
     move-result-object v2
 
@@ -4204,15 +4204,15 @@
 
     if-ne v0, v4, :cond_1
 
-    new-instance v0, Lbf;
+    new-instance v0, LopmCommand;
 
-    sget v1, Lbf;->d:I
+    sget v1, LopmCommand;->d:I
 
-    invoke-direct {v0, p1, v1, v3}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, p1, v1, v3}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
-    iput-object v0, p0, LopmCanvas;->a:Lbf;
+    iput-object v0, p0, LopmCanvas;->a:LopmCommand;
 
-    iget-object v0, p0, LopmCanvas;->a:Lbf;
+    iget-object v0, p0, LopmCanvas;->a:LopmCommand;
 
     invoke-virtual {p0, v0}, LopmCanvas;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
@@ -4220,32 +4220,32 @@
 
     if-nez v0, :cond_0
 
-    new-instance v0, Lbf;
+    new-instance v0, LopmCommand;
 
     const-string v1, ""
 
-    sget v2, Lbf;->e:I
+    sget v2, LopmCommand;->e:I
 
-    invoke-direct {v0, v1, v2, v4}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v2, v4}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
-    iput-object v0, p0, LopmCanvas;->b:Lbf;
+    iput-object v0, p0, LopmCanvas;->b:LopmCommand;
 
-    iget-object v0, p0, LopmCanvas;->b:Lbf;
+    iget-object v0, p0, LopmCanvas;->b:LopmCommand;
 
     invoke-virtual {p0, v0}, LopmCanvas;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
     :cond_0
-    new-instance v0, Lbf;
+    new-instance v0, LopmCommand;
 
-    sget v1, Lbf;->a:I
+    sget v1, LopmCommand;->a:I
 
     const/4 v2, 0x3
 
-    invoke-direct {v0, p2, v1, v2}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, p2, v1, v2}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
-    iput-object v0, p0, LopmCanvas;->c:Lbf;
+    iput-object v0, p0, LopmCanvas;->c:LopmCommand;
 
-    iget-object v0, p0, LopmCanvas;->c:Lbf;
+    iget-object v0, p0, LopmCanvas;->c:LopmCommand;
 
     invoke-virtual {p0, v0}, LopmCanvas;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
@@ -25891,7 +25891,7 @@
 
     aget-object v1, v1, v2
 
-    iget-object v1, v1, Lbf;->a:Ljava/lang/String;
+    iget-object v1, v1, LopmCommand;->a:Ljava/lang/String;
 
     invoke-static {v1}, Lcg;->a(Ljava/lang/String;)V
 
@@ -25933,7 +25933,7 @@
 
     aget-object v0, v0, v1
 
-    iget-object v0, v0, Lbf;->a:Ljava/lang/String;
+    iget-object v0, v0, LopmCommand;->a:Ljava/lang/String;
 
     invoke-static {v0}, Lcg;->a(Ljava/lang/String;)V
 
@@ -27580,13 +27580,13 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, LopmCanvas;->a:Lbf;
+    iget-object v2, v0, LopmCanvas;->a:LopmCommand;
 
     if-eqz v2, :cond_2
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, LopmCanvas;->c:Lbf;
+    iget-object v2, v0, LopmCanvas;->c:LopmCommand;
 
     if-eqz v2, :cond_2
 
@@ -27596,7 +27596,7 @@
 
     aget-object v2, v2, v3
 
-    invoke-virtual {v2}, Lbf;->getLabel()Ljava/lang/String;
+    invoke-virtual {v2}, LopmCommand;->getLabel()Ljava/lang/String;
 
     move-result-object v2
 
@@ -27606,15 +27606,15 @@
 
     aget-object v3, v3, v4
 
-    invoke-virtual {v3}, Lbf;->getLabel()Ljava/lang/String;
+    invoke-virtual {v3}, LopmCommand;->getLabel()Ljava/lang/String;
 
     move-result-object v3
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, LopmCanvas;->a:Lbf;
+    iget-object v4, v0, LopmCanvas;->a:LopmCommand;
 
-    invoke-virtual {v4}, Lbf;->getLabel()Ljava/lang/String;
+    invoke-virtual {v4}, LopmCommand;->getLabel()Ljava/lang/String;
 
     move-result-object v4
 
@@ -27626,9 +27626,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, LopmCanvas;->c:Lbf;
+    iget-object v4, v0, LopmCanvas;->c:LopmCommand;
 
-    invoke-virtual {v4}, Lbf;->getLabel()Ljava/lang/String;
+    invoke-virtual {v4}, LopmCommand;->getLabel()Ljava/lang/String;
 
     move-result-object v4
 
@@ -28856,7 +28856,7 @@
 
     aget-object v4, v4, v6
 
-    invoke-virtual {v4}, Lbf;->getLabel()Ljava/lang/String;
+    invoke-virtual {v4}, LopmCommand;->getLabel()Ljava/lang/String;
 
     move-result-object v7
 
@@ -28866,7 +28866,7 @@
 
     aget-object v4, v4, v6
 
-    invoke-virtual {v4}, Lbf;->getLabel()Ljava/lang/String;
+    invoke-virtual {v4}, LopmCommand;->getLabel()Ljava/lang/String;
 
     move-result-object v8
 
@@ -34629,7 +34629,7 @@
     if-ne p2, p0, :cond_3
 
     :try_start_1
-    iget-object v1, p0, LopmCanvas;->a:Lbf;
+    iget-object v1, p0, LopmCanvas;->a:LopmCommand;
 
     if-ne p1, v1, :cond_3
 
@@ -34712,7 +34712,7 @@
     :cond_3
     if-ne p2, p0, :cond_5
 
-    iget-object v1, p0, LopmCanvas;->b:Lbf;
+    iget-object v1, p0, LopmCanvas;->b:LopmCommand;
 
     if-ne p1, v1, :cond_5
 
@@ -34746,7 +34746,7 @@
     :cond_5
     if-ne p2, p0, :cond_34
 
-    iget-object v1, p0, LopmCanvas;->c:Lbf;
+    iget-object v1, p0, LopmCanvas;->c:LopmCommand;
 
     if-ne p1, v1, :cond_34
 
@@ -35080,9 +35080,9 @@
 
     invoke-virtual {p0}, LopmCanvas;->A()V
 
-    check-cast v1, Lbf;
+    check-cast v1, LopmCommand;
 
-    iget-object v1, v1, Lbf;->a:Ljava/lang/String;
+    iget-object v1, v1, LopmCommand;->a:Ljava/lang/String;
 
     invoke-static {v1}, Lcg;->a(Ljava/lang/String;)V
 
@@ -36941,11 +36941,11 @@
 
     if-eqz v0, :cond_d
 
-    iget-object v0, p0, LopmCanvas;->a:Lbf;
+    iget-object v0, p0, LopmCanvas;->a:LopmCommand;
 
     if-nez v0, :cond_d
 
-    iget-object v0, p0, LopmCanvas;->c:Lbf;
+    iget-object v0, p0, LopmCanvas;->c:LopmCommand;
 
     if-nez v0, :cond_d
 
@@ -40484,7 +40484,7 @@
 
     const/16 v7, 0x27
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0xce
 
@@ -40492,11 +40492,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->b:I
+    sget v10, LopmCommand;->b:I
 
-    sget v11, Lbf;->g:I
+    sget v11, LopmCommand;->g:I
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40504,7 +40504,7 @@
 
     const/16 v7, 0x29
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0xd0
 
@@ -40512,11 +40512,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->b:I
+    sget v10, LopmCommand;->b:I
 
-    sget v11, Lbf;->g:I
+    sget v11, LopmCommand;->g:I
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40524,7 +40524,7 @@
 
     const/16 v7, 0x2a
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0xd1
 
@@ -40532,11 +40532,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->b:I
+    sget v10, LopmCommand;->b:I
 
-    sget v11, Lbf;->g:I
+    sget v11, LopmCommand;->g:I
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40544,7 +40544,7 @@
 
     const/16 v7, 0x28
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0xcf
 
@@ -40552,11 +40552,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/4 v11, 0x5
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40564,7 +40564,7 @@
 
     const/16 v7, 0x2b
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0xd2
 
@@ -40572,11 +40572,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/4 v11, 0x6
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40584,7 +40584,7 @@
 
     const/16 v7, 0x2c
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x229
 
@@ -40592,11 +40592,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/4 v11, 0x7
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40604,7 +40604,7 @@
 
     const/16 v7, 0x2d
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0xd3
 
@@ -40612,11 +40612,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/16 v11, 0x8
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40624,7 +40624,7 @@
 
     const/16 v7, 0x30
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0xd5
 
@@ -40632,11 +40632,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/16 v11, 0x9
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40644,7 +40644,7 @@
 
     const/16 v7, 0x31
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0xd6
 
@@ -40652,11 +40652,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/16 v11, 0xa
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40664,7 +40664,7 @@
 
     const/16 v7, 0x32
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0xd7
 
@@ -40672,11 +40672,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/16 v11, 0xb
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40684,7 +40684,7 @@
 
     const/16 v7, 0x33
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0xd8
 
@@ -40692,11 +40692,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/16 v11, 0xc
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40704,7 +40704,7 @@
 
     const/16 v7, 0x2e
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x206
 
@@ -40712,11 +40712,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/16 v11, 0xd
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40724,7 +40724,7 @@
 
     const/16 v7, 0x2f
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x205
 
@@ -40732,11 +40732,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/16 v11, 0xe
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40744,7 +40744,7 @@
 
     const/16 v7, 0x3a
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x103
 
@@ -40752,11 +40752,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/16 v11, 0xf
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40764,7 +40764,7 @@
 
     const/16 v7, 0x3f
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x321
 
@@ -40772,11 +40772,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->b:I
+    sget v10, LopmCommand;->b:I
 
-    sget v11, Lbf;->g:I
+    sget v11, LopmCommand;->g:I
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40784,7 +40784,7 @@
 
     const/16 v7, 0x40
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x322
 
@@ -40792,11 +40792,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/4 v11, 0x6
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40804,7 +40804,7 @@
 
     const/16 v7, 0x44
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x334
 
@@ -40812,11 +40812,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/4 v11, 0x4
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40824,7 +40824,7 @@
 
     const/16 v7, 0x45
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x110
 
@@ -40832,11 +40832,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/16 v11, 0x10
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40844,7 +40844,7 @@
 
     const/16 v7, 0x4b
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x3e6
 
@@ -40852,11 +40852,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/16 v11, 0x11
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40864,7 +40864,7 @@
 
     const/16 v7, 0x4f
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x123
 
@@ -40872,11 +40872,11 @@
 
     move-result-object v9
 
-    sget v10, Lbf;->c:I
+    sget v10, LopmCommand;->c:I
 
     const/4 v11, 0x4
 
-    invoke-direct {v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40884,7 +40884,7 @@
 
     const/16 v7, 0xf
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/4 v9, 0x6
 
@@ -40894,7 +40894,7 @@
 
     const/16 v10, 0x14
 
-    invoke-direct {v8, v9, v3, v10}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v3, v10}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40902,7 +40902,7 @@
 
     const/16 v7, 0x12
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x6a
 
@@ -40912,7 +40912,7 @@
 
     const/16 v10, 0x14
 
-    invoke-direct {v8, v9, v3, v10}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v3, v10}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40920,7 +40920,7 @@
 
     const/16 v7, 0xb
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x13
 
@@ -40936,7 +40936,7 @@
 
     move-result-object v11
 
-    invoke-direct {v8, v9, v3, v10, v11}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v8, v9, v3, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v8, v6, v7
 
@@ -40944,7 +40944,7 @@
 
     const/16 v7, 0x13
 
-    new-instance v8, Lbf;
+    new-instance v8, LopmCommand;
 
     const/16 v9, 0x6c
 
@@ -40954,7 +40954,7 @@
 
     const/16 v10, 0x18
 
-    invoke-direct {v8, v9, v3, v10}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v8, v9, v3, v10}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v8, v6, v7
 
@@ -40962,7 +40962,7 @@
 
     const/16 v6, 0x9
 
-    new-instance v7, Lbf;
+    new-instance v7, LopmCommand;
 
     const/4 v8, 0x0
 
@@ -40970,9 +40970,9 @@
 
     move-result-object v8
 
-    sget v9, Lbf;->e:I
+    sget v9, LopmCommand;->e:I
 
-    sget v10, Lbf;->f:I
+    sget v10, LopmCommand;->f:I
 
     const/16 v11, 0x71
 
@@ -40980,7 +40980,7 @@
 
     move-result-object v11
 
-    invoke-direct {v7, v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v7, v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v7, v3, v6
 
@@ -40988,7 +40988,7 @@
 
     const/16 v6, 0xa
 
-    new-instance v7, Lbf;
+    new-instance v7, LopmCommand;
 
     const/4 v8, 0x1
 
@@ -40996,7 +40996,7 @@
 
     move-result-object v8
 
-    sget v9, Lbf;->a:I
+    sget v9, LopmCommand;->a:I
 
     const/16 v10, 0x19
 
@@ -41006,7 +41006,7 @@
 
     move-result-object v11
 
-    invoke-direct {v7, v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v7, v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v7, v3, v6
 
@@ -41014,7 +41014,7 @@
 
     const/16 v6, 0xe
 
-    new-instance v7, Lbf;
+    new-instance v7, LopmCommand;
 
     const/16 v8, 0xa
 
@@ -41032,7 +41032,7 @@
 
     move-result-object v11
 
-    invoke-direct {v7, v8, v9, v10, v11}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v7, v8, v9, v10, v11}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v7, v3, v6
 
@@ -41040,7 +41040,7 @@
 
     const/4 v6, 0x4
 
-    new-instance v7, Lbf;
+    new-instance v7, LopmCommand;
 
     const/4 v8, 0x4
 
@@ -41056,7 +41056,7 @@
 
     move-result-object v10
 
-    invoke-direct {v7, v8, v0, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v7, v8, v0, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v7, v3, v6
 
@@ -41064,7 +41064,7 @@
 
     const/4 v3, 0x0
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41082,7 +41082,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41090,7 +41090,7 @@
 
     const/4 v3, 0x1
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x2b
 
@@ -41108,7 +41108,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41116,7 +41116,7 @@
 
     const/16 v3, 0x63
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x2b
 
@@ -41134,7 +41134,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41142,7 +41142,7 @@
 
     const/4 v3, 0x2
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41160,7 +41160,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41168,7 +41168,7 @@
 
     const/16 v3, 0x5d
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41186,7 +41186,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41194,7 +41194,7 @@
 
     const/16 v3, 0x5e
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41212,7 +41212,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41220,7 +41220,7 @@
 
     const/16 v3, 0x5f
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41238,7 +41238,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41246,7 +41246,7 @@
 
     const/16 v3, 0x60
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41264,7 +41264,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41272,7 +41272,7 @@
 
     const/4 v3, 0x3
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/4 v7, 0x3
 
@@ -41290,7 +41290,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41298,7 +41298,7 @@
 
     const/16 v3, 0x35
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41316,7 +41316,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41324,7 +41324,7 @@
 
     const/16 v3, 0x36
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41342,7 +41342,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41350,7 +41350,7 @@
 
     const/16 v3, 0x37
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41368,7 +41368,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41376,7 +41376,7 @@
 
     const/16 v3, 0x38
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41394,7 +41394,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41402,7 +41402,7 @@
 
     const/16 v3, 0x41
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41420,7 +41420,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41428,7 +41428,7 @@
 
     const/16 v3, 0x46
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41446,7 +41446,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41454,7 +41454,7 @@
 
     const/16 v3, 0x47
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41472,7 +41472,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41480,7 +41480,7 @@
 
     const/16 v3, 0x48
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41498,7 +41498,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41506,7 +41506,7 @@
 
     const/16 v3, 0x49
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41524,7 +41524,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41532,7 +41532,7 @@
 
     const/16 v3, 0x4a
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41550,7 +41550,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41558,7 +41558,7 @@
 
     const/16 v3, 0x4c
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41576,7 +41576,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41584,7 +41584,7 @@
 
     const/16 v3, 0x4d
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41602,7 +41602,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41610,7 +41610,7 @@
 
     const/16 v3, 0x61
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41628,7 +41628,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41636,7 +41636,7 @@
 
     const/16 v3, 0x62
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41654,7 +41654,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41662,7 +41662,7 @@
 
     const/16 v3, 0x5c
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41680,7 +41680,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41688,7 +41688,7 @@
 
     const/16 v3, 0x64
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41706,7 +41706,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41714,7 +41714,7 @@
 
     const/16 v3, 0x3b
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x279
 
@@ -41732,7 +41732,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41740,7 +41740,7 @@
 
     const/16 v3, 0x14
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x15
 
@@ -41758,7 +41758,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41766,7 +41766,7 @@
 
     const/16 v3, 0x15
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x6d
 
@@ -41784,7 +41784,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41792,7 +41792,7 @@
 
     const/16 v3, 0x16
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x87
 
@@ -41810,7 +41810,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41818,7 +41818,7 @@
 
     const/16 v3, 0x25
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x23
 
@@ -41838,7 +41838,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41846,7 +41846,7 @@
 
     const/16 v3, 0x26
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/4 v7, 0x3
 
@@ -41864,7 +41864,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41872,7 +41872,7 @@
 
     const/16 v3, 0x1b
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0xae
 
@@ -41890,7 +41890,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41898,7 +41898,7 @@
 
     const/16 v3, 0x1d
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0xf
 
@@ -41916,7 +41916,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41924,7 +41924,7 @@
 
     const/16 v3, 0x18
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x8e
 
@@ -41942,7 +41942,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41950,7 +41950,7 @@
 
     const/16 v3, 0x19
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x1c
 
@@ -41968,7 +41968,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -41976,7 +41976,7 @@
 
     const/16 v3, 0x1a
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0xe
 
@@ -41994,7 +41994,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42002,7 +42002,7 @@
 
     const/16 v3, 0x24
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0xa0
 
@@ -42020,7 +42020,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42028,7 +42028,7 @@
 
     const/4 v3, 0x7
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x11
 
@@ -42046,7 +42046,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42054,7 +42054,7 @@
 
     const/16 v3, 0xd
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x68
 
@@ -42068,7 +42068,7 @@
 
     sget-object v10, Lbz;->u:Ljava/lang/String;
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42076,7 +42076,7 @@
 
     const/16 v3, 0x42
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0xe8
 
@@ -42094,7 +42094,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42102,7 +42102,7 @@
 
     const/16 v3, 0x50
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0xf
 
@@ -42120,7 +42120,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42128,7 +42128,7 @@
 
     const/16 v3, 0x11
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/4 v7, 0x5
 
@@ -42146,7 +42146,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42154,7 +42154,7 @@
 
     const/16 v3, 0xc
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/4 v7, 0x4
 
@@ -42172,7 +42172,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42180,7 +42180,7 @@
 
     const/4 v3, 0x5
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0xb
 
@@ -42198,7 +42198,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42206,7 +42206,7 @@
 
     const/4 v3, 0x6
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0xc
 
@@ -42224,7 +42224,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42232,7 +42232,7 @@
 
     const/16 v3, 0x8
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x3e
 
@@ -42250,7 +42250,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42258,7 +42258,7 @@
 
     const/16 v3, 0x3d
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0xee
 
@@ -42270,7 +42270,7 @@
 
     const/4 v9, 0x1
 
-    invoke-direct {v6, v7, v8, v9}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v6, v7, v8, v9}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v6, v0, v3
 
@@ -42278,7 +42278,7 @@
 
     const/16 v3, 0x3e
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x2ac
 
@@ -42290,7 +42290,7 @@
 
     const/4 v9, 0x1
 
-    invoke-direct {v6, v7, v8, v9}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v6, v7, v8, v9}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v6, v0, v3
 
@@ -42298,7 +42298,7 @@
 
     const/16 v3, 0x5b
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const/16 v7, 0x2b7
 
@@ -42310,7 +42310,7 @@
 
     const/4 v9, 0x1
 
-    invoke-direct {v6, v7, v8, v9}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v6, v7, v8, v9}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v6, v0, v3
 
@@ -42318,7 +42318,7 @@
 
     const/16 v3, 0x51
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, "+"
 
@@ -42326,7 +42326,7 @@
 
     const/4 v9, 0x1
 
-    invoke-direct {v6, v7, v8, v9}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v6, v7, v8, v9}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v6, v0, v3
 
@@ -42334,7 +42334,7 @@
 
     const/16 v3, 0x4e
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42348,7 +42348,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42356,7 +42356,7 @@
 
     const/16 v3, 0x52
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42370,7 +42370,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42378,7 +42378,7 @@
 
     const/16 v3, 0x53
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42392,7 +42392,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42400,7 +42400,7 @@
 
     const/16 v3, 0x54
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42414,7 +42414,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42422,7 +42422,7 @@
 
     const/16 v3, 0x55
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42436,7 +42436,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42444,7 +42444,7 @@
 
     const/16 v3, 0x56
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42458,7 +42458,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42466,7 +42466,7 @@
 
     const/16 v3, 0x57
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42480,7 +42480,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42488,7 +42488,7 @@
 
     const/16 v3, 0x58
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42502,7 +42502,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42510,7 +42510,7 @@
 
     const/16 v3, 0x59
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42524,7 +42524,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42532,7 +42532,7 @@
 
     const/16 v3, 0x5a
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42546,7 +42546,7 @@
 
     move-result-object v10
 
-    invoke-direct {v6, v7, v8, v9, v10}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v6, v7, v8, v9, v10}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     aput-object v6, v0, v3
 
@@ -42554,7 +42554,7 @@
 
     const/16 v3, 0x1c
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42562,7 +42562,7 @@
 
     const/4 v9, 0x1
 
-    invoke-direct {v6, v7, v8, v9}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v6, v7, v8, v9}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v6, v0, v3
 
@@ -42570,7 +42570,7 @@
 
     const/16 v3, 0x17
 
-    new-instance v6, Lbf;
+    new-instance v6, LopmCommand;
 
     const-string v7, ""
 
@@ -42578,7 +42578,7 @@
 
     const/4 v9, 0x1
 
-    invoke-direct {v6, v7, v8, v9}, Lbf;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v6, v7, v8, v9}, LopmCommand;-><init>(Ljava/lang/String;II)V
 
     aput-object v6, v0, v3
 

@@ -1,4 +1,4 @@
-.class public final Lbf;
+.class public final LopmCommand;
 .super Ljavax/microedition/lcdui/Command;
 
 
@@ -28,7 +28,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lbf;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3, v0}, LopmCommand;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
     :goto_0
     invoke-direct {p0, p1, p2, p3}, Ljavax/microedition/lcdui/Command;-><init>(Ljava/lang/String;II)V
 
-    iput-object p4, p0, Lbf;->a:Ljava/lang/String;
+    iput-object p4, p0, LopmCommand;->a:Ljava/lang/String;
 
     return-void
 
