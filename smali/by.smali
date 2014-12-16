@@ -282,9 +282,9 @@
 
     const/4 v1, 0x0
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    iput v2, v0, Lce;->y:I
+    iput v2, v0, LopmCanvas;->y:I
 
     iget-object v0, p0, Lby;->a:Lcf;
 
@@ -307,9 +307,9 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v0}, Lce;->repaint()V
+    invoke-virtual {v0}, LopmCanvas;->repaint()V
 
     :cond_1
     return-void
@@ -356,33 +356,33 @@
 
     aget v0, v0, v4
 
-    sget-object v4, Lce;->a:Lce;
+    sget-object v4, LopmCanvas;->a:LopmCanvas;
 
-    sget-object v5, Lce;->a:Lce;
+    sget-object v5, LopmCanvas;->a:LopmCanvas;
 
-    iget v5, v5, Lce;->y:I
+    iget v5, v5, LopmCanvas;->y:I
 
     mul-int/lit8 v5, v5, 0xa
 
     add-int/2addr v3, v5
 
-    iput v3, v4, Lce;->y:I
+    iput v3, v4, LopmCanvas;->y:I
 
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, LopmCanvas;->a:LopmCanvas;
 
-    iget v3, v3, Lce;->y:I
+    iget v3, v3, LopmCanvas;->y:I
 
     if-lt v3, v1, :cond_3
 
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, LopmCanvas;->a:LopmCanvas;
 
-    iget v3, v3, Lce;->y:I
+    iget v3, v3, LopmCanvas;->y:I
 
     if-gt v3, v0, :cond_3
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    iget v0, v0, Lce;->y:I
+    iget v0, v0, LopmCanvas;->y:I
 
     sub-int/2addr v0, v1
 
@@ -425,9 +425,9 @@
     packed-switch v0, :pswitch_data_0
 
     :goto_0
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v0}, Lce;->repaint()V
+    invoke-virtual {v0}, LopmCanvas;->repaint()V
 
     :goto_1
     return v2
@@ -480,7 +480,7 @@
 
     iget-object v1, p0, Lby;->a:Lcg;
 
-    invoke-static {v1}, Lce;->d(Lcg;)Z
+    invoke-static {v1}, LopmCanvas;->d(Lcg;)Z
 
     move-result v1
 
@@ -506,19 +506,19 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
     iget-object v1, p0, Lby;->a:Lcg;
 
-    invoke-virtual {v0, v1, v6, v6, v6}, Lce;->a(Lcg;ZZZ)Z
+    invoke-virtual {v0, v1, v6, v6, v6}, LopmCanvas;->a(Lcg;ZZZ)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v0}, Lce;->b()V
+    invoke-virtual {v0}, LopmCanvas;->b()V
 
     goto :goto_0
 
@@ -538,9 +538,9 @@
     goto :goto_1
 
     :cond_3
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, LopmCanvas;->a:LopmCanvas;
 
-    iget v3, v3, Lce;->y:I
+    iget v3, v3, LopmCanvas;->y:I
 
     if-le v3, v0, :cond_4
 
@@ -549,9 +549,9 @@
     goto :goto_1
 
     :cond_4
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, LopmCanvas;->a:LopmCanvas;
 
-    iget v3, v3, Lce;->y:I
+    iget v3, v3, LopmCanvas;->y:I
 
     if-ge v3, v7, :cond_7
 
@@ -562,15 +562,15 @@
     move v1, v2
 
     :cond_5
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, LopmCanvas;->a:LopmCanvas;
 
-    iget v3, v3, Lce;->y:I
+    iget v3, v3, LopmCanvas;->y:I
 
     if-lt v3, v1, :cond_6
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, LopmCanvas;->a:LopmCanvas;
 
-    iget v1, v1, Lce;->y:I
+    iget v1, v1, LopmCanvas;->y:I
 
     if-le v1, v0, :cond_7
 
@@ -580,7 +580,7 @@
     goto/16 :goto_1
 
     :cond_7
-    invoke-static {}, Lce;->v()V
+    invoke-static {}, LopmCanvas;->v()V
 
     goto/16 :goto_1
 
@@ -613,15 +613,15 @@
 
     move-result v10
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, LopmCanvas;->a:LopmCanvas;
 
-    iget v1, v1, Lce;->y:I
+    iget v1, v1, LopmCanvas;->y:I
 
     if-eqz v1, :cond_4
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, LopmCanvas;->a:LopmCanvas;
 
-    iget v1, v1, Lce;->y:I
+    iget v1, v1, LopmCanvas;->y:I
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -1206,13 +1206,13 @@
 
     if-eq v8, v0, :cond_0
 
-    sget-boolean v0, Lce;->m:Z
+    sget-boolean v0, LopmCanvas;->m:Z
 
     if-nez v0, :cond_0
 
-    sput-boolean v7, Lce;->l:Z
+    sput-boolean v7, LopmCanvas;->l:Z
 
-    sput-boolean v7, Lce;->m:Z
+    sput-boolean v7, LopmCanvas;->m:Z
 
     :cond_0
     return-void

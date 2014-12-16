@@ -1197,9 +1197,9 @@
     invoke-virtual {p0}, Lx;->b()V
 
     :cond_6
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v0}, Lce;->g()V
+    invoke-virtual {v0}, LopmCanvas;->g()V
 
     const/4 v0, 0x1
 

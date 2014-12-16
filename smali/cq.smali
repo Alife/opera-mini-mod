@@ -223,15 +223,15 @@
     :cond_0
     if-eqz p5, :cond_1
 
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, LopmCanvas;->a:LopmCanvas;
 
     const/4 v4, 0x1
 
-    sget-object v5, Lce;->a:Lce;
+    sget-object v5, LopmCanvas;->a:LopmCanvas;
 
-    iget-object v5, v5, Lce;->a:Lcg;
+    iget-object v5, v5, LopmCanvas;->a:Lcg;
 
-    invoke-virtual {v3, v4, v5}, Lce;->a(ZLcg;)V
+    invoke-virtual {v3, v4, v5}, LopmCanvas;->a(ZLcg;)V
 
     :cond_1
     const/4 v8, 0x0
@@ -1037,7 +1037,7 @@
     goto :goto_e
 
     :cond_16
-    invoke-static {}, Lce;->u()V
+    invoke-static {}, LopmCanvas;->u()V
 
     invoke-static {}, Ljava/lang/System;->gc()V
 
@@ -1175,13 +1175,13 @@
 
     if-eqz p1, :cond_0
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, LopmCanvas;->a:LopmCanvas;
 
-    iget-object v1, v1, Lce;->a:Lcg;
+    iget-object v1, v1, LopmCanvas;->a:Lcg;
 
-    invoke-virtual {v0, v7, v1}, Lce;->a(ZLcg;)V
+    invoke-virtual {v0, v7, v1}, LopmCanvas;->a(ZLcg;)V
 
     :cond_0
     invoke-virtual {p0}, Ljavax/microedition/lcdui/Image;->getWidth()I
@@ -1354,7 +1354,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-static {}, Lce;->u()V
+    invoke-static {}, LopmCanvas;->u()V
 
     invoke-virtual {v11}, Lay;->a()[B
 

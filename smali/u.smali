@@ -1343,9 +1343,9 @@
 
     iput-object v0, p0, Lu;->a:Lah;
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v0}, Lce;->g()V
+    invoke-virtual {v0}, LopmCanvas;->g()V
 
     goto/16 :goto_0
 .end method

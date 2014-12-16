@@ -131,7 +131,7 @@
     move-result-object v0
 
     :goto_2
-    sget-object v3, Lce;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v3, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
 
     invoke-virtual {v3}, Ljavax/microedition/lcdui/Display;->numAlphaLevels()I
 
@@ -159,17 +159,17 @@
     :goto_4
     sput-boolean v3, Lbz;->cl:Z
 
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v3}, Lce;->hasPointerEvents()Z
+    invoke-virtual {v3}, LopmCanvas;->hasPointerEvents()Z
 
     move-result v3
 
     sput-boolean v3, Lbz;->bY:Z
 
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v3}, Lce;->hasPointerMotionEvents()Z
+    invoke-virtual {v3}, LopmCanvas;->hasPointerMotionEvents()Z
 
     move-result v3
 
@@ -325,19 +325,19 @@
 
     move-result-object v6
 
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v3}, Lce;->getWidth()I
+    invoke-virtual {v3}, LopmCanvas;->getWidth()I
 
     move-result v7
 
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v3}, Lce;->getHeight()I
+    invoke-virtual {v3}, LopmCanvas;->getHeight()I
 
     move-result v8
 
-    sget-object v3, Lce;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v3, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
 
     invoke-virtual {v3}, Ljavax/microedition/lcdui/Display;->numColors()I
 
@@ -1626,9 +1626,9 @@
 
     sput v0, Lbz;->aI:I
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v0}, Lce;->isDoubleBuffered()Z
+    invoke-virtual {v0}, LopmCanvas;->isDoubleBuffered()Z
 
     move-result v0
 
@@ -3472,9 +3472,9 @@
     sput-boolean v0, Lbz;->cl:Z
 
     :cond_a0
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v0}, Lce;->hasRepeatEvents()Z
+    invoke-virtual {v0}, LopmCanvas;->hasRepeatEvents()Z
 
     move-result v0
 
@@ -3853,9 +3853,9 @@
 .method public static a(Lcg;)V
     .locals 1
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v0}, Lce;->k()V
+    invoke-virtual {v0}, LopmCanvas;->k()V
 
     new-instance v0, Lbh;
 
@@ -3875,9 +3875,9 @@
 
     sput-object p0, Lbp;->a:Ljavax/microedition/midlet/MIDlet;
 
-    sput-object p1, Lce;->a:Ljavax/microedition/lcdui/Display;
+    sput-object p1, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
     if-eqz v0, :cond_1
 
@@ -3885,7 +3885,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lce;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v0, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
 
     invoke-virtual {v0}, Ljavax/microedition/lcdui/Display;->getCurrent()Ljavax/microedition/lcdui/Displayable;
 
@@ -3898,13 +3898,13 @@
     :cond_0
     invoke-static {v2}, Lbp;->a(Z)V
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v0}, Lce;->repaint()V
+    invoke-virtual {v0}, LopmCanvas;->repaint()V
 
-    sget-object v0, Lce;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v0, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, LopmCanvas;->a:LopmCanvas;
 
     invoke-virtual {v0, v1}, Ljavax/microedition/lcdui/Display;->setCurrent(Ljavax/microedition/lcdui/Displayable;)V
 
@@ -3928,9 +3928,9 @@
 
     sput-boolean v3, Lbp;->b:Z
 
-    new-instance v0, Lce;
+    new-instance v0, LopmCanvas;
 
-    invoke-direct {v0}, Lce;-><init>()V
+    invoke-direct {v0}, LopmCanvas;-><init>()V
 
     goto :goto_0
 .end method
@@ -3942,7 +3942,7 @@
 
     if-eqz p0, :cond_0
 
-    sget-object v0, Lce;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v0, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
 
     const/4 v1, 0x0
 
@@ -4224,7 +4224,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
     const/16 v1, 0x8
 
@@ -4234,7 +4234,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lce;->a(Lcg;)Z
+    invoke-virtual {v0, v1}, LopmCanvas;->a(Lcg;)Z
 
     :cond_1
     sget v0, Lbz;->aC:I
@@ -4317,7 +4317,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Lce;->h:Z
+    sget-boolean v0, LopmCanvas;->h:Z
 
     if-nez v0, :cond_2
 
@@ -4326,13 +4326,13 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v0}, Lce;->x()V
+    invoke-virtual {v0}, LopmCanvas;->x()V
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, LopmCanvas;->a:LopmCanvas;
 
-    iget-object v0, v0, Lce;->a:Ljava/util/Timer;
+    iget-object v0, v0, LopmCanvas;->a:Ljava/util/Timer;
 
     invoke-static {v0}, Lbz;->a(Ljava/util/Timer;)V
 
@@ -4492,9 +4492,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v1}, Lce;->getWidth()I
+    invoke-virtual {v1}, LopmCanvas;->getWidth()I
 
     move-result v1
 
@@ -4508,9 +4508,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, LopmCanvas;->a:LopmCanvas;
 
-    invoke-virtual {v1}, Lce;->getHeight()I
+    invoke-virtual {v1}, LopmCanvas;->getHeight()I
 
     move-result v1
 
