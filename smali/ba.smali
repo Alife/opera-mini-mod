@@ -208,13 +208,13 @@
 
     if-eqz v0, :cond_8
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v3
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v1
 
@@ -228,7 +228,7 @@
 
     if-eqz v0, :cond_7
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v4
 
@@ -240,7 +240,7 @@
 
     if-eqz v0, :cond_b
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x40
 
@@ -257,7 +257,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x3a
 
@@ -272,7 +272,7 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0xf
 
@@ -305,7 +305,7 @@
 
     if-ne v0, v1, :cond_3
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x12
 
@@ -320,7 +320,7 @@
 
     if-ne v0, v1, :cond_4
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x13
 
@@ -369,7 +369,7 @@
 
     if-eqz v0, :cond_a
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v4
 
@@ -377,13 +377,13 @@
 
     :cond_9
     :goto_2
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v3
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v1
 
@@ -405,7 +405,7 @@
 
     if-eqz v0, :cond_c
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x2d
 
@@ -422,7 +422,7 @@
 
     if-eqz v0, :cond_d
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x30
 
@@ -430,7 +430,7 @@
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x31
 
@@ -438,7 +438,7 @@
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x32
 
@@ -446,7 +446,7 @@
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x33
 
@@ -459,7 +459,7 @@
 
     if-eqz v0, :cond_e
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x2e
 
@@ -467,7 +467,7 @@
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x2f
 
@@ -480,7 +480,7 @@
 
     if-eqz v0, :cond_f
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x45
 
@@ -499,7 +499,7 @@
 
     if-eqz v0, :cond_10
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x4b
 
@@ -508,7 +508,7 @@
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
     :cond_10
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0xb
 
@@ -560,7 +560,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x27
 
@@ -580,7 +580,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x44
 
@@ -610,7 +610,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x28
 
@@ -637,7 +637,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x2b
 
@@ -668,7 +668,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x2c
 
@@ -704,7 +704,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x29
 
@@ -722,7 +722,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x4f
 
@@ -751,7 +751,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x2a
 
@@ -800,19 +800,19 @@
 
     if-nez v0, :cond_4
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v2
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v4
 
     invoke-virtual {p0, v0}, LopmTextBox;->removeCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x4f
 
@@ -820,7 +820,7 @@
 
     invoke-virtual {p0, v0}, LopmTextBox;->removeCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x2a
 
@@ -836,7 +836,7 @@
 
     if-eqz p1, :cond_3
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x44
 
@@ -844,13 +844,13 @@
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v3
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v5
 
@@ -860,7 +860,7 @@
 
     if-eqz v0, :cond_3
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v6
 
@@ -891,13 +891,13 @@
 
     if-nez v0, :cond_5
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v4
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x4f
 
@@ -905,7 +905,7 @@
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v2
 
@@ -922,7 +922,7 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x2a
 
@@ -930,19 +930,19 @@
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v2
 
     invoke-virtual {p0, v0}, LopmTextBox;->removeCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v4
 
     invoke-virtual {p0, v0}, LopmTextBox;->removeCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x4f
 
@@ -953,7 +953,7 @@
     goto :goto_1
 
     :cond_6
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x44
 
@@ -961,7 +961,7 @@
 
     invoke-virtual {p0, v0}, LopmTextBox;->removeCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0x44
 
@@ -969,7 +969,7 @@
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v3
 
@@ -987,14 +987,14 @@
 
     if-nez v0, :cond_7
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v3
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
     :cond_7
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v5
 
@@ -1008,14 +1008,14 @@
 
     if-eqz v0, :cond_8
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v5
 
     invoke-virtual {p0, v0}, LopmTextBox;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
     :cond_8
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v6
 
@@ -1033,7 +1033,7 @@
 
     if-nez v0, :cond_3
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v6
 
@@ -1085,7 +1085,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v1, 0xe
 
@@ -1564,7 +1564,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x2d
 
@@ -1591,7 +1591,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x30
 
@@ -1609,7 +1609,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x31
 
@@ -1627,7 +1627,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x32
 
@@ -1645,7 +1645,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x33
 
@@ -1668,7 +1668,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x2e
 
@@ -1686,7 +1686,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x2f
 
@@ -1709,7 +1709,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x45
 
@@ -1738,7 +1738,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x4b
 
@@ -1757,7 +1757,7 @@
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0xb
 

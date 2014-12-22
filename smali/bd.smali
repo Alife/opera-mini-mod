@@ -3250,7 +3250,7 @@
 
     invoke-virtual {v0, v1}, Ljavax/microedition/lcdui/Form;->append(Ljavax/microedition/lcdui/Item;)I
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0x9
 
@@ -3258,7 +3258,7 @@
 
     invoke-virtual {v1, v2}, Ljavax/microedition/lcdui/DateField;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v2, LopmCanvas;->a:[LlangArray;
+    sget-object v2, LopmCanvas;->langArray:[LopmCommand;
 
     const/16 v3, 0xa
 

@@ -48,19 +48,19 @@
 
     iput-object v0, p0, Lbs;->a:Lcb;
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v2
 
     invoke-virtual {p0, v0}, Lbs;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v2
 
     invoke-virtual {p0, v0}, Lbs;->setSelectCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/4 v1, 0x4
 

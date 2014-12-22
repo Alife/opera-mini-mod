@@ -16304,7 +16304,7 @@
 
     const/16 v2, 0x9
 
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v0, v0, v2
 
@@ -16332,7 +16332,7 @@
 
     move-result v0
 
-    sget-object v1, LopmCanvas;->a:[LlangArray;
+    sget-object v1, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v1, v1, v2
 
@@ -16367,7 +16367,7 @@
     goto :goto_1
 
     :cond_4
-    sget-object v1, LopmCanvas;->a:[LlangArray;
+    sget-object v1, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v1, v1, v5
 
@@ -16380,7 +16380,7 @@
     goto :goto_0
 
     :cond_5
-    sget-object v1, LopmCanvas;->a:[LlangArray;
+    sget-object v1, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v1, v1, v5
 
@@ -16397,7 +16397,7 @@
     goto :goto_0
 
     :cond_6
-    sget-object v1, LopmCanvas;->a:[LlangArray;
+    sget-object v1, LopmCanvas;->langArray:[LopmCommand;
 
     aget-object v1, v1, v2
 
@@ -16462,7 +16462,7 @@
     goto :goto_2
 
     :cond_8
-    sget-object v0, LopmCanvas;->a:[LlangArray;
+    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
 
     const/4 v1, 0x4
 
