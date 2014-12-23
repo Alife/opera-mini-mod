@@ -9,7 +9,7 @@
 # instance fields
 .field public a:I
 
-.field public a:LopmTextBox;
+.field public a:Lba;
 
 .field public a:Ljava/lang/String;
 
@@ -1098,7 +1098,7 @@
     if-nez v0, :cond_1
 
     :cond_0
-    sget-object v0, LopmCanvas;->a:[B
+    sget-object v0, Lce;->a:[B
 
     aput-object v0, v4, v1
 
@@ -3277,9 +3277,9 @@
 
     if-ne v1, v4, :cond_2
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
-    iget-object v1, v1, LopmCanvas;->a:Lcg;
+    iget-object v1, v1, Lce;->a:Lcg;
 
     iget v1, v1, Lcg;->A:I
 

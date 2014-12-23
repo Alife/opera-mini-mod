@@ -9,7 +9,7 @@
 # instance fields
 .field public a:I
 
-.field public a:LopmTextBox;
+.field public a:Lba;
 
 .field public a:Lcf;
 
@@ -129,7 +129,7 @@
     return-void
 .end method
 
-.method public constructor <init>(LopmTextBox;)V
+.method public constructor <init>(Lba;)V
     .locals 1
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -142,7 +142,7 @@
 
     iput v0, p0, Lbh;->a:I
 
-    iput-object p1, p0, Lbh;->a:LopmTextBox;
+    iput-object p1, p0, Lbh;->a:Lba;
 
     return-void
 .end method
@@ -326,11 +326,11 @@
 
     if-eq v0, v1, :cond_0
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
     iget-object v1, p0, Lbh;->a:Lcg;
 
-    invoke-virtual {v0, v1}, LopmCanvas;->a(Lcg;)Z
+    invoke-virtual {v0, v1}, Lce;->a(Lcg;)Z
 
     const/4 v0, 0x0
 
@@ -469,15 +469,15 @@
 
     :cond_4
     :try_start_3
-    iget-object v0, p0, Lbh;->a:LopmTextBox;
+    iget-object v0, p0, Lbh;->a:Lba;
 
-    iget-object v1, p0, Lbh;->a:LopmTextBox;
+    iget-object v1, p0, Lbh;->a:Lba;
 
-    invoke-virtual {v1}, LopmTextBox;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Lba;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, LopmTextBox;->setString(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lba;->setString(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -598,7 +598,7 @@
     if-eqz v0, :cond_c
 
     :cond_b
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
     if-eqz v0, :cond_c
 
@@ -643,11 +643,11 @@
 
     if-nez v0, :cond_e
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
     iget-object v1, p0, Lbh;->a:Lcg;
 
-    invoke-virtual {v0, v1}, LopmCanvas;->a(Lcg;)Z
+    invoke-virtual {v0, v1}, Lce;->a(Lcg;)Z
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -700,7 +700,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, LopmCanvas;->a(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-static {v0, v1, v2}, Lce;->a(Ljava/lang/String;Ljava/lang/String;I)V
 
     goto/16 :goto_1
 
@@ -724,11 +724,11 @@
 
     invoke-static {v0}, Lbz;->a([Ljava/lang/Object;)V
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, LopmCanvas;->c(Lcg;)V
+    invoke-virtual {v0, v1}, Lce;->c(Lcg;)V
 
     :cond_13
     iget-boolean v0, p0, Lbh;->d:Z
@@ -752,7 +752,7 @@
 
     invoke-static {v0}, Lbz;->c([B)V
 
-    invoke-static {}, LopmCanvas;->h()V
+    invoke-static {}, Lce;->h()V
 
     :cond_15
     invoke-static {}, Lbz;->v()V
@@ -959,9 +959,9 @@
 
     :cond_1c
     :try_start_8
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    invoke-virtual {v0}, LopmCanvas;->n()V
+    invoke-virtual {v0}, Lce;->n()V
 
     goto/16 :goto_1
 
@@ -975,7 +975,7 @@
     :cond_1e
     iget v0, p0, Lbh;->b:I
 
-    invoke-static {v0}, LopmCanvas;->b(I)V
+    invoke-static {v0}, Lce;->b(I)V
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 

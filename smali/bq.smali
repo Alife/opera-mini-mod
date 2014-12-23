@@ -176,7 +176,7 @@
 
     invoke-direct {p0}, Lbq;->X()V
 
-    invoke-static {}, LopmTextBox;->b()Z
+    invoke-static {}, Lba;->b()Z
 
     move-result v0
 
@@ -203,9 +203,9 @@
 
     iget-object v0, v6, Lcg;->a:Lcb;
 
-    iget-object v0, v0, Lcb;->a:LopmTextBox;
+    iget-object v0, v0, Lcb;->a:Lba;
 
-    invoke-static {v0}, LopmTextBox;->a(LopmTextBox;)Z
+    invoke-static {v0}, Lba;->a(Lba;)Z
 
     move-result v0
 
@@ -496,7 +496,7 @@
 
     iget-object v0, v7, Lcg;->a:Lcb;
 
-    sget-object v1, LopmTextBox;->a:Ljava/lang/String;
+    sget-object v1, Lba;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcb;->a(Ljava/lang/String;)Z
 
@@ -544,7 +544,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, LopmTextBox;->a:Ljava/util/Vector;
+    sget-object v0, Lba;->a:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->isEmpty()Z
 
@@ -569,11 +569,11 @@
 
     iget-object v0, v7, Lcg;->a:Lcb;
 
-    iget-object v0, v0, Lcb;->a:LopmTextBox;
+    iget-object v0, v0, Lcb;->a:Lba;
 
     if-eqz v0, :cond_2
 
-    invoke-static {}, LopmTextBox;->a()Z
+    invoke-static {}, Lba;->a()Z
 
     move-result v0
 
@@ -2937,9 +2937,9 @@
     move v0, v3
 
     :goto_1
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
-    iget-boolean v1, v1, LopmCanvas;->t:Z
+    iget-boolean v1, v1, Lce;->t:Z
 
     if-nez v1, :cond_4
 
@@ -3172,7 +3172,7 @@
 
     if-eqz v0, :cond_3
 
-    sget v0, LopmCanvas;->i:I
+    sget v0, Lce;->i:I
 
     move v2, v0
 
@@ -3220,9 +3220,9 @@
 
     const/4 v1, 0x0
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-boolean v0, v0, LopmCanvas;->t:Z
+    iget-boolean v0, v0, Lce;->t:Z
 
     if-eqz v0, :cond_5
 
@@ -3351,7 +3351,7 @@
 
     iget v0, p0, Lbq;->K:I
 
-    sget v1, LopmCanvas;->i:I
+    sget v1, Lce;->i:I
 
     add-int/lit8 v1, v1, 0x2
 
@@ -3363,7 +3363,7 @@
 
     iget v0, p0, Lbq;->K:I
 
-    sget v1, LopmCanvas;->i:I
+    sget v1, Lce;->i:I
 
     add-int/lit8 v1, v1, 0x2
 
@@ -3944,7 +3944,7 @@
     if-eqz v2, :cond_2
 
     :cond_0
-    sget v2, LopmCanvas;->i:I
+    sget v2, Lce;->i:I
 
     move v11, v2
 
@@ -5072,9 +5072,9 @@
 
     invoke-direct/range {v0 .. v5}, Lbq;->a(IIIZI)V
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-boolean v0, v0, LopmCanvas;->t:Z
+    iget-boolean v0, v0, Lce;->t:Z
 
     if-eqz v0, :cond_3
 
@@ -5309,9 +5309,9 @@
     invoke-direct/range {v0 .. v5}, Lbq;->a(IIIZI)V
 
     :goto_4
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-boolean v0, v0, LopmCanvas;->t:Z
+    iget-boolean v0, v0, Lce;->t:Z
 
     if-nez v0, :cond_3
 
@@ -5351,9 +5351,9 @@
     :cond_3
     if-nez p1, :cond_4
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-boolean v0, v0, LopmCanvas;->t:Z
+    iget-boolean v0, v0, Lce;->t:Z
 
     if-nez v0, :cond_4
 
@@ -5422,9 +5422,9 @@
 
     if-nez p1, :cond_8
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-boolean v0, v0, LopmCanvas;->t:Z
+    iget-boolean v0, v0, Lce;->t:Z
 
     if-nez v0, :cond_6
 
@@ -5513,9 +5513,9 @@
     goto/16 :goto_3
 
     :cond_e
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-boolean v0, v0, LopmCanvas;->t:Z
+    iget-boolean v0, v0, Lce;->t:Z
 
     if-eqz v0, :cond_10
 
@@ -5882,9 +5882,9 @@
     :sswitch_2
     invoke-direct {p0}, Lbq;->b()Lcg;
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
-    iget-object v1, v1, LopmCanvas;->a:Lcg;
+    iget-object v1, v1, Lce;->a:Lcg;
 
     const/4 v2, 0x1
 
@@ -5904,9 +5904,9 @@
 
     invoke-direct {p0}, Lbq;->U()V
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
-    iget-boolean v1, v1, LopmCanvas;->t:Z
+    iget-boolean v1, v1, Lce;->t:Z
 
     if-eqz v1, :cond_4
 
@@ -5925,9 +5925,9 @@
     :cond_4
     const/4 v1, 0x0
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->a:Lcg;
+    iget-object v2, v2, Lce;->a:Lcg;
 
     invoke-direct {p0, v1, v2}, Lbq;->a(ZLcg;)V
 
@@ -7170,9 +7170,9 @@
     goto/16 :goto_14
 
     :pswitch_4
-    sget-object v3, LopmCanvas;->a:LopmCanvas;
+    sget-object v3, Lce;->a:Lce;
 
-    iget-object v3, v3, LopmCanvas;->a:Lcg;
+    iget-object v3, v3, Lce;->a:Lcg;
 
     iget-byte v3, v3, Lcg;->a:B
 
@@ -7184,9 +7184,9 @@
 
     if-eqz v3, :cond_29
 
-    sget-object v3, LopmCanvas;->a:LopmCanvas;
+    sget-object v3, Lce;->a:Lce;
 
-    iget-object v3, v3, LopmCanvas;->a:Lcg;
+    iget-object v3, v3, Lce;->a:Lcg;
 
     iget-byte v3, v3, Lcg;->a:B
 
@@ -7273,9 +7273,9 @@
 
     invoke-direct {p0, v0}, Lbq;->m(Z)V
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    iget-boolean v2, v2, LopmCanvas;->t:Z
+    iget-boolean v2, v2, Lce;->t:Z
 
     if-eqz v2, :cond_32
 
@@ -7296,9 +7296,9 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->a:Lcg;
+    iget-object v2, v2, Lce;->a:Lcg;
 
     invoke-direct {p0, v1, v2}, Lbq;->a(ZLcg;)V
 
@@ -9187,7 +9187,7 @@
 
     invoke-direct {p0}, Lbq;->X()V
 
-    sget-boolean v1, LopmCanvas;->b:Z
+    sget-boolean v1, Lce;->b:Z
 
     if-nez v1, :cond_80
 
@@ -9220,7 +9220,7 @@
 
     if-nez v1, :cond_7a
 
-    sget-boolean v1, LopmCanvas;->b:Z
+    sget-boolean v1, Lce;->b:Z
 
     if-nez v1, :cond_81
 
@@ -9240,7 +9240,7 @@
 
     invoke-direct/range {v1 .. v6}, Lbq;->a(IIIZI)V
 
-    sget-boolean v1, LopmCanvas;->b:Z
+    sget-boolean v1, Lce;->b:Z
 
     if-nez v1, :cond_82
 
@@ -9265,7 +9265,7 @@
 
     const/4 v4, 0x3
 
-    sget-boolean v5, LopmCanvas;->b:Z
+    sget-boolean v5, Lce;->b:Z
 
     const/16 v6, 0x6f
 
@@ -9275,20 +9275,20 @@
 
     invoke-direct {p0}, Lbq;->X()V
 
-    sget-boolean v1, LopmCanvas;->b:Z
+    sget-boolean v1, Lce;->b:Z
 
     if-eqz v1, :cond_83
 
     const-string v1, "myopera:logout"
 
     :goto_47
-    sget-boolean v2, LopmCanvas;->b:Z
+    sget-boolean v2, Lce;->b:Z
 
     if-eqz v2, :cond_84
 
     const/16 v2, 0xb1
 
-    sget-object v3, LopmCanvas;->b:Ljava/lang/String;
+    sget-object v3, Lce;->b:Ljava/lang/String;
 
     invoke-static {v2, v3}, Lbz;->a(ILjava/lang/String;)Ljava/lang/String;
 
@@ -9389,36 +9389,36 @@
     goto/16 :goto_0
 
     :sswitch_25
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
     const/4 v2, 0x1
 
-    iput-boolean v2, v1, LopmCanvas;->t:Z
+    iput-boolean v2, v1, Lce;->t:Z
 
     :sswitch_26
     iget-boolean v1, p0, Lbq;->M:Z
 
     if-nez v1, :cond_85
 
-    sget-boolean v1, LopmCanvas;->i:Z
+    sget-boolean v1, Lce;->i:Z
 
-    sput-boolean v1, LopmCanvas;->k:Z
+    sput-boolean v1, Lce;->k:Z
 
-    sget-boolean v1, LopmCanvas;->i:Z
+    sget-boolean v1, Lce;->i:Z
 
     if-nez v1, :cond_85
 
     const/4 v1, 0x1
 
-    sput-boolean v1, LopmCanvas;->i:Z
+    sput-boolean v1, Lce;->i:Z
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
-    invoke-virtual {v1}, LopmCanvas;->p()V
+    invoke-virtual {v1}, Lce;->p()V
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
-    invoke-virtual {v1}, LopmCanvas;->repaint()V
+    invoke-virtual {v1}, Lce;->repaint()V
 
     :cond_85
     invoke-direct {p0}, Lbq;->b()Lcg;
@@ -9632,7 +9632,7 @@
 
     invoke-direct {p0}, Lbq;->X()V
 
-    sget-boolean v1, LopmCanvas;->k:Z
+    sget-boolean v1, Lce;->k:Z
 
     const v2, 0xd066
 
@@ -9966,11 +9966,11 @@
     goto :goto_51
 
     :sswitch_29
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
     const/4 v2, 0x1
 
-    iput-boolean v2, v1, LopmCanvas;->t:Z
+    iput-boolean v2, v1, Lce;->t:Z
 
     :sswitch_2a
     invoke-direct {p0}, Lbq;->b()Lcg;
@@ -10024,11 +10024,11 @@
     goto :goto_52
 
     :sswitch_2b
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
     const/4 v2, 0x1
 
-    iput-boolean v2, v1, LopmCanvas;->t:Z
+    iput-boolean v2, v1, Lce;->t:Z
 
     invoke-direct {p0}, Lbq;->b()Lcg;
 
@@ -10473,11 +10473,11 @@
     goto/16 :goto_0
 
     :sswitch_32
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
     const/4 v2, 0x1
 
-    iput-boolean v2, v1, LopmCanvas;->t:Z
+    iput-boolean v2, v1, Lce;->t:Z
 
     :sswitch_33
     const/4 v1, 0x0

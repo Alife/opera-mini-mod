@@ -126,7 +126,7 @@
 
     const/4 v3, 0x3
 
-    invoke-static {v1, v2, v3}, LopmCanvas;->a(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-static {v1, v2, v3}, Lce;->a(Ljava/lang/String;Ljava/lang/String;I)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
@@ -153,7 +153,7 @@
 
     const/4 v3, 0x1
 
-    invoke-static {v0, v2, v3}, LopmCanvas;->a(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-static {v0, v2, v3}, Lce;->a(Ljava/lang/String;Ljava/lang/String;I)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 

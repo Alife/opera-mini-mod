@@ -537,7 +537,7 @@
 
     if-lez v0, :cond_5
 
-    sget-object v0, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v0, Lce;->a:Ljavax/microedition/lcdui/Display;
 
     const v1, 0x7fffffff
 
@@ -546,7 +546,7 @@
     goto/16 :goto_0
 
     :cond_5
-    sget-object v0, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v0, Lce;->a:Ljavax/microedition/lcdui/Display;
 
     const/4 v1, 0x0
 

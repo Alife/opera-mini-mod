@@ -5,7 +5,7 @@
 # instance fields
 .field public a:I
 
-.field public final a:LopmTextBox;
+.field public final a:Lba;
 
 .field public final a:Lcb;
 
@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method public constructor <init>(IILopmTextBox;Ljavax/microedition/lcdui/CommandListener;Lcb;)V
+.method public constructor <init>(IILba;Ljavax/microedition/lcdui/CommandListener;Lcb;)V
     .locals 3
 
     const/16 v2, 0x9
@@ -42,25 +42,25 @@
 
     invoke-direct {p0, v0, v1}, Ljavax/microedition/lcdui/List;-><init>(Ljava/lang/String;I)V
 
-    iput-object p3, p0, Lbs;->a:LopmTextBox;
+    iput-object p3, p0, Lbs;->a:Lba;
 
     const/4 v0, 0x0
 
     iput-object v0, p0, Lbs;->a:Lcb;
 
-    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
+    sget-object v0, Lce;->a:[Lbf;
 
     aget-object v0, v0, v2
 
     invoke-virtual {p0, v0}, Lbs;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
+    sget-object v0, Lce;->a:[Lbf;
 
     aget-object v0, v0, v2
 
     invoke-virtual {p0, v0}, Lbs;->setSelectCommand(Ljavax/microedition/lcdui/Command;)V
 
-    sget-object v0, LopmCanvas;->langArray:[LopmCommand;
+    sget-object v0, Lce;->a:[Lbf;
 
     const/4 v1, 0x4
 
@@ -68,7 +68,7 @@
 
     invoke-virtual {p0, v0}, Lbs;->addCommand(Ljavax/microedition/lcdui/Command;)V
 
-    invoke-static {p0}, LopmTextBox;->a(Ljavax/microedition/lcdui/Screen;)V
+    invoke-static {p0}, Lba;->a(Ljavax/microedition/lcdui/Screen;)V
 
     invoke-virtual {p0, p4}, Lbs;->setCommandListener(Ljavax/microedition/lcdui/CommandListener;)V
 
@@ -87,7 +87,7 @@
     return-void
 .end method
 
-.method private constructor <init>(IILjava/util/Vector;LopmTextBox;Lcb;Ljava/lang/String;ZIZZI)V
+.method private constructor <init>(IILjava/util/Vector;Lba;Lcb;Ljava/lang/String;ZIZZI)V
     .locals 2
 
     invoke-static {p1}, Lbz;->e(I)Ljava/lang/String;
@@ -108,7 +108,7 @@
 
     iput-object v0, p0, Lbs;->b:Ljava/util/Vector;
 
-    iput-object p4, p0, Lbs;->a:LopmTextBox;
+    iput-object p4, p0, Lbs;->a:Lba;
 
     iput-object p5, p0, Lbs;->a:Lcb;
 
@@ -190,15 +190,15 @@
 
     invoke-virtual {v0, v3}, Lcg;->c(Ljavax/microedition/lcdui/Graphics;)V
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    invoke-virtual {v0}, LopmCanvas;->repaint()V
+    invoke-virtual {v0}, Lce;->repaint()V
 
     :cond_0
     return-void
 .end method
 
-.method public static a(ILjava/util/Vector;LopmTextBox;Lcb;Ljava/lang/String;ZIZZI)V
+.method public static a(ILjava/util/Vector;Lba;Lcb;Ljava/lang/String;ZIZZI)V
     .locals 13
 
     new-instance v1, Lbs;
@@ -225,7 +225,7 @@
 
     move/from16 v12, p9
 
-    invoke-direct/range {v1 .. v12}, Lbs;-><init>(IILjava/util/Vector;LopmTextBox;Lcb;Ljava/lang/String;ZIZZI)V
+    invoke-direct/range {v1 .. v12}, Lbs;-><init>(IILjava/util/Vector;Lba;Lcb;Ljava/lang/String;ZIZZI)V
 
     new-instance v6, Ljava/util/Hashtable;
 
@@ -245,13 +245,13 @@
 
     invoke-virtual {v6, v2, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
     invoke-static {v1}, Lbz;->a(Ljavax/microedition/lcdui/Displayable;)V
 
-    sget-object v8, LopmCanvas;->a:LopmCanvas;
+    sget-object v8, Lce;->a:Lce;
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
     const v2, 0xd092
 
@@ -263,17 +263,17 @@
 
     const/4 v4, 0x1
 
-    sget-object v5, LopmCanvas;->a:LopmCanvas;
+    sget-object v5, Lce;->a:Lce;
 
-    iget-object v5, v5, LopmCanvas;->a:Lcg;
+    iget-object v5, v5, Lce;->a:Lcg;
 
     const/4 v7, 0x0
 
-    invoke-virtual/range {v1 .. v7}, LopmCanvas;->a(Ljava/lang/String;Ljava/lang/String;ILcg;Ljava/util/Hashtable;Z)Lcg;
+    invoke-virtual/range {v1 .. v7}, Lce;->a(Ljava/lang/String;Ljava/lang/String;ILcg;Ljava/util/Hashtable;Z)Lcg;
 
     move-result-object v1
 
-    iput-object v1, v8, LopmCanvas;->a:Lcg;
+    iput-object v1, v8, Lce;->a:Lcg;
 
     return-void
 .end method
@@ -285,7 +285,7 @@
 
     iget-object v1, p0, Lbs;->a:Ljava/util/Vector;
 
-    iget-object v2, p0, Lbs;->a:LopmTextBox;
+    iget-object v2, p0, Lbs;->a:Lba;
 
     iget-object v3, p0, Lbs;->a:Lcb;
 
@@ -301,7 +301,7 @@
 
     move v6, p1
 
-    invoke-static/range {v0 .. v9}, Lbs;->a(ILjava/util/Vector;LopmTextBox;Lcb;Ljava/lang/String;ZIZZI)V
+    invoke-static/range {v0 .. v9}, Lbs;->a(ILjava/util/Vector;Lba;Lcb;Ljava/lang/String;ZIZZI)V
 
     return-void
 .end method
@@ -329,9 +329,9 @@
 
     iput v2, v1, Lbs;->b:I
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    invoke-virtual {v0, p0}, LopmCanvas;->a(Lcg;)Z
+    invoke-virtual {v0, p0}, Lce;->a(Lcg;)Z
 
     iget-object v0, v1, Lbs;->a:Ljava/util/Vector;
 
@@ -363,7 +363,7 @@
 
     move-result-object v3
 
-    iget-object v4, v1, Lbs;->a:LopmTextBox;
+    iget-object v4, v1, Lbs;->a:Lba;
 
     if-nez v4, :cond_4
 
@@ -375,9 +375,9 @@
 
     iget-object v2, v3, Lcg;->a:Lcb;
 
-    iget-object v2, v2, Lcb;->a:LopmTextBox;
+    iget-object v2, v2, Lcb;->a:Lba;
 
-    invoke-static {v2}, LopmTextBox;->b(LopmTextBox;)Z
+    invoke-static {v2}, Lba;->b(Lba;)Z
 
     move-result v2
 
@@ -385,11 +385,11 @@
 
     iget-object v2, v3, Lcg;->a:Lcb;
 
-    iget-object v2, v2, Lcb;->a:LopmTextBox;
+    iget-object v2, v2, Lcb;->a:Lba;
 
     iget-object v1, v1, Lbs;->a:Ljava/util/Vector;
 
-    invoke-static {v2, v1}, LopmTextBox;->a(LopmTextBox;Ljava/util/Vector;)Z
+    invoke-static {v2, v1}, Lba;->a(Lba;Ljava/util/Vector;)Z
 
     move-result v1
 
@@ -410,9 +410,9 @@
     :cond_2
     iget-object v1, v3, Lcg;->a:Lcb;
 
-    iget-object v1, v1, Lcb;->a:LopmTextBox;
+    iget-object v1, v1, Lcb;->a:Lba;
 
-    invoke-static {v1}, LopmTextBox;->c(LopmTextBox;)Z
+    invoke-static {v1}, Lba;->c(Lba;)Z
 
     move-result v1
 
@@ -439,7 +439,7 @@
     goto :goto_0
 
     :cond_3
-    sput-object v0, LopmTextBox;->a:Ljava/lang/String;
+    sput-object v0, Lba;->a:Ljava/lang/String;
 
     iget-object v1, v3, Lcg;->a:Lcb;
 
@@ -448,25 +448,25 @@
     goto :goto_0
 
     :cond_4
-    iget-object v3, v1, Lbs;->a:LopmTextBox;
+    iget-object v3, v1, Lbs;->a:Lba;
 
     if-eqz v3, :cond_7
 
     iget-object v2, v1, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v3, LopmTextBox;->a:Ljava/util/Vector;
+    sget-object v3, Lba;->a:Ljava/util/Vector;
 
     if-ne v2, v3, :cond_5
 
-    sput-object v0, LopmTextBox;->a:Ljava/lang/String;
+    sput-object v0, Lba;->a:Ljava/lang/String;
 
-    iget-object v2, v1, Lbs;->a:LopmTextBox;
+    iget-object v2, v1, Lbs;->a:Lba;
 
-    invoke-virtual {v2}, LopmTextBox;->f()V
+    invoke-virtual {v2}, Lba;->f()V
 
-    iget-object v2, v1, Lbs;->a:LopmTextBox;
+    iget-object v2, v1, Lbs;->a:Lba;
 
-    invoke-static {v2, v5}, LopmTextBox;->a(LopmTextBox;Z)V
+    invoke-static {v2, v5}, Lba;->a(Lba;Z)V
 
     const/4 v2, 0x1
 
@@ -477,23 +477,23 @@
 
     if-eqz v2, :cond_6
 
-    iget-object v2, v1, Lbs;->a:LopmTextBox;
+    iget-object v2, v1, Lbs;->a:Lba;
 
     sget-boolean v3, Lbz;->aC:Z
 
-    invoke-virtual {v2, v0, v3}, LopmTextBox;->b(Ljava/lang/String;Z)V
+    invoke-virtual {v2, v0, v3}, Lba;->b(Ljava/lang/String;Z)V
 
     :goto_2
-    iget-object v0, v1, Lbs;->a:LopmTextBox;
+    iget-object v0, v1, Lbs;->a:Lba;
 
     invoke-static {v0}, Lbz;->a(Ljavax/microedition/lcdui/Displayable;)V
 
     goto :goto_1
 
     :cond_6
-    iget-object v2, v1, Lbs;->a:LopmTextBox;
+    iget-object v2, v1, Lbs;->a:Lba;
 
-    invoke-virtual {v2, v0}, LopmTextBox;->setString(Ljava/lang/String;)V
+    invoke-virtual {v2, v0}, Lba;->setString(Ljava/lang/String;)V
 
     goto :goto_2
 
@@ -504,9 +504,9 @@
 
     if-ne v0, v3, :cond_8
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-object v0, v0, LopmCanvas;->a:Lcg;
+    iget-object v0, v0, Lce;->a:Lcg;
 
     iget-byte v0, v0, Lcg;->a:B
 
@@ -568,9 +568,9 @@
     invoke-virtual {v5, v0}, Lbs;->a(I)V
 
     :cond_0
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
-    invoke-virtual {v1, p0}, LopmCanvas;->a(Lcg;)Z
+    invoke-virtual {v1, p0}, Lce;->a(Lcg;)Z
 
     iget-object v1, v5, Lbs;->a:Ljava/util/Vector;
 
@@ -578,7 +578,7 @@
 
     iget-object v1, v5, Lbs;->a:Ljava/util/Vector;
 
-    sget-object v4, LopmTextBox;->a:Ljava/util/Vector;
+    sget-object v4, Lba;->a:Ljava/util/Vector;
 
     if-ne v1, v4, :cond_7
 
@@ -611,7 +611,7 @@
 
     if-eq v4, v3, :cond_1
 
-    sget-object v0, LopmTextBox;->a:Ljava/util/Vector;
+    sget-object v0, Lba;->a:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -619,7 +619,7 @@
 
     if-ge v4, v0, :cond_1
 
-    sget-object v0, LopmTextBox;->a:Ljava/util/Vector;
+    sget-object v0, Lba;->a:Ljava/util/Vector;
 
     invoke-virtual {v0, v6, v4}, Ljava/util/Vector;->setElementAt(Ljava/lang/Object;I)V
 
@@ -633,7 +633,7 @@
     goto :goto_0
 
     :cond_2
-    sget-object v1, LopmTextBox;->a:Ljava/util/Vector;
+    sget-object v1, Lba;->a:Ljava/util/Vector;
 
     invoke-static {v1}, Lbz;->d(Ljava/util/Vector;)V
 
@@ -643,13 +643,13 @@
 
     :cond_3
     :goto_1
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
-    iget-object v1, v1, LopmCanvas;->b:LopmTextBox;
+    iget-object v1, v1, Lce;->b:Lba;
 
-    invoke-virtual {v0, v1, v3}, LopmCanvas;->a(LopmTextBox;I)V
+    invoke-virtual {v0, v1, v3}, Lce;->a(Lba;I)V
 
     :cond_4
     :goto_2
@@ -663,7 +663,7 @@
     :cond_6
     if-ne p1, v8, :cond_3
 
-    invoke-static {}, LopmTextBox;->g()V
+    invoke-static {}, Lba;->g()V
 
     goto :goto_1
 
@@ -733,9 +733,9 @@
 
     :cond_a
     :goto_4
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-object v0, v0, LopmCanvas;->a:Lcg;
+    iget-object v0, v0, Lce;->a:Lcg;
 
     iget-byte v0, v0, Lcg;->a:B
 
@@ -1105,9 +1105,9 @@
 
     invoke-static {v1, v2}, Lbz;->a(Ljava/lang/String;Ljava/util/Vector;)Z
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
-    invoke-virtual {v1, p0}, LopmCanvas;->a(Lcg;)Z
+    invoke-virtual {v1, p0}, Lce;->a(Lcg;)Z
 
     const/4 v1, -0x1
 
@@ -1311,9 +1311,9 @@
 
     iput v1, v0, Lbs;->b:I
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2, p0}, LopmCanvas;->a(Lcg;)Z
+    invoke-virtual {v2, p0}, Lce;->a(Lcg;)Z
 
     iget-object v2, v0, Lbs;->a:Ljava/util/Vector;
 
@@ -1337,9 +1337,9 @@
 
     if-ne v2, v3, :cond_2
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-object v0, v0, LopmCanvas;->a:Lcg;
+    iget-object v0, v0, Lce;->a:Lcg;
 
     iget-byte v0, v0, Lcg;->a:B
 
@@ -1383,9 +1383,9 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
-    invoke-virtual {v1, p0}, LopmCanvas;->a(Lcg;)Z
+    invoke-virtual {v1, p0}, Lce;->a(Lcg;)Z
 
     iget-object v1, v0, Lbs;->a:Ljava/util/Vector;
 
@@ -1393,9 +1393,9 @@
 
     if-ne v1, v2, :cond_2
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-object v0, v0, LopmCanvas;->a:Lcg;
+    iget-object v0, v0, Lce;->a:Lcg;
 
     iget-byte v0, v0, Lcg;->a:B
 

@@ -26,13 +26,13 @@
 
 .field public a:J
 
-.field public a:LopmTextBox;
+.field public a:Lba;
 
 .field public a:Lbo;
 
 .field public a:Lbt;
 
-.field public a:LopmCanvas;
+.field public a:Lce;
 
 .field public a:Lcf;
 
@@ -121,16 +121,16 @@
     return-void
 .end method
 
-.method public constructor <init>(LopmCanvas;IILjava/lang/String;)V
+.method public constructor <init>(Lce;IILjava/lang/String;)V
     .locals 1
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
-    iput-object p1, p0, Lbi;->a:LopmCanvas;
+    iput-object p1, p0, Lbi;->a:Lce;
 
-    iget-object v0, p0, Lbi;->a:LopmCanvas;
+    iget-object v0, p0, Lbi;->a:Lce;
 
-    invoke-static {v0}, LopmCanvas;->a(LopmCanvas;)I
+    invoke-static {v0}, Lce;->a(Lce;)I
 
     move-result v0
 
@@ -457,7 +457,7 @@
 
     invoke-direct {v0, v1}, Lbi;-><init>(I)V
 
-    sput-object v0, LopmCanvas;->a:Lbi;
+    sput-object v0, Lce;->a:Lbi;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -467,11 +467,11 @@
 
     iput-wide v4, v0, Lbi;->a:J
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-object v0, v0, LopmCanvas;->a:Ljava/util/Timer;
+    iget-object v0, v0, Lce;->a:Ljava/util/Timer;
 
-    sget-object v1, LopmCanvas;->a:Lbi;
+    sget-object v1, Lce;->a:Lbi;
 
     const-wide/16 v4, 0x7d0
 
@@ -515,7 +515,7 @@
 
     if-ne v0, v1, :cond_1
 
-    sget-object v1, LopmCanvas;->a:LopmCanvas;
+    sget-object v1, Lce;->a:Lce;
 
     monitor-enter v1
 
@@ -546,18 +546,18 @@
 
     invoke-virtual {v0}, Lcb;->d()V
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    invoke-virtual {v0}, LopmCanvas;->repaint()V
+    invoke-virtual {v0}, Lce;->repaint()V
 
     :cond_3
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    iget-boolean v0, v0, LopmCanvas;->B:Z
+    iget-boolean v0, v0, Lce;->B:Z
 
     if-nez v0, :cond_4
 
@@ -636,9 +636,9 @@
     goto :goto_0
 
     :cond_7
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
-    invoke-virtual {v0}, LopmCanvas;->repaint()V
+    invoke-virtual {v0}, Lce;->repaint()V
 
     goto :goto_0
 .end method
@@ -665,11 +665,11 @@
     invoke-virtual {v0}, Lcg;->j()V
 
     :cond_0
-    sget-object v0, LopmCanvas;->a:LopmCanvas;
+    sget-object v0, Lce;->a:Lce;
 
     const/4 v1, 0x0
 
-    iput-object v1, v0, LopmCanvas;->b:Lbi;
+    iput-object v1, v0, Lce;->b:Lbi;
 
     invoke-virtual {p0}, Lbi;->cancel()Z
 
@@ -713,8 +713,7 @@
     .locals 28
 
     :try_start_0
-     invoke-static {}, Landroid/os/Debug;->waitForDebugger()V
-   move-object/from16 v0, p0
+    move-object/from16 v0, p0
 
     iget v2, v0, Lbi;->b:I
 
@@ -726,9 +725,9 @@
     return-void
 
     :pswitch_1
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->q()V
+    invoke-virtual {v2}, Lce;->q()V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -784,14 +783,14 @@
     goto :goto_0
 
     :cond_1
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->c()V
+    invoke-virtual {v2}, Lce;->c()V
 
     goto :goto_0
 
     :pswitch_3
-    invoke-static {}, LopmCanvas;->m()V
+    invoke-static {}, Lce;->m()V
 
     sget v2, Lbz;->aW:I
 
@@ -806,13 +805,13 @@
     if-ne v2, v3, :cond_3
 
     :cond_2
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    iget-boolean v2, v2, LopmCanvas;->D:Z
+    iget-boolean v2, v2, Lce;->D:Z
 
     if-nez v2, :cond_3
 
-    sget-object v3, LopmCanvas;->a:LopmCanvas;
+    sget-object v3, Lce;->a:Lce;
 
     sget v2, Lbz;->aW:I
 
@@ -823,34 +822,34 @@
     const/4 v2, 0x1
 
     :goto_1
-    invoke-virtual {v3, v2}, LopmCanvas;->a(Z)V
+    invoke-virtual {v3, v2}, Lce;->a(Z)V
 
     goto :goto_0
 
     :cond_3
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    iget-boolean v2, v2, LopmCanvas;->C:Z
+    iget-boolean v2, v2, Lce;->C:Z
 
     if-nez v2, :cond_4
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    iget-boolean v2, v2, LopmCanvas;->D:Z
+    iget-boolean v2, v2, Lce;->D:Z
 
     if-eqz v2, :cond_0
 
     :cond_4
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->c()V
+    invoke-virtual {v2}, Lce;->c()V
 
     goto :goto_0
 
     :pswitch_4
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    iget-wide v2, v2, LopmCanvas;->b:J
+    iget-wide v2, v2, Lce;->b:J
 
     const-wide/16 v4, -0x1
 
@@ -862,9 +861,9 @@
 
     move-result-wide v2
 
-    sget-object v4, LopmCanvas;->a:LopmCanvas;
+    sget-object v4, Lce;->a:Lce;
 
-    iget-wide v4, v4, LopmCanvas;->b:J
+    iget-wide v4, v4, Lce;->b:J
 
     sub-long/2addr v2, v4
 
@@ -874,18 +873,18 @@
 
     if-lez v2, :cond_5
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
     const-wide/16 v3, -0x1
 
-    iput-wide v3, v2, LopmCanvas;->b:J
+    iput-wide v3, v2, Lce;->b:J
 
-    invoke-static {}, LopmCanvas;->v()V
+    invoke-static {}, Lce;->v()V
 
     :cond_5
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    iget-wide v2, v2, LopmCanvas;->b:J
+    iget-wide v2, v2, Lce;->b:J
 
     const-wide/16 v4, -0x1
 
@@ -893,16 +892,16 @@
 
     if-nez v2, :cond_0
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->B()V
+    invoke-virtual {v2}, Lce;->B()V
 
     goto/16 :goto_0
 
     :pswitch_5
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    iget v2, v2, LopmCanvas;->r:I
+    iget v2, v2, Lce;->r:I
 
     if-eqz v2, :cond_0
 
@@ -943,7 +942,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v2}, Lce;->a(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -1040,7 +1039,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v2}, Lce;->a(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -1098,14 +1097,14 @@
 
     move-result-object v2
 
-    invoke-static {v2}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v2}, Lce;->a(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
     :pswitch_7
-    sget-object v3, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v3, Lce;->a:Ljavax/microedition/lcdui/Display;
 
-    sget-object v2, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v2, Lce;->a:Ljavax/microedition/lcdui/Display;
 
     invoke-virtual {v2}, Ljavax/microedition/lcdui/Display;->getCurrent()Ljavax/microedition/lcdui/Displayable;
 
@@ -1113,13 +1112,13 @@
 
     invoke-virtual {v3, v2}, Ljavax/microedition/lcdui/Display;->setCurrent(Ljavax/microedition/lcdui/Displayable;)V
 
-    instance-of v3, v2, LopmTextBox;
+    instance-of v3, v2, Lba;
 
     if-eqz v3, :cond_0
 
-    check-cast v2, LopmTextBox;
+    check-cast v2, Lba;
 
-    invoke-virtual {v2}, LopmTextBox;->m()V
+    invoke-virtual {v2}, Lba;->m()V
 
     goto/16 :goto_0
 
@@ -1212,11 +1211,11 @@
     const/4 v2, 0x1
 
     :try_start_8
-    sput-boolean v2, LopmCanvas;->g:Z
+    sput-boolean v2, Lce;->g:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->c()V
+    invoke-virtual {v2}, Lce;->c()V
 
     goto/16 :goto_0
 
@@ -1256,13 +1255,13 @@
 
     if-nez v2, :cond_0
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->serviceRepaints()V
+    invoke-virtual {v2}, Lce;->serviceRepaints()V
     :try_end_b
     .catch Ljava/lang/Throwable; {:try_start_b .. :try_end_b} :catch_0
 
@@ -1389,7 +1388,7 @@
     invoke-virtual {v2, v3, v4}, Lcg;->b(ZZ)V
 
     :cond_c
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
     move-object/from16 v0, p0
 
@@ -1397,7 +1396,7 @@
 
     iget-object v3, v3, Lcf;->a:Lcg;
 
-    invoke-virtual {v2, v3}, LopmCanvas;->b(Lcg;)V
+    invoke-virtual {v2, v3}, Lce;->b(Lcg;)V
 
     goto/16 :goto_0
 
@@ -1421,11 +1420,11 @@
 
     iput-object v2, v0, Lbi;->a:Lcf;
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
     const/4 v3, 0x1
 
-    invoke-virtual {v2, v3}, LopmCanvas;->a(Z)V
+    invoke-virtual {v2, v3}, Lce;->a(Z)V
 
     invoke-virtual/range {p0 .. p0}, Lbi;->cancel()Z
     :try_end_d
@@ -1447,11 +1446,11 @@
     const/4 v2, 0x1
 
     :try_start_f
-    sput-boolean v2, LopmCanvas;->d:Z
+    sput-boolean v2, Lce;->d:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
 
     new-instance v3, Ljava/io/DataInputStream;
 
@@ -1578,11 +1577,11 @@
     const/4 v2, 0x0
 
     :try_start_10
-    sput-boolean v2, LopmCanvas;->b:Z
+    sput-boolean v2, Lce;->b:Z
 
     const-string v2, ""
 
-    sput-object v2, LopmCanvas;->a:Ljava/lang/String;
+    sput-object v2, Lce;->a:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1655,11 +1654,11 @@
     const/4 v2, 0x0
 
     :try_start_12
-    sput-boolean v2, LopmCanvas;->d:Z
+    sput-boolean v2, Lce;->d:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
     :try_end_12
     .catch Ljava/lang/Throwable; {:try_start_12 .. :try_end_12} :catch_0
 
@@ -1676,11 +1675,11 @@
     const/4 v4, 0x0
 
     :try_start_13
-    sget-boolean v2, LopmCanvas;->f:Z
+    sget-boolean v2, Lce;->f:Z
 
     if-nez v2, :cond_34
 
-    sget-object v2, LopmCanvas;->c:Ljava/lang/String;
+    sget-object v2, Lce;->c:Ljava/lang/String;
 
     move-object/from16 v0, v16
 
@@ -1690,7 +1689,7 @@
 
     if-eqz v2, :cond_34
 
-    sget v2, LopmCanvas;->c:I
+    sget v2, Lce;->c:I
 
     move/from16 v0, v18
 
@@ -1698,9 +1697,9 @@
 
     if-nez v18, :cond_34
 
-    sget v2, LopmCanvas;->c:I
+    sget v2, Lce;->c:I
 
-    sget v5, LopmCanvas;->b:I
+    sget v5, Lce;->b:I
     :try_end_13
     .catchall {:try_start_13 .. :try_end_13} :catchall_7
 
@@ -2471,7 +2470,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v2}, Lce;->a(Ljava/lang/String;)V
     :try_end_1b
     .catchall {:try_start_1b .. :try_end_1b} :catchall_4
 
@@ -2489,11 +2488,11 @@
     const/4 v2, 0x0
 
     :try_start_1d
-    sput-boolean v2, LopmCanvas;->d:Z
+    sput-boolean v2, Lce;->d:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
     :try_end_1d
     .catch Ljava/lang/Throwable; {:try_start_1d .. :try_end_1d} :catch_0
 
@@ -2670,11 +2669,11 @@
 
     const/16 v6, 0x9
 
-    sget-boolean v7, LopmCanvas;->f:Z
+    sget-boolean v7, Lce;->f:Z
 
     if-nez v7, :cond_33
 
-    sget-object v7, LopmCanvas;->c:Ljava/lang/String;
+    sget-object v7, Lce;->c:Ljava/lang/String;
 
     move-object/from16 v0, v16
 
@@ -2684,7 +2683,7 @@
 
     if-eqz v7, :cond_33
 
-    sget v7, LopmCanvas;->c:I
+    sget v7, Lce;->c:I
 
     move/from16 v0, v18
 
@@ -2692,9 +2691,9 @@
 
     if-nez v18, :cond_33
 
-    sget v7, LopmCanvas;->c:I
+    sget v7, Lce;->c:I
 
-    sget v8, LopmCanvas;->b:I
+    sget v8, Lce;->b:I
 
     if-ne v7, v8, :cond_33
 
@@ -2733,7 +2732,7 @@
     :cond_2e
     if-eqz v14, :cond_2f
 
-    sput-object v13, LopmCanvas;->a:Ljava/lang/String;
+    sput-object v13, Lce;->a:Ljava/lang/String;
 
     invoke-virtual {v13}, Ljava/lang/String;->length()I
 
@@ -2744,27 +2743,27 @@
     const/4 v3, 0x1
 
     :goto_1d
-    sput-boolean v3, LopmCanvas;->b:Z
+    sput-boolean v3, Lce;->b:Z
 
     if-eqz v3, :cond_2f
 
-    sput-object v12, LopmCanvas;->b:Ljava/lang/String;
+    sput-object v12, Lce;->b:Ljava/lang/String;
 
     and-int/lit8 v3, v19, 0x7
 
-    sput v3, LopmCanvas;->e:I
+    sput v3, Lce;->e:I
 
     :cond_2f
     if-eqz v18, :cond_30
 
-    sput v18, LopmCanvas;->b:I
+    sput v18, Lce;->b:I
 
     :cond_30
-    sput-object v17, LopmCanvas;->c:Ljava/lang/String;
+    sput-object v17, Lce;->c:Ljava/lang/String;
 
     const/4 v3, 0x0
 
-    sput-boolean v3, LopmCanvas;->a:Z
+    sput-boolean v3, Lce;->a:Z
 
     const/4 v3, 0x0
 
@@ -2829,9 +2828,9 @@
 
     if-eqz v2, :cond_33
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2, v3}, LopmCanvas;->a(Lcg;)Z
+    invoke-virtual {v2, v3}, Lce;->a(Lcg;)Z
     :try_end_20
     .catchall {:try_start_20 .. :try_end_20} :catchall_a
 
@@ -2857,11 +2856,11 @@
     const/4 v2, 0x0
 
     :try_start_23
-    sput-boolean v2, LopmCanvas;->d:Z
+    sput-boolean v2, Lce;->d:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
     :try_end_23
     .catch Ljava/lang/Throwable; {:try_start_23 .. :try_end_23} :catch_0
 
@@ -2873,9 +2872,9 @@
     const/4 v2, 0x1
 
     :try_start_24
-    sput-boolean v2, LopmCanvas;->a:Z
+    sput-boolean v2, Lce;->a:Z
 
-    sget-object v2, LopmCanvas;->a:Lbi;
+    sget-object v2, Lce;->a:Lbi;
 
     if-nez v2, :cond_5e
 
@@ -2929,22 +2928,22 @@
     const/4 v3, 0x0
 
     :try_start_26
-    sput-boolean v3, LopmCanvas;->d:Z
+    sput-boolean v3, Lce;->d:Z
 
-    sget-object v3, LopmCanvas;->a:LopmCanvas;
+    sget-object v3, Lce;->a:Lce;
 
-    invoke-virtual {v3}, LopmCanvas;->repaint()V
+    invoke-virtual {v3}, Lce;->repaint()V
 
     throw v2
 
     :pswitch_d
     const/4 v2, 0x1
 
-    sput-boolean v2, LopmCanvas;->c:Z
+    sput-boolean v2, Lce;->c:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
     :try_end_26
     .catch Ljava/lang/Throwable; {:try_start_26 .. :try_end_26} :catch_0
 
@@ -2992,11 +2991,11 @@
     const/4 v2, 0x0
 
     :try_start_29
-    sput-boolean v2, LopmCanvas;->c:Z
+    sput-boolean v2, Lce;->c:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
     :try_end_29
     .catch Ljava/lang/Throwable; {:try_start_29 .. :try_end_29} :catch_0
 
@@ -3041,11 +3040,11 @@
     const/4 v2, 0x0
 
     :try_start_2c
-    sput-boolean v2, LopmCanvas;->c:Z
+    sput-boolean v2, Lce;->c:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
 
     goto/16 :goto_0
 
@@ -3054,11 +3053,11 @@
 
     const/4 v2, 0x0
 
-    sput-boolean v2, LopmCanvas;->c:Z
+    sput-boolean v2, Lce;->c:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
 
     goto/16 :goto_0
 
@@ -3067,16 +3066,16 @@
 
     const/4 v3, 0x0
 
-    sput-boolean v3, LopmCanvas;->c:Z
+    sput-boolean v3, Lce;->c:Z
 
-    sget-object v3, LopmCanvas;->a:LopmCanvas;
+    sget-object v3, Lce;->a:Lce;
 
-    invoke-virtual {v3}, LopmCanvas;->repaint()V
+    invoke-virtual {v3}, Lce;->repaint()V
 
     throw v2
 
     :pswitch_e
-    sget-object v2, LopmCanvas;->a:Lbi;
+    sget-object v2, Lce;->a:Lbi;
 
     move-object/from16 v0, p0
 
@@ -3091,26 +3090,26 @@
     goto/16 :goto_0
 
     :cond_3b
-    sget-boolean v2, LopmCanvas;->a:Z
+    sget-boolean v2, Lce;->a:Z
 
     if-nez v2, :cond_3c
 
-    sget v2, LopmCanvas;->c:I
+    sget v2, Lce;->c:I
 
-    sget v3, LopmCanvas;->b:I
+    sget v3, Lce;->b:I
 
     if-ne v2, v3, :cond_3c
 
     const/4 v2, 0x0
 
-    sput-object v2, LopmCanvas;->a:Lbi;
+    sput-object v2, Lce;->a:Lbi;
 
     invoke-static/range {p0 .. p0}, Lbz;->a(Ljava/util/TimerTask;)V
 
     goto/16 :goto_0
 
     :cond_3c
-    sget-boolean v2, LopmCanvas;->f:Z
+    sget-boolean v2, Lce;->f:Z
 
     if-nez v2, :cond_0
 
@@ -3128,7 +3127,7 @@
 
     const/4 v2, 0x0
 
-    sput-object v2, LopmCanvas;->a:Lbi;
+    sput-object v2, Lce;->a:Lbi;
 
     invoke-static/range {p0 .. p0}, Lbz;->a(Ljava/util/TimerTask;)V
 
@@ -3148,20 +3147,20 @@
     goto/16 :goto_0
 
     :pswitch_10
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->k()V
+    invoke-virtual {v2}, Lce;->k()V
 
     goto/16 :goto_0
 
     :pswitch_11
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmTextBox;
+    iget-object v2, v0, Lbi;->a:Lba;
 
     if-eqz v2, :cond_3d
 
-    sget-object v2, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v2, Lce;->a:Ljavax/microedition/lcdui/Display;
 
     invoke-virtual {v2}, Ljavax/microedition/lcdui/Display;->getCurrent()Ljavax/microedition/lcdui/Displayable;
 
@@ -3169,7 +3168,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lbi;->a:LopmTextBox;
+    iget-object v3, v0, Lbi;->a:Lba;
 
     invoke-virtual {v2, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -3179,14 +3178,14 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmTextBox;
+    iget-object v2, v0, Lbi;->a:Lba;
 
-    invoke-virtual {v2}, LopmTextBox;->l()V
+    invoke-virtual {v2}, Lba;->l()V
 
     goto/16 :goto_0
 
     :cond_3d
-    sget-object v2, LopmCanvas;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v2, Lce;->a:Ljavax/microedition/lcdui/Display;
 
     invoke-virtual {v2}, Ljavax/microedition/lcdui/Display;->getCurrent()Ljavax/microedition/lcdui/Displayable;
 
@@ -3218,7 +3217,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lbi;->a:LopmTextBox;
+    iput-object v2, v0, Lbi;->a:Lba;
 
     invoke-virtual/range {p0 .. p0}, Lbi;->cancel()Z
 
@@ -3635,7 +3634,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v2}, Lce;->a(Ljava/lang/String;)V
 
     invoke-virtual/range {p0 .. p0}, Lbi;->cancel()Z
 
@@ -3831,13 +3830,13 @@
     goto/16 :goto_0
 
     :pswitch_17
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
     const/4 v3, 0x0
 
-    iput-boolean v3, v2, LopmCanvas;->y:Z
+    iput-boolean v3, v2, Lce;->y:Z
 
-    invoke-static {}, LopmCanvas;->v()V
+    invoke-static {}, Lce;->v()V
 
     invoke-virtual/range {p0 .. p0}, Lbi;->cancel()Z
 
@@ -3867,9 +3866,9 @@
     :goto_2a
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->x()V
+    invoke-virtual {v2}, Lce;->x()V
 
     goto/16 :goto_0
 
@@ -3884,7 +3883,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lbi;->a:LopmCanvas;
+    iget-object v3, v0, Lbi;->a:Lce;
 
     if-eqz v3, :cond_4a
 
@@ -3913,17 +3912,17 @@
     :cond_49
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lbi;->a:LopmCanvas;
+    iget-object v3, v0, Lbi;->a:Lce;
 
-    iget-boolean v3, v3, LopmCanvas;->x:Z
+    iget-boolean v3, v3, Lce;->x:Z
 
     if-nez v3, :cond_4a
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lbi;->a:LopmCanvas;
+    iget-object v3, v0, Lbi;->a:Lce;
 
-    invoke-static {v3}, LopmCanvas;->a(LopmCanvas;)I
+    invoke-static {v3}, Lce;->a(Lce;)I
 
     move-result v3
 
@@ -3935,9 +3934,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lbi;->a:LopmCanvas;
+    iget-object v3, v0, Lbi;->a:Lce;
 
-    iget-object v3, v3, LopmCanvas;->a:Ljava/lang/Object;
+    iget-object v3, v3, Lce;->a:Ljava/lang/Object;
 
     if-eqz v3, :cond_4b
 
@@ -3955,9 +3954,9 @@
 
     if-ne v2, v3, :cond_4b
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->i()Z
+    invoke-virtual {v2}, Lce;->i()Z
 
     move-result v2
 
@@ -3968,18 +3967,18 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->x()V
+    invoke-virtual {v2}, Lce;->x()V
 
     goto/16 :goto_0
 
     :cond_4b
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget v2, v2, LopmCanvas;->s:I
+    iget v2, v2, Lce;->s:I
 
     const/16 v3, -0x2d
 
@@ -3993,18 +3992,18 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->x()V
+    invoke-virtual {v2}, Lce;->x()V
 
     goto/16 :goto_0
 
     :cond_4c
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget v2, v2, LopmCanvas;->s:I
+    iget v2, v2, Lce;->s:I
 
     const/16 v3, -0x2d
 
@@ -4025,9 +4024,9 @@
     :cond_4d
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget v2, v2, LopmCanvas;->s:I
+    iget v2, v2, Lce;->s:I
 
     const/16 v3, 0x168
 
@@ -4035,13 +4034,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget v3, v2, LopmCanvas;->s:I
+    iget v3, v2, Lce;->s:I
 
     add-int/lit8 v3, v3, 0x2d
 
-    iput v3, v2, LopmCanvas;->s:I
+    iput v3, v2, Lce;->s:I
 
     sget-boolean v2, Lbz;->br:Z
 
@@ -4049,18 +4048,18 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->y()V
+    invoke-virtual {v2}, Lce;->y()V
 
     goto/16 :goto_0
 
     :cond_4e
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget v2, v2, LopmCanvas;->s:I
+    iget v2, v2, Lce;->s:I
 
     const/16 v3, 0x168
 
@@ -4072,18 +4071,18 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->y()V
+    invoke-virtual {v2}, Lce;->y()V
 
     :cond_4f
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
     const/16 v3, -0x2d
 
-    iput v3, v2, LopmCanvas;->s:I
+    iput v3, v2, Lce;->s:I
 
     sget-boolean v2, Lbz;->br:Z
 
@@ -4091,28 +4090,28 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
 
     :cond_50
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    iget-boolean v2, v2, LopmCanvas;->v:Z
+    iget-boolean v2, v2, Lce;->v:Z
 
     if-eqz v2, :cond_51
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
     const/4 v3, 0x0
 
-    iput-boolean v3, v2, LopmCanvas;->v:Z
+    iput-boolean v3, v2, Lce;->v:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
     const/4 v3, 0x1
 
-    iput-boolean v3, v2, LopmCanvas;->w:Z
+    iput-boolean v3, v2, Lce;->w:Z
 
     const v2, 0xd059
 
@@ -4124,39 +4123,39 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->x()V
+    invoke-virtual {v2}, Lce;->x()V
 
     goto/16 :goto_0
 
     :cond_51
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
     move-object/from16 v0, p0
 
     iget v3, v0, Lbi;->c:I
 
-    invoke-static {v2, v3}, LopmCanvas;->a(LopmCanvas;I)V
+    invoke-static {v2, v3}, Lce;->a(Lce;I)V
 
     goto/16 :goto_2a
 
     :pswitch_19
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->c:Lbi;
+    iget-object v2, v2, Lce;->c:Lbi;
 
     if-eqz v2, :cond_54
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->c:Lbi;
+    iget-object v2, v2, Lce;->c:Lbi;
 
     move-object/from16 v0, p0
 
@@ -4164,17 +4163,17 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->a:Lcg;
+    iget-object v2, v2, Lce;->a:Lcg;
 
     if-eqz v2, :cond_54
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->a:Lcg;
+    iget-object v2, v2, Lce;->a:Lcg;
 
     iget-object v2, v2, Lcg;->b:Lcf;
 
@@ -4182,9 +4181,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->a:Lcg;
+    iget-object v2, v2, Lce;->a:Lcg;
 
     iget-object v2, v2, Lcg;->b:Lcf;
 
@@ -4202,9 +4201,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lbi;->a:LopmCanvas;
+    iget-object v3, v0, Lbi;->a:Lce;
 
-    iget v3, v3, LopmCanvas;->q:I
+    iget v3, v3, Lce;->q:I
 
     if-ne v2, v3, :cond_53
 
@@ -4222,13 +4221,13 @@
     :cond_53
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
     new-instance v3, Lbi;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lbi;->a:LopmCanvas;
+    iget-object v4, v0, Lbi;->a:Lce;
 
     const/16 v5, 0x2d
 
@@ -4238,15 +4237,15 @@
 
     const/4 v7, 0x0
 
-    invoke-direct {v3, v4, v5, v6, v7}, Lbi;-><init>(LopmCanvas;IILjava/lang/String;)V
+    invoke-direct {v3, v4, v5, v6, v7}, Lbi;-><init>(Lce;IILjava/lang/String;)V
 
-    iput-object v3, v2, LopmCanvas;->d:Lbi;
+    iput-object v3, v2, Lce;->d:Lbi;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->d:Lbi;
+    iget-object v2, v2, Lce;->d:Lbi;
 
     move-object/from16 v0, p0
 
@@ -4256,15 +4255,15 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->a:Ljava/util/Timer;
+    iget-object v2, v2, Lce;->a:Ljava/util/Timer;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lbi;->a:LopmCanvas;
+    iget-object v3, v0, Lbi;->a:Lce;
 
-    iget-object v3, v3, LopmCanvas;->d:Lbi;
+    iget-object v3, v3, Lce;->d:Lbi;
 
     sget v4, Lbz;->o:I
 
@@ -4274,27 +4273,27 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
     const/4 v3, 0x1
 
-    iput-boolean v3, v2, LopmCanvas;->q:Z
+    iput-boolean v3, v2, Lce;->q:Z
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
     move-object/from16 v0, p0
 
     iget v3, v0, Lbi;->d:I
 
-    iput v3, v2, LopmCanvas;->q:I
+    iput v3, v2, Lce;->q:I
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
 
     :goto_2b
     invoke-static/range {p0 .. p0}, Lbz;->a(Ljava/util/TimerTask;)V
@@ -4304,28 +4303,28 @@
     :cond_54
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
     const/4 v3, -0x1
 
-    iput v3, v2, LopmCanvas;->q:I
+    iput v3, v2, Lce;->q:I
 
     goto :goto_2b
 
     :pswitch_1a
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->a:Lcg;
+    iget-object v2, v2, Lce;->a:Lcg;
 
     if-eqz v2, :cond_56
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->a:Lcg;
+    iget-object v2, v2, Lce;->a:Lcg;
 
     iget-object v2, v2, Lcg;->b:Lcf;
 
@@ -4333,9 +4332,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    iget-object v2, v2, LopmCanvas;->a:Lcg;
+    iget-object v2, v2, Lce;->a:Lcg;
 
     iget-object v2, v2, Lcg;->b:Lcf;
 
@@ -4360,25 +4359,25 @@
     :cond_55
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
     const/4 v3, 0x0
 
-    iput-boolean v3, v2, LopmCanvas;->q:Z
+    iput-boolean v3, v2, Lce;->q:Z
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
     const/4 v3, 0x0
 
-    iput-boolean v3, v2, LopmCanvas;->r:Z
+    iput-boolean v3, v2, Lce;->r:Z
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbi;->a:LopmCanvas;
+    iget-object v2, v0, Lbi;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
 
     :cond_56
     invoke-virtual/range {p0 .. p0}, Lbi;->cancel()Z
@@ -4444,7 +4443,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v2}, Lce;->a(Ljava/lang/String;)V
 
     :cond_57
     invoke-static {}, Lbz;->T()V
@@ -4472,9 +4471,9 @@
 
     iput-boolean v2, v3, Lcg;->n:Z
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
 
     goto/16 :goto_0
 
@@ -4515,9 +4514,9 @@
 
     invoke-virtual {v2}, Lbt;->d()V
 
-    sget-object v2, LopmCanvas;->a:LopmCanvas;
+    sget-object v2, Lce;->a:Lce;
 
-    invoke-virtual {v2}, LopmCanvas;->repaint()V
+    invoke-virtual {v2}, Lce;->repaint()V
 
     :cond_58
     invoke-virtual/range {p0 .. p0}, Lbi;->cancel()Z

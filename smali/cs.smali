@@ -385,7 +385,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v1}, Lce;->a(Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -460,7 +460,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v1}, Lce;->a(Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -541,7 +541,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v1}, Lce;->a(Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -858,7 +858,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v1}, Lce;->a(Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -879,7 +879,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, LopmCanvas;->a(Ljava/lang/String;)V
+    invoke-static {v1}, Lce;->a(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
