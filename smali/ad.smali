@@ -13,11 +13,11 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/String;I)Lal;
+.method public abstract a_al(Ljava/lang/String;I)Lal;
 .end method
 
-.method public abstract a(Ljava/lang/String;Z)V
+.method public abstract a_V(Ljava/lang/String;Z)V
 .end method
 
-.method public abstract e()V
+.method public abstract e_V()V
 .end method

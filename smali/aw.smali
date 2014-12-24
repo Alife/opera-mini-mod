@@ -6,7 +6,7 @@
 
 
 # instance fields
-.field public a:Lcom/siemens/mp/io/file/FileConnection;
+.field public a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
 
 # direct methods
@@ -17,17 +17,17 @@
 
     check-cast p1, Lcom/siemens/mp/io/file/FileConnection;
 
-    iput-object p1, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iput-object p1, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()J
+.method public final a_J()J
     .locals 2
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->availableSize()J
 
@@ -36,10 +36,10 @@
     return-wide v0
 .end method
 
-.method public final a(Z)J
+.method public final a_J(Z)J
     .locals 2
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0, p1}, Lcom/siemens/mp/io/file/FileConnection;->directorySize(Z)J
 
@@ -48,10 +48,10 @@
     return-wide v0
 .end method
 
-.method public final a()Ljava/io/DataInputStream;
+.method public final a_DataInputStream()Ljava/io/DataInputStream;
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->openDataInputStream()Ljava/io/DataInputStream;
 
@@ -60,10 +60,10 @@
     return-object v0
 .end method
 
-.method public final a()Ljava/io/DataOutputStream;
+.method public final a_DataOutputStream()Ljava/io/DataOutputStream;
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->openDataOutputStream()Ljava/io/DataOutputStream;
 
@@ -72,10 +72,10 @@
     return-object v0
 .end method
 
-.method public final a()Ljava/io/InputStream;
+.method public final a_InputStream()Ljava/io/InputStream;
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->openInputStream()Ljava/io/InputStream;
 
@@ -84,10 +84,10 @@
     return-object v0
 .end method
 
-.method public final a()Ljava/io/OutputStream;
+.method public final a_OutputStream()Ljava/io/OutputStream;
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->openOutputStream()Ljava/io/OutputStream;
 
@@ -96,10 +96,10 @@
     return-object v0
 .end method
 
-.method public final a(J)Ljava/io/OutputStream;
+.method public final a_OutputStream(J)Ljava/io/OutputStream;
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0, p1, p2}, Lcom/siemens/mp/io/file/FileConnection;->openOutputStream(J)Ljava/io/OutputStream;
 
@@ -108,10 +108,10 @@
     return-object v0
 .end method
 
-.method public final a()Ljava/lang/String;
+.method public final a_String()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->getName()Ljava/lang/String;
 
@@ -120,10 +120,10 @@
     return-object v0
 .end method
 
-.method public final a()Ljava/util/Enumeration;
+.method public final a_Enumeration()Ljava/util/Enumeration;
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->list()Ljava/util/Enumeration;
 
@@ -132,10 +132,10 @@
     return-object v0
 .end method
 
-.method public final a(Ljava/lang/String;Z)Ljava/util/Enumeration;
+.method public final a_Enumeration(Ljava/lang/String;Z)Ljava/util/Enumeration;
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0, p1, p2}, Lcom/siemens/mp/io/file/FileConnection;->list(Ljava/lang/String;Z)Ljava/util/Enumeration;
 
@@ -144,40 +144,40 @@
     return-object v0
 .end method
 
-.method public final a()V
+.method public final a_V()V
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->create()V
 
     return-void
 .end method
 
-.method public final a(J)V
+.method public final a_V(J)V
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0, p1, p2}, Lcom/siemens/mp/io/file/FileConnection;->truncate(J)V
 
     return-void
 .end method
 
-.method public final a(Z)V
+.method public final a_V(Z)V
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0, p1}, Lcom/siemens/mp/io/file/FileConnection;->setHidden(Z)V
 
     return-void
 .end method
 
-.method public final a()Z
+.method public final a_Z()Z
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->canRead()Z
 
@@ -186,10 +186,10 @@
     return v0
 .end method
 
-.method public final a(Ljava/lang/String;)Z
+.method public final a_Z(Ljava/lang/String;)Z
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0, p1}, Lcom/siemens/mp/io/file/FileConnection;->rename(Ljava/lang/String;)V
 
@@ -198,10 +198,10 @@
     return v0
 .end method
 
-.method public final b()J
+.method public final b_J()J
     .locals 2
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->fileSize()J
 
@@ -210,10 +210,10 @@
     return-wide v0
 .end method
 
-.method public final b()Ljava/lang/String;
+.method public final b_String()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->getPath()Ljava/lang/String;
 
@@ -222,30 +222,30 @@
     return-object v0
 .end method
 
-.method public final b()V
+.method public final b_V()V
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->delete()V
 
     return-void
 .end method
 
-.method public final b(Z)V
+.method public final b_V(Z)V
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0, p1}, Lcom/siemens/mp/io/file/FileConnection;->setReadable(Z)V
 
     return-void
 .end method
 
-.method public final b()Z
+.method public final b_Z()Z
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->canWrite()Z
 
@@ -254,10 +254,10 @@
     return v0
 .end method
 
-.method public final c()Ljava/lang/String;
+.method public final c_String()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->getURL()Ljava/lang/String;
 
@@ -266,30 +266,30 @@
     return-object v0
 .end method
 
-.method public final c()V
+.method public final c_V()V
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->mkdir()V
 
     return-void
 .end method
 
-.method public final c(Z)V
+.method public final c_V(Z)V
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0, p1}, Lcom/siemens/mp/io/file/FileConnection;->setWritable(Z)V
 
     return-void
 .end method
 
-.method public final c()Z
+.method public final c_Z()Z
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->exists()Z
 
@@ -301,17 +301,17 @@
 .method public final close()V
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->close()V
 
     return-void
 .end method
 
-.method public final d()J
+.method public final d_J()J
     .locals 2
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->lastModified()J
 
@@ -320,10 +320,10 @@
     return-wide v0
 .end method
 
-.method public final d()Z
+.method public final d_Z()Z
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->isDirectory()Z
 
@@ -332,10 +332,10 @@
     return v0
 .end method
 
-.method public final e()J
+.method public final e_J()J
     .locals 2
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->totalSize()J
 
@@ -344,10 +344,10 @@
     return-wide v0
 .end method
 
-.method public final e()Z
+.method public final e_Z()Z
     .locals 1
 
-    iget-object v0, p0, Law;->a:Lcom/siemens/mp/io/file/FileConnection;
+    iget-object v0, p0, Law;->a_FileConnection:Lcom/siemens/mp/io/file/FileConnection;
 
     invoke-interface {v0}, Lcom/siemens/mp/io/file/FileConnection;->isHidden()Z
 

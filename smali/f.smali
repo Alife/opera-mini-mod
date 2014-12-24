@@ -3,17 +3,17 @@
 
 
 # static fields
-.field public static final a:I
+.field public static final a_I:I
 
-.field public static final a:[I
+.field public static final a_Is:[I
 
-.field public static final b:[I
+.field public static final b_Is:[I
 
-.field public static final c:[I
+.field public static final c_Is:[I
 
-.field public static final d:[I
+.field public static final d_Is:[I
 
-.field public static final e:[I
+.field public static final e_Is:[I
 
 
 # direct methods
@@ -26,41 +26,41 @@
 
     const v1, 0xfffb
 
-    invoke-static {v0, v1}, Lbz;->b(II)I
+    invoke-static {v0, v1}, Lbz;->b_I(II)I
 
     move-result v0
 
-    sput v0, Lf;->a:I
+    sput v0, Lf;->a_I:I
 
     new-array v0, v2, [I
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lf;->a:[I
+    sput-object v0, Lf;->a_Is:[I
 
     new-array v0, v2, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lf;->b:[I
+    sput-object v0, Lf;->b_Is:[I
 
     new-array v0, v2, [I
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lf;->c:[I
+    sput-object v0, Lf;->c_Is:[I
 
     new-array v0, v2, [I
 
     fill-array-data v0, :array_3
 
-    sput-object v0, Lf;->d:[I
+    sput-object v0, Lf;->d_Is:[I
 
     new-array v0, v2, [I
 
     fill-array-data v0, :array_4
 
-    sput-object v0, Lf;->e:[I
+    sput-object v0, Lf;->e_Is:[I
 
     return-void
 

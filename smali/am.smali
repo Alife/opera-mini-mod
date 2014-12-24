@@ -3,11 +3,11 @@
 
 
 # static fields
-.field public static a:I
+.field public static a_I:I
 
-.field public static a:Ljava/util/Hashtable;
+.field public static a_Hashtable:Ljava/util/Hashtable;
 
-.field public static b:Ljava/util/Hashtable;
+.field public static b_Hashtable:Ljava/util/Hashtable;
 
 
 # direct methods
@@ -20,19 +20,19 @@
 
     move-result v0
 
-    sput v0, Lam;->a:I
+    sput v0, Lam;->a_I:I
 
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lam;->a:Ljava/util/Hashtable;
+    sput-object v0, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lam;->b:Ljava/util/Hashtable;
+    sput-object v0, Lam;->b_Hashtable:Ljava/util/Hashtable;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;I)Ljavax/microedition/io/Connection;
+.method public static a_Connection(Ljava/lang/String;I)Ljavax/microedition/io/Connection;
     .locals 12
 
     const/16 v11, 0x2e
@@ -64,13 +64,13 @@
 
     if-eqz v0, :cond_7
 
-    sget v0, Lam;->a:I
+    sget v0, Lam;->a_I:I
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcc;->d(Ljava/lang/String;)Z
+    invoke-static {v2}, Lcc;->d_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -99,7 +99,7 @@
 
     move-result-object v4
 
-    sget-object v0, Lam;->a:Ljava/util/Hashtable;
+    sget-object v0, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0, v4}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -113,7 +113,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lbm;->h(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbm;->h_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -132,18 +132,18 @@
 
     const/4 v6, 0x0
 
-    invoke-virtual {v0, v5, v6}, Lad;->a(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v5, v6}, Lad;->a_V(Ljava/lang/String;Z)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    sget-object v1, Lam;->a:Ljava/util/Hashtable;
+    sget-object v1, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v4, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object v1, v0
 
     :goto_1
-    sget-object v0, Lam;->b:Ljava/util/Hashtable;
+    sget-object v0, Lam;->b_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0, v4}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -153,7 +153,7 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lam;->b:Ljava/util/Hashtable;
+    sget-object v0, Lam;->b_Hashtable:Ljava/util/Hashtable;
 
     new-instance v5, Ljava/lang/Integer;
 
@@ -168,7 +168,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0, p1}, Lad;->a(Ljava/lang/String;I)Lal;
+    invoke-virtual {v1, v0, p1}, Lad;->a_al(Ljava/lang/String;I)Lal;
 
     move-result-object v0
 
@@ -200,7 +200,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object v5, Lam;->b:Ljava/util/Hashtable;
+    sget-object v5, Lam;->b_Hashtable:Ljava/util/Hashtable;
 
     new-instance v6, Ljava/lang/Integer;
 
@@ -217,7 +217,7 @@
     goto :goto_2
 
     :cond_2
-    invoke-static {v2, p1}, Lak;->a(Ljava/lang/String;I)Lal;
+    invoke-static {v2, p1}, Lak;->a_al(Ljava/lang/String;I)Lal;
 
     move-result-object v0
 
@@ -255,7 +255,7 @@
 
     move-result-object v5
 
-    sget-object v0, Lam;->a:Ljava/util/Hashtable;
+    sget-object v0, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0, v5}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -269,7 +269,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lbm;->h(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbm;->h_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -288,18 +288,18 @@
 
     const/4 v7, 0x0
 
-    invoke-virtual {v0, v6, v7}, Lad;->a(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v6, v7}, Lad;->a_V(Ljava/lang/String;Z)V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
 
-    sget-object v1, Lam;->a:Ljava/util/Hashtable;
+    sget-object v1, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v5, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object v1, v0
 
     :goto_5
-    sget-object v0, Lam;->b:Ljava/util/Hashtable;
+    sget-object v0, Lam;->b_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0, v5}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -309,7 +309,7 @@
 
     if-nez v0, :cond_5
 
-    sget-object v0, Lam;->b:Ljava/util/Hashtable;
+    sget-object v0, Lam;->b_Hashtable:Ljava/util/Hashtable;
 
     new-instance v3, Ljava/lang/Integer;
 
@@ -324,7 +324,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0, p1}, Lad;->a(Ljava/lang/String;I)Lal;
+    invoke-virtual {v1, v0, p1}, Lad;->a_al(Ljava/lang/String;I)Lal;
 
     move-result-object v0
 
@@ -355,7 +355,7 @@
     goto :goto_4
 
     :cond_5
-    sget-object v3, Lam;->b:Ljava/util/Hashtable;
+    sget-object v3, Lam;->b_Hashtable:Ljava/util/Hashtable;
 
     new-instance v6, Ljava/lang/Integer;
 
@@ -372,7 +372,7 @@
     goto :goto_6
 
     :cond_6
-    invoke-static {v2, p1}, Lak;->a(Ljava/lang/String;I)Lal;
+    invoke-static {v2, p1}, Lak;->a_al(Ljava/lang/String;I)Lal;
 
     move-result-object v0
 
@@ -398,14 +398,14 @@
     goto/16 :goto_1
 .end method
 
-.method public static a()V
+.method public static a_V()V
     .locals 5
 
     new-instance v1, Ljava/lang/StringBuffer;
 
     invoke-direct {v1}, Ljava/lang/StringBuffer;-><init>()V
 
-    sget-object v0, Lam;->a:Ljava/util/Hashtable;
+    sget-object v0, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -425,7 +425,7 @@
     check-cast v0, Ljava/lang/String;
 
     :try_start_0
-    invoke-static {v0}, Lam;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Lam;->a_V(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -480,10 +480,10 @@
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;)V
+.method public static a_V(Ljava/lang/String;)V
     .locals 4
 
-    invoke-static {p0}, Lcc;->a(Ljava/lang/String;)Z
+    invoke-static {p0}, Lcc;->a_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -498,7 +498,7 @@
 
     invoke-direct {v1}, Ljava/util/Vector;-><init>()V
 
-    sget-object v0, Lam;->a:Ljava/util/Hashtable;
+    sget-object v0, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -552,12 +552,12 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-static {v0}, Lam;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Lam;->a_V(Ljava/lang/String;)V
 
     goto :goto_2
 
     :cond_4
-    sget-object v0, Lam;->a:Ljava/util/Hashtable;
+    sget-object v0, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -567,25 +567,25 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lad;->e()V
+    invoke-virtual {v0}, Lad;->e_V()V
 
-    sget-object v0, Lam;->a:Ljava/util/Hashtable;
+    sget-object v0, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lam;->b:Ljava/util/Hashtable;
+    sget-object v0, Lam;->b_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 .end method
 
-.method public static a(Ljava/lang/String;)Z
+.method public static a_Z(Ljava/lang/String;)Z
     .locals 3
 
     const/4 v1, 0x1
 
-    sget-object v0, Lam;->a:Ljava/util/Hashtable;
+    sget-object v0, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->containsKey(Ljava/lang/Object;)Z
 
@@ -599,7 +599,7 @@
     return v0
 
     :cond_0
-    sget-object v0, Lam;->a:Ljava/util/Hashtable;
+    sget-object v0, Lam;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 

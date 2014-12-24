@@ -6,23 +6,23 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public a:Lah;
+.field public a_ah:Lah;
 
-.field public a:Ljava/util/Vector;
+.field public a_Vector:Ljava/util/Vector;
 
-.field public a:[B
+.field public a_Bs:[B
 
-.field public b:I
+.field public b_I:I
 
-.field public c:I
+.field public c_I:I
 
-.field public d:I
+.field public d_I:I
 
-.field public e:I
+.field public e_I:I
 
-.field public f:I
+.field public f_I:I
 
 
 # direct methods
@@ -45,25 +45,25 @@
 
     const/16 v0, 0x1000
 
-    iput v0, p0, Lao;->a:I
+    iput v0, p0, Lao;->a_I:I
 
-    iput v1, p0, Lao;->d:I
+    iput v1, p0, Lao;->d_I:I
 
-    iput v1, p0, Lao;->e:I
+    iput v1, p0, Lao;->e_I:I
 
-    iput-object p1, p0, Lao;->a:Lah;
+    iput-object p1, p0, Lao;->a_ah:Lah;
 
-    iget-object v0, p0, Lao;->a:Lah;
+    iget-object v0, p0, Lao;->a_ah:Lah;
 
-    invoke-virtual {v0}, Lah;->b()I
+    invoke-virtual {v0}, Lah;->b_I()I
 
     move-result v0
 
-    iput v0, p0, Lao;->f:I
+    iput v0, p0, Lao;->f_I:I
 
-    iget-object v0, p0, Lao;->a:Lah;
+    iget-object v0, p0, Lao;->a_ah:Lah;
 
-    iget v1, p0, Lao;->f:I
+    iget v1, p0, Lao;->f_I:I
 
     add-int/lit16 v1, v1, 0x100
 
@@ -73,14 +73,14 @@
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iput-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
-    invoke-direct {p0}, Lao;->a()Z
+    invoke-direct {p0}, Lao;->a_Z()Z
 
     return-void
 .end method
 
-.method private a()Z
+.method private a_Z()Z
     .locals 6
 
     const/4 v4, 0x1
@@ -90,7 +90,7 @@
     move v1, v2
 
     :goto_0
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -98,7 +98,7 @@
 
     if-ge v1, v0, :cond_c
 
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -106,13 +106,13 @@
 
     check-cast v0, Lap;
 
-    iget v3, p0, Lao;->d:I
+    iget v3, p0, Lao;->d_I:I
 
-    iget v5, v0, Lap;->a:I
+    iget v5, v0, Lap;->a_I:I
 
     if-lt v3, v5, :cond_0
 
-    iget v5, v0, Lap;->b:I
+    iget v5, v0, Lap;->b_I:I
 
     if-gt v3, v5, :cond_0
 
@@ -141,7 +141,7 @@
     move v1, v2
 
     :goto_3
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -149,7 +149,7 @@
 
     if-ge v1, v0, :cond_b
 
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -157,69 +157,69 @@
 
     check-cast v0, Lap;
 
-    iget v3, v0, Lap;->a:I
+    iget v3, v0, Lap;->a_I:I
 
-    iget v5, p0, Lao;->d:I
+    iget v5, p0, Lao;->d_I:I
 
     if-le v3, v5, :cond_5
 
-    iget v1, v0, Lap;->a:I
+    iget v1, v0, Lap;->a_I:I
 
-    iget v3, p0, Lao;->a:I
+    iget v3, p0, Lao;->a_I:I
 
     sub-int/2addr v1, v3
 
-    iget v3, p0, Lao;->d:I
+    iget v3, p0, Lao;->d_I:I
 
     if-gt v1, v3, :cond_b
 
-    iget-object v1, p0, Lao;->a:Lah;
+    iget-object v1, p0, Lao;->a_ah:Lah;
 
-    iget v0, v0, Lap;->a:I
+    iget v0, v0, Lap;->a_I:I
 
-    iget v3, p0, Lao;->a:I
+    iget v3, p0, Lao;->a_I:I
 
     sub-int/2addr v0, v3
 
-    invoke-virtual {v1, v0}, Lah;->a(I)V
+    invoke-virtual {v1, v0}, Lah;->a_V(I)V
 
     move v0, v4
 
     :goto_4
     if-nez v0, :cond_2
 
-    iget v0, p0, Lao;->d:I
+    iget v0, p0, Lao;->d_I:I
 
-    iget v1, p0, Lao;->f:I
+    iget v1, p0, Lao;->f_I:I
 
-    iget v3, p0, Lao;->a:I
+    iget v3, p0, Lao;->a_I:I
 
     sub-int/2addr v1, v3
 
     if-le v0, v1, :cond_6
 
-    iget-object v0, p0, Lao;->a:Lah;
+    iget-object v0, p0, Lao;->a_ah:Lah;
 
-    iget v1, p0, Lao;->f:I
+    iget v1, p0, Lao;->f_I:I
 
-    iget v3, p0, Lao;->a:I
+    iget v3, p0, Lao;->a_I:I
 
     sub-int/2addr v1, v3
 
-    invoke-virtual {v0, v1}, Lah;->a(I)V
+    invoke-virtual {v0, v1}, Lah;->a_V(I)V
 
     :cond_2
     :goto_5
     :try_start_0
     new-instance v0, Lap;
 
-    iget v1, p0, Lao;->a:I
+    iget v1, p0, Lao;->a_I:I
 
     invoke-direct {v0, v1}, Lap;-><init>(I)V
 
-    iget-object v1, p0, Lao;->a:Lah;
+    iget-object v1, p0, Lao;->a_ah:Lah;
 
-    invoke-virtual {v0, v1}, Lap;->a(Lah;)V
+    invoke-virtual {v0, v1}, Lap;->a_V(Lah;)V
     :try_end_0
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -229,7 +229,7 @@
     move v3, v2
 
     :goto_7
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -237,7 +237,7 @@
 
     if-ge v3, v0, :cond_a
 
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0, v3}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -245,13 +245,13 @@
 
     check-cast v0, Lap;
 
-    iget v0, v0, Lap;->a:I
+    iget v0, v0, Lap;->a_I:I
 
-    iget v5, v1, Lap;->a:I
+    iget v5, v1, Lap;->a_I:I
 
     if-le v0, v5, :cond_9
 
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0, v1, v3}, Ljava/util/Vector;->insertElementAt(Ljava/lang/Object;I)V
 
@@ -260,28 +260,28 @@
     :goto_8
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->addElement(Ljava/lang/Object;)V
 
     :cond_3
-    iget-object v0, v1, Lap;->a:[B
+    iget-object v0, v1, Lap;->a_Bs:[B
 
-    iput-object v0, p0, Lao;->a:[B
+    iput-object v0, p0, Lao;->a_Bs:[B
 
-    iget v0, v1, Lap;->c:I
+    iget v0, v1, Lap;->c_I:I
 
-    iput v0, p0, Lao;->b:I
+    iput v0, p0, Lao;->b_I:I
 
-    iget v0, p0, Lao;->d:I
+    iget v0, p0, Lao;->d_I:I
 
-    iget v1, v1, Lap;->a:I
+    iget v1, v1, Lap;->a_I:I
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lao;->c:I
+    iput v0, p0, Lao;->c_I:I
 
-    iget v0, p0, Lao;->b:I
+    iget v0, p0, Lao;->b_I:I
 
     if-lez v0, :cond_4
 
@@ -298,18 +298,18 @@
     goto/16 :goto_3
 
     :cond_6
-    iget-object v0, p0, Lao;->a:Lah;
+    iget-object v0, p0, Lao;->a_ah:Lah;
 
-    iget v1, p0, Lao;->d:I
+    iget v1, p0, Lao;->d_I:I
 
-    invoke-virtual {v0, v1}, Lah;->a(I)V
+    invoke-virtual {v0, v1}, Lah;->a_V(I)V
 
     goto :goto_5
 
     :catch_0
     move-exception v0
 
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -317,9 +317,9 @@
 
     if-lez v0, :cond_8
 
-    iget v1, p0, Lao;->d:I
+    iget v1, p0, Lao;->d_I:I
 
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0, v2}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -327,11 +327,11 @@
 
     check-cast v0, Lap;
 
-    iget v0, v0, Lap;->a:I
+    iget v0, v0, Lap;->a_I:I
 
     if-ge v1, v0, :cond_7
 
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -342,7 +342,7 @@
     move v1, v0
 
     :goto_9
-    iget-object v0, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -350,11 +350,11 @@
 
     check-cast v0, Lap;
 
-    iget-object v3, p0, Lao;->a:Lah;
+    iget-object v3, p0, Lao;->a_ah:Lah;
 
-    invoke-virtual {v0, v3}, Lap;->a(Lah;)V
+    invoke-virtual {v0, v3}, Lap;->a_V(Lah;)V
 
-    iget-object v3, p0, Lao;->a:Ljava/util/Vector;
+    iget-object v3, p0, Lao;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v3, v1}, Ljava/util/Vector;->removeElementAt(I)V
 
@@ -401,15 +401,15 @@
 
 
 # virtual methods
-.method public final a()I
+.method public final a_I()I
     .locals 1
 
-    iget v0, p0, Lao;->d:I
+    iget v0, p0, Lao;->d_I:I
 
     return v0
 .end method
 
-.method public final a(I)V
+.method public final a_V(I)V
     .locals 2
 
     const/4 v1, -0x1
@@ -418,28 +418,28 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lao;->d:I
+    iput v0, p0, Lao;->d_I:I
 
     :goto_0
-    iput v1, p0, Lao;->b:I
+    iput v1, p0, Lao;->b_I:I
 
-    iput v1, p0, Lao;->c:I
+    iput v1, p0, Lao;->c_I:I
 
     return-void
 
     :cond_0
-    iget v0, p0, Lao;->f:I
+    iget v0, p0, Lao;->f_I:I
 
     if-le p1, v0, :cond_1
 
-    iget v0, p0, Lao;->f:I
+    iget v0, p0, Lao;->f_I:I
 
-    iput v0, p0, Lao;->d:I
+    iput v0, p0, Lao;->d_I:I
 
     goto :goto_0
 
     :cond_1
-    iput p1, p0, Lao;->d:I
+    iput p1, p0, Lao;->d_I:I
 
     goto :goto_0
 .end method
@@ -447,19 +447,19 @@
 .method public final available()I
     .locals 2
 
-    iget v0, p0, Lao;->f:I
+    iget v0, p0, Lao;->f_I:I
 
-    iget v1, p0, Lao;->d:I
+    iget v1, p0, Lao;->d_I:I
 
     sub-int/2addr v0, v1
 
     return v0
 .end method
 
-.method public final b()I
+.method public final b_I()I
     .locals 1
 
-    iget v0, p0, Lao;->f:I
+    iget v0, p0, Lao;->f_I:I
 
     return v0
 .end method
@@ -467,7 +467,7 @@
 .method public final close()V
     .locals 1
 
-    iget-object v0, p0, Lao;->a:Lah;
+    iget-object v0, p0, Lao;->a_ah:Lah;
 
     invoke-virtual {v0}, Lah;->close()V
 
@@ -477,9 +477,9 @@
 .method public final mark(I)V
     .locals 1
 
-    iget v0, p0, Lao;->d:I
+    iget v0, p0, Lao;->d_I:I
 
-    iput v0, p0, Lao;->e:I
+    iput v0, p0, Lao;->e_I:I
 
     return-void
 .end method
@@ -487,9 +487,9 @@
 .method public final read()I
     .locals 3
 
-    iget v0, p0, Lao;->d:I
+    iget v0, p0, Lao;->d_I:I
 
-    iget v1, p0, Lao;->f:I
+    iget v1, p0, Lao;->f_I:I
 
     if-lt v0, v1, :cond_0
 
@@ -499,28 +499,28 @@
     return v0
 
     :cond_0
-    iget v0, p0, Lao;->c:I
+    iget v0, p0, Lao;->c_I:I
 
-    iget v1, p0, Lao;->b:I
+    iget v1, p0, Lao;->b_I:I
 
     if-lt v0, v1, :cond_1
 
-    invoke-direct {p0}, Lao;->a()Z
+    invoke-direct {p0}, Lao;->a_Z()Z
 
     :cond_1
-    iget v0, p0, Lao;->d:I
+    iget v0, p0, Lao;->d_I:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lao;->d:I
+    iput v0, p0, Lao;->d_I:I
 
-    iget-object v0, p0, Lao;->a:[B
+    iget-object v0, p0, Lao;->a_Bs:[B
 
-    iget v1, p0, Lao;->c:I
+    iget v1, p0, Lao;->c_I:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lao;->c:I
+    iput v2, p0, Lao;->c_I:I
 
     aget-byte v0, v0, v1
 
@@ -568,46 +568,46 @@
     :goto_1
     if-lez v0, :cond_3
 
-    iget v1, p0, Lao;->c:I
+    iget v1, p0, Lao;->c_I:I
 
-    iget v2, p0, Lao;->b:I
+    iget v2, p0, Lao;->b_I:I
 
     if-lt v1, v2, :cond_2
 
-    invoke-direct {p0}, Lao;->a()Z
+    invoke-direct {p0}, Lao;->a_Z()Z
 
     move-result v1
 
     if-eqz v1, :cond_3
 
     :cond_2
-    iget v1, p0, Lao;->b:I
+    iget v1, p0, Lao;->b_I:I
 
-    iget v2, p0, Lao;->c:I
+    iget v2, p0, Lao;->c_I:I
 
     sub-int/2addr v1, v2
 
-    invoke-static {v0, v1}, Lbz;->b(II)I
+    invoke-static {v0, v1}, Lbz;->b_I(II)I
 
     move-result v1
 
-    iget-object v2, p0, Lao;->a:[B
+    iget-object v2, p0, Lao;->a_Bs:[B
 
-    iget v3, p0, Lao;->c:I
+    iget v3, p0, Lao;->c_I:I
 
     invoke-static {v2, v3, p1, p2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget v2, p0, Lao;->c:I
+    iget v2, p0, Lao;->c_I:I
 
     add-int/2addr v2, v1
 
-    iput v2, p0, Lao;->c:I
+    iput v2, p0, Lao;->c_I:I
 
-    iget v2, p0, Lao;->d:I
+    iget v2, p0, Lao;->d_I:I
 
     add-int/2addr v2, v1
 
-    iput v2, p0, Lao;->d:I
+    iput v2, p0, Lao;->d_I:I
 
     add-int/2addr p2, v1
 
@@ -948,13 +948,13 @@
 
     const/4 v1, -0x1
 
-    iget v0, p0, Lao;->e:I
+    iget v0, p0, Lao;->e_I:I
 
-    iput v0, p0, Lao;->d:I
+    iput v0, p0, Lao;->d_I:I
 
-    iput v1, p0, Lao;->b:I
+    iput v1, p0, Lao;->b_I:I
 
-    iput v1, p0, Lao;->c:I
+    iput v1, p0, Lao;->c_I:I
 
     return-void
 .end method
@@ -979,7 +979,7 @@
     int-to-long p1, v0
 
     :cond_0
-    iget v0, p0, Lao;->c:I
+    iget v0, p0, Lao;->c_I:I
 
     int-to-long v0, v0
 
@@ -987,9 +987,9 @@
 
     long-to-int v0, v0
 
-    iput v0, p0, Lao;->c:I
+    iput v0, p0, Lao;->c_I:I
 
-    iget v0, p0, Lao;->d:I
+    iget v0, p0, Lao;->d_I:I
 
     int-to-long v0, v0
 
@@ -997,7 +997,7 @@
 
     long-to-int v0, v0
 
-    iput v0, p0, Lao;->d:I
+    iput v0, p0, Lao;->d_I:I
 
     return-wide p1
 .end method

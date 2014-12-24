@@ -6,11 +6,11 @@
 
 
 # static fields
-.field public static final a:[Ljava/lang/String;
+.field public static final a_Strings:[Ljava/lang/String;
 
 
 # instance fields
-.field public a:Lcom/motorola/io/FileConnection;
+.field public a_FileConnection:Lcom/motorola/io/FileConnection;
 
 
 # direct methods
@@ -21,11 +21,11 @@
 
     const-string v0, "/audio/vavr/\u0000/certs/\u0000/certs/root/\u0000/certs/root/x509/\u0000/certs/root/x509/kjava/\u0000/certs/root/x509/ssl/\u0000/email/\u0000/kjava/\u0000/licenses/\u0000/mib/\u0000/mib/cache/\u0000/mib/cookies/\u0000/mib/gen/\u0000/mib/offline/\u0000/mib/pcf/\u0000/mixedmedia/\u0000/mms/\u0000/mms/mmstemplate/\u0000/partial/\u0000/ringtone/\u0000/settings/\u0000/skins/\u0000/system/\u0000/wvim/\u0000"
 
-    invoke-static {v0, v1, v1}, Lcc;->a(Ljava/lang/String;IC)[Ljava/lang/String;
+    invoke-static {v0, v1, v1}, Lcc;->a_Strings(Ljava/lang/String;IC)[Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lau;->a:[Ljava/lang/String;
+    sput-object v0, Lau;->a_Strings:[Ljava/lang/String;
 
     return-void
 .end method
@@ -37,12 +37,12 @@
 
     check-cast p1, Lcom/motorola/io/FileConnection;
 
-    iput-object p1, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iput-object p1, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     return-void
 .end method
 
-.method private static a(Ljavax/microedition/io/Connection;)Ljava/util/Enumeration;
+.method private static a_Enumeration(Ljavax/microedition/io/Connection;)Ljava/util/Enumeration;
     .locals 6
 
     const/4 v1, 0x0
@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lau;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-static {v0}, Lau;->a_Strings([Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v2
 
@@ -88,19 +88,19 @@
     move v2, v1
 
     :goto_1
-    sget-object v0, Lau;->a:[Ljava/lang/String;
+    sget-object v0, Lau;->a_Strings:[Ljava/lang/String;
 
     array-length v0, v0
 
     if-ge v2, v0, :cond_3
 
-    sget-object v0, Lau;->a:[Ljava/lang/String;
+    sget-object v0, Lau;->a_Strings:[Ljava/lang/String;
 
     aget-object v0, v0, v2
 
     const/16 v3, 0x2f
 
-    sget-object v5, Lau;->a:[Ljava/lang/String;
+    sget-object v5, Lau;->a_Strings:[Ljava/lang/String;
 
     aget-object v5, v5, v2
 
@@ -118,7 +118,7 @@
 
     if-eq v0, v3, :cond_1
 
-    sget-object v3, Lau;->a:[Ljava/lang/String;
+    sget-object v3, Lau;->a_Strings:[Ljava/lang/String;
 
     aget-object v3, v3, v2
 
@@ -138,7 +138,7 @@
 
     const-string v5, "a/mobile"
 
-    invoke-static {v5, v3}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5, v3}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -157,7 +157,7 @@
 
     if-ge v3, v0, :cond_5
 
-    sget-object v0, Lau;->a:[Ljava/lang/String;
+    sget-object v0, Lau;->a_Strings:[Ljava/lang/String;
 
     aget-object v5, v0, v2
 
@@ -178,7 +178,7 @@
     :goto_3
     if-nez v0, :cond_1
 
-    sget-object v0, Lau;->a:[Ljava/lang/String;
+    sget-object v0, Lau;->a_Strings:[Ljava/lang/String;
 
     aget-object v0, v0, v2
 
@@ -207,12 +207,12 @@
 
     invoke-virtual {v4, v0}, Ljava/util/Vector;->copyInto([Ljava/lang/Object;)V
 
-    invoke-static {v0}, Lau;->a([Ljava/lang/String;)[Ljava/lang/String;
+    invoke-static {v0}, Lau;->a_Strings([Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
     :cond_4
-    invoke-static {v0}, Lau;->a([Ljava/lang/String;)Ljava/util/Enumeration;
+    invoke-static {v0}, Lau;->a_Enumeration([Ljava/lang/String;)Ljava/util/Enumeration;
 
     move-result-object v0
 
@@ -224,7 +224,7 @@
     goto :goto_3
 .end method
 
-.method private static a([Ljava/lang/String;)Ljava/util/Enumeration;
+.method private static a_Enumeration([Ljava/lang/String;)Ljava/util/Enumeration;
     .locals 4
 
     const/4 v1, 0x0
@@ -262,7 +262,7 @@
     return-object v0
 .end method
 
-.method public static a()[Ljava/lang/String;
+.method public static a_Strings()[Ljava/lang/String;
     .locals 1
 
     invoke-static {}, Lcom/motorola/io/FileSystemRegistry;->listRoots()[Ljava/lang/String;
@@ -272,7 +272,7 @@
     return-object v0
 .end method
 
-.method private static a([Ljava/lang/String;)[Ljava/lang/String;
+.method private static a_Strings([Ljava/lang/String;)[Ljava/lang/String;
     .locals 6
 
     const/16 v5, 0x2f
@@ -347,14 +347,14 @@
     goto :goto_1
 .end method
 
-.method public static b()Ljava/util/Enumeration;
+.method public static b_Enumeration()Ljava/util/Enumeration;
     .locals 1
 
     invoke-static {}, Lcom/motorola/io/FileSystemRegistry;->listRoots()[Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lau;->a([Ljava/lang/String;)Ljava/util/Enumeration;
+    invoke-static {v0}, Lau;->a_Enumeration([Ljava/lang/String;)Ljava/util/Enumeration;
 
     move-result-object v0
 
@@ -363,10 +363,10 @@
 
 
 # virtual methods
-.method public final a()J
+.method public final a_J()J
     .locals 2
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->availableSize()J
 
@@ -375,10 +375,10 @@
     return-wide v0
 .end method
 
-.method public final a(Z)J
+.method public final a_J(Z)J
     .locals 2
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0, p1}, Lcom/motorola/io/FileConnection;->directorySize(Z)J
 
@@ -387,10 +387,10 @@
     return-wide v0
 .end method
 
-.method public final a()Ljava/io/DataInputStream;
+.method public final a_DataInputStream()Ljava/io/DataInputStream;
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->openDataInputStream()Ljava/io/DataInputStream;
 
@@ -399,10 +399,10 @@
     return-object v0
 .end method
 
-.method public final a()Ljava/io/DataOutputStream;
+.method public final a_DataOutputStream()Ljava/io/DataOutputStream;
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->openDataOutputStream()Ljava/io/DataOutputStream;
 
@@ -411,10 +411,10 @@
     return-object v0
 .end method
 
-.method public final a()Ljava/io/InputStream;
+.method public final a_InputStream()Ljava/io/InputStream;
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->openInputStream()Ljava/io/InputStream;
 
@@ -423,10 +423,10 @@
     return-object v0
 .end method
 
-.method public final a()Ljava/io/OutputStream;
+.method public final a_OutputStream()Ljava/io/OutputStream;
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->openOutputStream()Ljava/io/OutputStream;
 
@@ -435,10 +435,10 @@
     return-object v0
 .end method
 
-.method public final a(J)Ljava/io/OutputStream;
+.method public final a_OutputStream(J)Ljava/io/OutputStream;
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->openOutputStream()Ljava/io/OutputStream;
 
@@ -447,7 +447,7 @@
     return-object v0
 .end method
 
-.method public final a()Ljava/lang/String;
+.method public final a_String()Ljava/lang/String;
     .locals 1
 
     const/4 v0, 0x0
@@ -455,60 +455,60 @@
     return-object v0
 .end method
 
-.method public final a()Ljava/util/Enumeration;
+.method public final a_Enumeration()Ljava/util/Enumeration;
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
-    invoke-static {v0}, Lau;->a(Ljavax/microedition/io/Connection;)Ljava/util/Enumeration;
+    invoke-static {v0}, Lau;->a_Enumeration(Ljavax/microedition/io/Connection;)Ljava/util/Enumeration;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final a(Ljava/lang/String;Z)Ljava/util/Enumeration;
+.method public final a_Enumeration(Ljava/lang/String;Z)Ljava/util/Enumeration;
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
-    invoke-static {v0}, Lau;->a(Ljavax/microedition/io/Connection;)Ljava/util/Enumeration;
+    invoke-static {v0}, Lau;->a_Enumeration(Ljavax/microedition/io/Connection;)Ljava/util/Enumeration;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final a()V
+.method public final a_V()V
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->create()Z
 
     return-void
 .end method
 
-.method public final a(J)V
+.method public final a_V(J)V
     .locals 0
 
     return-void
 .end method
 
-.method public final a(Z)V
+.method public final a_V(Z)V
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0, p1}, Lcom/motorola/io/FileConnection;->setHidden(Z)V
 
     return-void
 .end method
 
-.method public final a()Z
+.method public final a_Z()Z
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->canRead()Z
 
@@ -517,16 +517,16 @@
     return v0
 .end method
 
-.method public final a(Ljava/lang/String;)Z
+.method public final a_Z(Ljava/lang/String;)Z
     .locals 2
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     check-cast v0, Lcom/motorola/io/FileConnection;
 
     const-string v1, "file:///"
 
-    invoke-static {v1, p1}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -537,10 +537,10 @@
     return v0
 .end method
 
-.method public final b()J
+.method public final b_J()J
     .locals 2
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->fileSize()J
 
@@ -549,10 +549,10 @@
     return-wide v0
 .end method
 
-.method public final b()Ljava/lang/String;
+.method public final b_String()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->getPath()Ljava/lang/String;
 
@@ -561,30 +561,30 @@
     return-object v0
 .end method
 
-.method public final b()V
+.method public final b_V()V
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->delete()Z
 
     return-void
 .end method
 
-.method public final b(Z)V
+.method public final b_V(Z)V
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0, p1}, Lcom/motorola/io/FileConnection;->setReadable(Z)V
 
     return-void
 .end method
 
-.method public final b()Z
+.method public final b_Z()Z
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->canWrite()Z
 
@@ -593,10 +593,10 @@
     return v0
 .end method
 
-.method public final c()Ljava/lang/String;
+.method public final c_String()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->getURL()Ljava/lang/String;
 
@@ -605,30 +605,30 @@
     return-object v0
 .end method
 
-.method public final c()V
+.method public final c_V()V
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->mkdir()Z
 
     return-void
 .end method
 
-.method public final c(Z)V
+.method public final c_V(Z)V
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0, p1}, Lcom/motorola/io/FileConnection;->setWriteable(Z)V
 
     return-void
 .end method
 
-.method public final c()Z
+.method public final c_Z()Z
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->exists()Z
 
@@ -640,17 +640,17 @@
 .method public final close()V
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->close()V
 
     return-void
 .end method
 
-.method public final d()J
+.method public final d_J()J
     .locals 2
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->lastModified()J
 
@@ -659,10 +659,10 @@
     return-wide v0
 .end method
 
-.method public final d()Z
+.method public final d_Z()Z
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->isDirectory()Z
 
@@ -671,10 +671,10 @@
     return v0
 .end method
 
-.method public final e()J
+.method public final e_J()J
     .locals 2
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->totalSize()J
 
@@ -683,10 +683,10 @@
     return-wide v0
 .end method
 
-.method public final e()Z
+.method public final e_Z()Z
     .locals 1
 
-    iget-object v0, p0, Lau;->a:Lcom/motorola/io/FileConnection;
+    iget-object v0, p0, Lau;->a_FileConnection:Lcom/motorola/io/FileConnection;
 
     invoke-interface {v0}, Lcom/motorola/io/FileConnection;->isHidden()Z
 

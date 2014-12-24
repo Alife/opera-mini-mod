@@ -3,25 +3,25 @@
 
 
 # static fields
-.field public static a:I
+.field public static a_I:I
 
-.field public static b:I
+.field public static b_I:I
 
-.field public static c:I
+.field public static c_I:I
 
 
 # instance fields
-.field public final a:Lcf;
+.field public final a_cf:Lcf;
 
-.field public final a:Lcg;
+.field public final a_cg:Lcg;
 
-.field public a:Ljava/util/Hashtable;
+.field public a_Hashtable:Ljava/util/Hashtable;
 
-.field public a:Ljava/util/Vector;
+.field public a_Vector:Ljava/util/Vector;
 
-.field public a:[Ljavax/microedition/lcdui/Image;
+.field public a_Images:[Ljavax/microedition/lcdui/Image;
 
-.field public b:[Ljavax/microedition/lcdui/Image;
+.field public b_Images:[Ljavax/microedition/lcdui/Image;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     const/4 v0, -0x1
 
-    sput v0, Lby;->c:I
+    sput v0, Lby;->c_I:I
 
     return-void
 .end method
@@ -40,43 +40,43 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lby;->a:Lcg;
+    iput-object p1, p0, Lby;->a_cg:Lcg;
 
-    iget-object v0, p1, Lcg;->b:Lcf;
+    iget-object v0, p1, Lcg;->b_cf:Lcf;
 
-    iput-object v0, p0, Lby;->a:Lcf;
+    iput-object v0, p0, Lby;->a_cf:Lcf;
 
     return-void
 .end method
 
-.method public static a()Z
+.method public static a_Z()Z
     .locals 8
 
     const/4 v7, 0x1
 
     const/4 v2, 0x0
 
-    sget v0, Lby;->c:I
+    sget v0, Lby;->c_I:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    sget v0, Lby;->b:I
+    sget v0, Lby;->b_I:I
 
-    sget v1, Lby;->a:I
+    sget v1, Lby;->a_I:I
 
-    sget v3, Lby;->c:I
+    sget v3, Lby;->c_I:I
 
     int-to-long v3, v3
 
     const-wide/16 v5, 0x12c
 
-    invoke-static/range {v0 .. v7}, Lbz;->a(IIIJJZ)I
+    invoke-static/range {v0 .. v7}, Lbz;->a_I(IIIJJZ)I
 
     move-result v0
 
-    sget v1, Lby;->b:I
+    sget v1, Lby;->b_I:I
 
     if-ne v0, v1, :cond_0
 
@@ -91,7 +91,7 @@
     goto :goto_0
 .end method
 
-.method private static a(I)[Ljavax/microedition/lcdui/Image;
+.method private static a_Images(I)[Ljavax/microedition/lcdui/Image;
     .locals 13
 
     const/16 v0, 0xa
@@ -123,7 +123,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v11, v1}, Lbz;->a(I[CI)I
+    invoke-static {v0, v11, v1}, Lbz;->a_I(I[CI)I
 
     move-result v4
 
@@ -131,7 +131,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lbz;->e(II)I
+    invoke-static {v0, v1}, Lbz;->e_I(II)I
 
     move-result v5
 
@@ -153,13 +153,13 @@
 
     add-int/lit8 v5, v5, 0x1
 
-    sget-object v6, Lco;->a:[I
+    sget-object v6, Lco;->a_Is:[I
 
     const/16 v7, 0x25
 
     aget v6, v6, v7
 
-    sget-object v7, Lco;->a:[I
+    sget-object v7, Lco;->a_Is:[I
 
     const/16 v8, 0x26
 
@@ -167,7 +167,7 @@
 
     const/4 v8, 0x0
 
-    invoke-static/range {v0 .. v8}, Lco;->a(Ljavax/microedition/lcdui/Graphics;[IIIIIIII)V
+    invoke-static/range {v0 .. v8}, Lco;->a_V(Ljavax/microedition/lcdui/Graphics;[IIIIIIII)V
 
     invoke-virtual {v0, p0}, Ljavax/microedition/lcdui/Graphics;->setColor(I)V
 
@@ -185,7 +185,7 @@
 
     move-object v2, v11
 
-    invoke-static/range {v0 .. v7}, Lco;->a(Ljavax/microedition/lcdui/Graphics;I[CIIIII)V
+    invoke-static/range {v0 .. v7}, Lco;->a_V(Ljavax/microedition/lcdui/Graphics;I[CIIIII)V
 
     aput-object v12, v10, v9
 
@@ -199,7 +199,7 @@
     return-object v10
 .end method
 
-.method private static a([Ljavax/microedition/lcdui/Image;I)[Ljavax/microedition/lcdui/Image;
+.method private static a_Images([Ljavax/microedition/lcdui/Image;I)[Ljavax/microedition/lcdui/Image;
     .locals 7
 
     const/16 v6, 0xa
@@ -219,7 +219,7 @@
 
     const/4 v5, 0x1
 
-    invoke-static {v3, v4, p1, v1, v5}, Lco;->a(Ljavax/microedition/lcdui/Image;IIZZ)Ljavax/microedition/lcdui/Image;
+    invoke-static {v3, v4, p1, v1, v5}, Lco;->a_Image(Ljavax/microedition/lcdui/Image;IIZZ)Ljavax/microedition/lcdui/Image;
 
     move-result-object v3
 
@@ -235,16 +235,16 @@
 
 
 # virtual methods
-.method public final a()V
+.method public final a_V()V
     .locals 3
 
-    iget-object v0, p0, Lby;->a:Lcf;
+    iget-object v0, p0, Lby;->a_cf:Lcf;
 
-    invoke-virtual {v0}, Lcf;->a()Ljava/util/Vector;
+    invoke-virtual {v0}, Lcf;->a_Vector()Ljava/util/Vector;
 
     move-result-object v0
 
-    iput-object v0, p0, Lby;->a:Ljava/util/Vector;
+    iput-object v0, p0, Lby;->a_Vector:Ljava/util/Vector;
 
     const/4 v0, 0x1
 
@@ -252,7 +252,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lbz;->a(ILjava/lang/String;I)I
+    invoke-static {v0, v1, v2}, Lbz;->a_I(ILjava/lang/String;I)I
 
     move-result v0
 
@@ -260,9 +260,9 @@
 
     shr-int/lit8 v0, v0, 0x1
 
-    sput v0, Lby;->a:I
+    sput v0, Lby;->a_I:I
 
-    sput v0, Lby;->b:I
+    sput v0, Lby;->b_I:I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -270,44 +270,44 @@
 
     long-to-int v0, v0
 
-    sput v0, Lby;->c:I
+    sput v0, Lby;->c_I:I
 
     return-void
 .end method
 
-.method public final a(Z)V
+.method public final a_V(Z)V
     .locals 3
 
     const/4 v2, 0x0
 
     const/4 v1, 0x0
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
-    iput v2, v0, Lce;->y:I
+    iput v2, v0, Lce;->y_I:I
 
-    iget-object v0, p0, Lby;->a:Lcf;
+    iget-object v0, p0, Lby;->a_cf:Lcf;
 
     if-eqz v0, :cond_0
 
-    iput-object v1, p0, Lby;->a:Ljava/util/Vector;
+    iput-object v1, p0, Lby;->a_Vector:Ljava/util/Vector;
 
-    sput v2, Lby;->b:I
+    sput v2, Lby;->b_I:I
 
     const/4 v0, -0x1
 
-    sput v0, Lby;->c:I
+    sput v0, Lby;->c_I:I
 
-    iput-object v1, p0, Lby;->a:[Ljavax/microedition/lcdui/Image;
+    iput-object v1, p0, Lby;->a_Images:[Ljavax/microedition/lcdui/Image;
 
-    iput-object v1, p0, Lby;->b:[Ljavax/microedition/lcdui/Image;
+    iput-object v1, p0, Lby;->b_Images:[Ljavax/microedition/lcdui/Image;
 
-    iput-object v1, p0, Lby;->a:Ljava/util/Hashtable;
+    iput-object v1, p0, Lby;->a_Hashtable:Ljava/util/Hashtable;
 
     :cond_0
     if-eqz p1, :cond_1
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
     invoke-virtual {v0}, Lce;->repaint()V
 
@@ -315,7 +315,7 @@
     return-void
 .end method
 
-.method public final a(I)Z
+.method public final a_Z(I)Z
     .locals 8
 
     const/16 v7, 0xa
@@ -336,7 +336,7 @@
 
     add-int/lit8 v3, p1, -0x30
 
-    iget-object v0, p0, Lby;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lby;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->firstElement()Ljava/lang/Object;
 
@@ -346,7 +346,7 @@
 
     aget v1, v0, v4
 
-    iget-object v0, p0, Lby;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lby;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->lastElement()Ljava/lang/Object;
 
@@ -356,41 +356,41 @@
 
     aget v0, v0, v4
 
-    sget-object v4, Lce;->a:Lce;
+    sget-object v4, Lce;->a_ce:Lce;
 
-    sget-object v5, Lce;->a:Lce;
+    sget-object v5, Lce;->a_ce:Lce;
 
-    iget v5, v5, Lce;->y:I
+    iget v5, v5, Lce;->y_I:I
 
     mul-int/lit8 v5, v5, 0xa
 
     add-int/2addr v3, v5
 
-    iput v3, v4, Lce;->y:I
+    iput v3, v4, Lce;->y_I:I
 
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, Lce;->a_ce:Lce;
 
-    iget v3, v3, Lce;->y:I
+    iget v3, v3, Lce;->y_I:I
 
     if-lt v3, v1, :cond_3
 
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, Lce;->a_ce:Lce;
 
-    iget v3, v3, Lce;->y:I
+    iget v3, v3, Lce;->y_I:I
 
     if-gt v3, v0, :cond_3
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
-    iget v0, v0, Lce;->y:I
+    iget v0, v0, Lce;->y_I:I
 
     sub-int/2addr v0, v1
 
-    iget-object v1, p0, Lby;->a:Ljava/util/Vector;
+    iget-object v1, p0, Lby;->a_Vector:Ljava/util/Vector;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lby;->a:Ljava/util/Vector;
+    iget-object v1, p0, Lby;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v1}, Ljava/util/Vector;->size()I
 
@@ -398,7 +398,7 @@
 
     if-le v1, v0, :cond_2
 
-    iget-object v1, p0, Lby;->a:Ljava/util/Vector;
+    iget-object v1, p0, Lby;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v1, v0}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -410,22 +410,22 @@
 
     aget v0, v0, v1
 
-    invoke-virtual {p0, v6}, Lby;->a(Z)V
+    invoke-virtual {p0, v6}, Lby;->a_V(Z)V
 
-    iget-object v1, p0, Lby;->a:Lcf;
+    iget-object v1, p0, Lby;->a_cf:Lcf;
 
-    iput v0, v1, Lcf;->v:I
+    iput v0, v1, Lcf;->v_I:I
 
-    iget-object v0, p0, Lby;->a:Lcf;
+    iget-object v0, p0, Lby;->a_cf:Lcf;
 
-    invoke-virtual {v0, v6, v2}, Lcf;->a(ZZ)V
+    invoke-virtual {v0, v6, v2}, Lcf;->a_V(ZZ)V
 
-    sget v0, Lbz;->bS:I
+    sget v0, Lbz;->bS_I:I
 
     packed-switch v0, :pswitch_data_0
 
     :goto_0
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
     invoke-virtual {v0}, Lce;->repaint()V
 
@@ -433,66 +433,66 @@
     return v2
 
     :pswitch_0
-    iget-object v0, p0, Lby;->a:Lcf;
+    iget-object v0, p0, Lby;->a_cf:Lcf;
 
-    invoke-virtual {v0}, Lcf;->g()Ljava/lang/String;
+    invoke-virtual {v0}, Lcf;->g_String()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0, v6}, Lbz;->a(Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v0, v6}, Lbz;->a_String(Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lby;->a:Lcf;
+    iget-object v0, p0, Lby;->a_cf:Lcf;
 
-    invoke-virtual {v0}, Lcf;->h()Ljava/lang/String;
+    invoke-virtual {v0}, Lcf;->h_String()Ljava/lang/String;
 
     move-result-object v0
 
     :cond_0
-    iget-object v1, p0, Lby;->a:Lcg;
+    iget-object v1, p0, Lby;->a_cg:Lcg;
 
     const/4 v3, 0x2
 
-    invoke-virtual {v1, v3}, Lcg;->a(I)Z
+    invoke-virtual {v1, v3}, Lcg;->a_Z(I)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    iget-object v1, p0, Lby;->a:Lcg;
+    iget-object v1, p0, Lby;->a_cg:Lcg;
 
     const/16 v3, 0x8
 
-    invoke-virtual {v1, v3}, Lcg;->a(I)Z
+    invoke-virtual {v1, v3}, Lcg;->a_Z(I)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    invoke-static {v0}, Lbz;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbz;->d_Z(Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    iget-object v1, p0, Lby;->a:Lcg;
+    iget-object v1, p0, Lby;->a_cg:Lcg;
 
-    invoke-static {v1}, Lce;->d(Lcg;)Z
+    invoke-static {v1}, Lce;->d_Z(Lcg;)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    iget-object v1, p0, Lby;->a:Lcf;
+    iget-object v1, p0, Lby;->a_cf:Lcf;
 
-    iget-boolean v1, v1, Lcf;->U:Z
+    iget-boolean v1, v1, Lcf;->U_Z:Z
 
     if-nez v1, :cond_1
 
-    invoke-static {v0}, Lcc;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcc;->b_Z(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -506,52 +506,52 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
-    iget-object v1, p0, Lby;->a:Lcg;
+    iget-object v1, p0, Lby;->a_cg:Lcg;
 
-    invoke-virtual {v0, v1, v6, v6, v6}, Lce;->a(Lcg;ZZZ)Z
+    invoke-virtual {v0, v1, v6, v6, v6}, Lce;->a_Z(Lcg;ZZZ)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
-    invoke-virtual {v0}, Lce;->b()V
+    invoke-virtual {v0}, Lce;->b_V()V
 
     goto :goto_0
 
     :cond_1
     :pswitch_1
-    iget-object v0, p0, Lby;->a:Lcf;
+    iget-object v0, p0, Lby;->a_cf:Lcf;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v6, v1}, Lcf;->a(ZLjava/lang/String;)V
+    invoke-virtual {v0, v6, v1}, Lcf;->a_V(ZLjava/lang/String;)V
 
     goto :goto_0
 
     :cond_2
-    invoke-virtual {p0, v2}, Lby;->a(Z)V
+    invoke-virtual {p0, v2}, Lby;->a_V(Z)V
 
     goto :goto_1
 
     :cond_3
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, Lce;->a_ce:Lce;
 
-    iget v3, v3, Lce;->y:I
+    iget v3, v3, Lce;->y_I:I
 
     if-le v3, v0, :cond_4
 
-    invoke-virtual {p0, v2}, Lby;->a(Z)V
+    invoke-virtual {p0, v2}, Lby;->a_V(Z)V
 
     goto :goto_1
 
     :cond_4
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, Lce;->a_ce:Lce;
 
-    iget v3, v3, Lce;->y:I
+    iget v3, v3, Lce;->y_I:I
 
     if-ge v3, v7, :cond_7
 
@@ -562,30 +562,30 @@
     move v1, v2
 
     :cond_5
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, Lce;->a_ce:Lce;
 
-    iget v3, v3, Lce;->y:I
+    iget v3, v3, Lce;->y_I:I
 
     if-lt v3, v1, :cond_6
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, Lce;->a_ce:Lce;
 
-    iget v1, v1, Lce;->y:I
+    iget v1, v1, Lce;->y_I:I
 
     if-le v1, v0, :cond_7
 
     :cond_6
-    invoke-virtual {p0, v2}, Lby;->a(Z)V
+    invoke-virtual {p0, v2}, Lby;->a_V(Z)V
 
     goto/16 :goto_1
 
     :cond_7
-    invoke-static {}, Lce;->v()V
+    invoke-static {}, Lce;->v_V()V
 
     goto/16 :goto_1
 
     :cond_8
-    invoke-virtual {p0, v2}, Lby;->a(Z)V
+    invoke-virtual {p0, v2}, Lby;->a_V(Z)V
 
     goto/16 :goto_1
 
@@ -596,10 +596,10 @@
     .end packed-switch
 .end method
 
-.method public final a(Ljavax/microedition/lcdui/Graphics;)Z
+.method public final a_Z(Ljavax/microedition/lcdui/Graphics;)Z
     .locals 16
 
-    invoke-virtual/range {p0 .. p0}, Lby;->b()Z
+    invoke-virtual/range {p0 .. p0}, Lby;->b_Z()Z
 
     move-result v1
 
@@ -607,21 +607,21 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->a:Ljava/util/Vector;
+    iget-object v1, v0, Lby;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v1}, Ljava/util/Vector;->size()I
 
     move-result v10
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, Lce;->a_ce:Lce;
 
-    iget v1, v1, Lce;->y:I
+    iget v1, v1, Lce;->y_I:I
 
     if-eqz v1, :cond_4
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, Lce;->a_ce:Lce;
 
-    iget v1, v1, Lce;->y:I
+    iget v1, v1, Lce;->y_I:I
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -634,15 +634,15 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->a:Lcg;
+    iget-object v1, v0, Lby;->a_cg:Lcg;
 
-    iget v12, v1, Lcg;->h:I
+    iget v12, v1, Lcg;->h_I:I
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->a:Lcg;
+    iget-object v1, v0, Lby;->a_cg:Lcg;
 
-    invoke-virtual {v1}, Lcg;->a()I
+    invoke-virtual {v1}, Lcg;->a_I()I
 
     move-result v13
 
@@ -655,7 +655,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->a:Ljava/util/Vector;
+    iget-object v1, v0, Lby;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v1, v9}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -705,7 +705,7 @@
 
     const/4 v3, 0x0
 
-    invoke-static {v2, v14, v3}, Lbz;->a(I[CI)I
+    invoke-static {v2, v14, v3}, Lbz;->a_I(I[CI)I
 
     move-result v2
 
@@ -715,7 +715,7 @@
 
     const/4 v3, 0x0
 
-    invoke-static {v2, v3}, Lbz;->e(II)I
+    invoke-static {v2, v3}, Lbz;->e_I(II)I
 
     move-result v2
 
@@ -723,17 +723,17 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lby;->a:Lcg;
+    iget-object v2, v0, Lby;->a_cg:Lcg;
 
-    iget v2, v2, Lcg;->c:I
+    iget v2, v2, Lcg;->c_I:I
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lby;->a:Lcg;
+    iget-object v3, v0, Lby;->a_cg:Lcg;
 
-    iget-object v3, v3, Lcg;->b:Lcf;
+    iget-object v3, v3, Lcg;->b_cf:Lcf;
 
-    iget v3, v3, Lcf;->z:I
+    iget v3, v3, Lcf;->z_I:I
 
     sub-int/2addr v2, v3
 
@@ -745,17 +745,17 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lby;->a:Lcg;
+    iget-object v3, v0, Lby;->a_cg:Lcg;
 
-    iget v3, v3, Lcg;->c:I
+    iget v3, v3, Lcg;->c_I:I
 
     add-int/lit8 v3, v3, 0x2
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lby;->a:Lcg;
+    iget-object v6, v0, Lby;->a_cg:Lcg;
 
-    iget v6, v6, Lcg;->c:I
+    iget v6, v6, Lcg;->c_I:I
 
     add-int/2addr v6, v12
 
@@ -763,23 +763,23 @@
 
     sub-int/2addr v6, v4
 
-    invoke-static {v2, v3, v6}, Lbz;->a(III)I
+    invoke-static {v2, v3, v6}, Lbz;->a_I(III)I
 
     move-result v7
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lby;->a:Lcg;
+    iget-object v2, v0, Lby;->a_cg:Lcg;
 
-    iget v2, v2, Lcg;->d:I
+    iget v2, v2, Lcg;->d_I:I
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lby;->a:Lcg;
+    iget-object v3, v0, Lby;->a_cg:Lcg;
 
-    iget-object v3, v3, Lcg;->b:Lcf;
+    iget-object v3, v3, Lcg;->b_cf:Lcf;
 
-    iget v3, v3, Lcf;->A:I
+    iget v3, v3, Lcf;->A_I:I
 
     sub-int/2addr v2, v3
 
@@ -791,17 +791,17 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lby;->a:Lcg;
+    iget-object v2, v0, Lby;->a_cg:Lcg;
 
-    iget v2, v2, Lcg;->d:I
+    iget v2, v2, Lcg;->d_I:I
 
     add-int/lit8 v2, v2, 0x2
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lby;->a:Lcg;
+    iget-object v3, v0, Lby;->a_cg:Lcg;
 
-    iget v3, v3, Lcg;->d:I
+    iget v3, v3, Lcg;->d_I:I
 
     add-int/2addr v3, v13
 
@@ -809,27 +809,27 @@
 
     sub-int/2addr v3, v5
 
-    invoke-static {v1, v2, v3}, Lbz;->a(III)I
+    invoke-static {v1, v2, v3}, Lbz;->a_I(III)I
 
     move-result v8
 
-    sget v1, Lby;->b:I
+    sget v1, Lby;->b_I:I
 
     shr-int/lit8 v1, v1, 0x1
 
     sub-int v2, v7, v1
 
-    sget v1, Lby;->b:I
+    sget v1, Lby;->b_I:I
 
     shr-int/lit8 v1, v1, 0x1
 
     sub-int v3, v8, v1
 
-    sget v1, Lby;->b:I
+    sget v1, Lby;->b_I:I
 
     add-int/2addr v4, v1
 
-    sget v1, Lby;->b:I
+    sget v1, Lby;->b_I:I
 
     add-int/2addr v5, v1
 
@@ -837,55 +837,55 @@
 
     move-object/from16 v1, p1
 
-    invoke-static/range {v1 .. v6}, Lco;->d(Ljavax/microedition/lcdui/Graphics;IIIIZ)V
+    invoke-static/range {v1 .. v6}, Lco;->d_V(Ljavax/microedition/lcdui/Graphics;IIIIZ)V
 
-    sget-boolean v1, Lbz;->cm:Z
+    sget-boolean v1, Lbz;->cm_Z:Z
 
     if-eqz v1, :cond_9
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->a:[Ljavax/microedition/lcdui/Image;
+    iget-object v1, v0, Lby;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     if-nez v1, :cond_1
 
-    sget-object v1, Lco;->a:[I
+    sget-object v1, Lco;->a_Is:[I
 
     const/16 v4, 0x2a
 
     aget v1, v1, v4
 
-    invoke-static {v1}, Lby;->a(I)[Ljavax/microedition/lcdui/Image;
+    invoke-static {v1}, Lby;->a_Images(I)[Ljavax/microedition/lcdui/Image;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lby;->a:[Ljavax/microedition/lcdui/Image;
+    iput-object v1, v0, Lby;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->b:[Ljavax/microedition/lcdui/Image;
+    iget-object v1, v0, Lby;->b_Images:[Ljavax/microedition/lcdui/Image;
 
     if-nez v1, :cond_2
 
-    sget-object v1, Lco;->a:[I
+    sget-object v1, Lco;->a_Is:[I
 
     const/16 v4, 0x2b
 
     aget v1, v1, v4
 
-    invoke-static {v1}, Lby;->a(I)[Ljavax/microedition/lcdui/Image;
+    invoke-static {v1}, Lby;->a_Images(I)[Ljavax/microedition/lcdui/Image;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lby;->b:[Ljavax/microedition/lcdui/Image;
+    iput-object v1, v0, Lby;->b_Images:[Ljavax/microedition/lcdui/Image;
 
     :cond_2
-    sget v1, Lbz;->aY:I
+    sget v1, Lbz;->aY_I:I
 
     if-lez v1, :cond_6
 
@@ -893,7 +893,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->a:[Ljavax/microedition/lcdui/Image;
+    iget-object v1, v0, Lby;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/4 v5, 0x0
 
@@ -903,7 +903,7 @@
 
     move-result v1
 
-    sget v5, Lby;->b:I
+    sget v5, Lby;->b_I:I
 
     add-int/2addr v1, v5
 
@@ -911,7 +911,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->a:Ljava/util/Hashtable;
+    iget-object v1, v0, Lby;->a_Hashtable:Ljava/util/Hashtable;
 
     if-nez v1, :cond_3
 
@@ -921,12 +921,12 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lby;->a:Ljava/util/Hashtable;
+    iput-object v1, v0, Lby;->a_Hashtable:Ljava/util/Hashtable;
 
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->a:Ljava/util/Hashtable;
+    iget-object v1, v0, Lby;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v4}, Ljava/util/Hashtable;->containsKey(Ljava/lang/Object;)Z
 
@@ -936,7 +936,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->a:Ljava/util/Hashtable;
+    iget-object v1, v0, Lby;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v4}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -987,7 +987,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lby;->b:[Ljavax/microedition/lcdui/Image;
+    iget-object v5, v0, Lby;->b_Images:[Ljavax/microedition/lcdui/Image;
 
     :goto_6
     aget-char v6, v14, v2
@@ -1026,17 +1026,17 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lby;->a:Ljava/util/Hashtable;
+    iget-object v5, v0, Lby;->a_Hashtable:Ljava/util/Hashtable;
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lby;->a:[Ljavax/microedition/lcdui/Image;
+    iget-object v1, v0, Lby;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
 
     move-result v6
 
-    invoke-static {v1, v6}, Lby;->a([Ljavax/microedition/lcdui/Image;I)[Ljavax/microedition/lcdui/Image;
+    invoke-static {v1, v6}, Lby;->a_Images([Ljavax/microedition/lcdui/Image;I)[Ljavax/microedition/lcdui/Image;
 
     move-result-object v1
 
@@ -1063,7 +1063,7 @@
     :cond_8
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lby;->a:[Ljavax/microedition/lcdui/Image;
+    iget-object v5, v0, Lby;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     goto :goto_6
 
@@ -1095,7 +1095,7 @@
 
     if-ne v1, v2, :cond_a
 
-    sget-object v1, Lco;->a:[I
+    sget-object v1, Lco;->a_Is:[I
 
     const/16 v2, 0x2b
 
@@ -1116,7 +1116,7 @@
 
     move-object v3, v14
 
-    invoke-static/range {v1 .. v8}, Lco;->a(Ljavax/microedition/lcdui/Graphics;I[CIIIII)V
+    invoke-static/range {v1 .. v8}, Lco;->a_V(Ljavax/microedition/lcdui/Graphics;I[CIIIII)V
 
     const/4 v1, 0x1
 
@@ -1124,7 +1124,7 @@
 
     const/4 v3, 0x0
 
-    invoke-static {v1, v2, v3}, Lbz;->b(III)I
+    invoke-static {v1, v2, v3}, Lbz;->b_I(III)I
 
     move-result v1
 
@@ -1135,7 +1135,7 @@
     goto :goto_7
 
     :cond_a
-    sget-object v1, Lco;->a:[I
+    sget-object v1, Lco;->a_Is:[I
 
     const/16 v2, 0x2a
 
@@ -1171,61 +1171,61 @@
     goto/16 :goto_2
 .end method
 
-.method public final b()V
+.method public final b_V()V
     .locals 9
 
     const/4 v7, 0x1
 
-    invoke-virtual {p0}, Lby;->b()Z
+    invoke-virtual {p0}, Lby;->b_Z()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    sget v8, Lby;->b:I
+    sget v8, Lby;->b_I:I
 
-    sget v0, Lby;->b:I
+    sget v0, Lby;->b_I:I
 
-    sget v1, Lby;->a:I
+    sget v1, Lby;->a_I:I
 
     const/4 v2, 0x0
 
-    sget v3, Lby;->c:I
+    sget v3, Lby;->c_I:I
 
     int-to-long v3, v3
 
     const-wide/16 v5, 0x12c
 
-    invoke-static/range {v0 .. v7}, Lbz;->a(IIIJJZ)I
+    invoke-static/range {v0 .. v7}, Lbz;->a_I(IIIJJZ)I
 
     move-result v0
 
-    sput v0, Lby;->b:I
+    sput v0, Lby;->b_I:I
 
-    sget v0, Lby;->b:I
+    sget v0, Lby;->b_I:I
 
     if-eq v8, v0, :cond_0
 
-    sget-boolean v0, Lce;->m:Z
+    sget-boolean v0, Lce;->m_Z:Z
 
     if-nez v0, :cond_0
 
-    sput-boolean v7, Lce;->l:Z
+    sput-boolean v7, Lce;->l_Z:Z
 
-    sput-boolean v7, Lce;->m:Z
+    sput-boolean v7, Lce;->m_Z:Z
 
     :cond_0
     return-void
 .end method
 
-.method public final b()Z
+.method public final b_Z()Z
     .locals 1
 
-    iget-object v0, p0, Lby;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lby;->a_Vector:Ljava/util/Vector;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lby;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lby;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->isEmpty()Z
 

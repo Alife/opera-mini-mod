@@ -6,11 +6,11 @@
 
 
 # instance fields
-.field public final a:I
+.field public final a_I:I
 
-.field public final a:[Ljava/lang/Object;
+.field public final a_Objects:[Ljava/lang/Object;
 
-.field public b:I
+.field public b_I:I
 
 
 # direct methods
@@ -19,17 +19,17 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lbv;->a:[Ljava/lang/Object;
+    iput-object p1, p0, Lbv;->a_Objects:[Ljava/lang/Object;
 
-    iget-object v0, p0, Lbv;->a:[Ljava/lang/Object;
+    iget-object v0, p0, Lbv;->a_Objects:[Ljava/lang/Object;
 
     array-length v0, v0
 
-    iput v0, p0, Lbv;->a:I
+    iput v0, p0, Lbv;->a_I:I
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lbv;->b:I
+    iput v0, p0, Lbv;->b_I:I
 
     return-void
 .end method
@@ -39,9 +39,9 @@
 .method public final hasMoreElements()Z
     .locals 2
 
-    iget v0, p0, Lbv;->b:I
+    iget v0, p0, Lbv;->b_I:I
 
-    iget v1, p0, Lbv;->a:I
+    iget v1, p0, Lbv;->a_I:I
 
     if-ge v0, v1, :cond_0
 
@@ -59,21 +59,21 @@
 .method public final nextElement()Ljava/lang/Object;
     .locals 2
 
-    iget v0, p0, Lbv;->b:I
+    iget v0, p0, Lbv;->b_I:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lbv;->b:I
+    iput v0, p0, Lbv;->b_I:I
 
-    iget v0, p0, Lbv;->b:I
+    iget v0, p0, Lbv;->b_I:I
 
-    iget v1, p0, Lbv;->a:I
+    iget v1, p0, Lbv;->a_I:I
 
     if-gt v0, v1, :cond_0
 
-    iget-object v0, p0, Lbv;->a:[Ljava/lang/Object;
+    iget-object v0, p0, Lbv;->a_Objects:[Ljava/lang/Object;
 
-    iget v1, p0, Lbv;->b:I
+    iget v1, p0, Lbv;->b_I:I
 
     add-int/lit8 v1, v1, -0x1
 

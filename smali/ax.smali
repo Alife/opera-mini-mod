@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public a:Ljava/io/InputStream;
+.field public a_InputStream:Ljava/io/InputStream;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     invoke-direct {p0}, Ljava/io/Reader;-><init>()V
 
-    iput-object p1, p0, Lax;->a:Ljava/io/InputStream;
+    iput-object p1, p0, Lax;->a_InputStream:Ljava/io/InputStream;
 
     return-void
 .end method
@@ -22,7 +22,7 @@
 .method public final close()V
     .locals 1
 
-    iget-object v0, p0, Lax;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lax;->a_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
@@ -37,7 +37,7 @@
     :goto_0
     if-ge v0, p3, :cond_0
 
-    iget-object v1, p0, Lax;->a:Ljava/io/InputStream;
+    iget-object v1, p0, Lax;->a_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v1}, Ljava/io/InputStream;->read()I
 
@@ -85,7 +85,7 @@
 
     shl-int/lit8 v1, v1, 0xc
 
-    iget-object v2, p0, Lax;->a:Ljava/io/InputStream;
+    iget-object v2, p0, Lax;->a_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v2}, Ljava/io/InputStream;->read()I
 
@@ -97,7 +97,7 @@
 
     add-int/2addr v1, v2
 
-    iget-object v2, p0, Lax;->a:Ljava/io/InputStream;
+    iget-object v2, p0, Lax;->a_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v2}, Ljava/io/InputStream;->read()I
 
@@ -118,7 +118,7 @@
 
     shl-int/lit8 v1, v1, 0x6
 
-    iget-object v2, p0, Lax;->a:Ljava/io/InputStream;
+    iget-object v2, p0, Lax;->a_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v2}, Ljava/io/InputStream;->read()I
 

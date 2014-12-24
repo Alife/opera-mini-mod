@@ -3,23 +3,23 @@
 
 
 # static fields
-.field public static a:I
+.field public static a_I:I
 
-.field public static b:I
+.field public static b_I:I
 
-.field public static c:I
+.field public static c_I:I
 
-.field public static d:I
+.field public static d_I:I
 
-.field public static e:I
+.field public static e_I:I
 
-.field public static f:I
+.field public static f_I:I
 
-.field public static g:I
+.field public static g_I:I
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public a_String:Ljava/lang/String;
 
 
 # direct methods
@@ -45,7 +45,7 @@
     :goto_0
     invoke-direct {p0, p1, p2, p3}, Ljavax/microedition/lcdui/Command;-><init>(Ljava/lang/String;II)V
 
-    iput-object p4, p0, Lbf;->a:Ljava/lang/String;
+    iput-object p4, p0, Lbf;->a_String:Ljava/lang/String;
 
     return-void
 

@@ -3,7 +3,7 @@
 
 
 # static fields
-.field public static a:Z
+.field public static a_Z:Z
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lan;->a:Z
+    sput-boolean v0, Lan;->a_Z:Z
 
     return-void
 .end method
@@ -25,7 +25,7 @@
     return-void
 .end method
 
-.method private static a(Lal;[BII)I
+.method private static a_I(Lal;[BII)I
     .locals 11
 
     const/4 v2, 0x0
@@ -51,11 +51,11 @@
 
     invoke-direct {v5, p0}, Laf;-><init>(Lal;)V
 
-    invoke-virtual {v5}, Lah;->b()I
+    invoke-virtual {v5}, Lah;->b_I()I
 
     move-result v6
 
-    invoke-virtual {v5, p3}, Lah;->a(I)V
+    invoke-virtual {v5, p3}, Lah;->a_V(I)V
 
     if-ge v4, v3, :cond_3
 
@@ -65,7 +65,7 @@
 
     int-to-long v7, v1
 
-    invoke-interface {p0, v7, v8}, Lal;->a(J)Ljava/io/OutputStream;
+    invoke-interface {p0, v7, v8}, Lal;->a_OutputStream(J)Ljava/io/OutputStream;
 
     move-result-object v1
 
@@ -95,12 +95,12 @@
 
     int-to-long v0, v0
 
-    invoke-interface {p0, v0, v1}, Lal;->a(J)V
+    invoke-interface {p0, v0, v1}, Lal;->a_V(J)V
 
     :goto_2
     int-to-long v0, p2
 
-    invoke-interface {p0, v0, v1}, Lal;->a(J)Ljava/io/OutputStream;
+    invoke-interface {p0, v0, v1}, Lal;->a_OutputStream(J)Ljava/io/OutputStream;
 
     move-result-object v0
 
@@ -145,14 +145,14 @@
 
     int-to-long v8, v6
 
-    invoke-interface {p0, v8, v9}, Lal;->a(J)Ljava/io/OutputStream;
+    invoke-interface {p0, v8, v9}, Lal;->a_OutputStream(J)Ljava/io/OutputStream;
 
     move-result-object v8
 
     :goto_3
     if-lez v1, :cond_4
 
-    invoke-static {v1, v10}, Lbz;->b(II)I
+    invoke-static {v1, v10}, Lbz;->b_I(II)I
 
     move-result v9
 
@@ -170,19 +170,19 @@
 
     add-int/2addr v1, p3
 
-    invoke-virtual {v5, v1}, Lah;->a(I)V
+    invoke-virtual {v5, v1}, Lah;->a_V(I)V
 
     invoke-virtual {v5, v7}, Lah;->read([B)I
 
     move-result v1
 
-    invoke-virtual {v5}, Lah;->a()I
+    invoke-virtual {v5}, Lah;->a_I()I
 
     move-result v8
 
     if-le v8, v6, :cond_6
 
-    invoke-virtual {v5}, Lah;->a()I
+    invoke-virtual {v5}, Lah;->a_I()I
 
     move-result v8
 
@@ -199,7 +199,7 @@
 
     int-to-long v8, v8
 
-    invoke-interface {p0, v8, v9}, Lal;->a(J)Ljava/io/OutputStream;
+    invoke-interface {p0, v8, v9}, Lal;->a_OutputStream(J)Ljava/io/OutputStream;
 
     move-result-object v8
 
@@ -222,7 +222,7 @@
     goto :goto_2
 .end method
 
-.method public static a(Ljava/io/InputStream;)I
+.method public static a_I(Ljava/io/InputStream;)I
     .locals 2
 
     invoke-virtual {p0}, Ljava/io/InputStream;->read()I
@@ -264,15 +264,15 @@
     return v0
 .end method
 
-.method public static a(Lal;)Lal;
+.method public static a_al(Lal;)Lal;
     .locals 2
 
     :try_start_0
-    invoke-interface {p0}, Lal;->b()J
+    invoke-interface {p0}, Lal;->b_J()J
 
     move-result-wide v0
 
-    invoke-interface {p0, v0, v1}, Lal;->a(J)V
+    invoke-interface {p0, v0, v1}, Lal;->a_V(J)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -286,11 +286,11 @@
 
     const/4 v0, 0x0
 
-    invoke-interface {p0}, Lal;->c()Ljava/lang/String;
+    invoke-interface {p0}, Lal;->c_String()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lak;->a(Ljava/lang/String;Ljava/lang/String;)Ljavax/microedition/io/Connection;
+    invoke-static {v0, v1}, Lak;->a_Connection(Ljava/lang/String;Ljava/lang/String;)Ljavax/microedition/io/Connection;
 
     move-result-object v0
 
@@ -301,7 +301,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Lal;Lai;Laq;Z)Lal;
+.method public static a_al(Lal;Lai;Laq;Z)Lal;
     .locals 12
 
     const-wide/16 v10, 0x0
@@ -316,25 +316,25 @@
 
     invoke-direct {v3}, Ljava/util/Vector;-><init>()V
 
-    invoke-virtual {p1, v3}, Lai;->a(Ljava/util/Vector;)V
+    invoke-virtual {p1, v3}, Lai;->a_V(Ljava/util/Vector;)V
 
     if-eqz p3, :cond_7
 
-    sget-boolean v0, Lan;->a:Z
+    sget-boolean v0, Lan;->a_Z:Z
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {p1}, Lai;->c()I
+    invoke-virtual {p1}, Lai;->c_I()I
 
     move-result v0
 
-    invoke-virtual {p1}, Lai;->b()I
+    invoke-virtual {p1}, Lai;->b_I()I
 
     move-result v1
 
     if-ge v0, v1, :cond_2
 
-    invoke-virtual {p1}, Lai;->a()Lah;
+    invoke-virtual {p1}, Lai;->a_ah()Lah;
 
     move-result-object v0
 
@@ -342,7 +342,7 @@
 
     if-eqz p2, :cond_0
 
-    invoke-interface {p2, v10, v11}, Laq;->b(J)V
+    invoke-interface {p2, v10, v11}, Laq;->b_V(J)V
 
     invoke-virtual {v3}, Ljava/util/Vector;->size()I
 
@@ -350,12 +350,12 @@
 
     int-to-long v0, v0
 
-    invoke-interface {p2, v0, v1}, Laq;->a(J)V
+    invoke-interface {p2, v0, v1}, Laq;->a_V(J)V
 
-    invoke-interface {p2}, Laq;->a()V
+    invoke-interface {p2}, Laq;->a_V()V
 
     :cond_0
-    invoke-static {p0}, Lan;->a(Lal;)Lal;
+    invoke-static {p0}, Lan;->a_al(Lal;)Lal;
 
     move-result-object p0
 
@@ -374,25 +374,25 @@
 
     check-cast v0, Lai;
 
-    invoke-virtual {v0}, Lai;->a()[B
+    invoke-virtual {v0}, Lai;->a_Bs()[B
 
     move-result-object v4
 
-    invoke-virtual {v0}, Lai;->d()I
+    invoke-virtual {v0}, Lai;->d_I()I
 
     move-result v5
 
-    invoke-virtual {v0}, Lai;->e()I
+    invoke-virtual {v0}, Lai;->e_I()I
 
     move-result v0
 
-    invoke-static {p0, v4, v5, v0}, Lan;->a(Lal;[BII)I
+    invoke-static {p0, v4, v5, v0}, Lan;->a_I(Lal;[BII)I
 
     if-eqz p2, :cond_1
 
-    invoke-interface {p2, v8}, Laq;->a(I)V
+    invoke-interface {p2, v8}, Laq;->a_V(I)V
 
-    invoke-interface {p2}, Laq;->a()V
+    invoke-interface {p2}, Laq;->a_V()V
 
     :cond_1
     add-int/lit8 v0, v1, 0x1
@@ -402,41 +402,41 @@
     goto :goto_0
 
     :cond_2
-    invoke-interface {p0}, Lal;->b()Ljava/lang/String;
+    invoke-interface {p0}, Lal;->b_String()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v1, v8}, Lak;->a(Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v1, v8}, Lak;->a_String(Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-static {v9, v4}, Lak;->a(Ljava/lang/String;Ljava/lang/String;)Ljavax/microedition/io/Connection;
+    invoke-static {v9, v4}, Lak;->a_Connection(Ljava/lang/String;Ljava/lang/String;)Ljavax/microedition/io/Connection;
 
     move-result-object v0
 
     check-cast v0, Lal;
 
-    invoke-interface {v0}, Lal;->a()V
+    invoke-interface {v0}, Lal;->a_V()V
 
-    invoke-interface {v0}, Lal;->a()Ljava/io/OutputStream;
+    invoke-interface {v0}, Lal;->a_OutputStream()Ljava/io/OutputStream;
 
     move-result-object v5
 
-    invoke-virtual {p1, v2}, Lai;->a(I)V
+    invoke-virtual {p1, v2}, Lai;->a_V(I)V
 
     if-eqz p2, :cond_3
 
-    invoke-interface {p2, v10, v11}, Laq;->b(J)V
+    invoke-interface {p2, v10, v11}, Laq;->b_V(J)V
 
-    invoke-virtual {p1}, Lai;->b()I
+    invoke-virtual {p1}, Lai;->b_I()I
 
     move-result v6
 
     int-to-long v6, v6
 
-    invoke-interface {p2, v6, v7}, Laq;->a(J)V
+    invoke-interface {p2, v6, v7}, Laq;->a_V(J)V
 
-    invoke-interface {p2}, Laq;->a()V
+    invoke-interface {p2}, Laq;->a_V()V
 
     :cond_3
     const/high16 v6, 0x1
@@ -459,9 +459,9 @@
 
     if-eqz p2, :cond_4
 
-    invoke-interface {p2, v7}, Laq;->a(I)V
+    invoke-interface {p2, v7}, Laq;->a_V(I)V
 
-    invoke-interface {p2}, Laq;->a()V
+    invoke-interface {p2}, Laq;->a_V()V
 
     goto :goto_1
 
@@ -470,25 +470,25 @@
 
     invoke-virtual {v5}, Ljava/io/OutputStream;->close()V
 
-    invoke-virtual {p1}, Lai;->a()Lah;
+    invoke-virtual {p1}, Lai;->a_ah()Lah;
 
     move-result-object v5
 
     invoke-virtual {v5}, Lah;->close()V
 
-    invoke-static {p0}, Lan;->a(Lal;)Lal;
+    invoke-static {p0}, Lan;->a_al(Lal;)Lal;
 
     move-result-object v5
 
-    invoke-interface {v5}, Lal;->a()Ljava/lang/String;
+    invoke-interface {v5}, Lal;->a_String()Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-interface {v5}, Lal;->b()V
+    invoke-interface {v5}, Lal;->b_V()V
 
     invoke-interface {v5}, Lal;->close()V
 
-    invoke-interface {v0, v6}, Lal;->a(Ljava/lang/String;)Z
+    invoke-interface {v0, v6}, Lal;->a_Z(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -496,18 +496,18 @@
 
     if-nez v5, :cond_6
 
-    invoke-static {v1, v6}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v6}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     const/4 v5, 0x4
 
-    invoke-static {v4, v0, v5, v9, v9}, Lbm;->a(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Runnable;Laq;)I
+    invoke-static {v4, v0, v5, v9, v9}, Lbm;->a_I(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Runnable;Laq;)I
 
     :cond_6
-    invoke-static {v4}, Lak;->a(Ljava/lang/String;)V
+    invoke-static {v4}, Lak;->a_V(Ljava/lang/String;)V
 
-    invoke-static {v1, v6}, Lak;->a(Ljava/lang/String;Ljava/lang/String;)Ljavax/microedition/io/Connection;
+    invoke-static {v1, v6}, Lak;->a_Connection(Ljava/lang/String;Ljava/lang/String;)Ljavax/microedition/io/Connection;
 
     move-result-object v0
 
@@ -518,7 +518,7 @@
     :cond_7
     if-eqz p2, :cond_8
 
-    invoke-interface {p2, v10, v11}, Laq;->b(J)V
+    invoke-interface {p2, v10, v11}, Laq;->b_V(J)V
 
     invoke-virtual {v3}, Ljava/util/Vector;->size()I
 
@@ -526,9 +526,9 @@
 
     int-to-long v0, v0
 
-    invoke-interface {p2, v0, v1}, Laq;->a(J)V
+    invoke-interface {p2, v0, v1}, Laq;->a_V(J)V
 
-    invoke-interface {p2}, Laq;->a()V
+    invoke-interface {p2}, Laq;->a_V()V
 
     :cond_8
     :goto_2
@@ -544,7 +544,7 @@
 
     check-cast v0, Lai;
 
-    invoke-virtual {v0}, Lai;->b()Lah;
+    invoke-virtual {v0}, Lai;->b_ah()Lah;
 
     move-result-object v1
 
@@ -558,21 +558,21 @@
 
     check-cast v0, Laf;
 
-    invoke-virtual {v0}, Laf;->a()Lal;
+    invoke-virtual {v0}, Laf;->a_al()Lal;
 
     move-result-object v0
 
     invoke-virtual {v1}, Lah;->close()V
 
-    invoke-interface {v0}, Lal;->b()Ljava/lang/String;
+    invoke-interface {v0}, Lal;->b_String()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {v0}, Lal;->a()Ljava/lang/String;
+    invoke-interface {v0}, Lal;->a_String()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-static {v1, v4}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v4}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -580,20 +580,20 @@
 
     const/16 v4, 0xe
 
-    invoke-static {v4}, Lbz;->e(I)Ljava/lang/String;
+    invoke-static {v4}, Lbz;->e_String(I)Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-interface {p2, v4, v1}, Laq;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {p2, v4, v1}, Laq;->a_V(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-interface {p2, v8}, Laq;->a(I)V
+    invoke-interface {p2, v8}, Laq;->a_V(I)V
 
-    invoke-interface {p2}, Laq;->a()V
+    invoke-interface {p2}, Laq;->a_V()V
 
     :cond_9
-    invoke-static {v1}, Lak;->a(Ljava/lang/String;)V
+    invoke-static {v1}, Lak;->a_V(Ljava/lang/String;)V
 
-    invoke-interface {v0}, Lal;->b()V
+    invoke-interface {v0}, Lal;->b_V()V
 
     invoke-interface {v0}, Lal;->close()V
 
@@ -611,7 +611,7 @@
     return-object p0
 .end method
 
-.method public static a(Ljava/io/OutputStream;I)V
+.method public static a_V(Ljava/io/OutputStream;I)V
     .locals 1
 
     and-int/lit16 v0, p1, 0xff
@@ -637,7 +637,7 @@
     return-void
 .end method
 
-.method public static b(Ljava/io/InputStream;)I
+.method public static b_I(Ljava/io/InputStream;)I
     .locals 2
 
     invoke-virtual {p0}, Ljava/io/InputStream;->read()I
@@ -659,7 +659,7 @@
     return v0
 .end method
 
-.method public static b(Ljava/io/OutputStream;I)V
+.method public static b_V(Ljava/io/OutputStream;I)V
     .locals 1
 
     and-int/lit16 v0, p1, 0xff

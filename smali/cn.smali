@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public b:I
+.field public b_I:I
 
 
 # direct methods

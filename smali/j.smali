@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field public a:Le;
+.field public a_e:Le;
 
-.field public a:Ljava/io/OutputStream;
+.field public a_OutputStream:Ljava/io/OutputStream;
 
-.field public a:[B
+.field public a_Bs:[B
 
 
 # direct methods
@@ -26,59 +26,59 @@
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
-    iput-object p1, p0, Lj;->a:Ljava/io/OutputStream;
+    iput-object p1, p0, Lj;->a_OutputStream:Ljava/io/OutputStream;
 
     const/16 v0, 0x200
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lj;->a:[B
+    iput-object v0, p0, Lj;->a_Bs:[B
 
-    iput-object p2, p0, Lj;->a:Le;
+    iput-object p2, p0, Lj;->a_e:Le;
 
     return-void
 .end method
 
-.method private b()V
+.method private b_V()V
     .locals 4
 
     const/4 v3, 0x0
 
     :goto_0
-    iget-object v0, p0, Lj;->a:Le;
+    iget-object v0, p0, Lj;->a_e:Le;
 
-    invoke-virtual {v0}, Le;->b()Z
+    invoke-virtual {v0}, Le;->b_Z()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lj;->a:Le;
+    iget-object v0, p0, Lj;->a_e:Le;
 
-    iget-object v1, p0, Lj;->a:[B
+    iget-object v1, p0, Lj;->a_Bs:[B
 
-    iget-object v2, p0, Lj;->a:[B
+    iget-object v2, p0, Lj;->a_Bs:[B
 
     array-length v2, v2
 
-    invoke-virtual {v0, v1, v3, v2}, Le;->a([BII)I
+    invoke-virtual {v0, v1, v3, v2}, Le;->a_I([BII)I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    iget-object v1, p0, Lj;->a:Ljava/io/OutputStream;
+    iget-object v1, p0, Lj;->a_OutputStream:Ljava/io/OutputStream;
 
-    iget-object v2, p0, Lj;->a:[B
+    iget-object v2, p0, Lj;->a_Bs:[B
 
     invoke-virtual {v1, v2, v3, v0}, Ljava/io/OutputStream;->write([BII)V
 
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lj;->a:Le;
+    iget-object v0, p0, Lj;->a_e:Le;
 
-    invoke-virtual {v0}, Le;->b()Z
+    invoke-virtual {v0}, Le;->b_Z()Z
 
     move-result v0
 
@@ -98,64 +98,64 @@
 
 
 # virtual methods
-.method public final a()I
+.method public final a_I()I
     .locals 1
 
-    iget-object v0, p0, Lj;->a:Le;
+    iget-object v0, p0, Lj;->a_e:Le;
 
-    iget v0, v0, Le;->b:I
+    iget v0, v0, Le;->b_I:I
 
     return v0
 .end method
 
-.method public final a()V
+.method public final a_V()V
     .locals 4
 
     const/4 v3, 0x0
 
-    iget-object v0, p0, Lj;->a:Le;
+    iget-object v0, p0, Lj;->a_e:Le;
 
-    iget v1, v0, Le;->a:I
+    iget v1, v0, Le;->a_I:I
 
     or-int/lit8 v1, v1, 0xc
 
-    iput v1, v0, Le;->a:I
+    iput v1, v0, Le;->a_I:I
 
     :goto_0
-    iget-object v0, p0, Lj;->a:Le;
+    iget-object v0, p0, Lj;->a_e:Le;
 
-    invoke-virtual {v0}, Le;->a()Z
+    invoke-virtual {v0}, Le;->a_Z()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lj;->a:Le;
+    iget-object v0, p0, Lj;->a_e:Le;
 
-    iget-object v1, p0, Lj;->a:[B
+    iget-object v1, p0, Lj;->a_Bs:[B
 
-    iget-object v2, p0, Lj;->a:[B
+    iget-object v2, p0, Lj;->a_Bs:[B
 
     array-length v2, v2
 
-    invoke-virtual {v0, v1, v3, v2}, Le;->a([BII)I
+    invoke-virtual {v0, v1, v3, v2}, Le;->a_I([BII)I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    iget-object v1, p0, Lj;->a:Ljava/io/OutputStream;
+    iget-object v1, p0, Lj;->a_OutputStream:Ljava/io/OutputStream;
 
-    iget-object v2, p0, Lj;->a:[B
+    iget-object v2, p0, Lj;->a_Bs:[B
 
     invoke-virtual {v1, v2, v3, v0}, Ljava/io/OutputStream;->write([BII)V
 
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lj;->a:Le;
+    iget-object v0, p0, Lj;->a_e:Le;
 
-    invoke-virtual {v0}, Le;->a()Z
+    invoke-virtual {v0}, Le;->a_Z()Z
 
     move-result v0
 
@@ -170,7 +170,7 @@
     throw v0
 
     :cond_1
-    iget-object v0, p0, Lj;->a:Ljava/io/OutputStream;
+    iget-object v0, p0, Lj;->a_OutputStream:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
 
@@ -180,9 +180,9 @@
 .method public final close()V
     .locals 1
 
-    invoke-virtual {p0}, Lj;->a()V
+    invoke-virtual {p0}, Lj;->a_V()V
 
-    iget-object v0, p0, Lj;->a:Ljava/io/OutputStream;
+    iget-object v0, p0, Lj;->a_OutputStream:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
@@ -192,17 +192,17 @@
 .method public final flush()V
     .locals 2
 
-    iget-object v0, p0, Lj;->a:Le;
+    iget-object v0, p0, Lj;->a_e:Le;
 
-    iget v1, v0, Le;->a:I
+    iget v1, v0, Le;->a_I:I
 
     or-int/lit8 v1, v1, 0x4
 
-    iput v1, v0, Le;->a:I
+    iput v1, v0, Le;->a_I:I
 
-    invoke-direct {p0}, Lj;->b()V
+    invoke-direct {p0}, Lj;->b_V()V
 
-    iget-object v0, p0, Lj;->a:Ljava/io/OutputStream;
+    iget-object v0, p0, Lj;->a_OutputStream:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
 
@@ -230,9 +230,9 @@
 .method public final write([BII)V
     .locals 3
 
-    iget-object v0, p0, Lj;->a:Le;
+    iget-object v0, p0, Lj;->a_e:Le;
 
-    iget v1, v0, Le;->a:I
+    iget v1, v0, Le;->a_I:I
 
     and-int/lit8 v1, v1, 0x8
 
@@ -247,11 +247,11 @@
     throw v0
 
     :cond_0
-    iget-object v0, v0, Le;->a:Lg;
+    iget-object v0, v0, Le;->a_g:Lg;
 
-    iget v1, v0, Lg;->l:I
+    iget v1, v0, Lg;->l_I:I
 
-    iget v2, v0, Lg;->m:I
+    iget v2, v0, Lg;->m_I:I
 
     if-ge v1, v2, :cond_1
 
@@ -282,13 +282,13 @@
     throw v0
 
     :cond_3
-    iput-object p1, v0, Lg;->b:[B
+    iput-object p1, v0, Lg;->b_Bs:[B
 
-    iput p2, v0, Lg;->l:I
+    iput p2, v0, Lg;->l_I:I
 
-    iput v1, v0, Lg;->m:I
+    iput v1, v0, Lg;->m_I:I
 
-    invoke-direct {p0}, Lj;->b()V
+    invoke-direct {p0}, Lj;->b_V()V
 
     return-void
 .end method

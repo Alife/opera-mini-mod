@@ -6,89 +6,89 @@
 
 
 # virtual methods
-.method public abstract a()J
+.method public abstract a_J()J
 .end method
 
-.method public abstract a(Z)J
+.method public abstract a_J(Z)J
 .end method
 
-.method public abstract a()Ljava/io/DataInputStream;
+.method public abstract a_DataInputStream()Ljava/io/DataInputStream;
 .end method
 
-.method public abstract a()Ljava/io/DataOutputStream;
+.method public abstract a_DataOutputStream()Ljava/io/DataOutputStream;
 .end method
 
-.method public abstract a()Ljava/io/InputStream;
+.method public abstract a_InputStream()Ljava/io/InputStream;
 .end method
 
-.method public abstract a()Ljava/io/OutputStream;
+.method public abstract a_OutputStream()Ljava/io/OutputStream;
 .end method
 
-.method public abstract a(J)Ljava/io/OutputStream;
+.method public abstract a_OutputStream(J)Ljava/io/OutputStream;
 .end method
 
-.method public abstract a()Ljava/lang/String;
+.method public abstract a_String()Ljava/lang/String;
 .end method
 
-.method public abstract a()Ljava/util/Enumeration;
+.method public abstract a_Enumeration()Ljava/util/Enumeration;
 .end method
 
-.method public abstract a(Ljava/lang/String;Z)Ljava/util/Enumeration;
+.method public abstract a_Enumeration(Ljava/lang/String;Z)Ljava/util/Enumeration;
 .end method
 
-.method public abstract a()V
+.method public abstract a_V()V
 .end method
 
-.method public abstract a(J)V
+.method public abstract a_V(J)V
 .end method
 
-.method public abstract a(Z)V
+.method public abstract a_V(Z)V
 .end method
 
-.method public abstract a()Z
+.method public abstract a_Z()Z
 .end method
 
-.method public abstract a(Ljava/lang/String;)Z
+.method public abstract a_Z(Ljava/lang/String;)Z
 .end method
 
-.method public abstract b()J
+.method public abstract b_J()J
 .end method
 
-.method public abstract b()Ljava/lang/String;
+.method public abstract b_String()Ljava/lang/String;
 .end method
 
-.method public abstract b()V
+.method public abstract b_V()V
 .end method
 
-.method public abstract b(Z)V
+.method public abstract b_V(Z)V
 .end method
 
-.method public abstract b()Z
+.method public abstract b_Z()Z
 .end method
 
-.method public abstract c()Ljava/lang/String;
+.method public abstract c_String()Ljava/lang/String;
 .end method
 
-.method public abstract c()V
+.method public abstract c_V()V
 .end method
 
-.method public abstract c(Z)V
+.method public abstract c_V(Z)V
 .end method
 
-.method public abstract c()Z
+.method public abstract c_Z()Z
 .end method
 
 .method public abstract close()V
 .end method
 
-.method public abstract d()J
+.method public abstract d_J()J
 .end method
 
-.method public abstract d()Z
+.method public abstract d_Z()Z
 .end method
 
-.method public abstract e()J
+.method public abstract e_J()J
 .end method
 
-.method public abstract e()Z
+.method public abstract e_Z()Z
 .end method

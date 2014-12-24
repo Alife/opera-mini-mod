@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public final a:Laa;
+.field public final a_aa:Laa;
 
-.field public b:I
+.field public b_I:I
 
 
 # direct methods
@@ -18,49 +18,49 @@
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
-    iput-object p1, p0, Lab;->a:Laa;
+    iput-object p1, p0, Lab;->a_aa:Laa;
 
-    iput v0, p0, Lab;->a:I
+    iput v0, p0, Lab;->a_I:I
 
-    iput v0, p0, Lab;->b:I
+    iput v0, p0, Lab;->b_I:I
 
-    invoke-direct {p0}, Lab;->a()V
+    invoke-direct {p0}, Lab;->a_V()V
 
     return-void
 .end method
 
-.method private a()V
+.method private a_V()V
     .locals 3
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->a:[B
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lab;->a:Laa;
-
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->a_Bs:[B
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v1, p0, Lab;->a:Laa;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
-    iget-object v1, v1, Laa;->a:Lal;
+    if-nez v0, :cond_0
 
-    invoke-interface {v1}, Lal;->a()Ljava/io/InputStream;
+    iget-object v0, p0, Lab;->a_aa:Laa;
+
+    iget-object v1, p0, Lab;->a_aa:Laa;
+
+    iget-object v1, v1, Laa;->a_al:Lal;
+
+    invoke-interface {v1}, Lal;->a_InputStream()Ljava/io/InputStream;
 
     move-result-object v1
 
-    iput-object v1, v0, Laa;->b:Ljava/io/InputStream;
+    iput-object v1, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
-    iget v1, p0, Lab;->a:I
+    iget v1, p0, Lab;->a_I:I
 
     int-to-long v1, v1
 
@@ -75,17 +75,17 @@
 .method public final available()I
     .locals 2
 
-    invoke-direct {p0}, Lab;->a()V
+    invoke-direct {p0}, Lab;->a_V()V
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->available()I
 
@@ -95,11 +95,11 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget v0, v0, Laa;->a:I
+    iget v0, v0, Laa;->a_I:I
 
-    iget v1, p0, Lab;->a:I
+    iget v1, p0, Lab;->a_I:I
 
     sub-int/2addr v0, v1
 
@@ -111,26 +111,26 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iput-object v1, v0, Laa;->b:Ljava/io/InputStream;
+    iput-object v1, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     :cond_0
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iput-object v1, v0, Laa;->a:Ljava/io/InputStream;
+    iput-object v1, v0, Laa;->a_InputStream:Ljava/io/InputStream;
 
     return-void
 .end method
@@ -139,17 +139,17 @@
     .locals 1
 
     :try_start_0
-    invoke-direct {p0}, Lab;->a()V
+    invoke-direct {p0}, Lab;->a_V()V
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/InputStream;->mark(I)V
 
@@ -157,9 +157,9 @@
     return-void
 
     :cond_0
-    iget v0, p0, Lab;->a:I
+    iget v0, p0, Lab;->a_I:I
 
-    iput v0, p0, Lab;->b:I
+    iput v0, p0, Lab;->b_I:I
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -175,17 +175,17 @@
     .locals 1
 
     :try_start_0
-    invoke-direct {p0}, Lab;->a()V
+    invoke-direct {p0}, Lab;->a_V()V
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->markSupported()Z
     :try_end_0
@@ -212,17 +212,17 @@
 .method public final read()I
     .locals 3
 
-    invoke-direct {p0}, Lab;->a()V
+    invoke-direct {p0}, Lab;->a_V()V
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->read()I
 
@@ -232,11 +232,11 @@
     return v0
 
     :cond_0
-    iget v0, p0, Lab;->a:I
+    iget v0, p0, Lab;->a_I:I
 
-    iget-object v1, p0, Lab;->a:Laa;
+    iget-object v1, p0, Lab;->a_aa:Laa;
 
-    iget v1, v1, Laa;->a:I
+    iget v1, v1, Laa;->a_I:I
 
     if-lt v0, v1, :cond_1
 
@@ -245,15 +245,15 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->a:[B
+    iget-object v0, v0, Laa;->a_Bs:[B
 
-    iget v1, p0, Lab;->a:I
+    iget v1, p0, Lab;->a_I:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lab;->a:I
+    iput v2, p0, Lab;->a_I:I
 
     aget-byte v0, v0, v1
 
@@ -279,17 +279,17 @@
 .method public final read([BII)I
     .locals 2
 
-    invoke-direct {p0}, Lab;->a()V
+    invoke-direct {p0}, Lab;->a_V()V
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/InputStream;->read([BII)I
 
@@ -315,19 +315,19 @@
     move p3, v0
 
     :cond_2
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->a:[B
+    iget-object v0, v0, Laa;->a_Bs:[B
 
-    iget v1, p0, Lab;->a:I
+    iget v1, p0, Lab;->a_I:I
 
     invoke-static {v0, v1, p1, p2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget v0, p0, Lab;->a:I
+    iget v0, p0, Lab;->a_I:I
 
     add-int/2addr v0, p3
 
-    iput v0, p0, Lab;->a:I
+    iput v0, p0, Lab;->a_I:I
 
     goto :goto_0
 .end method
@@ -335,17 +335,17 @@
 .method public final reset()V
     .locals 1
 
-    invoke-direct {p0}, Lab;->a()V
+    invoke-direct {p0}, Lab;->a_V()V
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->reset()V
 
@@ -353,9 +353,9 @@
     return-void
 
     :cond_0
-    iget v0, p0, Lab;->b:I
+    iget v0, p0, Lab;->b_I:I
 
-    iput v0, p0, Lab;->a:I
+    iput v0, p0, Lab;->a_I:I
 
     goto :goto_0
 .end method
@@ -363,17 +363,17 @@
 .method public final skip(J)J
     .locals 2
 
-    invoke-direct {p0}, Lab;->a()V
+    invoke-direct {p0}, Lab;->a_V()V
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lab;->a:Laa;
+    iget-object v0, p0, Lab;->a_aa:Laa;
 
-    iget-object v0, v0, Laa;->b:Ljava/io/InputStream;
+    iget-object v0, v0, Laa;->b_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1, p2}, Ljava/io/InputStream;->skip(J)J
 
@@ -400,7 +400,7 @@
     int-to-long p1, v0
 
     :cond_1
-    iget v0, p0, Lab;->a:I
+    iget v0, p0, Lab;->a_I:I
 
     int-to-long v0, v0
 
@@ -408,7 +408,7 @@
 
     long-to-int v0, v0
 
-    iput v0, p0, Lab;->a:I
+    iput v0, p0, Lab;->a_I:I
 
     goto :goto_0
 .end method

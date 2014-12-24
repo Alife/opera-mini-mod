@@ -3,39 +3,39 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public a:J
+.field public a_J:J
 
-.field public a:Lcl;
+.field public a_cl:Lcl;
 
-.field public a:Lcm;
+.field public a_cm:Lcm;
 
-.field public a:[Lcm;
+.field public a_cms:[Lcm;
 
-.field public b:I
+.field public b_I:I
 
-.field public c:I
+.field public c_I:I
 
-.field public d:I
+.field public d_I:I
 
-.field public e:I
+.field public e_I:I
 
-.field public f:I
+.field public f_I:I
 
-.field public g:I
+.field public g_I:I
 
-.field public h:I
+.field public h_I:I
 
-.field public i:I
+.field public i_I:I
 
-.field public j:I
+.field public j_I:I
 
-.field public k:I
+.field public k_I:I
 
-.field public l:I
+.field public l_I:I
 
-.field public m:I
+.field public m_I:I
 
 
 # direct methods
@@ -48,11 +48,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcm;->a:Lcl;
+    iput-object p1, p0, Lcm;->a_cl:Lcl;
 
-    iput-object p0, p0, Lcm;->a:Lcm;
+    iput-object p0, p0, Lcm;->a_cm:Lcm;
 
-    iget-boolean v0, p1, Lcl;->b:Z
+    iget-boolean v0, p1, Lcl;->b_Z:Z
 
     if-eqz v0, :cond_0
 
@@ -61,23 +61,23 @@
     :goto_0
     new-array v0, v0, [Lcm;
 
-    iput-object v0, p0, Lcm;->a:[Lcm;
+    iput-object v0, p0, Lcm;->a_cms:[Lcm;
 
-    iput v1, p0, Lcm;->l:I
+    iput v1, p0, Lcm;->l_I:I
 
-    iput v1, p0, Lcm;->m:I
+    iput v1, p0, Lcm;->m_I:I
 
     const-wide/32 v0, 0x7fffffff
 
-    iput-wide v0, p0, Lcm;->a:J
+    iput-wide v0, p0, Lcm;->a_J:J
 
-    iput v2, p0, Lcm;->a:I
+    iput v2, p0, Lcm;->a_I:I
 
-    iput v2, p0, Lcm;->b:I
+    iput v2, p0, Lcm;->b_I:I
 
-    iput v2, p0, Lcm;->c:I
+    iput v2, p0, Lcm;->c_I:I
 
-    iput v2, p0, Lcm;->d:I
+    iput v2, p0, Lcm;->d_I:I
 
     return-void
 
@@ -92,15 +92,15 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iget-object v0, p1, Lcm;->a:Lcl;
+    iget-object v0, p1, Lcm;->a_cl:Lcl;
 
-    iput-object v0, p0, Lcm;->a:Lcl;
+    iput-object v0, p0, Lcm;->a_cl:Lcl;
 
-    iput-object p1, p0, Lcm;->a:Lcm;
+    iput-object p1, p0, Lcm;->a_cm:Lcm;
 
-    iget-object v0, p0, Lcm;->a:Lcl;
+    iget-object v0, p0, Lcm;->a_cl:Lcl;
 
-    iget-boolean v0, v0, Lcl;->b:Z
+    iget-boolean v0, v0, Lcl;->b_Z:Z
 
     if-eqz v0, :cond_1
 
@@ -109,42 +109,42 @@
     :goto_0
     new-array v0, v0, [Lcm;
 
-    iput-object v0, p0, Lcm;->a:[Lcm;
+    iput-object v0, p0, Lcm;->a_cms:[Lcm;
 
-    iput p2, p0, Lcm;->l:I
+    iput p2, p0, Lcm;->l_I:I
 
-    iput p3, p0, Lcm;->m:I
+    iput p3, p0, Lcm;->m_I:I
 
-    iget-object v0, p0, Lcm;->a:Lcl;
+    iget-object v0, p0, Lcm;->a_cl:Lcl;
 
-    iget v1, v0, Lcl;->c:I
+    iget v1, v0, Lcl;->c_I:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, v0, Lcl;->c:I
+    iput v1, v0, Lcl;->c_I:I
 
-    iget-object v0, p0, Lcm;->a:Lcl;
+    iget-object v0, p0, Lcm;->a_cl:Lcl;
 
-    iget v0, v0, Lcl;->a:I
+    iget v0, v0, Lcl;->a_I:I
 
     if-ne p3, v0, :cond_0
 
-    iget-object v0, p0, Lcm;->a:Lcl;
+    iget-object v0, p0, Lcm;->a_cl:Lcl;
 
-    iget v1, v0, Lcl;->b:I
+    iget v1, v0, Lcl;->b_I:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, v0, Lcl;->b:I
+    iput v1, v0, Lcl;->b_I:I
 
     :cond_0
-    iget v0, p1, Lcm;->k:I
+    iget v0, p1, Lcm;->k_I:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p1, Lcm;->k:I
+    iput v0, p1, Lcm;->k_I:I
 
-    iget-object v0, p1, Lcm;->a:[Lcm;
+    iget-object v0, p1, Lcm;->a_cms:[Lcm;
 
     aput-object p0, v0, p2
 
@@ -156,7 +156,7 @@
 
     shr-int/lit8 v1, v0, 0x1
 
-    iget v2, p1, Lcm;->a:I
+    iget v2, p1, Lcm;->a_I:I
 
     and-int/lit8 v0, p2, 0x1
 
@@ -167,9 +167,9 @@
     :goto_1
     add-int/2addr v0, v2
 
-    iput v0, p0, Lcm;->a:I
+    iput v0, p0, Lcm;->a_I:I
 
-    iget v2, p1, Lcm;->b:I
+    iget v2, p1, Lcm;->b_I:I
 
     and-int/lit8 v0, p2, 0x2
 
@@ -180,9 +180,9 @@
     :goto_2
     add-int/2addr v0, v2
 
-    iput v0, p0, Lcm;->b:I
+    iput v0, p0, Lcm;->b_I:I
 
-    iget v2, p1, Lcm;->c:I
+    iget v2, p1, Lcm;->c_I:I
 
     and-int/lit8 v0, p2, 0x4
 
@@ -193,9 +193,9 @@
     :goto_3
     add-int/2addr v0, v2
 
-    iput v0, p0, Lcm;->c:I
+    iput v0, p0, Lcm;->c_I:I
 
-    iget v0, p1, Lcm;->d:I
+    iget v0, p1, Lcm;->d_I:I
 
     and-int/lit8 v2, p2, 0x8
 
@@ -204,7 +204,7 @@
     :goto_4
     add-int/2addr v0, v1
 
-    iput v0, p0, Lcm;->d:I
+    iput v0, p0, Lcm;->d_I:I
 
     return-void
 
@@ -234,121 +234,121 @@
     goto :goto_4
 .end method
 
-.method private c()V
+.method private c_V()V
     .locals 4
 
     const/4 v3, 0x0
 
-    iget-object v0, p0, Lcm;->a:Lcm;
+    iget-object v0, p0, Lcm;->a_cm:Lcm;
 
-    iget v1, v0, Lcm;->k:I
+    iget v1, v0, Lcm;->k_I:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iput v1, v0, Lcm;->k:I
+    iput v1, v0, Lcm;->k_I:I
 
-    iget-object v0, p0, Lcm;->a:Lcm;
+    iget-object v0, p0, Lcm;->a_cm:Lcm;
 
-    iget v1, v0, Lcm;->e:I
+    iget v1, v0, Lcm;->e_I:I
 
-    iget v2, p0, Lcm;->e:I
-
-    add-int/2addr v1, v2
-
-    iput v1, v0, Lcm;->e:I
-
-    iget-object v0, p0, Lcm;->a:Lcm;
-
-    iget v1, v0, Lcm;->f:I
-
-    iget v2, p0, Lcm;->f:I
+    iget v2, p0, Lcm;->e_I:I
 
     add-int/2addr v1, v2
 
-    iput v1, v0, Lcm;->f:I
+    iput v1, v0, Lcm;->e_I:I
 
-    iget-object v0, p0, Lcm;->a:Lcm;
+    iget-object v0, p0, Lcm;->a_cm:Lcm;
 
-    iget v1, v0, Lcm;->g:I
+    iget v1, v0, Lcm;->f_I:I
 
-    iget v2, p0, Lcm;->g:I
-
-    add-int/2addr v1, v2
-
-    iput v1, v0, Lcm;->g:I
-
-    iget-object v0, p0, Lcm;->a:Lcm;
-
-    iget v1, v0, Lcm;->h:I
-
-    iget v2, p0, Lcm;->h:I
+    iget v2, p0, Lcm;->f_I:I
 
     add-int/2addr v1, v2
 
-    iput v1, v0, Lcm;->h:I
+    iput v1, v0, Lcm;->f_I:I
 
-    iget-object v0, p0, Lcm;->a:Lcm;
+    iget-object v0, p0, Lcm;->a_cm:Lcm;
 
-    iget v1, v0, Lcm;->i:I
+    iget v1, v0, Lcm;->g_I:I
 
-    iget v2, p0, Lcm;->i:I
+    iget v2, p0, Lcm;->g_I:I
 
     add-int/2addr v1, v2
 
-    iput v1, v0, Lcm;->i:I
+    iput v1, v0, Lcm;->g_I:I
 
-    iget-object v0, p0, Lcm;->a:Lcm;
+    iget-object v0, p0, Lcm;->a_cm:Lcm;
 
-    iget-object v0, v0, Lcm;->a:[Lcm;
+    iget v1, v0, Lcm;->h_I:I
 
-    iget v1, p0, Lcm;->l:I
+    iget v2, p0, Lcm;->h_I:I
+
+    add-int/2addr v1, v2
+
+    iput v1, v0, Lcm;->h_I:I
+
+    iget-object v0, p0, Lcm;->a_cm:Lcm;
+
+    iget v1, v0, Lcm;->i_I:I
+
+    iget v2, p0, Lcm;->i_I:I
+
+    add-int/2addr v1, v2
+
+    iput v1, v0, Lcm;->i_I:I
+
+    iget-object v0, p0, Lcm;->a_cm:Lcm;
+
+    iget-object v0, v0, Lcm;->a_cms:[Lcm;
+
+    iget v1, p0, Lcm;->l_I:I
 
     aput-object v3, v0, v1
 
-    iget-object v0, p0, Lcm;->a:Lcl;
+    iget-object v0, p0, Lcm;->a_cl:Lcl;
 
-    iget v1, v0, Lcl;->c:I
+    iget v1, v0, Lcl;->c_I:I
 
     add-int/lit8 v1, v1, -0x1
 
-    iput v1, v0, Lcl;->c:I
+    iput v1, v0, Lcl;->c_I:I
 
-    iput-object v3, p0, Lcm;->a:Lcl;
+    iput-object v3, p0, Lcm;->a_cl:Lcl;
 
-    iput-object v3, p0, Lcm;->a:Lcm;
+    iput-object v3, p0, Lcm;->a_cm:Lcm;
 
     return-void
 .end method
 
 
 # virtual methods
-.method final a(JJ)J
+.method final a_J(JJ)J
     .locals 2
 
-    iget v0, p0, Lcm;->k:I
+    iget v0, p0, Lcm;->k_I:I
 
     if-eqz v0, :cond_1
 
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, Lcm;->a:[Lcm;
+    iget-object v1, p0, Lcm;->a_cms:[Lcm;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_1
 
-    iget-object v1, p0, Lcm;->a:[Lcm;
+    iget-object v1, p0, Lcm;->a_cms:[Lcm;
 
     aget-object v1, v1, v0
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcm;->a:[Lcm;
+    iget-object v1, p0, Lcm;->a_cms:[Lcm;
 
     aget-object v1, v1, v0
 
-    invoke-virtual {v1, p1, p2, p3, p4}, Lcm;->a(JJ)J
+    invoke-virtual {v1, p1, p2, p3, p4}, Lcm;->a_J(JJ)J
 
     move-result-wide p3
 
@@ -358,70 +358,70 @@
     goto :goto_0
 
     :cond_1
-    iget-wide v0, p0, Lcm;->a:J
+    iget-wide v0, p0, Lcm;->a_J:J
 
     cmp-long v0, v0, p1
 
     if-gtz v0, :cond_3
 
-    invoke-direct {p0}, Lcm;->c()V
+    invoke-direct {p0}, Lcm;->c_V()V
 
     :cond_2
     :goto_1
     return-wide p3
 
     :cond_3
-    iget v0, p0, Lcm;->e:I
+    iget v0, p0, Lcm;->e_I:I
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcm;->a:Lcl;
+    iget-object v0, p0, Lcm;->a_cl:Lcl;
 
-    iget v1, v0, Lcl;->b:I
+    iget v1, v0, Lcl;->b_I:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, v0, Lcl;->b:I
+    iput v1, v0, Lcl;->b_I:I
 
     :cond_4
-    iget-wide v0, p0, Lcm;->a:J
+    iget-wide v0, p0, Lcm;->a_J:J
 
     cmp-long v0, v0, p3
 
     if-gez v0, :cond_2
 
-    iget-wide p3, p0, Lcm;->a:J
+    iget-wide p3, p0, Lcm;->a_J:J
 
     goto :goto_1
 .end method
 
-.method final a()V
+.method final a_V()V
     .locals 2
 
-    iget v0, p0, Lcm;->k:I
+    iget v0, p0, Lcm;->k_I:I
 
     if-eqz v0, :cond_1
 
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, Lcm;->a:[Lcm;
+    iget-object v1, p0, Lcm;->a_cms:[Lcm;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_1
 
-    iget-object v1, p0, Lcm;->a:[Lcm;
+    iget-object v1, p0, Lcm;->a_cms:[Lcm;
 
     aget-object v1, v1, v0
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcm;->a:[Lcm;
+    iget-object v1, p0, Lcm;->a_cms:[Lcm;
 
     aget-object v1, v1, v0
 
-    invoke-virtual {v1}, Lcm;->a()V
+    invoke-virtual {v1}, Lcm;->a_V()V
 
     :cond_0
     add-int/lit8 v0, v0, 0x1
@@ -429,24 +429,24 @@
     goto :goto_0
 
     :cond_1
-    iget v0, p0, Lcm;->m:I
+    iget v0, p0, Lcm;->m_I:I
 
-    iget-object v1, p0, Lcm;->a:Lcl;
+    iget-object v1, p0, Lcm;->a_cl:Lcl;
 
-    iget v1, v1, Lcl;->a:I
+    iget v1, v1, Lcl;->a_I:I
 
     if-ne v0, v1, :cond_2
 
-    invoke-direct {p0}, Lcm;->c()V
+    invoke-direct {p0}, Lcm;->c_V()V
 
     :cond_2
     return-void
 .end method
 
-.method final a(IIIILcn;)V
+.method final a_V(IIIILcn;)V
     .locals 7
 
-    iget v0, p0, Lcm;->k:I
+    iget v0, p0, Lcm;->k_I:I
 
     if-eqz v0, :cond_1
 
@@ -455,19 +455,19 @@
     move v6, v0
 
     :goto_0
-    iget-object v0, p0, Lcm;->a:[Lcm;
+    iget-object v0, p0, Lcm;->a_cms:[Lcm;
 
     array-length v0, v0
 
     if-ge v6, v0, :cond_1
 
-    iget-object v0, p0, Lcm;->a:[Lcm;
+    iget-object v0, p0, Lcm;->a_cms:[Lcm;
 
     aget-object v0, v0, v6
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcm;->a:[Lcm;
+    iget-object v0, p0, Lcm;->a_cms:[Lcm;
 
     aget-object v0, v0, v6
 
@@ -481,7 +481,7 @@
 
     move-object v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Lcm;->a(IIIILcn;)V
+    invoke-virtual/range {v0 .. v5}, Lcm;->a_V(IIIILcn;)V
 
     :cond_0
     add-int/lit8 v0, v6, 0x1
@@ -491,25 +491,25 @@
     goto :goto_0
 
     :cond_1
-    iget v0, p0, Lcm;->e:I
+    iget v0, p0, Lcm;->e_I:I
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcm;->a:Lcl;
+    iget-object v0, p0, Lcm;->a_cl:Lcl;
 
-    iget-object v0, v0, Lcl;->a:[I
+    iget-object v0, v0, Lcl;->a_Is:[I
 
-    iget v1, p0, Lcm;->j:I
+    iget v1, p0, Lcm;->j_I:I
 
     aget v0, v0, v1
 
-    iget-object v1, p0, Lcm;->a:Lcl;
+    iget-object v1, p0, Lcm;->a_cl:Lcl;
 
-    iget-boolean v1, v1, Lcl;->b:Z
+    iget-boolean v1, v1, Lcl;->b_Z:Z
 
     if-eqz v1, :cond_3
 
-    sget-object v1, Lck;->a:[I
+    sget-object v1, Lck;->a_Is:[I
 
     shr-int/lit8 v2, v0, 0x10
 
@@ -521,7 +521,7 @@
 
     aget v1, v1, v2
 
-    sget-object v2, Lck;->a:[I
+    sget-object v2, Lck;->a_Is:[I
 
     shr-int/lit8 v3, v0, 0x8
 
@@ -535,7 +535,7 @@
 
     add-int/2addr v1, v2
 
-    sget-object v2, Lck;->a:[I
+    sget-object v2, Lck;->a_Is:[I
 
     and-int/lit16 v3, v0, 0xff
 
@@ -547,7 +547,7 @@
 
     add-int/2addr v1, v2
 
-    sget-object v2, Lck;->a:[I
+    sget-object v2, Lck;->a_Is:[I
 
     ushr-int/lit8 v0, v0, 0x18
 
@@ -560,21 +560,21 @@
     add-int/2addr v0, v1
 
     :goto_1
-    iget v1, p5, Lcn;->a:I
+    iget v1, p5, Lcn;->a_I:I
 
     if-ge v0, v1, :cond_2
 
-    iput v0, p5, Lcn;->a:I
+    iput v0, p5, Lcn;->a_I:I
 
-    iget v0, p0, Lcm;->j:I
+    iget v0, p0, Lcm;->j_I:I
 
-    iput v0, p5, Lcn;->b:I
+    iput v0, p5, Lcn;->b_I:I
 
     :cond_2
     return-void
 
     :cond_3
-    sget-object v1, Lck;->a:[I
+    sget-object v1, Lck;->a_Is:[I
 
     shr-int/lit8 v2, v0, 0x10
 
@@ -586,7 +586,7 @@
 
     aget v1, v1, v2
 
-    sget-object v2, Lck;->a:[I
+    sget-object v2, Lck;->a_Is:[I
 
     shr-int/lit8 v3, v0, 0x8
 
@@ -600,7 +600,7 @@
 
     add-int/2addr v1, v2
 
-    sget-object v2, Lck;->a:[I
+    sget-object v2, Lck;->a_Is:[I
 
     and-int/lit16 v0, v0, 0xff
 
@@ -615,33 +615,33 @@
     goto :goto_1
 .end method
 
-.method final b()V
+.method final b_V()V
     .locals 6
 
-    iget v0, p0, Lcm;->k:I
+    iget v0, p0, Lcm;->k_I:I
 
     if-eqz v0, :cond_1
 
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, Lcm;->a:[Lcm;
+    iget-object v1, p0, Lcm;->a_cms:[Lcm;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_1
 
-    iget-object v1, p0, Lcm;->a:[Lcm;
+    iget-object v1, p0, Lcm;->a_cms:[Lcm;
 
     aget-object v1, v1, v0
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcm;->a:[Lcm;
+    iget-object v1, p0, Lcm;->a_cms:[Lcm;
 
     aget-object v1, v1, v0
 
-    invoke-virtual {v1}, Lcm;->b()V
+    invoke-virtual {v1}, Lcm;->b_V()V
 
     :cond_0
     add-int/lit8 v0, v0, 0x1
@@ -649,65 +649,65 @@
     goto :goto_0
 
     :cond_1
-    iget v0, p0, Lcm;->e:I
+    iget v0, p0, Lcm;->e_I:I
 
     if-eqz v0, :cond_2
 
-    iget v0, p0, Lcm;->f:I
+    iget v0, p0, Lcm;->f_I:I
 
-    iget v1, p0, Lcm;->e:I
+    iget v1, p0, Lcm;->e_I:I
 
     shr-int/lit8 v1, v1, 0x1
 
     add-int/2addr v0, v1
 
-    iget v1, p0, Lcm;->e:I
+    iget v1, p0, Lcm;->e_I:I
 
     div-int/2addr v0, v1
 
-    iget v1, p0, Lcm;->g:I
+    iget v1, p0, Lcm;->g_I:I
 
-    iget v2, p0, Lcm;->e:I
+    iget v2, p0, Lcm;->e_I:I
 
     shr-int/lit8 v2, v2, 0x1
 
     add-int/2addr v1, v2
 
-    iget v2, p0, Lcm;->e:I
+    iget v2, p0, Lcm;->e_I:I
 
     div-int/2addr v1, v2
 
-    iget v2, p0, Lcm;->h:I
+    iget v2, p0, Lcm;->h_I:I
 
-    iget v3, p0, Lcm;->e:I
+    iget v3, p0, Lcm;->e_I:I
 
     shr-int/lit8 v3, v3, 0x1
 
     add-int/2addr v2, v3
 
-    iget v3, p0, Lcm;->e:I
+    iget v3, p0, Lcm;->e_I:I
 
     div-int/2addr v2, v3
 
-    iget v3, p0, Lcm;->i:I
+    iget v3, p0, Lcm;->i_I:I
 
-    iget v4, p0, Lcm;->e:I
+    iget v4, p0, Lcm;->e_I:I
 
     shr-int/lit8 v4, v4, 0x1
 
     add-int/2addr v3, v4
 
-    iget v4, p0, Lcm;->e:I
+    iget v4, p0, Lcm;->e_I:I
 
     div-int/2addr v3, v4
 
-    iget-object v4, p0, Lcm;->a:Lcl;
+    iget-object v4, p0, Lcm;->a_cl:Lcl;
 
-    iget-object v4, v4, Lcl;->a:[I
+    iget-object v4, v4, Lcl;->a_Is:[I
 
-    iget-object v5, p0, Lcm;->a:Lcl;
+    iget-object v5, p0, Lcm;->a_cl:Lcl;
 
-    iget v5, v5, Lcl;->b:I
+    iget v5, v5, Lcl;->b_I:I
 
     and-int/lit16 v3, v3, 0xff
 
@@ -731,15 +731,15 @@
 
     aput v0, v4, v5
 
-    iget-object v0, p0, Lcm;->a:Lcl;
+    iget-object v0, p0, Lcm;->a_cl:Lcl;
 
-    iget v1, v0, Lcl;->b:I
+    iget v1, v0, Lcl;->b_I:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, v0, Lcl;->b:I
+    iput v2, v0, Lcl;->b_I:I
 
-    iput v1, p0, Lcm;->j:I
+    iput v1, p0, Lcm;->j_I:I
 
     :cond_2
     return-void
@@ -754,7 +754,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
-    iget-object v1, p0, Lcm;->a:Lcm;
+    iget-object v1, p0, Lcm;->a_cm:Lcm;
 
     if-ne v1, p0, :cond_0
 
@@ -767,7 +767,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    iget v1, p0, Lcm;->m:I
+    iget v1, p0, Lcm;->m_I:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
@@ -775,19 +775,19 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget v1, p0, Lcm;->a:I
+    iget v1, p0, Lcm;->a_I:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    iget v1, p0, Lcm;->b:I
+    iget v1, p0, Lcm;->b_I:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    iget v1, p0, Lcm;->c:I
+    iget v1, p0, Lcm;->c_I:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 

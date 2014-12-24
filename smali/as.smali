@@ -3,7 +3,7 @@
 
 
 # static fields
-.field public static final a:I
+.field public static final a_I:I
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     move-result v0
 
-    sput v0, Las;->a:I
+    sput v0, Las;->a_I:I
 
     const/16 v0, 0x100
 
@@ -295,7 +295,7 @@
     return-void
 .end method
 
-.method private static a(C)C
+.method private static a_C(C)C
     .locals 1
 
     const/16 v0, 0x41
@@ -316,7 +316,7 @@
     return p0
 .end method
 
-.method private static a(IZ)C
+.method private static a_C(IZ)C
     .locals 1
 
     const/16 v0, 0x1a
@@ -347,7 +347,7 @@
     goto :goto_0
 .end method
 
-.method private static a(IIZ)I
+.method private static a_I(IIZ)I
     .locals 3
 
     if-eqz p2, :cond_0
@@ -389,7 +389,7 @@
     return v0
 .end method
 
-.method private static a(Ljava/lang/String;I)I
+.method private static a_I(Ljava/lang/String;I)I
     .locals 2
 
     :goto_0
@@ -427,7 +427,7 @@
     return p1
 .end method
 
-.method public static a(Ljava/lang/String;)Ljava/lang/String;
+.method public static a_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
     const/4 v1, 0x0
@@ -446,7 +446,7 @@
 
     if-ge v0, v3, :cond_1
 
-    invoke-static {p0, v0}, Las;->a(Ljava/lang/String;I)I
+    invoke-static {p0, v0}, Las;->a_I(Ljava/lang/String;I)I
 
     move-result v3
 
@@ -454,7 +454,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Las;->a(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, v1}, Las;->a_String(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -482,7 +482,7 @@
     return-object v0
 .end method
 
-.method private static a(Ljava/lang/String;I)Ljava/lang/String;
+.method private static a_String(Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
 
     const/16 v8, 0x7a
@@ -493,7 +493,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0}, Las;->a(Ljava/lang/String;)Z
+    invoke-static {p0}, Las;->a_Z(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -621,13 +621,13 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Las;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Las;->a_Z(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_c
 
-    invoke-static {v2}, Las;->a(Ljava/lang/StringBuffer;)Z
+    invoke-static {v2}, Las;->a_Z(Ljava/lang/StringBuffer;)Z
 
     move-result v0
 
@@ -636,13 +636,13 @@
     const/4 v0, 0x0
 
     :try_start_0
-    invoke-static {v2, v0}, Las;->a(Ljava/lang/StringBuffer;[Z)Ljava/lang/StringBuffer;
+    invoke-static {v2, v0}, Las;->a_StringBuffer(Ljava/lang/StringBuffer;[Z)Ljava/lang/StringBuffer;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
-    invoke-static {v0}, Las;->a(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
+    invoke-static {v0}, Las;->a_StringBuffer(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
 
     move-result-object v0
 
@@ -698,7 +698,7 @@
     goto :goto_4
 .end method
 
-.method private static a(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
+.method private static a_StringBuffer(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 3
 
     new-instance v1, Ljava/lang/StringBuffer;
@@ -718,7 +718,7 @@
 
     move-result v2
 
-    invoke-static {v2}, Las;->a(C)C
+    invoke-static {v2}, Las;->a_C(C)C
 
     move-result v2
 
@@ -732,7 +732,7 @@
     return-object v1
 .end method
 
-.method private static a(Ljava/lang/StringBuffer;[Z)Ljava/lang/StringBuffer;
+.method private static a_StringBuffer(Ljava/lang/StringBuffer;[Z)Ljava/lang/StringBuffer;
     .locals 19
 
     const/16 v1, 0x100
@@ -852,7 +852,7 @@
     goto :goto_4
 
     :cond_4
-    invoke-static {v5}, Las;->b(C)Z
+    invoke-static {v5}, Las;->b_Z(C)Z
 
     move-result v1
 
@@ -870,7 +870,7 @@
 
     move-result v1
 
-    invoke-static {v1}, Las;->a(C)Z
+    invoke-static {v1}, Las;->a_Z(C)Z
 
     move-result v7
 
@@ -878,13 +878,13 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    invoke-static {v5}, Las;->b(C)Z
+    invoke-static {v5}, Las;->b_Z(C)Z
 
     move-result v7
 
     if-eqz v7, :cond_5
 
-    invoke-static {v1}, Las;->a(C)Z
+    invoke-static {v1}, Las;->a_Z(C)Z
 
     move-result v7
 
@@ -1093,7 +1093,7 @@
 
     const/16 v17, 0x0
 
-    invoke-static/range {v16 .. v17}, Las;->a(IZ)C
+    invoke-static/range {v16 .. v17}, Las;->a_C(IZ)C
 
     move-result v16
 
@@ -1141,7 +1141,7 @@
     const/4 v1, 0x1
 
     :goto_f
-    invoke-static {v11, v1}, Las;->a(IZ)C
+    invoke-static {v11, v1}, Las;->a_C(IZ)C
 
     move-result v1
 
@@ -1155,7 +1155,7 @@
     const/4 v1, 0x1
 
     :goto_11
-    invoke-static {v6, v5, v1}, Las;->a(IIZ)I
+    invoke-static {v6, v5, v1}, Las;->a_I(IIZ)I
 
     move-result v6
 
@@ -1241,7 +1241,7 @@
     goto :goto_10
 .end method
 
-.method private static a(C)Z
+.method private static a_Z(C)Z
     .locals 1
 
     const v0, 0xdc00
@@ -1263,7 +1263,7 @@
     goto :goto_0
 .end method
 
-.method private static a(Ljava/lang/String;)Z
+.method private static a_Z(Ljava/lang/String;)Z
     .locals 4
 
     const/4 v1, 0x0
@@ -1299,7 +1299,7 @@
     goto :goto_1
 .end method
 
-.method private static a(Ljava/lang/StringBuffer;)Z
+.method private static a_Z(Ljava/lang/StringBuffer;)Z
     .locals 5
 
     const/4 v1, 0x0
@@ -1308,7 +1308,7 @@
 
     move-result v0
 
-    sget v2, Las;->a:I
+    sget v2, Las;->a_I:I
 
     if-ge v0, v2, :cond_0
 
@@ -1323,7 +1323,7 @@
     move v0, v1
 
     :goto_1
-    sget v3, Las;->a:I
+    sget v3, Las;->a_I:I
 
     if-ge v0, v3, :cond_2
 
@@ -1331,7 +1331,7 @@
 
     move-result v3
 
-    invoke-static {v3}, Las;->a(C)C
+    invoke-static {v3}, Las;->a_C(C)C
 
     move-result v3
 
@@ -1356,7 +1356,7 @@
     goto :goto_0
 .end method
 
-.method private static b(C)Z
+.method private static b_Z(C)Z
     .locals 1
 
     const v0, 0xd800

@@ -3,7 +3,7 @@
 
 
 # static fields
-.field public static a:Ljava/util/Hashtable;
+.field public static a_Hashtable:Ljava/util/Hashtable;
 
 
 # direct methods
@@ -14,7 +14,7 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lbb;->a:Ljava/util/Hashtable;
+    sput-object v0, Lbb;->a_Hashtable:Ljava/util/Hashtable;
 
     return-void
 .end method
@@ -27,12 +27,12 @@
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;)Ljava/lang/String;
+.method public static a_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     if-eqz p0, :cond_0
 
-    sget-object v0, Lbb;->a:Ljava/util/Hashtable;
+    sget-object v0, Lbb;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->containsKey(Ljava/lang/Object;)Z
 
@@ -40,7 +40,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lbb;->a:Ljava/util/Hashtable;
+    sget-object v0, Lbb;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -57,7 +57,7 @@
     goto :goto_0
 .end method
 
-.method private static a(Ljava/lang/String;)Ljava/util/Hashtable;
+.method private static a_Hashtable(Ljava/lang/String;)Ljava/util/Hashtable;
     .locals 8
 
     const/4 v7, 0x1
@@ -70,7 +70,7 @@
 
     const-string v0, "; "
 
-    invoke-static {p0, v0}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+    invoke-static {p0, v0}, Lcc;->a_Strings(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v4
 
@@ -87,7 +87,7 @@
 
     const-string v5, "="
 
-    invoke-static {v2, v5}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+    invoke-static {v2, v5}, Lcc;->a_Strings(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v2
 
@@ -95,7 +95,7 @@
 
     aget-object v5, v2, v1
 
-    invoke-static {v5}, Lcc;->b(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcc;->b_Z(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -126,24 +126,24 @@
     return-object v3
 .end method
 
-.method public static a()V
+.method public static a_V()V
     .locals 1
 
-    sget-object v0, Lbb;->a:Ljava/util/Hashtable;
+    sget-object v0, Lbb;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->clear()V
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;Ljava/lang/String;)V
+.method public static a_V(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
 
     if-eqz p0, :cond_7
 
     if-eqz p1, :cond_7
 
-    invoke-static {p1}, Lbb;->a(Ljava/lang/String;)Ljava/util/Hashtable;
+    invoke-static {p1}, Lbb;->a_Hashtable(Ljava/lang/String;)Ljava/util/Hashtable;
 
     move-result-object v2
 
@@ -151,11 +151,11 @@
 
     if-eqz v2, :cond_5
 
-    invoke-static {p0}, Lbb;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lbb;->a_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lbb;->a(Ljava/lang/String;)Ljava/util/Hashtable;
+    invoke-static {v0}, Lbb;->a_Hashtable(Ljava/lang/String;)Ljava/util/Hashtable;
 
     move-result-object v3
 
@@ -281,7 +281,7 @@
     move-result-object v0
 
     :cond_5
-    sget-object v1, Lbb;->a:Ljava/util/Hashtable;
+    sget-object v1, Lbb;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v1, p0}, Ljava/util/Hashtable;->containsKey(Ljava/lang/Object;)Z
 
@@ -289,14 +289,14 @@
 
     if-eqz v1, :cond_6
 
-    sget-object v1, Lbb;->a:Ljava/util/Hashtable;
+    sget-object v1, Lbb;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v1, p0}, Ljava/util/Hashtable;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_6
     if-eqz v0, :cond_7
 
-    sget-object v1, Lbb;->a:Ljava/util/Hashtable;
+    sget-object v1, Lbb;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v1, p0, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

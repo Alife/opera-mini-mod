@@ -3,13 +3,13 @@
 
 
 # static fields
-.field public static a:[I
+.field public static a_Is:[I
 
-.field public static b:[I
+.field public static b_Is:[I
 
 
 # instance fields
-.field public a:Lcl;
+.field public a_cl:Lcl;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lck;->a:[I
+    sput-object v0, Lck;->a_Is:[I
 
     const/16 v0, -0xff
 
@@ -31,7 +31,7 @@
 
     if-gt v0, v1, :cond_0
 
-    sget-object v1, Lck;->a:[I
+    sget-object v1, Lck;->a_Is:[I
 
     add-int/lit16 v2, v0, 0xff
 
@@ -46,14 +46,14 @@
     :cond_0
     new-array v0, v4, [I
 
-    sput-object v0, Lck;->b:[I
+    sput-object v0, Lck;->b_Is:[I
 
     const/4 v0, 0x0
 
     :goto_1
     if-ge v0, v4, :cond_1
 
-    sget-object v1, Lck;->b:[I
+    sget-object v1, Lck;->b_Is:[I
 
     const/4 v2, 0x1
 
@@ -92,45 +92,45 @@
 
     invoke-direct/range {v0 .. v6}, Lcl;-><init>(Ljavax/microedition/lcdui/Image;IIZZLaq;)V
 
-    iput-object v0, p0, Lck;->a:Lcl;
+    iput-object v0, p0, Lck;->a_cl:Lcl;
 
-    iget-object v0, p0, Lck;->a:Lcl;
+    iget-object v0, p0, Lck;->a_cl:Lcl;
 
-    invoke-virtual {v0}, Lcl;->a()V
+    invoke-virtual {v0}, Lcl;->a_V()V
 
-    iget-object v0, p0, Lck;->a:Lcl;
+    iget-object v0, p0, Lck;->a_cl:Lcl;
 
-    invoke-virtual {v0}, Lcl;->b()V
+    invoke-virtual {v0}, Lcl;->b_V()V
 
-    iget-object v0, p0, Lck;->a:Lcl;
+    iget-object v0, p0, Lck;->a_cl:Lcl;
 
-    iget v1, v0, Lcl;->b:I
+    iget v1, v0, Lcl;->b_I:I
 
     new-array v1, v1, [I
 
-    iput-object v1, v0, Lcl;->a:[I
+    iput-object v1, v0, Lcl;->a_Is:[I
 
     const/4 v1, 0x0
 
-    iput v1, v0, Lcl;->b:I
+    iput v1, v0, Lcl;->b_I:I
 
-    iget-object v0, v0, Lcl;->a:Lcm;
+    iget-object v0, v0, Lcl;->a_cm:Lcm;
 
-    invoke-virtual {v0}, Lcm;->b()V
+    invoke-virtual {v0}, Lcm;->b_V()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)I
+.method public final a_I(I)I
     .locals 10
 
     const/4 v6, 0x1
 
     const/4 v7, 0x0
 
-    iget-object v9, p0, Lck;->a:Lcl;
+    iget-object v9, p0, Lck;->a_cl:Lcl;
 
     shr-int/lit8 v0, p1, 0x10
 
@@ -144,21 +144,21 @@
 
     ushr-int/lit8 v4, p1, 0x18
 
-    iget-object v0, v9, Lcl;->a:Lcm;
+    iget-object v0, v9, Lcl;->a_cm:Lcm;
 
-    iget-boolean v5, v9, Lcl;->b:Z
+    iget-boolean v5, v9, Lcl;->b_Z:Z
 
     if-eqz v5, :cond_4
 
     :goto_0
-    iget v5, v0, Lcm;->a:I
+    iget v5, v0, Lcm;->a_I:I
 
     if-le v1, v5, :cond_0
 
     move v5, v6
 
     :goto_1
-    iget v8, v0, Lcm;->b:I
+    iget v8, v0, Lcm;->b_I:I
 
     if-le v2, v8, :cond_1
 
@@ -169,7 +169,7 @@
 
     or-int/2addr v8, v5
 
-    iget v5, v0, Lcm;->c:I
+    iget v5, v0, Lcm;->c_I:I
 
     if-le v3, v5, :cond_2
 
@@ -180,7 +180,7 @@
 
     or-int/2addr v8, v5
 
-    iget v5, v0, Lcm;->d:I
+    iget v5, v0, Lcm;->d_I:I
 
     if-le v4, v5, :cond_3
 
@@ -191,13 +191,13 @@
 
     or-int/2addr v5, v8
 
-    iget-object v8, v0, Lcm;->a:[Lcm;
+    iget-object v8, v0, Lcm;->a_cms:[Lcm;
 
     aget-object v8, v8, v5
 
     if-eqz v8, :cond_8
 
-    iget-object v0, v0, Lcm;->a:[Lcm;
+    iget-object v0, v0, Lcm;->a_cms:[Lcm;
 
     aget-object v0, v0, v5
 
@@ -225,14 +225,14 @@
 
     :cond_4
     :goto_5
-    iget v5, v0, Lcm;->a:I
+    iget v5, v0, Lcm;->a_I:I
 
     if-le v1, v5, :cond_5
 
     move v5, v6
 
     :goto_6
-    iget v8, v0, Lcm;->b:I
+    iget v8, v0, Lcm;->b_I:I
 
     if-le v2, v8, :cond_6
 
@@ -243,7 +243,7 @@
 
     or-int/2addr v8, v5
 
-    iget v5, v0, Lcm;->c:I
+    iget v5, v0, Lcm;->c_I:I
 
     if-le v3, v5, :cond_7
 
@@ -254,13 +254,13 @@
 
     or-int/2addr v5, v8
 
-    iget-object v8, v0, Lcm;->a:[Lcm;
+    iget-object v8, v0, Lcm;->a_cms:[Lcm;
 
     aget-object v8, v8, v5
 
     if-eqz v8, :cond_8
 
-    iget-object v0, v0, Lcm;->a:[Lcm;
+    iget-object v0, v0, Lcm;->a_cms:[Lcm;
 
     aget-object v0, v0, v5
 
@@ -282,7 +282,7 @@
     goto :goto_8
 
     :cond_8
-    iget-boolean v5, v9, Lcl;->a:Z
+    iget-boolean v5, v9, Lcl;->a_Z:Z
 
     if-eqz v5, :cond_9
 
@@ -292,29 +292,29 @@
 
     const v6, 0x7fffffff
 
-    iput v6, v5, Lcn;->a:I
+    iput v6, v5, Lcn;->a_I:I
 
-    iget-object v0, v0, Lcm;->a:Lcm;
+    iget-object v0, v0, Lcm;->a_cm:Lcm;
 
-    invoke-virtual/range {v0 .. v5}, Lcm;->a(IIIILcn;)V
+    invoke-virtual/range {v0 .. v5}, Lcm;->a_V(IIIILcn;)V
 
-    iget v0, v5, Lcn;->b:I
+    iget v0, v5, Lcn;->b_I:I
 
     :goto_9
     return v0
 
     :cond_9
-    iget v0, v0, Lcm;->j:I
+    iget v0, v0, Lcm;->j_I:I
 
     goto :goto_9
 .end method
 
-.method public final a()[I
+.method public final a_Is()[I
     .locals 1
 
-    iget-object v0, p0, Lck;->a:Lcl;
+    iget-object v0, p0, Lck;->a_cl:Lcl;
 
-    iget-object v0, v0, Lcl;->a:[I
+    iget-object v0, v0, Lcl;->a_Is:[I
 
     return-object v0
 .end method

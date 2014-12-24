@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public a:Ljava/io/InputStream;
+.field public a_InputStream:Ljava/io/InputStream;
 
-.field public a:Ll;
+.field public a_l:Ll;
 
-.field public a:[B
+.field public a_Bs:[B
 
-.field public b:[B
+.field public b_Bs:[B
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lo;->b:[B
+    iput-object v0, p0, Lo;->b_Bs:[B
 
     if-nez p1, :cond_0
 
@@ -58,15 +58,15 @@
     throw v0
 
     :cond_1
-    iput-object p1, p0, Lo;->a:Ljava/io/InputStream;
+    iput-object p1, p0, Lo;->a_InputStream:Ljava/io/InputStream;
 
-    iput-object p2, p0, Lo;->a:Ll;
+    iput-object p2, p0, Lo;->a_l:Ll;
 
     const/16 v0, 0x1000
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lo;->a:[B
+    iput-object v0, p0, Lo;->a_Bs:[B
 
     return-void
 .end method
@@ -76,7 +76,7 @@
 .method public available()I
     .locals 2
 
-    iget-object v0, p0, Lo;->a:Ll;
+    iget-object v0, p0, Lo;->a_l:Ll;
 
     if-nez v0, :cond_0
 
@@ -89,9 +89,9 @@
     throw v0
 
     :cond_0
-    iget-object v0, p0, Lo;->a:Ll;
+    iget-object v0, p0, Lo;->a_l:Ll;
 
-    invoke-virtual {v0}, Ll;->a()Z
+    invoke-virtual {v0}, Ll;->a_Z()Z
 
     move-result v0
 
@@ -114,18 +114,18 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lo;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lo;->a_InputStream:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lo;->a:Ljava/io/InputStream;
+    iget-object v0, p0, Lo;->a_InputStream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lo;->a:Ljava/io/InputStream;
+    iput-object v0, p0, Lo;->a_InputStream:Ljava/io/InputStream;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -160,7 +160,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v0, p0, Lo;->b:[B
+    iget-object v0, p0, Lo;->b_Bs:[B
 
     const/4 v1, 0x1
 
@@ -170,7 +170,7 @@
 
     if-lez v0, :cond_0
 
-    iget-object v0, p0, Lo;->b:[B
+    iget-object v0, p0, Lo;->b_Bs:[B
 
     aget-byte v0, v0, v2
 
@@ -190,7 +190,7 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lo;->a:Ll;
+    iget-object v1, p0, Lo;->a_l:Ll;
 
     if-nez v1, :cond_0
 
@@ -209,19 +209,19 @@
     return v0
 
     :cond_1
-    iget-object v1, p0, Lo;->a:Ll;
+    iget-object v1, p0, Lo;->a_l:Ll;
 
-    iget-object v2, p0, Lo;->a:[B
+    iget-object v2, p0, Lo;->a_Bs:[B
 
-    iget v3, p0, Lo;->a:I
+    iget v3, p0, Lo;->a_I:I
 
-    invoke-virtual {v1, v2, v0, v3}, Ll;->a([BII)V
+    invoke-virtual {v1, v2, v0, v3}, Ll;->a_V([BII)V
 
     :cond_2
     :try_start_0
-    iget-object v1, p0, Lo;->a:Ll;
+    iget-object v1, p0, Lo;->a_l:Ll;
 
-    invoke-virtual {v1, p1, p2, p3}, Ll;->a([BII)I
+    invoke-virtual {v1, p1, p2, p3}, Ll;->a_I([BII)I
     :try_end_0
     .catch Ld; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -247,15 +247,15 @@
     throw v1
 
     :cond_3
-    iget-object v1, p0, Lo;->a:Ll;
+    iget-object v1, p0, Lo;->a_l:Ll;
 
-    invoke-virtual {v1}, Ll;->b()Z
+    invoke-virtual {v1}, Ll;->b_Z()Z
 
     move-result v1
 
-    iget-object v2, p0, Lo;->a:Ll;
+    iget-object v2, p0, Lo;->a_l:Ll;
 
-    invoke-virtual {v2}, Ll;->a()Z
+    invoke-virtual {v2}, Ll;->a_Z()Z
 
     move-result v2
 
@@ -268,15 +268,15 @@
     goto :goto_0
 
     :cond_4
-    iget-object v1, p0, Lo;->a:Ll;
+    iget-object v1, p0, Lo;->a_l:Ll;
 
-    invoke-virtual {v1}, Ll;->c()Z
+    invoke-virtual {v1}, Ll;->c_Z()Z
 
     move-result v1
 
     if-eqz v1, :cond_6
 
-    iget-object v1, p0, Lo;->a:Ljava/io/InputStream;
+    iget-object v1, p0, Lo;->a_InputStream:Ljava/io/InputStream;
 
     if-nez v1, :cond_5
 
@@ -289,11 +289,11 @@
     throw v0
 
     :cond_5
-    iget-object v1, p0, Lo;->a:Ljava/io/InputStream;
+    iget-object v1, p0, Lo;->a_InputStream:Ljava/io/InputStream;
 
-    iget-object v2, p0, Lo;->a:[B
+    iget-object v2, p0, Lo;->a_Bs:[B
 
-    iget-object v3, p0, Lo;->a:[B
+    iget-object v3, p0, Lo;->a_Bs:[B
 
     array-length v3, v3
 
@@ -301,9 +301,9 @@
 
     move-result v1
 
-    iput v1, p0, Lo;->a:I
+    iput v1, p0, Lo;->a_I:I
 
-    iget v1, p0, Lo;->a:I
+    iget v1, p0, Lo;->a_I:I
 
     if-gez v1, :cond_1
 
@@ -344,7 +344,7 @@
 
     const-wide/16 v0, 0x0
 
-    iget-object v2, p0, Lo;->a:Ll;
+    iget-object v2, p0, Lo;->a_l:Ll;
 
     if-nez v2, :cond_0
 
@@ -376,7 +376,7 @@
     return-wide v0
 
     :cond_2
-    invoke-static {p1, p2, v8, v9}, Lbz;->b(JJ)J
+    invoke-static {p1, p2, v8, v9}, Lbz;->b_J(JJ)J
 
     move-result-wide v2
 
@@ -409,7 +409,7 @@
 
     add-long/2addr v2, v6
 
-    invoke-static {p1, p2, v8, v9}, Lbz;->b(JJ)J
+    invoke-static {p1, p2, v8, v9}, Lbz;->b_J(JJ)J
 
     move-result-wide v6
 

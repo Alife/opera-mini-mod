@@ -3,17 +3,17 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public a:Lcr;
+.field public a_cr:Lcr;
 
-.field public final a:Ljava/util/Vector;
+.field public final a_Vector:Ljava/util/Vector;
 
-.field public final a:Z
+.field public final a_Z:Z
 
-.field public final b:I
+.field public final b_I:I
 
-.field public final b:Z
+.field public final b_Z:Z
 
 
 # direct methods
@@ -22,22 +22,22 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcr;->a:Ljava/util/Vector;
+    iput-object p1, p0, Lcr;->a_Vector:Ljava/util/Vector;
 
-    iput p2, p0, Lcr;->b:I
+    iput p2, p0, Lcr;->b_I:I
 
-    iput-boolean p3, p0, Lcr;->a:Z
+    iput-boolean p3, p0, Lcr;->a_Z:Z
 
-    iput-boolean p4, p0, Lcr;->b:Z
+    iput-boolean p4, p0, Lcr;->b_Z:Z
 
     const/high16 v0, -0x8000
 
-    iput v0, p0, Lcr;->a:I
+    iput v0, p0, Lcr;->a_I:I
 
     return-void
 .end method
 
-.method private a(I)I
+.method private a_I(I)I
     .locals 5
 
     const/4 v4, 0x1
@@ -47,7 +47,7 @@
     move v1, v2
 
     :goto_0
-    iget-object v0, p0, Lcr;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lcr;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -55,7 +55,7 @@
 
     if-ge v1, v0, :cond_1
 
-    iget-object v0, p0, Lcr;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lcr;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -87,7 +87,7 @@
 
     if-le p1, v3, :cond_3
 
-    iget-object v3, p0, Lcr;->a:Ljava/util/Vector;
+    iget-object v3, p0, Lcr;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v3}, Ljava/util/Vector;->size()I
 
@@ -111,52 +111,52 @@
 
 
 # virtual methods
-.method public final a()I
+.method public final a_I()I
     .locals 1
 
-    iget v0, p0, Lcr;->a:I
+    iget v0, p0, Lcr;->a_I:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcr;->a:I
+    iput v0, p0, Lcr;->a_I:I
 
-    iget v0, p0, Lcr;->a:I
+    iget v0, p0, Lcr;->a_I:I
 
-    invoke-direct {p0, v0}, Lcr;->a(I)I
+    invoke-direct {p0, v0}, Lcr;->a_I(I)I
 
     move-result v0
 
-    iput v0, p0, Lcr;->a:I
+    iput v0, p0, Lcr;->a_I:I
 
-    iget v0, p0, Lcr;->a:I
+    iget v0, p0, Lcr;->a_I:I
 
     return v0
 .end method
 
-.method public final a()V
+.method public final a_V()V
     .locals 1
 
     const/high16 v0, -0x8000
 
-    iput v0, p0, Lcr;->a:I
+    iput v0, p0, Lcr;->a_I:I
 
-    invoke-virtual {p0}, Lcr;->a()I
+    invoke-virtual {p0}, Lcr;->a_I()I
 
     return-void
 .end method
 
-.method public final a()Z
+.method public final a_Z()Z
     .locals 2
 
-    iget v0, p0, Lcr;->a:I
+    iget v0, p0, Lcr;->a_I:I
 
     add-int/lit8 v0, v0, 0x1
 
-    invoke-direct {p0, v0}, Lcr;->a(I)I
+    invoke-direct {p0, v0}, Lcr;->a_I(I)I
 
     move-result v0
 
-    iget v1, p0, Lcr;->a:I
+    iget v1, p0, Lcr;->a_I:I
 
     if-eq v0, v1, :cond_0
 
@@ -174,11 +174,11 @@
 .method public final toString()Ljava/lang/String;
     .locals 5
 
-    iget-boolean v0, p0, Lcr;->a:Z
+    iget-boolean v0, p0, Lcr;->a_Z:Z
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lcr;->a:I
+    iget v0, p0, Lcr;->a_I:I
 
     int-to-char v0, v0
 
@@ -186,7 +186,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcr;->b:Z
+    iget-boolean v1, p0, Lcr;->b_Z:Z
 
     if-eqz v1, :cond_0
 
@@ -199,19 +199,19 @@
     return-object v0
 
     :cond_1
-    iget v0, p0, Lcr;->a:I
+    iget v0, p0, Lcr;->a_I:I
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iget v1, p0, Lcr;->b:I
+    iget v1, p0, Lcr;->b_I:I
 
     const/4 v2, -0x1
 
     if-eq v1, v2, :cond_0
 
-    iget v1, p0, Lcr;->b:I
+    iget v1, p0, Lcr;->b_I:I
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 

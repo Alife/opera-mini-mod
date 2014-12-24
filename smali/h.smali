@@ -3,33 +3,33 @@
 
 
 # static fields
-.field public static final a:[I
+.field public static final a_Is:[I
 
-.field public static b:[B
+.field public static b_Bs:[B
 
-.field public static b:[S
+.field public static b_Ss:[S
 
-.field public static c:[B
+.field public static c_Bs:[B
 
-.field public static c:[S
+.field public static c_Ss:[S
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public a:Li;
+.field public a_i:Li;
 
-.field public a:Lk;
+.field public a_k:Lk;
 
-.field public a:[B
+.field public a_Bs:[B
 
-.field public a:[S
+.field public a_Ss:[S
 
-.field public b:I
+.field public b_I:I
 
-.field public b:Li;
+.field public b_i:Li;
 
-.field public c:Li;
+.field public c_i:Li;
 
 
 # direct methods
@@ -50,15 +50,15 @@
 
     fill-array-data v1, :array_0
 
-    sput-object v1, Lh;->a:[I
+    sput-object v1, Lh;->a_Is:[I
 
     new-array v1, v6, [S
 
-    sput-object v1, Lh;->b:[S
+    sput-object v1, Lh;->b_Ss:[S
 
     new-array v1, v6, [B
 
-    sput-object v1, Lh;->b:[B
+    sput-object v1, Lh;->b_Bs:[B
 
     move v1, v0
 
@@ -67,19 +67,19 @@
 
     if-ge v1, v2, :cond_0
 
-    sget-object v2, Lh;->b:[S
+    sget-object v2, Lh;->b_Ss:[S
 
     add-int/lit8 v3, v1, 0x30
 
     shl-int/lit8 v3, v3, 0x8
 
-    invoke-static {v3}, Lh;->a(I)S
+    invoke-static {v3}, Lh;->a_S(I)S
 
     move-result v3
 
     aput-short v3, v2, v1
 
-    sget-object v3, Lh;->b:[B
+    sget-object v3, Lh;->b_Bs:[B
 
     add-int/lit8 v2, v1, 0x1
 
@@ -95,19 +95,19 @@
 
     if-ge v1, v2, :cond_1
 
-    sget-object v2, Lh;->b:[S
+    sget-object v2, Lh;->b_Ss:[S
 
     add-int/lit16 v3, v1, 0x100
 
     shl-int/lit8 v3, v3, 0x7
 
-    invoke-static {v3}, Lh;->a(I)S
+    invoke-static {v3}, Lh;->a_S(I)S
 
     move-result v3
 
     aput-short v3, v2, v1
 
-    sget-object v3, Lh;->b:[B
+    sget-object v3, Lh;->b_Bs:[B
 
     add-int/lit8 v2, v1, 0x1
 
@@ -125,19 +125,19 @@
 
     if-ge v1, v2, :cond_2
 
-    sget-object v2, Lh;->b:[S
+    sget-object v2, Lh;->b_Ss:[S
 
     add-int/lit16 v3, v1, -0x100
 
     shl-int/lit8 v3, v3, 0x9
 
-    invoke-static {v3}, Lh;->a(I)S
+    invoke-static {v3}, Lh;->a_S(I)S
 
     move-result v3
 
     aput-short v3, v2, v1
 
-    sget-object v3, Lh;->b:[B
+    sget-object v3, Lh;->b_Bs:[B
 
     add-int/lit8 v2, v1, 0x1
 
@@ -153,19 +153,19 @@
     :goto_3
     if-ge v1, v6, :cond_3
 
-    sget-object v2, Lh;->b:[S
+    sget-object v2, Lh;->b_Ss:[S
 
     add-int/lit8 v3, v1, -0x58
 
     shl-int/lit8 v3, v3, 0x8
 
-    invoke-static {v3}, Lh;->a(I)S
+    invoke-static {v3}, Lh;->a_S(I)S
 
     move-result v3
 
     aput-short v3, v2, v1
 
-    sget-object v3, Lh;->b:[B
+    sget-object v3, Lh;->b_Bs:[B
 
     add-int/lit8 v2, v1, 0x1
 
@@ -178,26 +178,26 @@
     :cond_3
     new-array v1, v5, [S
 
-    sput-object v1, Lh;->c:[S
+    sput-object v1, Lh;->c_Ss:[S
 
     new-array v1, v5, [B
 
-    sput-object v1, Lh;->c:[B
+    sput-object v1, Lh;->c_Bs:[B
 
     :goto_4
     if-ge v0, v5, :cond_4
 
-    sget-object v1, Lh;->c:[S
+    sget-object v1, Lh;->c_Ss:[S
 
     shl-int/lit8 v2, v0, 0xb
 
-    invoke-static {v2}, Lh;->a(I)S
+    invoke-static {v2}, Lh;->a_S(I)S
 
     move-result v2
 
     aput-short v2, v1, v0
 
-    sget-object v1, Lh;->c:[B
+    sget-object v1, Lh;->c_Bs:[B
 
     const/4 v2, 0x5
 
@@ -245,7 +245,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lh;->a:Lk;
+    iput-object p1, p0, Lh;->a_k:Lk;
 
     new-instance v0, Li;
 
@@ -255,7 +255,7 @@
 
     invoke-direct {v0, p0, v1, v2, v3}, Li;-><init>(Lh;III)V
 
-    iput-object v0, p0, Lh;->a:Li;
+    iput-object v0, p0, Lh;->a_i:Li;
 
     new-instance v0, Li;
 
@@ -265,7 +265,7 @@
 
     invoke-direct {v0, p0, v1, v2, v3}, Li;-><init>(Lh;III)V
 
-    iput-object v0, p0, Lh;->b:Li;
+    iput-object v0, p0, Lh;->b_i:Li;
 
     new-instance v0, Li;
 
@@ -277,20 +277,20 @@
 
     invoke-direct {v0, p0, v1, v2, v3}, Li;-><init>(Lh;III)V
 
-    iput-object v0, p0, Lh;->c:Li;
+    iput-object v0, p0, Lh;->c_i:Li;
 
     new-array v0, v4, [S
 
-    iput-object v0, p0, Lh;->a:[S
+    iput-object v0, p0, Lh;->a_Ss:[S
 
     new-array v0, v4, [B
 
-    iput-object v0, p0, Lh;->a:[B
+    iput-object v0, p0, Lh;->a_Bs:[B
 
     return-void
 .end method
 
-.method private static a(I)I
+.method private static a_I(I)I
     .locals 2
 
     const/16 v0, 0xff
@@ -322,7 +322,7 @@
     goto :goto_0
 .end method
 
-.method static a(I)S
+.method static a_S(I)S
     .locals 3
 
     const-string v0, "\u0000\u0008\u0004\u000c\u0002\n\u0006\u000e\u0001\t\u0005\r\u0003\u000b\u0007\u000f"
@@ -378,7 +378,7 @@
     return v0
 .end method
 
-.method private static b(I)I
+.method private static b_I(I)I
     .locals 2
 
     const/4 v0, 0x0
@@ -400,7 +400,7 @@
     return v0
 .end method
 
-.method private b()V
+.method private b_V()V
     .locals 7
 
     const/4 v6, 0x1
@@ -408,17 +408,17 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget v1, p0, Lh;->a:I
+    iget v1, p0, Lh;->a_I:I
 
     if-ge v0, v1, :cond_3
 
-    iget-object v1, p0, Lh;->a:[B
+    iget-object v1, p0, Lh;->a_Bs:[B
 
     aget-byte v1, v1, v0
 
     and-int/lit16 v1, v1, 0xff
 
-    iget-object v2, p0, Lh;->a:[S
+    iget-object v2, p0, Lh;->a_Ss:[S
 
     aget-short v2, v2, v0
 
@@ -426,13 +426,13 @@
 
     if-eqz v2, :cond_2
 
-    invoke-static {v1}, Lh;->a(I)I
+    invoke-static {v1}, Lh;->a_I(I)I
 
     move-result v2
 
-    iget-object v4, p0, Lh;->a:Li;
+    iget-object v4, p0, Lh;->a_i:Li;
 
-    invoke-virtual {v4, v2}, Li;->a(I)V
+    invoke-virtual {v4, v2}, Li;->a_V(I)V
 
     add-int/lit16 v2, v2, -0x105
 
@@ -444,7 +444,7 @@
 
     if-gt v2, v4, :cond_0
 
-    iget-object v4, p0, Lh;->a:Lk;
+    iget-object v4, p0, Lh;->a_k:Lk;
 
     shl-int v5, v6, v2
 
@@ -452,16 +452,16 @@
 
     and-int/2addr v1, v5
 
-    invoke-virtual {v4, v1, v2}, Lk;->a(II)V
+    invoke-virtual {v4, v1, v2}, Lk;->a_V(II)V
 
     :cond_0
-    invoke-static {v3}, Lh;->b(I)I
+    invoke-static {v3}, Lh;->b_I(I)I
 
     move-result v1
 
-    iget-object v2, p0, Lh;->b:Li;
+    iget-object v2, p0, Lh;->b_i:Li;
 
-    invoke-virtual {v2, v1}, Li;->a(I)V
+    invoke-virtual {v2, v1}, Li;->a_V(I)V
 
     div-int/lit8 v1, v1, 0x2
 
@@ -469,7 +469,7 @@
 
     if-lez v1, :cond_1
 
-    iget-object v2, p0, Lh;->a:Lk;
+    iget-object v2, p0, Lh;->a_k:Lk;
 
     shl-int v4, v6, v1
 
@@ -477,7 +477,7 @@
 
     and-int/2addr v3, v4
 
-    invoke-virtual {v2, v3, v1}, Lk;->a(II)V
+    invoke-virtual {v2, v3, v1}, Lk;->a_V(II)V
 
     :cond_1
     :goto_1
@@ -486,52 +486,52 @@
     goto :goto_0
 
     :cond_2
-    iget-object v2, p0, Lh;->a:Li;
+    iget-object v2, p0, Lh;->a_i:Li;
 
-    invoke-virtual {v2, v1}, Li;->a(I)V
+    invoke-virtual {v2, v1}, Li;->a_V(I)V
 
     goto :goto_1
 
     :cond_3
-    iget-object v0, p0, Lh;->a:Li;
+    iget-object v0, p0, Lh;->a_i:Li;
 
     const/16 v1, 0x100
 
-    invoke-virtual {v0, v1}, Li;->a(I)V
+    invoke-virtual {v0, v1}, Li;->a_V(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
+.method public final a_V()V
     .locals 1
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lh;->a:I
+    iput v0, p0, Lh;->a_I:I
 
-    iput v0, p0, Lh;->b:I
+    iput v0, p0, Lh;->b_I:I
 
-    iget-object v0, p0, Lh;->a:Li;
+    iget-object v0, p0, Lh;->a_i:Li;
 
-    invoke-virtual {v0}, Li;->a()V
+    invoke-virtual {v0}, Li;->a_V()V
 
-    iget-object v0, p0, Lh;->b:Li;
+    iget-object v0, p0, Lh;->b_i:Li;
 
-    invoke-virtual {v0}, Li;->a()V
+    invoke-virtual {v0}, Li;->a_V()V
 
-    iget-object v0, p0, Lh;->c:Li;
+    iget-object v0, p0, Lh;->c_i:Li;
 
-    invoke-virtual {v0}, Li;->a()V
+    invoke-virtual {v0}, Li;->a_V()V
 
     return-void
 .end method
 
-.method public final a([BIIZ)V
+.method public final a_V([BIIZ)V
     .locals 3
 
-    iget-object v1, p0, Lh;->a:Lk;
+    iget-object v1, p0, Lh;->a_k:Lk;
 
     if-eqz p4, :cond_0
 
@@ -542,27 +542,27 @@
 
     const/4 v2, 0x3
 
-    invoke-virtual {v1, v0, v2}, Lk;->a(II)V
+    invoke-virtual {v1, v0, v2}, Lk;->a_V(II)V
 
-    iget-object v0, p0, Lh;->a:Lk;
+    iget-object v0, p0, Lh;->a_k:Lk;
 
-    invoke-virtual {v0}, Lk;->a()V
+    invoke-virtual {v0}, Lk;->a_V()V
 
-    iget-object v0, p0, Lh;->a:Lk;
+    iget-object v0, p0, Lh;->a_k:Lk;
 
-    invoke-virtual {v0, p3}, Lk;->a(I)V
+    invoke-virtual {v0, p3}, Lk;->a_V(I)V
 
-    iget-object v0, p0, Lh;->a:Lk;
+    iget-object v0, p0, Lh;->a_k:Lk;
 
     xor-int/lit8 v1, p3, -0x1
 
-    invoke-virtual {v0, v1}, Lk;->a(I)V
+    invoke-virtual {v0, v1}, Lk;->a_V(I)V
 
-    iget-object v0, p0, Lh;->a:Lk;
+    iget-object v0, p0, Lh;->a_k:Lk;
 
-    invoke-virtual {v0, p1, p2, p3}, Lk;->a([BII)V
+    invoke-virtual {v0, p1, p2, p3}, Lk;->a_V([BII)V
 
-    invoke-virtual {p0}, Lh;->a()V
+    invoke-virtual {p0}, Lh;->a_V()V
 
     return-void
 
@@ -572,10 +572,10 @@
     goto :goto_0
 .end method
 
-.method public final a()Z
+.method public final a_Z()Z
     .locals 2
 
-    iget v0, p0, Lh;->a:I
+    iget v0, p0, Lh;->a_I:I
 
     const/16 v1, 0x3fff
 
@@ -592,32 +592,32 @@
     goto :goto_0
 .end method
 
-.method public final a(I)Z
+.method public final a_Z(I)Z
     .locals 4
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lh;->a:[S
+    iget-object v1, p0, Lh;->a_Ss:[S
 
-    iget v2, p0, Lh;->a:I
+    iget v2, p0, Lh;->a_I:I
 
     aput-short v0, v1, v2
 
-    iget-object v1, p0, Lh;->a:[B
+    iget-object v1, p0, Lh;->a_Bs:[B
 
-    iget v2, p0, Lh;->a:I
+    iget v2, p0, Lh;->a_I:I
 
     add-int/lit8 v3, v2, 0x1
 
-    iput v3, p0, Lh;->a:I
+    iput v3, p0, Lh;->a_I:I
 
     int-to-byte v3, p1
 
     aput-byte v3, v1, v2
 
-    iget-object v1, p0, Lh;->a:Li;
+    iget-object v1, p0, Lh;->a_i:Li;
 
-    iget-object v1, v1, Li;->a:[S
+    iget-object v1, v1, Li;->a_Ss:[S
 
     aget-short v2, v1, p1
 
@@ -627,7 +627,7 @@
 
     aput-short v2, v1, p1
 
-    iget v1, p0, Lh;->a:I
+    iget v1, p0, Lh;->a_I:I
 
     const/16 v2, 0x3fff
 
@@ -639,24 +639,24 @@
     return v0
 .end method
 
-.method public final a(II)Z
+.method public final a_Z(II)Z
     .locals 3
 
-    iget-object v0, p0, Lh;->a:[S
+    iget-object v0, p0, Lh;->a_Ss:[S
 
-    iget v1, p0, Lh;->a:I
+    iget v1, p0, Lh;->a_I:I
 
     int-to-short v2, p1
 
     aput-short v2, v0, v1
 
-    iget-object v0, p0, Lh;->a:[B
+    iget-object v0, p0, Lh;->a_Bs:[B
 
-    iget v1, p0, Lh;->a:I
+    iget v1, p0, Lh;->a_I:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lh;->a:I
+    iput v2, p0, Lh;->a_I:I
 
     add-int/lit8 v2, p2, -0x3
 
@@ -666,13 +666,13 @@
 
     add-int/lit8 v0, p2, -0x3
 
-    invoke-static {v0}, Lh;->a(I)I
+    invoke-static {v0}, Lh;->a_I(I)I
 
     move-result v0
 
-    iget-object v1, p0, Lh;->a:Li;
+    iget-object v1, p0, Lh;->a_i:Li;
 
-    iget-object v1, v1, Li;->a:[S
+    iget-object v1, v1, Li;->a_Ss:[S
 
     aget-short v2, v1, v0
 
@@ -690,7 +690,7 @@
 
     if-ge v0, v1, :cond_0
 
-    iget v1, p0, Lh;->b:I
+    iget v1, p0, Lh;->b_I:I
 
     add-int/lit16 v0, v0, -0x105
 
@@ -698,18 +698,18 @@
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lh;->b:I
+    iput v0, p0, Lh;->b_I:I
 
     :cond_0
     add-int/lit8 v0, p1, -0x1
 
-    invoke-static {v0}, Lh;->b(I)I
+    invoke-static {v0}, Lh;->b_I(I)I
 
     move-result v0
 
-    iget-object v1, p0, Lh;->b:Li;
+    iget-object v1, p0, Lh;->b_i:Li;
 
-    iget-object v1, v1, Li;->a:[S
+    iget-object v1, v1, Li;->a_Ss:[S
 
     aget-short v2, v1, v0
 
@@ -723,7 +723,7 @@
 
     if-lt v0, v1, :cond_1
 
-    iget v1, p0, Lh;->b:I
+    iget v1, p0, Lh;->b_I:I
 
     div-int/lit8 v0, v0, 0x2
 
@@ -731,10 +731,10 @@
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lh;->b:I
+    iput v0, p0, Lh;->b_I:I
 
     :cond_1
-    iget v0, p0, Lh;->a:I
+    iget v0, p0, Lh;->a_I:I
 
     const/16 v1, 0x3fff
 
@@ -751,7 +751,7 @@
     goto :goto_0
 .end method
 
-.method public final b([BIIZ)V
+.method public final b_V([BIIZ)V
     .locals 11
 
     const/16 v4, 0x100
@@ -766,9 +766,9 @@
 
     const/4 v1, 0x1
 
-    iget-object v0, p0, Lh;->a:Li;
+    iget-object v0, p0, Lh;->a_i:Li;
 
-    iget-object v0, v0, Li;->a:[S
+    iget-object v0, v0, Li;->a_Ss:[S
 
     aget-short v3, v0, v4
 
@@ -778,29 +778,29 @@
 
     aput-short v3, v0, v4
 
-    iget-object v0, p0, Lh;->a:Li;
+    iget-object v0, p0, Lh;->a_i:Li;
 
-    invoke-virtual {v0}, Li;->c()V
+    invoke-virtual {v0}, Li;->c_V()V
 
-    iget-object v0, p0, Lh;->b:Li;
+    iget-object v0, p0, Lh;->b_i:Li;
 
-    invoke-virtual {v0}, Li;->c()V
+    invoke-virtual {v0}, Li;->c_V()V
 
-    iget-object v0, p0, Lh;->a:Li;
+    iget-object v0, p0, Lh;->a_i:Li;
 
-    iget-object v3, p0, Lh;->c:Li;
+    iget-object v3, p0, Lh;->c_i:Li;
 
-    invoke-virtual {v0, v3}, Li;->a(Li;)V
+    invoke-virtual {v0, v3}, Li;->a_V(Li;)V
 
-    iget-object v0, p0, Lh;->b:Li;
+    iget-object v0, p0, Lh;->b_i:Li;
 
-    iget-object v3, p0, Lh;->c:Li;
+    iget-object v3, p0, Lh;->c_i:Li;
 
-    invoke-virtual {v0, v3}, Li;->a(Li;)V
+    invoke-virtual {v0, v3}, Li;->a_V(Li;)V
 
-    iget-object v0, p0, Lh;->c:Li;
+    iget-object v0, p0, Lh;->c_i:Li;
 
-    invoke-virtual {v0}, Li;->c()V
+    invoke-virtual {v0}, Li;->c_V()V
 
     const/16 v0, 0x12
 
@@ -811,11 +811,11 @@
     :goto_0
     if-le v3, v0, :cond_1
 
-    iget-object v4, p0, Lh;->c:Li;
+    iget-object v4, p0, Lh;->c_i:Li;
 
-    iget-object v4, v4, Li;->a:[B
+    iget-object v4, v4, Li;->a_Bs:[B
 
-    sget-object v5, Lh;->a:[I
+    sget-object v5, Lh;->a_Is:[I
 
     aget v5, v5, v3
 
@@ -835,35 +835,35 @@
 
     add-int/lit8 v3, v3, 0xe
 
-    iget-object v4, p0, Lh;->c:Li;
+    iget-object v4, p0, Lh;->c_i:Li;
 
-    invoke-virtual {v4}, Li;->a()I
-
-    move-result v4
-
-    add-int/2addr v3, v4
-
-    iget-object v4, p0, Lh;->a:Li;
-
-    invoke-virtual {v4}, Li;->a()I
+    invoke-virtual {v4}, Li;->a_I()I
 
     move-result v4
 
     add-int/2addr v3, v4
 
-    iget-object v4, p0, Lh;->b:Li;
+    iget-object v4, p0, Lh;->a_i:Li;
 
-    invoke-virtual {v4}, Li;->a()I
+    invoke-virtual {v4}, Li;->a_I()I
 
     move-result v4
 
     add-int/2addr v3, v4
 
-    iget v4, p0, Lh;->b:I
+    iget-object v4, p0, Lh;->b_i:Li;
+
+    invoke-virtual {v4}, Li;->a_I()I
+
+    move-result v4
 
     add-int/2addr v3, v4
 
-    iget v4, p0, Lh;->b:I
+    iget v4, p0, Lh;->b_I:I
+
+    add-int/2addr v3, v4
+
+    iget v4, p0, Lh;->b_I:I
 
     move v5, v2
 
@@ -872,13 +872,13 @@
 
     if-ge v5, v6, :cond_2
 
-    iget-object v6, p0, Lh;->a:Li;
+    iget-object v6, p0, Lh;->a_i:Li;
 
-    iget-object v6, v6, Li;->a:[S
+    iget-object v6, v6, Li;->a_Ss:[S
 
     aget-short v6, v6, v5
 
-    sget-object v8, Lh;->b:[B
+    sget-object v8, Lh;->b_Bs:[B
 
     aget-byte v8, v8, v5
 
@@ -902,13 +902,13 @@
 
     if-ge v5, v6, :cond_3
 
-    iget-object v6, p0, Lh;->b:Li;
+    iget-object v6, p0, Lh;->b_i:Li;
 
-    iget-object v6, v6, Li;->a:[S
+    iget-object v6, v6, Li;->a_Ss:[S
 
     aget-short v6, v6, v5
 
-    sget-object v8, Lh;->c:[B
+    sget-object v8, Lh;->c_Bs:[B
 
     aget-byte v8, v8, v5
 
@@ -938,7 +938,7 @@
 
     if-ge v5, v6, :cond_5
 
-    invoke-virtual {p0, p1, p2, p3, p4}, Lh;->a([BIIZ)V
+    invoke-virtual {p0, p1, p2, p3, p4}, Lh;->a_V([BIIZ)V
 
     :goto_3
     return-void
@@ -946,7 +946,7 @@
     :cond_5
     if-ne v3, v4, :cond_7
 
-    iget-object v3, p0, Lh;->a:Lk;
+    iget-object v3, p0, Lh;->a_k:Lk;
 
     if-eqz p4, :cond_6
 
@@ -955,27 +955,27 @@
     :goto_4
     add-int/lit8 v0, v0, 0x2
 
-    invoke-virtual {v3, v0, v9}, Lk;->a(II)V
+    invoke-virtual {v3, v0, v9}, Lk;->a_V(II)V
 
-    iget-object v0, p0, Lh;->a:Li;
+    iget-object v0, p0, Lh;->a_i:Li;
 
-    sget-object v1, Lh;->b:[S
+    sget-object v1, Lh;->b_Ss:[S
 
-    sget-object v2, Lh;->b:[B
+    sget-object v2, Lh;->b_Bs:[B
 
-    invoke-virtual {v0, v1, v2}, Li;->a([S[B)V
+    invoke-virtual {v0, v1, v2}, Li;->a_V([S[B)V
 
-    iget-object v0, p0, Lh;->b:Li;
+    iget-object v0, p0, Lh;->b_i:Li;
 
-    sget-object v1, Lh;->c:[S
+    sget-object v1, Lh;->c_Ss:[S
 
-    sget-object v2, Lh;->c:[B
+    sget-object v2, Lh;->c_Bs:[B
 
-    invoke-virtual {v0, v1, v2}, Li;->a([S[B)V
+    invoke-virtual {v0, v1, v2}, Li;->a_V([S[B)V
 
-    invoke-direct {p0}, Lh;->b()V
+    invoke-direct {p0}, Lh;->b_V()V
 
-    invoke-virtual {p0}, Lh;->a()V
+    invoke-virtual {p0}, Lh;->a_V()V
 
     goto :goto_3
 
@@ -985,69 +985,69 @@
     goto :goto_4
 
     :cond_7
-    iget-object v3, p0, Lh;->a:Lk;
+    iget-object v3, p0, Lh;->a_k:Lk;
 
     if-eqz p4, :cond_8
 
     :goto_5
     add-int/lit8 v1, v1, 0x4
 
-    invoke-virtual {v3, v1, v9}, Lk;->a(II)V
+    invoke-virtual {v3, v1, v9}, Lk;->a_V(II)V
 
-    iget-object v1, p0, Lh;->c:Li;
+    iget-object v1, p0, Lh;->c_i:Li;
 
-    invoke-virtual {v1}, Li;->b()V
+    invoke-virtual {v1}, Li;->b_V()V
 
-    iget-object v1, p0, Lh;->a:Li;
+    iget-object v1, p0, Lh;->a_i:Li;
 
-    invoke-virtual {v1}, Li;->b()V
+    invoke-virtual {v1}, Li;->b_V()V
 
-    iget-object v1, p0, Lh;->b:Li;
+    iget-object v1, p0, Lh;->b_i:Li;
 
-    invoke-virtual {v1}, Li;->b()V
+    invoke-virtual {v1}, Li;->b_V()V
 
-    iget-object v1, p0, Lh;->a:Lk;
+    iget-object v1, p0, Lh;->a_k:Lk;
 
-    iget-object v3, p0, Lh;->a:Li;
+    iget-object v3, p0, Lh;->a_i:Li;
 
-    iget v3, v3, Li;->a:I
+    iget v3, v3, Li;->a_I:I
 
     add-int/lit16 v3, v3, -0x101
 
-    invoke-virtual {v1, v3, v10}, Lk;->a(II)V
+    invoke-virtual {v1, v3, v10}, Lk;->a_V(II)V
 
-    iget-object v1, p0, Lh;->a:Lk;
+    iget-object v1, p0, Lh;->a_k:Lk;
 
-    iget-object v3, p0, Lh;->b:Li;
+    iget-object v3, p0, Lh;->b_i:Li;
 
-    iget v3, v3, Li;->a:I
+    iget v3, v3, Li;->a_I:I
 
     add-int/lit8 v3, v3, -0x1
 
-    invoke-virtual {v1, v3, v10}, Lk;->a(II)V
+    invoke-virtual {v1, v3, v10}, Lk;->a_V(II)V
 
-    iget-object v1, p0, Lh;->a:Lk;
+    iget-object v1, p0, Lh;->a_k:Lk;
 
     add-int/lit8 v3, v0, -0x4
 
-    invoke-virtual {v1, v3, v7}, Lk;->a(II)V
+    invoke-virtual {v1, v3, v7}, Lk;->a_V(II)V
 
     :goto_6
     if-ge v2, v0, :cond_9
 
-    iget-object v1, p0, Lh;->a:Lk;
+    iget-object v1, p0, Lh;->a_k:Lk;
 
-    iget-object v3, p0, Lh;->c:Li;
+    iget-object v3, p0, Lh;->c_i:Li;
 
-    iget-object v3, v3, Li;->a:[B
+    iget-object v3, v3, Li;->a_Bs:[B
 
-    sget-object v4, Lh;->a:[I
+    sget-object v4, Lh;->a_Is:[I
 
     aget v4, v4, v2
 
     aget-byte v3, v3, v4
 
-    invoke-virtual {v1, v3, v9}, Lk;->a(II)V
+    invoke-virtual {v1, v3, v9}, Lk;->a_V(II)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -1059,21 +1059,21 @@
     goto :goto_5
 
     :cond_9
-    iget-object v0, p0, Lh;->a:Li;
+    iget-object v0, p0, Lh;->a_i:Li;
 
-    iget-object v1, p0, Lh;->c:Li;
+    iget-object v1, p0, Lh;->c_i:Li;
 
-    invoke-virtual {v0, v1}, Li;->b(Li;)V
+    invoke-virtual {v0, v1}, Li;->b_V(Li;)V
 
-    iget-object v0, p0, Lh;->b:Li;
+    iget-object v0, p0, Lh;->b_i:Li;
 
-    iget-object v1, p0, Lh;->c:Li;
+    iget-object v1, p0, Lh;->c_i:Li;
 
-    invoke-virtual {v0, v1}, Li;->b(Li;)V
+    invoke-virtual {v0, v1}, Li;->b_V(Li;)V
 
-    invoke-direct {p0}, Lh;->b()V
+    invoke-direct {p0}, Lh;->b_V()V
 
-    invoke-virtual {p0}, Lh;->a()V
+    invoke-virtual {p0}, Lh;->a_V()V
 
     goto/16 :goto_3
 .end method

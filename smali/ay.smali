@@ -21,7 +21,7 @@
 
 
 # virtual methods
-.method public final a(I)V
+.method public final a_V(I)V
     .locals 0
 
     iput p1, p0, Lay;->count:I
@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method public final a()[B
+.method public final a_Bs()[B
     .locals 1
 
     iget-object v0, p0, Lay;->buf:[B

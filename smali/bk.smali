@@ -8,14 +8,14 @@
 
     invoke-direct {p0}, Lcf;-><init>()V
 
-    iput-object p0, p0, Lbk;->a:Lcf;
+    iput-object p0, p0, Lbk;->a_cf:Lcf;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(ILcg;IZLbu;)V
+.method public final a_V(ILcg;IZLbu;)V
     .locals 0
 
     return-void

@@ -3,13 +3,13 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public a:Ljava/lang/String;
+.field public a_String:Ljava/lang/String;
 
-.field public b:I
+.field public b_I:I
 
-.field public c:I
+.field public c_I:I
 
 
 # direct methods
@@ -20,17 +20,17 @@
 
     const-string v0, ""
 
-    iput-object v0, p0, Lc;->a:Ljava/lang/String;
+    iput-object v0, p0, Lc;->a_String:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/io/InputStream;)Z
+.method public final a_Z(Ljava/io/InputStream;)Z
     .locals 2
 
-    invoke-static {p1}, Lan;->a(Ljava/io/InputStream;)I
+    invoke-static {p1}, Lan;->a_I(Ljava/io/InputStream;)I
 
     move-result v0
 
@@ -48,25 +48,25 @@
 
     invoke-virtual {p1, v0, v1}, Ljava/io/InputStream;->skip(J)J
 
-    invoke-static {p1}, Lan;->b(Ljava/io/InputStream;)I
+    invoke-static {p1}, Lan;->b_I(Ljava/io/InputStream;)I
 
     move-result v0
 
-    iput v0, p0, Lc;->a:I
+    iput v0, p0, Lc;->a_I:I
 
-    invoke-static {p1}, Lan;->a(Ljava/io/InputStream;)I
-
-    move-result v0
-
-    iput v0, p0, Lc;->b:I
-
-    invoke-static {p1}, Lan;->a(Ljava/io/InputStream;)I
+    invoke-static {p1}, Lan;->a_I(Ljava/io/InputStream;)I
 
     move-result v0
 
-    iput v0, p0, Lc;->c:I
+    iput v0, p0, Lc;->b_I:I
 
-    invoke-static {p1}, Lan;->b(Ljava/io/InputStream;)I
+    invoke-static {p1}, Lan;->a_I(Ljava/io/InputStream;)I
+
+    move-result v0
+
+    iput v0, p0, Lc;->c_I:I
+
+    invoke-static {p1}, Lan;->b_I(Ljava/io/InputStream;)I
 
     move-result v0
 
@@ -74,11 +74,11 @@
 
     const/4 v1, 0x4
 
-    invoke-static {p1, v0, v1}, Lcc;->a(Ljava/io/InputStream;II)Ljava/lang/String;
+    invoke-static {p1, v0, v1}, Lcc;->a_String(Ljava/io/InputStream;II)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lc;->a:Ljava/lang/String;
+    iput-object v0, p0, Lc;->a_String:Ljava/lang/String;
 
     :goto_1
     const/4 v0, 0x1
@@ -88,7 +88,7 @@
     :cond_1
     const-string v0, ""
 
-    iput-object v0, p0, Lc;->a:Ljava/lang/String;
+    iput-object v0, p0, Lc;->a_String:Ljava/lang/String;
 
     goto :goto_1
 .end method

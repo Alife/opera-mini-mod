@@ -3,7 +3,7 @@
 
 
 # static fields
-.field public static a:Lb;
+.field public static a_b:Lb;
 
 
 # direct methods
@@ -14,7 +14,7 @@
 
     invoke-direct {v0}, Lb;-><init>()V
 
-    sput-object v0, Lcq;->a:Lb;
+    sput-object v0, Lcq;->a_b:Lb;
 
     return-void
 .end method
@@ -27,7 +27,7 @@
     return-void
 .end method
 
-.method private static a(I)I
+.method private static a_I(I)I
     .locals 4
 
     and-int/lit16 v0, p0, 0xff
@@ -57,7 +57,7 @@
     return v0
 .end method
 
-.method private static a(IIII)I
+.method private static a_I(IIII)I
     .locals 3
 
     packed-switch p0, :pswitch_data_0
@@ -87,19 +87,19 @@
 
     sub-int v1, v0, p1
 
-    invoke-static {v1}, Lbz;->a(I)I
+    invoke-static {v1}, Lbz;->a_I(I)I
 
     move-result v1
 
     sub-int v2, v0, p2
 
-    invoke-static {v2}, Lbz;->a(I)I
+    invoke-static {v2}, Lbz;->a_I(I)I
 
     move-result v2
 
     sub-int/2addr v0, p3
 
-    invoke-static {v0}, Lbz;->a(I)I
+    invoke-static {v0}, Lbz;->a_I(I)I
 
     move-result v0
 
@@ -125,7 +125,7 @@
     .end packed-switch
 .end method
 
-.method private static a(S)S
+.method private static a_S(S)S
     .locals 2
 
     and-int/lit16 v0, p0, 0xff
@@ -143,7 +143,7 @@
     return v0
 .end method
 
-.method private static a(Ljava/io/DataOutputStream;[B)V
+.method private static a_V(Ljava/io/DataOutputStream;[B)V
     .locals 2
 
     array-length v0, p1
@@ -154,17 +154,17 @@
 
     invoke-virtual {p0, p1}, Ljava/io/DataOutputStream;->write([B)V
 
-    sget-object v0, Lcq;->a:Lb;
+    sget-object v0, Lcq;->a_b:Lb;
 
-    invoke-virtual {v0}, Lb;->a()V
+    invoke-virtual {v0}, Lb;->a_V()V
 
-    sget-object v0, Lcq;->a:Lb;
+    sget-object v0, Lcq;->a_b:Lb;
 
-    invoke-virtual {v0, p1}, Lb;->a([B)V
+    invoke-virtual {v0, p1}, Lb;->a_V([B)V
 
-    sget-object v0, Lcq;->a:Lb;
+    sget-object v0, Lcq;->a_b:Lb;
 
-    invoke-virtual {v0}, Lb;->a()J
+    invoke-virtual {v0}, Lb;->a_J()J
 
     move-result-wide v0
 
@@ -175,7 +175,7 @@
     return-void
 .end method
 
-.method private static a(Ljavax/microedition/lcdui/Image;Ljava/io/DataOutputStream;IIIZ)V
+.method private static a_V(Ljavax/microedition/lcdui/Image;Ljava/io/DataOutputStream;IIIZ)V
     .locals 26
 
     if-eqz p2, :cond_0
@@ -223,15 +223,15 @@
     :cond_0
     if-eqz p5, :cond_1
 
-    sget-object v3, Lce;->a:Lce;
+    sget-object v3, Lce;->a_ce:Lce;
 
     const/4 v4, 0x1
 
-    sget-object v5, Lce;->a:Lce;
+    sget-object v5, Lce;->a_ce:Lce;
 
-    iget-object v5, v5, Lce;->a:Lcg;
+    iget-object v5, v5, Lce;->a_cg:Lcg;
 
-    invoke-virtual {v3, v4, v5}, Lce;->a(ZLcg;)V
+    invoke-virtual {v3, v4, v5}, Lce;->a_V(ZLcg;)V
 
     :cond_1
     const/4 v8, 0x0
@@ -333,7 +333,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v3}, Lcq;->a(Ljava/io/DataOutputStream;[B)V
+    invoke-static {v0, v3}, Lcq;->a_V(Ljava/io/DataOutputStream;[B)V
 
     invoke-virtual/range {v16 .. v16}, Ljava/io/ByteArrayOutputStream;->reset()V
 
@@ -357,7 +357,7 @@
 
     invoke-direct/range {v3 .. v9}, Lck;-><init>(Ljavax/microedition/lcdui/Image;IIZZLaq;)V
 
-    invoke-virtual {v3}, Lck;->a()[I
+    invoke-virtual {v3}, Lck;->a_Is()[I
 
     move-result-object v5
 
@@ -418,7 +418,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v4}, Lcq;->a(Ljava/io/DataOutputStream;[B)V
+    invoke-static {v0, v4}, Lcq;->a_V(Ljava/io/DataOutputStream;[B)V
 
     invoke-virtual/range {v16 .. v16}, Ljava/io/ByteArrayOutputStream;->reset()V
 
@@ -456,7 +456,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v4}, Lcq;->a(Ljava/io/DataOutputStream;[B)V
+    invoke-static {v0, v4}, Lcq;->a_V(Ljava/io/DataOutputStream;[B)V
 
     invoke-virtual/range {v16 .. v16}, Ljava/io/ByteArrayOutputStream;->reset()V
 
@@ -687,7 +687,7 @@
 
     aget v6, v4, v3
 
-    invoke-virtual {v12, v6}, Lck;->a(I)I
+    invoke-virtual {v12, v6}, Lck;->a_I(I)I
 
     move-result v6
 
@@ -838,7 +838,7 @@
 
     move/from16 v0, v24
 
-    invoke-static {v3, v9, v10, v0}, Lcq;->a(IIII)I
+    invoke-static {v3, v9, v10, v0}, Lcq;->a_I(IIII)I
 
     move-result v9
 
@@ -860,7 +860,7 @@
 
     aget-byte v7, v7, v5
 
-    invoke-static {v7}, Lbz;->a(I)I
+    invoke-static {v7}, Lbz;->a_I(I)I
 
     move-result v7
 
@@ -902,7 +902,7 @@
 
     move/from16 v0, v24
 
-    invoke-static {v3, v9, v10, v0}, Lcq;->a(IIII)I
+    invoke-static {v3, v9, v10, v0}, Lcq;->a_I(IIII)I
 
     move-result v9
 
@@ -924,7 +924,7 @@
 
     aget-byte v7, v7, v5
 
-    invoke-static {v7}, Lbz;->a(I)I
+    invoke-static {v7}, Lbz;->a_I(I)I
 
     move-result v7
 
@@ -988,7 +988,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v3}, Lcq;->a(Ljava/io/DataOutputStream;[B)V
+    invoke-static {v0, v3}, Lcq;->a_V(Ljava/io/DataOutputStream;[B)V
 
     invoke-virtual/range {v16 .. v16}, Ljava/io/ByteArrayOutputStream;->reset()V
 
@@ -1037,11 +1037,11 @@
     goto :goto_e
 
     :cond_16
-    invoke-static {}, Lce;->u()V
+    invoke-static {}, Lce;->u_V()V
 
     invoke-static {}, Ljava/lang/System;->gc()V
 
-    invoke-virtual/range {v18 .. v18}, Lj;->a()V
+    invoke-virtual/range {v18 .. v18}, Lj;->a_V()V
 
     invoke-virtual/range {v16 .. v16}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
@@ -1049,7 +1049,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v3}, Lcq;->a(Ljava/io/DataOutputStream;[B)V
+    invoke-static {v0, v3}, Lcq;->a_V(Ljava/io/DataOutputStream;[B)V
 
     invoke-virtual/range {v16 .. v16}, Ljava/io/ByteArrayOutputStream;->reset()V
 
@@ -1065,7 +1065,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v3}, Lcq;->a(Ljava/io/DataOutputStream;[B)V
+    invoke-static {v0, v3}, Lcq;->a_V(Ljava/io/DataOutputStream;[B)V
 
     invoke-virtual/range {v16 .. v16}, Ljava/io/ByteArrayOutputStream;->close()V
 
@@ -1095,13 +1095,13 @@
     .end packed-switch
 .end method
 
-.method public static a(Ljavax/microedition/lcdui/Image;)[B
+.method public static a_Bs(Ljavax/microedition/lcdui/Image;)[B
     .locals 1
 
     const/4 v0, 0x0
 
     :try_start_0
-    invoke-static {p0, v0}, Lcq;->a(Ljavax/microedition/lcdui/Image;Z)[B
+    invoke-static {p0, v0}, Lcq;->a_Bs(Ljavax/microedition/lcdui/Image;Z)[B
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1118,7 +1118,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljavax/microedition/lcdui/Image;IIIZ)[B
+.method public static a_Bs(Ljavax/microedition/lcdui/Image;IIIZ)[B
     .locals 7
 
     new-instance v6, Ljava/io/ByteArrayOutputStream;
@@ -1139,7 +1139,7 @@
 
     move v5, p4
 
-    invoke-static/range {v0 .. v5}, Lcq;->a(Ljavax/microedition/lcdui/Image;Ljava/io/DataOutputStream;IIIZ)V
+    invoke-static/range {v0 .. v5}, Lcq;->a_V(Ljavax/microedition/lcdui/Image;Ljava/io/DataOutputStream;IIIZ)V
 
     invoke-virtual {v6}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
@@ -1150,7 +1150,7 @@
     return-object v0
 .end method
 
-.method public static a(Ljavax/microedition/lcdui/Image;Z)[B
+.method public static a_Bs(Ljavax/microedition/lcdui/Image;Z)[B
     .locals 3
 
     const/4 v0, 0x2
@@ -1159,14 +1159,14 @@
 
     const/4 v2, -0x1
 
-    invoke-static {p0, v0, v1, v2, p1}, Lcq;->a(Ljavax/microedition/lcdui/Image;IIIZ)[B
+    invoke-static {p0, v0, v1, v2, p1}, Lcq;->a_Bs(Ljavax/microedition/lcdui/Image;IIIZ)[B
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static b(Ljavax/microedition/lcdui/Image;Z)[B
+.method public static b_Bs(Ljavax/microedition/lcdui/Image;Z)[B
     .locals 13
 
     const/4 v7, 0x1
@@ -1175,13 +1175,13 @@
 
     if-eqz p1, :cond_0
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, Lce;->a_ce:Lce;
 
-    iget-object v1, v1, Lce;->a:Lcg;
+    iget-object v1, v1, Lce;->a_cg:Lcg;
 
-    invoke-virtual {v0, v7, v1}, Lce;->a(ZLcg;)V
+    invoke-virtual {v0, v7, v1}, Lce;->a_V(ZLcg;)V
 
     :cond_0
     invoke-virtual {p0}, Ljavax/microedition/lcdui/Image;->getWidth()I
@@ -1222,7 +1222,7 @@
 
     invoke-virtual {v12, v1}, Ljava/io/DataOutputStream;->writeByte(I)V
 
-    invoke-static {v10}, Lcq;->a(I)I
+    invoke-static {v10}, Lcq;->a_I(I)I
 
     move-result v1
 
@@ -1232,7 +1232,7 @@
 
     const/16 v1, 0x36
 
-    invoke-static {v1}, Lcq;->a(I)I
+    invoke-static {v1}, Lcq;->a_I(I)I
 
     move-result v1
 
@@ -1240,25 +1240,25 @@
 
     const/16 v1, 0x28
 
-    invoke-static {v1}, Lcq;->a(I)I
+    invoke-static {v1}, Lcq;->a_I(I)I
 
     move-result v1
 
     invoke-virtual {v12, v1}, Ljava/io/DataOutputStream;->writeInt(I)V
 
-    invoke-static {v3}, Lcq;->a(I)I
+    invoke-static {v3}, Lcq;->a_I(I)I
 
     move-result v1
 
     invoke-virtual {v12, v1}, Ljava/io/DataOutputStream;->writeInt(I)V
 
-    invoke-static {v0}, Lcq;->a(I)I
+    invoke-static {v0}, Lcq;->a_I(I)I
 
     move-result v1
 
     invoke-virtual {v12, v1}, Ljava/io/DataOutputStream;->writeInt(I)V
 
-    invoke-static {v7}, Lcq;->a(S)S
+    invoke-static {v7}, Lcq;->a_S(S)S
 
     move-result v1
 
@@ -1266,7 +1266,7 @@
 
     const/16 v1, 0x18
 
-    invoke-static {v1}, Lcq;->a(S)S
+    invoke-static {v1}, Lcq;->a_S(S)S
 
     move-result v1
 
@@ -1354,9 +1354,9 @@
     goto :goto_0
 
     :cond_3
-    invoke-static {}, Lce;->u()V
+    invoke-static {}, Lce;->u_V()V
 
-    invoke-virtual {v11}, Lay;->a()[B
+    invoke-virtual {v11}, Lay;->a_Bs()[B
 
     move-result-object v1
 

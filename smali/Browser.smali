@@ -22,7 +22,7 @@
 .method public pauseApp()V
     .locals 0
 
-    invoke-static {}, Lbp;->b()V
+    invoke-static {}, Lbp;->b_V()V
 
     return-void
 .end method
@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lbp;->a(Ljavax/microedition/midlet/MIDlet;Ljavax/microedition/lcdui/Display;)V
+    invoke-static {p0, v0}, Lbp;->a_V(Ljavax/microedition/midlet/MIDlet;Ljavax/microedition/lcdui/Display;)V
 
     return-void
 .end method

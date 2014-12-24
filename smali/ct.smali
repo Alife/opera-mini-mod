@@ -6,9 +6,9 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a_String:Ljava/lang/String;
 
-.field public final b:Ljava/lang/String;
+.field public final b_String:Ljava/lang/String;
 
 
 # direct methods
@@ -71,13 +71,13 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lct;->a:Ljava/lang/String;
+    iput-object v0, p0, Lct;->a_String:Ljava/lang/String;
 
-    iput-object p2, p0, Lct;->b:Ljava/lang/String;
+    iput-object p2, p0, Lct;->b_String:Ljava/lang/String;
 
     return-void
 .end method
@@ -90,7 +90,7 @@
     const/4 v1, 0x0
 
     :try_start_0
-    iget-object v0, p0, Lct;->a:Ljava/lang/String;
+    iget-object v0, p0, Lct;->a_String:Ljava/lang/String;
 
     invoke-static {v0}, Ljavax/microedition/io/Connector;->open(Ljava/lang/String;)Ljavax/microedition/io/Connection;
 
@@ -110,7 +110,7 @@
 
     check-cast v1, Ljavax/wireless/messaging/TextMessage;
 
-    iget-object v2, p0, Lct;->b:Ljava/lang/String;
+    iget-object v2, p0, Lct;->b_String:Ljava/lang/String;
 
     invoke-interface {v1, v2}, Ljavax/wireless/messaging/TextMessage;->setPayloadText(Ljava/lang/String;)V
 
@@ -120,18 +120,18 @@
 
     const/16 v2, 0x47
 
-    invoke-static {v2}, Lbz;->e(I)Ljava/lang/String;
+    invoke-static {v2}, Lbz;->e_String(I)Ljava/lang/String;
 
     move-result-object v2
 
     const/4 v3, 0x3
 
-    invoke-static {v1, v2, v3}, Lce;->a(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-static {v1, v2, v3}, Lce;->a_V(Ljava/lang/String;Ljava/lang/String;I)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
 
-    invoke-static {v0}, Lbz;->b(Ljava/lang/Object;)V
+    invoke-static {v0}, Lbz;->b_V(Ljava/lang/Object;)V
 
     :goto_0
     return-void
@@ -147,17 +147,17 @@
 
     const/16 v2, 0x37
 
-    invoke-static {v2}, Lbz;->e(I)Ljava/lang/String;
+    invoke-static {v2}, Lbz;->e_String(I)Ljava/lang/String;
 
     move-result-object v2
 
     const/4 v3, 0x1
 
-    invoke-static {v0, v2, v3}, Lce;->a(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-static {v0, v2, v3}, Lce;->a_V(Ljava/lang/String;Ljava/lang/String;I)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    invoke-static {v1}, Lbz;->b(Ljava/lang/Object;)V
+    invoke-static {v1}, Lbz;->b_V(Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -171,7 +171,7 @@
     move-object v0, v4
 
     :goto_2
-    invoke-static {v1}, Lbz;->b(Ljava/lang/Object;)V
+    invoke-static {v1}, Lbz;->b_V(Ljava/lang/Object;)V
 
     throw v0
 

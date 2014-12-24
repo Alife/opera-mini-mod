@@ -3,15 +3,15 @@
 
 
 # instance fields
-.field public a:J
+.field public a_J:J
 
-.field public a:Lal;
+.field public a_al:Lal;
 
-.field public a:Ljava/lang/String;
+.field public a_String:Ljava/lang/String;
 
-.field public a:Z
+.field public a_Z:Z
 
-.field public d:I
+.field public d_I:I
 
 
 # direct methods
@@ -22,15 +22,15 @@
 
     const-string v0, ""
 
-    iput-object v0, p0, Lae;->a:Ljava/lang/String;
+    iput-object v0, p0, Lae;->a_String:Ljava/lang/String;
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lae;->d:I
+    iput v0, p0, Lae;->d_I:I
 
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lae;->a:J
+    iput-wide v0, p0, Lae;->a_J:J
 
     return-void
 .end method
@@ -42,67 +42,67 @@
 
     const-string v0, ""
 
-    iput-object v0, p0, Lae;->a:Ljava/lang/String;
+    iput-object v0, p0, Lae;->a_String:Ljava/lang/String;
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lae;->d:I
+    iput v0, p0, Lae;->d_I:I
 
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lae;->a:J
+    iput-wide v0, p0, Lae;->a_J:J
 
-    invoke-virtual {p0, p1}, Lae;->a(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lae;->a_V(Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()J
+.method public a_J()J
     .locals 2
 
-    iget-wide v0, p0, Lae;->a:J
+    iget-wide v0, p0, Lae;->a_J:J
 
     return-wide v0
 .end method
 
-.method public a()Ljava/lang/String;
+.method public a_String()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lae;->a:Ljava/lang/String;
+    iget-object v0, p0, Lae;->a_String:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public a(I)V
+.method public a_V(I)V
     .locals 0
 
-    iput p1, p0, Lae;->d:I
+    iput p1, p0, Lae;->d_I:I
 
     return-void
 .end method
 
-.method public a(J)V
+.method public a_V(J)V
     .locals 0
 
-    iput-wide p1, p0, Lae;->a:J
+    iput-wide p1, p0, Lae;->a_J:J
 
     return-void
 .end method
 
-.method public a(Ljava/lang/String;)V
+.method public a_V(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lae;->a:Ljava/lang/String;
+    iput-object p1, p0, Lae;->a_String:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public b()I
+.method public b_I()I
     .locals 1
 
-    iget v0, p0, Lae;->d:I
+    iget v0, p0, Lae;->d_I:I
 
     return v0
 .end method
@@ -131,11 +131,11 @@
 
     check-cast p1, Lae;
 
-    iget-object v1, p0, Lae;->a:Ljava/lang/String;
+    iget-object v1, p0, Lae;->a_String:Ljava/lang/String;
 
     if-nez v1, :cond_3
 
-    iget-object v1, p1, Lae;->a:Ljava/lang/String;
+    iget-object v1, p1, Lae;->a_String:Ljava/lang/String;
 
     if-nez v1, :cond_0
 
@@ -145,9 +145,9 @@
     goto :goto_0
 
     :cond_3
-    iget-object v1, p0, Lae;->a:Ljava/lang/String;
+    iget-object v1, p0, Lae;->a_String:Ljava/lang/String;
 
-    iget-object v2, p1, Lae;->a:Ljava/lang/String;
+    iget-object v2, p1, Lae;->a_String:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -161,7 +161,7 @@
 .method public hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lae;->a:Ljava/lang/String;
+    iget-object v0, p0, Lae;->a_String:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -199,9 +199,9 @@
 
     const-string v4, "] "
 
-    iget-object v5, p0, Lae;->a:Ljava/lang/String;
+    iget-object v5, p0, Lae;->a_String:Ljava/lang/String;
 
-    invoke-static/range {v0 .. v5}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {v0 .. v5}, Lcc;->a_String(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

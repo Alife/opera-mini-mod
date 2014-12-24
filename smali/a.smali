@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
 
 # direct methods
@@ -14,19 +14,19 @@
 
     const/4 v0, 0x1
 
-    iput v0, p0, La;->a:I
+    iput v0, p0, La;->a_I:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()J
+.method public final a_J()J
     .locals 4
 
     const-wide v0, 0xffffffffL
 
-    iget v2, p0, La;->a:I
+    iget v2, p0, La;->a_I:I
 
     int-to-long v2, v2
 
@@ -35,7 +35,7 @@
     return-wide v0
 .end method
 
-.method public final a([BII)V
+.method public final a_V([BII)V
     .locals 7
 
     const v6, 0xfff1
@@ -44,11 +44,11 @@
 
     const v0, 0xffff
 
-    iget v1, p0, La;->a:I
+    iget v1, p0, La;->a_I:I
 
     and-int v4, v0, v1
 
-    iget v0, p0, La;->a:I
+    iget v0, p0, La;->a_I:I
 
     ushr-int/lit8 v5, v0, 0x10
 
@@ -117,7 +117,7 @@
 
     or-int/2addr v0, v4
 
-    iput v0, p0, La;->a:I
+    iput v0, p0, La;->a_I:I
 
     return-void
 

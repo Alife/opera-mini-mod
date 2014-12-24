@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field public final a:[Ljava/lang/Object;
+.field public final a_Objects:[Ljava/lang/Object;
 
-.field public final b:[Ljava/lang/Object;
+.field public final b_Objects:[Ljava/lang/Object;
 
-.field public final c:[Ljava/lang/Object;
+.field public final c_Objects:[Ljava/lang/Object;
 
 
 # direct methods
@@ -30,29 +30,29 @@
 
     new-array v0, v1, [Ljava/lang/Object;
 
-    iput-object v0, p0, Lbw;->a:[Ljava/lang/Object;
+    iput-object v0, p0, Lbw;->a_Objects:[Ljava/lang/Object;
 
     new-array v0, v1, [Ljava/lang/Object;
 
-    iput-object v0, p0, Lbw;->b:[Ljava/lang/Object;
+    iput-object v0, p0, Lbw;->b_Objects:[Ljava/lang/Object;
 
     new-array v0, v1, [Ljava/lang/Object;
 
-    iput-object v0, p0, Lbw;->c:[Ljava/lang/Object;
+    iput-object v0, p0, Lbw;->c_Objects:[Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final a_V(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 3
 
     const/4 v1, -0x1
 
     if-eqz p1, :cond_2
 
-    iget-object v0, p0, Lbw;->a:[Ljava/lang/Object;
+    iget-object v0, p0, Lbw;->a_Objects:[Ljava/lang/Object;
 
     array-length v0, v0
 
@@ -61,7 +61,7 @@
 
     if-ltz v0, :cond_3
 
-    iget-object v2, p0, Lbw;->a:[Ljava/lang/Object;
+    iget-object v2, p0, Lbw;->a_Objects:[Ljava/lang/Object;
 
     aget-object v2, v2, v0
 
@@ -72,7 +72,7 @@
 
     const v0, 0x7fffffff
 
-    sget-object v1, Lbz;->a:Ljava/util/Random;
+    sget-object v1, Lbz;->a_Random:Ljava/util/Random;
 
     invoke-virtual {v1}, Ljava/util/Random;->nextInt()I
 
@@ -80,22 +80,22 @@
 
     and-int/2addr v0, v1
 
-    iget-object v1, p0, Lbw;->a:[Ljava/lang/Object;
+    iget-object v1, p0, Lbw;->a_Objects:[Ljava/lang/Object;
 
     array-length v1, v1
 
     rem-int/2addr v0, v1
 
     :cond_1
-    iget-object v1, p0, Lbw;->a:[Ljava/lang/Object;
+    iget-object v1, p0, Lbw;->a_Objects:[Ljava/lang/Object;
 
     aput-object p1, v1, v0
 
-    iget-object v1, p0, Lbw;->b:[Ljava/lang/Object;
+    iget-object v1, p0, Lbw;->b_Objects:[Ljava/lang/Object;
 
     aput-object p2, v1, v0
 
-    iget-object v1, p0, Lbw;->c:[Ljava/lang/Object;
+    iget-object v1, p0, Lbw;->c_Objects:[Ljava/lang/Object;
 
     aput-object p3, v1, v0
 

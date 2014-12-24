@@ -13,19 +13,19 @@
 
 
 # virtual methods
-.method public abstract a()I
+.method public abstract a_I()I
 .end method
 
-.method public final a([BIIIILaq;)I
+.method public final a_I([BIIIILaq;)I
     .locals 8
 
-    invoke-virtual {p0}, Lah;->a()I
+    invoke-virtual {p0}, Lah;->a_I()I
 
     move-result v3
 
     if-ltz p4, :cond_0
 
-    invoke-virtual {p0, p4}, Lah;->a(I)V
+    invoke-virtual {p0, p4}, Lah;->a_V(I)V
 
     :cond_0
     const/4 v2, -0x1
@@ -44,7 +44,7 @@
 
     const/16 v0, 0x245
 
-    invoke-static {v0}, Lbz;->e(I)Ljava/lang/String;
+    invoke-static {v0}, Lbz;->e_String(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -60,25 +60,25 @@
 
     const-string v6, " ..."
 
-    invoke-static {v1, v5, v6}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v5, v6}, Lcc;->a_String(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {p6, v0, v1}, Laq;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {p6, v0, v1}, Laq;->a_V(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    invoke-interface {p6, v0}, Laq;->a(Z)V
+    invoke-interface {p6, v0}, Laq;->a_V(Z)V
 
-    invoke-virtual {p0}, Lah;->a()I
+    invoke-virtual {p0}, Lah;->a_I()I
 
     move-result v0
 
     int-to-long v0, v0
 
-    invoke-interface {p6, v0, v1}, Laq;->b(J)V
+    invoke-interface {p6, v0, v1}, Laq;->b_V(J)V
 
-    invoke-virtual {p0}, Lah;->a()I
+    invoke-virtual {p0}, Lah;->a_I()I
 
     move-result v0
 
@@ -90,11 +90,11 @@
 
     int-to-long v0, v0
 
-    invoke-interface {p6, v0, v1}, Laq;->a(J)V
+    invoke-interface {p6, v0, v1}, Laq;->a_V(J)V
 
-    invoke-interface {p6}, Laq;->a()V
+    invoke-interface {p6}, Laq;->a_V()V
 
-    invoke-interface {p6}, Laq;->a()Z
+    invoke-interface {p6}, Laq;->a_Z()Z
 
     move-result v5
 
@@ -128,7 +128,7 @@
 
     if-gez v2, :cond_2
 
-    invoke-virtual {p0}, Lah;->a()I
+    invoke-virtual {p0}, Lah;->a_I()I
 
     move-result v2
 
@@ -142,7 +142,7 @@
     if-lt v0, v5, :cond_5
 
     :cond_3
-    invoke-virtual {p0, v3}, Lah;->a(I)V
+    invoke-virtual {p0, v3}, Lah;->a_V(I)V
 
     goto :goto_0
 
@@ -153,7 +153,7 @@
 
     if-ne v5, v0, :cond_8
 
-    invoke-virtual {p0}, Lah;->a()I
+    invoke-virtual {p0}, Lah;->a_I()I
 
     move-result v0
 
@@ -165,7 +165,7 @@
     :goto_1
     if-ltz p5, :cond_6
 
-    invoke-virtual {p0}, Lah;->a()I
+    invoke-virtual {p0}, Lah;->a_I()I
 
     move-result v5
 
@@ -178,14 +178,14 @@
 
     if-ne v1, v4, :cond_7
 
-    invoke-interface {p6, v1}, Laq;->a(I)V
+    invoke-interface {p6, v1}, Laq;->a_V(I)V
 
     const/4 v1, 0x0
 
-    invoke-interface {p6}, Laq;->a()V
+    invoke-interface {p6}, Laq;->a_V()V
 
     :cond_7
-    invoke-interface {p6}, Laq;->a()Z
+    invoke-interface {p6}, Laq;->a_Z()Z
 
     move-result v5
 
@@ -203,10 +203,10 @@
     goto :goto_1
 .end method
 
-.method public abstract a(I)V
+.method public abstract a_V(I)V
 .end method
 
-.method public abstract b()I
+.method public abstract b_I()I
 .end method
 
 .method public final markSupported()Z

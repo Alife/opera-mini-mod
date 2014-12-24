@@ -3,25 +3,25 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public a:Ljava/lang/String;
+.field public a_String:Ljava/lang/String;
 
-.field public b:Ljava/lang/String;
+.field public b_String:Ljava/lang/String;
 
-.field public c:Ljava/lang/String;
+.field public c_String:Ljava/lang/String;
 
-.field public d:Ljava/lang/String;
+.field public d_String:Ljava/lang/String;
 
-.field public e:Ljava/lang/String;
+.field public e_String:Ljava/lang/String;
 
-.field public f:Ljava/lang/String;
+.field public f_String:Ljava/lang/String;
 
-.field public g:Ljava/lang/String;
+.field public g_String:Ljava/lang/String;
 
-.field public h:Ljava/lang/String;
+.field public h_String:Ljava/lang/String;
 
-.field public i:Ljava/lang/String;
+.field public i_String:Ljava/lang/String;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lcd;->a:I
+    iput v0, p0, Lcd;->a_I:I
 
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
@@ -150,13 +150,13 @@
     add-int/lit8 v4, v6, 0x1
 
     :goto_4
-    iput-object v0, p0, Lcd;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcd;->e_String:Ljava/lang/String;
 
     if-eqz p1, :cond_5
 
     if-eqz v0, :cond_3
 
-    iget-object v6, p1, Lcd;->e:Ljava/lang/String;
+    iget-object v6, p1, Lcd;->e_String:Ljava/lang/String;
 
     invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -165,13 +165,13 @@
     if-eqz v6, :cond_5
 
     :cond_3
-    iget-object v6, p1, Lcd;->h:Ljava/lang/String;
+    iget-object v6, p1, Lcd;->h_String:Ljava/lang/String;
 
     if-eqz v6, :cond_4
 
-    iget-object v6, p1, Lcd;->h:Ljava/lang/String;
+    iget-object v6, p1, Lcd;->h_String:Ljava/lang/String;
 
-    invoke-static {v6}, Lcc;->e(Ljava/lang/String;)Z
+    invoke-static {v6}, Lcc;->e_Z(Ljava/lang/String;)Z
 
     move-result v6
 
@@ -182,37 +182,37 @@
     :cond_4
     if-nez v0, :cond_5
 
-    iget-object v0, p1, Lcd;->e:Ljava/lang/String;
+    iget-object v0, p1, Lcd;->e_String:Ljava/lang/String;
 
-    iput-object v0, p0, Lcd;->e:Ljava/lang/String;
+    iput-object v0, p0, Lcd;->e_String:Ljava/lang/String;
 
-    iget-object v0, p1, Lcd;->f:Ljava/lang/String;
+    iget-object v0, p1, Lcd;->f_String:Ljava/lang/String;
 
-    iput-object v0, p0, Lcd;->f:Ljava/lang/String;
+    iput-object v0, p0, Lcd;->f_String:Ljava/lang/String;
 
-    iget-object v0, p1, Lcd;->a:Ljava/lang/String;
+    iget-object v0, p1, Lcd;->a_String:Ljava/lang/String;
 
-    iput-object v0, p0, Lcd;->a:Ljava/lang/String;
+    iput-object v0, p0, Lcd;->a_String:Ljava/lang/String;
 
-    iget-object v0, p1, Lcd;->b:Ljava/lang/String;
+    iget-object v0, p1, Lcd;->b_String:Ljava/lang/String;
 
-    iput-object v0, p0, Lcd;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcd;->b_String:Ljava/lang/String;
 
-    iget-object v0, p1, Lcd;->c:Ljava/lang/String;
+    iget-object v0, p1, Lcd;->c_String:Ljava/lang/String;
 
-    iput-object v0, p0, Lcd;->c:Ljava/lang/String;
+    iput-object v0, p0, Lcd;->c_String:Ljava/lang/String;
 
-    iget v0, p1, Lcd;->a:I
+    iget v0, p1, Lcd;->a_I:I
 
-    iput v0, p0, Lcd;->a:I
+    iput v0, p0, Lcd;->a_I:I
 
-    iget-object v0, p1, Lcd;->d:Ljava/lang/String;
+    iget-object v0, p1, Lcd;->d_String:Ljava/lang/String;
 
-    iput-object v0, p0, Lcd;->d:Ljava/lang/String;
+    iput-object v0, p0, Lcd;->d_String:Ljava/lang/String;
 
-    iget-object v0, p1, Lcd;->h:Ljava/lang/String;
+    iget-object v0, p1, Lcd;->h_String:Ljava/lang/String;
 
-    iput-object v0, p0, Lcd;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcd;->h_String:Ljava/lang/String;
 
     move v2, v1
 
@@ -229,27 +229,27 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcd;->i:Ljava/lang/String;
+    iput-object v1, p0, Lcd;->i_String:Ljava/lang/String;
 
     :goto_5
     if-eqz v2, :cond_6
 
     if-ne v4, v0, :cond_6
 
-    iget-object v1, p1, Lcd;->g:Ljava/lang/String;
+    iget-object v1, p1, Lcd;->g_String:Ljava/lang/String;
 
-    iput-object v1, p0, Lcd;->g:Ljava/lang/String;
+    iput-object v1, p0, Lcd;->g_String:Ljava/lang/String;
 
-    iget-object v1, p0, Lcd;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->i_String:Ljava/lang/String;
 
     if-nez v1, :cond_6
 
-    iget-object v1, p1, Lcd;->i:Ljava/lang/String;
+    iget-object v1, p1, Lcd;->i_String:Ljava/lang/String;
 
-    iput-object v1, p0, Lcd;->i:Ljava/lang/String;
+    iput-object v1, p0, Lcd;->i_String:Ljava/lang/String;
 
     :cond_6
-    invoke-static {p0, p2, v4, v0}, Lcd;->a(Lcd;Ljava/lang/String;II)V
+    invoke-static {p0, p2, v4, v0}, Lcd;->a_V(Lcd;Ljava/lang/String;II)V
 
     return-void
 
@@ -284,7 +284,7 @@
     return-void
 .end method
 
-.method static a(Lcd;Z)Ljava/lang/String;
+.method static a_String(Lcd;Z)Ljava/lang/String;
     .locals 3
 
     const/16 v2, 0x3a
@@ -293,22 +293,22 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
-    iget-object v1, p0, Lcd;->e:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->e_String:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcd;->e:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->e_String:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
     :cond_0
-    iget-object v1, p0, Lcd;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->f_String:Ljava/lang/String;
 
     if-eqz v1, :cond_5
 
-    iget-object v1, p0, Lcd;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->f_String:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -322,22 +322,22 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcd;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->f_String:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_1
     :goto_0
-    iget-object v1, p0, Lcd;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->h_String:Ljava/lang/String;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcd;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->h_String:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_2
-    iget-object v1, p0, Lcd;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->g_String:Ljava/lang/String;
 
     if-eqz v1, :cond_3
 
@@ -345,12 +345,12 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcd;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->g_String:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_3
-    iget-object v1, p0, Lcd;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->i_String:Ljava/lang/String;
 
     if-eqz v1, :cond_4
 
@@ -358,7 +358,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcd;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->i_String:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -370,11 +370,11 @@
     return-object v0
 
     :cond_5
-    iget-object v1, p0, Lcd;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->c_String:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcd;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->c_String:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -388,24 +388,24 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcd;->c:Ljava/lang/String;
+    iget-object v1, p0, Lcd;->c_String:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget v1, p0, Lcd;->a:I
+    iget v1, p0, Lcd;->a_I:I
 
     if-lez v1, :cond_1
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    iget v1, p0, Lcd;->a:I
+    iget v1, p0, Lcd;->a_I:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
     goto :goto_0
 .end method
 
-.method public static a(Ljava/lang/String;)Ljava/lang/String;
+.method public static a_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     const-string v0, "http://"
@@ -476,7 +476,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/lang/String;Z)Ljava/lang/String;
+.method public static a_String(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 5
 
     const/16 v4, 0x20
@@ -532,7 +532,7 @@
     if-gt v2, v4, :cond_3
 
     :cond_2
-    invoke-static {v1, v2}, Lcd;->a(Ljava/lang/StringBuffer;I)V
+    invoke-static {v1, v2}, Lcd;->a_V(Ljava/lang/StringBuffer;I)V
 
     add-int/lit8 v0, v0, 0x1
 
@@ -549,7 +549,7 @@
 
     if-ltz v3, :cond_4
 
-    invoke-static {v1, v2}, Lcd;->a(Ljava/lang/StringBuffer;I)V
+    invoke-static {v1, v2}, Lcd;->a_V(Ljava/lang/StringBuffer;I)V
 
     add-int/lit8 v0, v0, 0x1
 
@@ -563,7 +563,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-static {v1, v2}, Lcd;->a(Ljava/lang/StringBuffer;C)V
+    invoke-static {v1, v2}, Lcd;->a_V(Ljava/lang/StringBuffer;C)V
 
     add-int/lit8 v0, v0, 0x1
 
@@ -577,7 +577,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/lang/String;ZZ)Ljava/lang/String;
+.method public static a_String(Ljava/lang/String;ZZ)Ljava/lang/String;
     .locals 6
 
     if-nez p0, :cond_0
@@ -763,40 +763,40 @@
     goto/16 :goto_0
 .end method
 
-.method private static a(Lcd;Ljava/lang/String;II)V
+.method private static a_V(Lcd;Ljava/lang/String;II)V
     .locals 17
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcd;->f:Ljava/lang/String;
+    iget-object v6, v0, Lcd;->f_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcd;->a:Ljava/lang/String;
+    iget-object v4, v0, Lcd;->a_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcd;->b:Ljava/lang/String;
+    iget-object v5, v0, Lcd;->b_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lcd;->c:Ljava/lang/String;
+    iget-object v8, v0, Lcd;->c_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iget v10, v0, Lcd;->a:I
+    iget v10, v0, Lcd;->a_I:I
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcd;->h:Ljava/lang/String;
+    iget-object v7, v0, Lcd;->h_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iget-object v9, v0, Lcd;->g:Ljava/lang/String;
+    iget-object v9, v0, Lcd;->g_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcd;->i:Ljava/lang/String;
+    iget-object v13, v0, Lcd;->i_String:Ljava/lang/String;
 
     move/from16 v0, p2
 
@@ -1002,7 +1002,7 @@
 
     const/4 v14, 0x0
 
-    invoke-static {v4, v14}, Lcc;->b(Ljava/lang/String;I)I
+    invoke-static {v4, v14}, Lcc;->b_I(Ljava/lang/String;I)I
 
     move-result v4
 
@@ -1134,7 +1134,7 @@
 
     move-result-object v2
 
-    invoke-static {v4, v2}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v2}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1182,7 +1182,7 @@
 
     move-result-object v3
 
-    invoke-static {v4, v2, v3}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v2, v3}, Lcc;->a_String(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1210,7 +1210,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1253,7 +1253,7 @@
 
     const-string v3, "/"
 
-    invoke-static {v2, v3}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1302,7 +1302,7 @@
 
     move-result-object v2
 
-    invoke-static {v4, v2}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v2}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1415,56 +1415,56 @@
     :cond_16
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcd;->e:Ljava/lang/String;
+    iget-object v3, v0, Lcd;->e_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v3, v0, Lcd;->e:Ljava/lang/String;
+    iput-object v3, v0, Lcd;->e_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v5, v0, Lcd;->c:Ljava/lang/String;
+    iput-object v5, v0, Lcd;->c_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v8, v0, Lcd;->f:Ljava/lang/String;
+    iput-object v8, v0, Lcd;->f_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v7, v0, Lcd;->a:Ljava/lang/String;
+    iput-object v7, v0, Lcd;->a_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v6, v0, Lcd;->b:Ljava/lang/String;
+    iput-object v6, v0, Lcd;->b_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcd;->h:Ljava/lang/String;
+    iput-object v2, v0, Lcd;->h_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v12, v0, Lcd;->g:Ljava/lang/String;
+    iput-object v12, v0, Lcd;->g_String:Ljava/lang/String;
 
     if-eqz v12, :cond_17
 
     const-string v3, "?"
 
-    invoke-static {v2, v3, v12}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3, v12}, Lcc;->a_String(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     :cond_17
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcd;->d:Ljava/lang/String;
+    iput-object v2, v0, Lcd;->d_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcd;->i:Ljava/lang/String;
+    iput-object v13, v0, Lcd;->i_String:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput v9, v0, Lcd;->a:I
+    iput v9, v0, Lcd;->a_I:I
 
     return-void
 
@@ -1535,7 +1535,7 @@
     goto/16 :goto_1
 .end method
 
-.method private static a(Ljava/lang/StringBuffer;C)V
+.method private static a_V(Ljava/lang/StringBuffer;C)V
     .locals 1
 
     const/16 v0, 0x7ff
@@ -1548,7 +1548,7 @@
 
     or-int/lit16 v0, v0, 0xe0
 
-    invoke-static {p0, v0}, Lcd;->a(Ljava/lang/StringBuffer;I)V
+    invoke-static {p0, v0}, Lcd;->a_V(Ljava/lang/StringBuffer;I)V
 
     shr-int/lit8 v0, p1, 0x6
 
@@ -1556,14 +1556,14 @@
 
     or-int/lit16 v0, v0, 0x80
 
-    invoke-static {p0, v0}, Lcd;->a(Ljava/lang/StringBuffer;I)V
+    invoke-static {p0, v0}, Lcd;->a_V(Ljava/lang/StringBuffer;I)V
 
     :goto_0
     and-int/lit8 v0, p1, 0x3f
 
     or-int/lit16 v0, v0, 0x80
 
-    invoke-static {p0, v0}, Lcd;->a(Ljava/lang/StringBuffer;I)V
+    invoke-static {p0, v0}, Lcd;->a_V(Ljava/lang/StringBuffer;I)V
 
     return-void
 
@@ -1574,12 +1574,12 @@
 
     or-int/lit16 v0, v0, 0xc0
 
-    invoke-static {p0, v0}, Lcd;->a(Ljava/lang/StringBuffer;I)V
+    invoke-static {p0, v0}, Lcd;->a_V(Ljava/lang/StringBuffer;I)V
 
     goto :goto_0
 .end method
 
-.method private static a(Ljava/lang/StringBuffer;I)V
+.method private static a_V(Ljava/lang/StringBuffer;I)V
     .locals 1
 
     const/16 v0, 0x25
@@ -1604,7 +1604,7 @@
     return-void
 .end method
 
-.method public static a(Ljava/lang/StringBuffer;Ljava/lang/String;)V
+.method public static a_V(Ljava/lang/StringBuffer;Ljava/lang/String;)V
     .locals 4
 
     invoke-virtual {p0}, Ljava/lang/StringBuffer;->length()I
@@ -1680,7 +1680,7 @@
     return-void
 .end method
 
-.method public static b(Ljava/lang/String;)Ljava/lang/String;
+.method public static b_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     const-string v0, "://"
@@ -1703,7 +1703,7 @@
     return-object p0
 .end method
 
-.method public static c(Ljava/lang/String;)Ljava/lang/String;
+.method public static c_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     if-eqz p0, :cond_0
@@ -1736,7 +1736,7 @@
     return-object p0
 .end method
 
-.method public static d(Ljava/lang/String;)Ljava/lang/String;
+.method public static d_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     const/16 v0, 0x3f
@@ -1759,7 +1759,7 @@
     return-object p0
 .end method
 
-.method public static e(Ljava/lang/String;)Ljava/lang/String;
+.method public static e_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
 
     const/4 v3, 0x1
@@ -1771,25 +1771,25 @@
     invoke-direct {v4, p0}, Lcd;-><init>(Ljava/lang/String;)V
 
     :try_start_0
-    iget-object v0, v4, Lcd;->f:Ljava/lang/String;
+    iget-object v0, v4, Lcd;->f_String:Ljava/lang/String;
 
-    invoke-static {v0}, Las;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Las;->a_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v4, Lcd;->f:Ljava/lang/String;
+    iput-object v0, v4, Lcd;->f_String:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    iget-object v0, v4, Lcd;->h:Ljava/lang/String;
+    iget-object v0, v4, Lcd;->h_String:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
     :goto_1
-    iput-object v0, v4, Lcd;->h:Ljava/lang/String;
+    iput-object v0, v4, Lcd;->h_String:Ljava/lang/String;
 
-    invoke-static {v4, v3}, Lcd;->a(Lcd;Z)Ljava/lang/String;
+    invoke-static {v4, v3}, Lcd;->a_String(Lcd;Z)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1861,7 +1861,7 @@
     if-eq v7, v8, :cond_4
 
     :cond_2
-    invoke-static {v5, v6}, Lcd;->a(Ljava/lang/StringBuffer;I)V
+    invoke-static {v5, v6}, Lcd;->a_V(Ljava/lang/StringBuffer;I)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -1880,7 +1880,7 @@
     goto :goto_4
 
     :cond_5
-    invoke-static {v5, v6}, Lcd;->a(Ljava/lang/StringBuffer;C)V
+    invoke-static {v5, v6}, Lcd;->a_V(Ljava/lang/StringBuffer;C)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -1904,12 +1904,12 @@
     goto :goto_0
 .end method
 
-.method public static f(Ljava/lang/String;)Ljava/lang/String;
+.method public static f_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     const-string v0, "http://"
 
-    invoke-static {p0, v0}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Lcc;->a_Z(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1917,7 +1917,7 @@
 
     const-string v0, "https://"
 
-    invoke-static {p0, v0}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Lcc;->a_Z(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1925,7 +1925,7 @@
 
     const-string v0, "file:///"
 
-    invoke-static {p0, v0}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Lcc;->a_Z(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1933,7 +1933,7 @@
 
     const-string v0, "http://"
 
-    invoke-static {v0, p0}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -1941,10 +1941,10 @@
     return-object p0
 .end method
 
-.method public static g(Ljava/lang/String;)Ljava/lang/String;
+.method public static g_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    invoke-static {p0}, Lcc;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcc;->c_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1968,7 +1968,7 @@
     return-object v0
 .end method
 
-.method public static h(Ljava/lang/String;)Ljava/lang/String;
+.method public static h_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 13
 
     const/4 v2, 0x0
@@ -2123,7 +2123,7 @@
 
     const/4 v8, 0x0
 
-    invoke-static {v2, v7, v6, v0, v8}, Lbz;->a([BII[CZ)I
+    invoke-static {v2, v7, v6, v0, v8}, Lbz;->a_I([BII[CZ)I
 
     move-result v7
 
@@ -2147,7 +2147,7 @@
     goto :goto_1
 
     :cond_6
-    sget-boolean v7, Lbz;->dG:Z
+    sget-boolean v7, Lbz;->dG_Z:Z
 
     if-eqz v7, :cond_7
 
@@ -2157,7 +2157,7 @@
 
     invoke-direct {v7, v2, v8, v6}, Ljava/lang/String;-><init>([BII)V
 
-    invoke-static {v7}, Lcc;->l(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7}, Lcc;->l_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -2209,7 +2209,7 @@
     .end sparse-switch
 .end method
 
-.method public static i(Ljava/lang/String;)Ljava/lang/String;
+.method public static i_String(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
 
     const/4 v0, 0x0
@@ -2306,7 +2306,7 @@
 
     const/4 v6, 0x0
 
-    invoke-static {v2, v4, v5, v3, v6}, Lbz;->a([BII[CZ)I
+    invoke-static {v2, v4, v5, v3, v6}, Lbz;->a_I([BII[CZ)I
 
     move-result v4
 

@@ -3,51 +3,51 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public a:La;
+.field public a_a:La;
 
-.field public a:Lh;
+.field public a_h:Lh;
 
-.field public a:Lk;
+.field public a_k:Lk;
 
-.field public a:Z
+.field public a_Z:Z
 
-.field public a:[B
+.field public a_Bs:[B
 
-.field public a:[S
+.field public a_Ss:[S
 
-.field public b:I
+.field public b_I:I
 
-.field public b:[B
+.field public b_Bs:[B
 
-.field public b:[S
+.field public b_Ss:[S
 
-.field public c:I
+.field public c_I:I
 
-.field public d:I
+.field public d_I:I
 
-.field public e:I
+.field public e_I:I
 
-.field public f:I
+.field public f_I:I
 
-.field public g:I
+.field public g_I:I
 
-.field public h:I
+.field public h_I:I
 
-.field public i:I
+.field public i_I:I
 
-.field public j:I
+.field public j_I:I
 
-.field public k:I
+.field public k_I:I
 
-.field public l:I
+.field public l_I:I
 
-.field public m:I
+.field public m_I:I
 
-.field public n:I
+.field public n_I:I
 
-.field public o:I
+.field public o_I:I
 
 
 # direct methods
@@ -68,42 +68,42 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lg;->a:Lk;
+    iput-object p1, p0, Lg;->a_k:Lk;
 
     new-instance v0, Lh;
 
     invoke-direct {v0, p1}, Lh;-><init>(Lk;)V
 
-    iput-object v0, p0, Lg;->a:Lh;
+    iput-object v0, p0, Lg;->a_h:Lh;
 
     new-instance v0, La;
 
     invoke-direct {v0}, La;-><init>()V
 
-    iput-object v0, p0, Lg;->a:La;
+    iput-object v0, p0, Lg;->a_a:La;
 
     const/high16 v0, 0x1
 
     new-array v0, v0, [B
 
-    iput-object v0, p0, Lg;->a:[B
+    iput-object v0, p0, Lg;->a_Bs:[B
 
     new-array v0, v2, [S
 
-    iput-object v0, p0, Lg;->a:[S
+    iput-object v0, p0, Lg;->a_Ss:[S
 
     new-array v0, v2, [S
 
-    iput-object v0, p0, Lg;->b:[S
+    iput-object v0, p0, Lg;->b_Ss:[S
 
-    iput v1, p0, Lg;->c:I
+    iput v1, p0, Lg;->c_I:I
 
-    iput v1, p0, Lg;->b:I
+    iput v1, p0, Lg;->b_I:I
 
     return-void
 .end method
 
-.method public static a(Ljava/util/Hashtable;Ljava/lang/String;)V
+.method public static a_V(Ljava/util/Hashtable;Ljava/lang/String;)V
     .locals 3
 
     const/16 v0, 0x2f
@@ -147,7 +147,7 @@
 
     if-lez v1, :cond_1
 
-    invoke-static {v0, v2}, Lg;->a(Ljava/util/Hashtable;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lg;->a_V(Ljava/util/Hashtable;Ljava/lang/String;)V
 
     :cond_1
     :goto_0
@@ -163,38 +163,38 @@
     goto :goto_0
 .end method
 
-.method private a(I)Z
+.method private a_Z(I)Z
     .locals 14
 
-    iget v0, p0, Lg;->f:I
+    iget v0, p0, Lg;->f_I:I
 
-    iget v2, p0, Lg;->h:I
+    iget v2, p0, Lg;->h_I:I
 
-    iget-object v8, p0, Lg;->b:[S
+    iget-object v8, p0, Lg;->b_Ss:[S
 
-    iget v3, p0, Lg;->c:I
+    iget v3, p0, Lg;->c_I:I
 
-    iget v1, p0, Lg;->c:I
+    iget v1, p0, Lg;->c_I:I
 
-    iget v4, p0, Lg;->a:I
+    iget v4, p0, Lg;->a_I:I
 
     add-int/2addr v4, v1
 
-    iget v1, p0, Lg;->a:I
+    iget v1, p0, Lg;->a_I:I
 
     const/4 v5, 0x2
 
-    invoke-static {v1, v5}, Lbz;->a(II)I
+    invoke-static {v1, v5}, Lbz;->a_I(II)I
 
     move-result v5
 
-    iget v1, p0, Lg;->c:I
+    iget v1, p0, Lg;->c_I:I
 
     add-int/lit16 v1, v1, -0x7efa
 
     const/4 v6, 0x0
 
-    invoke-static {v1, v6}, Lbz;->a(II)I
+    invoke-static {v1, v6}, Lbz;->a_I(II)I
 
     move-result v9
 
@@ -202,28 +202,28 @@
 
     add-int/lit8 v10, v1, -0x1
 
-    iget-object v1, p0, Lg;->a:[B
+    iget-object v1, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v6, v4, -0x1
 
     aget-byte v6, v1, v6
 
-    iget-object v1, p0, Lg;->a:[B
+    iget-object v1, p0, Lg;->a_Bs:[B
 
     aget-byte v1, v1, v4
 
-    iget v7, p0, Lg;->i:I
+    iget v7, p0, Lg;->i_I:I
 
     if-lt v5, v7, :cond_0
 
     shr-int/lit8 v0, v0, 0x2
 
     :cond_0
-    iget v7, p0, Lg;->d:I
+    iget v7, p0, Lg;->d_I:I
 
     if-le v2, v7, :cond_8
 
-    iget v2, p0, Lg;->d:I
+    iget v2, p0, Lg;->d_I:I
 
     move v13, v1
 
@@ -233,7 +233,7 @@
 
     :cond_1
     :goto_0
-    iget-object v7, p0, Lg;->a:[B
+    iget-object v7, p0, Lg;->a_Bs:[B
 
     add-int v11, p1, v5
 
@@ -241,7 +241,7 @@
 
     if-ne v7, v0, :cond_5
 
-    iget-object v7, p0, Lg;->a:[B
+    iget-object v7, p0, Lg;->a_Bs:[B
 
     add-int v11, p1, v5
 
@@ -251,23 +251,23 @@
 
     if-ne v7, v6, :cond_5
 
-    iget-object v7, p0, Lg;->a:[B
+    iget-object v7, p0, Lg;->a_Bs:[B
 
     aget-byte v7, v7, p1
 
-    iget-object v11, p0, Lg;->a:[B
+    iget-object v11, p0, Lg;->a_Bs:[B
 
     aget-byte v11, v11, v3
 
     if-ne v7, v11, :cond_5
 
-    iget-object v7, p0, Lg;->a:[B
+    iget-object v7, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v11, p1, 0x1
 
     aget-byte v7, v7, v11
 
-    iget-object v11, p0, Lg;->a:[B
+    iget-object v11, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v12, v3, 0x1
 
@@ -286,13 +286,13 @@
     move v3, v13
 
     :cond_2
-    iget-object v11, p0, Lg;->a:[B
+    iget-object v11, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v7, v7, 0x1
 
     aget-byte v11, v11, v7
 
-    iget-object v12, p0, Lg;->a:[B
+    iget-object v12, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v3, v3, 0x1
 
@@ -300,13 +300,13 @@
 
     if-ne v11, v12, :cond_3
 
-    iget-object v11, p0, Lg;->a:[B
+    iget-object v11, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v7, v7, 0x1
 
     aget-byte v11, v11, v7
 
-    iget-object v12, p0, Lg;->a:[B
+    iget-object v12, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v3, v3, 0x1
 
@@ -314,13 +314,13 @@
 
     if-ne v11, v12, :cond_3
 
-    iget-object v11, p0, Lg;->a:[B
+    iget-object v11, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v7, v7, 0x1
 
     aget-byte v11, v11, v7
 
-    iget-object v12, p0, Lg;->a:[B
+    iget-object v12, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v3, v3, 0x1
 
@@ -328,13 +328,13 @@
 
     if-ne v11, v12, :cond_3
 
-    iget-object v11, p0, Lg;->a:[B
+    iget-object v11, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v7, v7, 0x1
 
     aget-byte v11, v11, v7
 
-    iget-object v12, p0, Lg;->a:[B
+    iget-object v12, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v3, v3, 0x1
 
@@ -342,13 +342,13 @@
 
     if-ne v11, v12, :cond_3
 
-    iget-object v11, p0, Lg;->a:[B
+    iget-object v11, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v7, v7, 0x1
 
     aget-byte v11, v11, v7
 
-    iget-object v12, p0, Lg;->a:[B
+    iget-object v12, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v3, v3, 0x1
 
@@ -356,13 +356,13 @@
 
     if-ne v11, v12, :cond_3
 
-    iget-object v11, p0, Lg;->a:[B
+    iget-object v11, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v7, v7, 0x1
 
     aget-byte v11, v11, v7
 
-    iget-object v12, p0, Lg;->a:[B
+    iget-object v12, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v3, v3, 0x1
 
@@ -370,13 +370,13 @@
 
     if-ne v11, v12, :cond_3
 
-    iget-object v11, p0, Lg;->a:[B
+    iget-object v11, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v7, v7, 0x1
 
     aget-byte v11, v11, v7
 
-    iget-object v12, p0, Lg;->a:[B
+    iget-object v12, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v3, v3, 0x1
 
@@ -384,13 +384,13 @@
 
     if-ne v11, v12, :cond_3
 
-    iget-object v11, p0, Lg;->a:[B
+    iget-object v11, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v7, v7, 0x1
 
     aget-byte v11, v11, v7
 
-    iget-object v12, p0, Lg;->a:[B
+    iget-object v12, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v3, v3, 0x1
 
@@ -405,28 +405,28 @@
 
     if-le v3, v4, :cond_4
 
-    iput p1, p0, Lg;->o:I
+    iput p1, p0, Lg;->o_I:I
 
-    iget v0, p0, Lg;->c:I
+    iget v0, p0, Lg;->c_I:I
 
     sub-int v5, v3, v0
 
     if-ge v5, v2, :cond_6
 
-    iget-object v0, p0, Lg;->a:[B
+    iget-object v0, p0, Lg;->a_Bs:[B
 
     add-int/lit8 v4, v3, -0x1
 
     aget-byte v6, v0, v4
 
-    iget-object v0, p0, Lg;->a:[B
+    iget-object v0, p0, Lg;->a_Bs:[B
 
     aget-byte v0, v0, v3
 
     move v4, v3
 
     :cond_4
-    iget v3, p0, Lg;->c:I
+    iget v3, p0, Lg;->c_I:I
 
     :cond_5
     const v7, 0xffff
@@ -444,15 +444,15 @@
     if-nez v1, :cond_1
 
     :cond_6
-    iget v0, p0, Lg;->d:I
+    iget v0, p0, Lg;->d_I:I
 
-    invoke-static {v5, v0}, Lbz;->b(II)I
+    invoke-static {v5, v0}, Lbz;->b_I(II)I
 
     move-result v0
 
-    iput v0, p0, Lg;->a:I
+    iput v0, p0, Lg;->a_I:I
 
-    iget v0, p0, Lg;->a:I
+    iget v0, p0, Lg;->a_I:I
 
     const/4 v1, 0x3
 
@@ -478,16 +478,16 @@
     goto/16 :goto_0
 .end method
 
-.method private final b()I
+.method private final b_I()I
     .locals 4
 
-    iget v0, p0, Lg;->n:I
+    iget v0, p0, Lg;->n_I:I
 
     shl-int/lit8 v0, v0, 0x5
 
-    iget-object v1, p0, Lg;->a:[B
+    iget-object v1, p0, Lg;->a_Bs:[B
 
-    iget v2, p0, Lg;->c:I
+    iget v2, p0, Lg;->c_I:I
 
     add-int/lit8 v2, v2, 0x2
 
@@ -497,27 +497,27 @@
 
     and-int/lit16 v0, v0, 0x7fff
 
-    iget-object v1, p0, Lg;->b:[S
+    iget-object v1, p0, Lg;->b_Ss:[S
 
-    iget v2, p0, Lg;->c:I
+    iget v2, p0, Lg;->c_I:I
 
     and-int/lit16 v2, v2, 0x7fff
 
-    iget-object v3, p0, Lg;->a:[S
+    iget-object v3, p0, Lg;->a_Ss:[S
 
     aget-short v3, v3, v0
 
     aput-short v3, v1, v2
 
-    iget-object v1, p0, Lg;->a:[S
+    iget-object v1, p0, Lg;->a_Ss:[S
 
-    iget v2, p0, Lg;->c:I
+    iget v2, p0, Lg;->c_I:I
 
     int-to-short v2, v2
 
     aput-short v2, v1, v0
 
-    iput v0, p0, Lg;->n:I
+    iput v0, p0, Lg;->n_I:I
 
     const v0, 0xffff
 
@@ -526,7 +526,7 @@
     return v0
 .end method
 
-.method public static b(Ljava/util/Hashtable;Ljava/lang/String;)V
+.method public static b_V(Ljava/util/Hashtable;Ljava/lang/String;)V
     .locals 3
 
     const/16 v0, 0x2f
@@ -567,7 +567,7 @@
     return-void
 
     :cond_0
-    invoke-static {v0, v2}, Lg;->b(Ljava/util/Hashtable;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lg;->b_V(Ljava/util/Hashtable;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -582,7 +582,7 @@
     goto :goto_0
 .end method
 
-.method private c()V
+.method private c_V()V
     .locals 6
 
     const v5, 0xffff
@@ -591,42 +591,42 @@
 
     const v4, 0x8000
 
-    iget-object v0, p0, Lg;->a:[B
+    iget-object v0, p0, Lg;->a_Bs:[B
 
-    iget-object v2, p0, Lg;->a:[B
+    iget-object v2, p0, Lg;->a_Bs:[B
 
     invoke-static {v0, v4, v2, v1, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget v0, p0, Lg;->o:I
+    iget v0, p0, Lg;->o_I:I
 
     add-int/lit16 v0, v0, -0x8000
 
-    iput v0, p0, Lg;->o:I
+    iput v0, p0, Lg;->o_I:I
 
-    iget v0, p0, Lg;->c:I
-
-    add-int/lit16 v0, v0, -0x8000
-
-    iput v0, p0, Lg;->c:I
-
-    iget v0, p0, Lg;->b:I
+    iget v0, p0, Lg;->c_I:I
 
     add-int/lit16 v0, v0, -0x8000
 
-    iput v0, p0, Lg;->b:I
+    iput v0, p0, Lg;->c_I:I
+
+    iget v0, p0, Lg;->b_I:I
+
+    add-int/lit16 v0, v0, -0x8000
+
+    iput v0, p0, Lg;->b_I:I
 
     move v2, v1
 
     :goto_0
     if-ge v2, v4, :cond_1
 
-    iget-object v0, p0, Lg;->a:[S
+    iget-object v0, p0, Lg;->a_Ss:[S
 
     aget-short v0, v0, v2
 
     and-int/2addr v0, v5
 
-    iget-object v3, p0, Lg;->a:[S
+    iget-object v3, p0, Lg;->a_Ss:[S
 
     if-lt v0, v4, :cond_0
 
@@ -654,13 +654,13 @@
     :goto_2
     if-ge v2, v4, :cond_3
 
-    iget-object v0, p0, Lg;->b:[S
+    iget-object v0, p0, Lg;->b_Ss:[S
 
     aget-short v0, v0, v2
 
     and-int/2addr v0, v5
 
-    iget-object v3, p0, Lg;->b:[S
+    iget-object v3, p0, Lg;->b_Ss:[S
 
     if-lt v0, v4, :cond_2
 
@@ -688,12 +688,12 @@
 
 
 # virtual methods
-.method public final a()I
+.method public final a_I()I
     .locals 2
 
-    iget-object v0, p0, Lg;->a:La;
+    iget-object v0, p0, Lg;->a_a:La;
 
-    invoke-virtual {v0}, La;->a()J
+    invoke-virtual {v0}, La;->a_J()J
 
     move-result-wide v0
 
@@ -702,7 +702,7 @@
     return v0
 .end method
 
-.method public final a()V
+.method public final a_V()V
     .locals 4
 
     const v3, 0x8000
@@ -711,34 +711,34 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lg;->a:Lh;
+    iget-object v0, p0, Lg;->a_h:Lh;
 
-    invoke-virtual {v0}, Lh;->a()V
+    invoke-virtual {v0}, Lh;->a_V()V
 
-    iget-object v0, p0, Lg;->a:La;
+    iget-object v0, p0, Lg;->a_a:La;
 
-    iput v2, v0, La;->a:I
+    iput v2, v0, La;->a_I:I
 
-    iput v2, p0, Lg;->c:I
+    iput v2, p0, Lg;->c_I:I
 
-    iput v2, p0, Lg;->b:I
+    iput v2, p0, Lg;->b_I:I
 
-    iput v1, p0, Lg;->d:I
+    iput v1, p0, Lg;->d_I:I
 
-    iput v1, p0, Lg;->k:I
+    iput v1, p0, Lg;->k_I:I
 
-    iput-boolean v1, p0, Lg;->a:Z
+    iput-boolean v1, p0, Lg;->a_Z:Z
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lg;->a:I
+    iput v0, p0, Lg;->a_I:I
 
     move v0, v1
 
     :goto_0
     if-ge v0, v3, :cond_0
 
-    iget-object v2, p0, Lg;->a:[S
+    iget-object v2, p0, Lg;->a_Ss:[S
 
     aput-short v1, v2, v0
 
@@ -752,7 +752,7 @@
     :goto_1
     if-ge v0, v3, :cond_1
 
-    iget-object v2, p0, Lg;->b:[S
+    iget-object v2, p0, Lg;->b_Ss:[S
 
     aput-short v1, v2, v0
 
@@ -764,7 +764,7 @@
     return-void
 .end method
 
-.method public final a(ZZ)Z
+.method public final a_Z(ZZ)Z
     .locals 11
 
     const/16 v10, 0x106
@@ -778,113 +778,113 @@
     const/4 v2, 0x0
 
     :cond_0
-    iget v0, p0, Lg;->c:I
+    iget v0, p0, Lg;->c_I:I
 
     const v3, 0xfefa
 
     if-lt v0, v3, :cond_1
 
-    invoke-direct {p0}, Lg;->c()V
+    invoke-direct {p0}, Lg;->c_V()V
 
     :cond_1
     :goto_0
-    iget v0, p0, Lg;->d:I
+    iget v0, p0, Lg;->d_I:I
 
     if-ge v0, v10, :cond_3
 
-    iget v0, p0, Lg;->l:I
+    iget v0, p0, Lg;->l_I:I
 
-    iget v3, p0, Lg;->m:I
+    iget v3, p0, Lg;->m_I:I
 
     if-ge v0, v3, :cond_3
 
     const/high16 v0, 0x1
 
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     sub-int/2addr v0, v3
 
-    iget v3, p0, Lg;->c:I
+    iget v3, p0, Lg;->c_I:I
 
     sub-int/2addr v0, v3
 
-    iget v3, p0, Lg;->m:I
+    iget v3, p0, Lg;->m_I:I
 
-    iget v4, p0, Lg;->l:I
+    iget v4, p0, Lg;->l_I:I
 
     sub-int/2addr v3, v4
 
     if-le v0, v3, :cond_2
 
-    iget v0, p0, Lg;->m:I
+    iget v0, p0, Lg;->m_I:I
 
-    iget v3, p0, Lg;->l:I
+    iget v3, p0, Lg;->l_I:I
 
     sub-int/2addr v0, v3
 
     :cond_2
-    iget-object v3, p0, Lg;->b:[B
+    iget-object v3, p0, Lg;->b_Bs:[B
 
-    iget v4, p0, Lg;->l:I
+    iget v4, p0, Lg;->l_I:I
 
-    iget-object v5, p0, Lg;->a:[B
+    iget-object v5, p0, Lg;->a_Bs:[B
 
-    iget v6, p0, Lg;->c:I
+    iget v6, p0, Lg;->c_I:I
 
-    iget v7, p0, Lg;->d:I
+    iget v7, p0, Lg;->d_I:I
 
     add-int/2addr v6, v7
 
     invoke-static {v3, v4, v5, v6, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget-object v3, p0, Lg;->a:La;
+    iget-object v3, p0, Lg;->a_a:La;
 
-    iget-object v4, p0, Lg;->b:[B
+    iget-object v4, p0, Lg;->b_Bs:[B
 
-    iget v5, p0, Lg;->l:I
+    iget v5, p0, Lg;->l_I:I
 
-    invoke-virtual {v3, v4, v5, v0}, La;->a([BII)V
+    invoke-virtual {v3, v4, v5, v0}, La;->a_V([BII)V
 
-    iget v3, p0, Lg;->l:I
-
-    add-int/2addr v3, v0
-
-    iput v3, p0, Lg;->l:I
-
-    iget v3, p0, Lg;->k:I
+    iget v3, p0, Lg;->l_I:I
 
     add-int/2addr v3, v0
 
-    iput v3, p0, Lg;->k:I
+    iput v3, p0, Lg;->l_I:I
 
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->k_I:I
+
+    add-int/2addr v3, v0
+
+    iput v3, p0, Lg;->k_I:I
+
+    iget v3, p0, Lg;->d_I:I
 
     add-int/2addr v0, v3
 
-    iput v0, p0, Lg;->d:I
+    iput v0, p0, Lg;->d_I:I
 
     goto :goto_0
 
     :cond_3
-    iget v0, p0, Lg;->d:I
+    iget v0, p0, Lg;->d_I:I
 
     if-lt v0, v8, :cond_4
 
-    invoke-virtual {p0}, Lg;->b()V
+    invoke-virtual {p0}, Lg;->b_V()V
 
     :cond_4
     if-eqz p1, :cond_5
 
-    iget v0, p0, Lg;->l:I
+    iget v0, p0, Lg;->l_I:I
 
-    iget v3, p0, Lg;->m:I
+    iget v3, p0, Lg;->m_I:I
 
     if-ne v0, v3, :cond_5
 
     move v0, v1
 
     :goto_1
-    iget v3, p0, Lg;->j:I
+    iget v3, p0, Lg;->j_I:I
 
     packed-switch v3, :pswitch_data_0
 
@@ -899,16 +899,16 @@
     :pswitch_0
     if-nez v0, :cond_7
 
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     if-nez v3, :cond_7
 
     move v0, v2
 
     :goto_3
-    iget-object v3, p0, Lg;->a:Lk;
+    iget-object v3, p0, Lg;->a_k:Lk;
 
-    invoke-virtual {v3}, Lk;->a()Z
+    invoke-virtual {v3}, Lk;->a_Z()Z
 
     move-result v3
 
@@ -922,27 +922,27 @@
     goto :goto_2
 
     :cond_7
-    iget v3, p0, Lg;->c:I
+    iget v3, p0, Lg;->c_I:I
 
-    iget v4, p0, Lg;->d:I
+    iget v4, p0, Lg;->d_I:I
 
     add-int/2addr v3, v4
 
-    iput v3, p0, Lg;->c:I
+    iput v3, p0, Lg;->c_I:I
 
-    iput v2, p0, Lg;->d:I
+    iput v2, p0, Lg;->d_I:I
 
-    iget v3, p0, Lg;->c:I
+    iget v3, p0, Lg;->c_I:I
 
-    iget v4, p0, Lg;->b:I
+    iget v4, p0, Lg;->b_I:I
 
     sub-int/2addr v3, v4
 
-    sget v4, Lf;->a:I
+    sget v4, Lf;->a_I:I
 
     if-ge v3, v4, :cond_9
 
-    iget v4, p0, Lg;->b:I
+    iget v4, p0, Lg;->b_I:I
 
     const v5, 0x8000
 
@@ -956,30 +956,30 @@
     if-eqz v0, :cond_b
 
     :cond_9
-    sget v0, Lf;->a:I
+    sget v0, Lf;->a_I:I
 
     if-le v3, v0, :cond_27
 
-    sget v0, Lf;->a:I
+    sget v0, Lf;->a_I:I
 
     move v3, v0
 
     move v0, v2
 
     :goto_4
-    iget-object v4, p0, Lg;->a:Lh;
+    iget-object v4, p0, Lg;->a_h:Lh;
 
-    iget-object v5, p0, Lg;->a:[B
+    iget-object v5, p0, Lg;->a_Bs:[B
 
-    iget v6, p0, Lg;->b:I
+    iget v6, p0, Lg;->b_I:I
 
-    invoke-virtual {v4, v5, v6, v3, v0}, Lh;->a([BIIZ)V
+    invoke-virtual {v4, v5, v6, v3, v0}, Lh;->a_V([BIIZ)V
 
-    iget v4, p0, Lg;->b:I
+    iget v4, p0, Lg;->b_I:I
 
     add-int/2addr v3, v4
 
-    iput v3, p0, Lg;->b:I
+    iput v3, p0, Lg;->b_I:I
 
     if-nez v0, :cond_a
 
@@ -998,7 +998,7 @@
     goto :goto_3
 
     :pswitch_1
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     if-ge v3, v10, :cond_c
 
@@ -1009,64 +1009,64 @@
     goto :goto_3
 
     :cond_c
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     if-ge v3, v10, :cond_d
 
     if-eqz v0, :cond_17
 
     :cond_d
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     if-nez v3, :cond_e
 
-    iget-object v0, p0, Lg;->a:Lh;
+    iget-object v0, p0, Lg;->a_h:Lh;
 
-    iget-object v3, p0, Lg;->a:[B
+    iget-object v3, p0, Lg;->a_Bs:[B
 
-    iget v4, p0, Lg;->b:I
+    iget v4, p0, Lg;->b_I:I
 
-    iget v5, p0, Lg;->c:I
+    iget v5, p0, Lg;->c_I:I
 
-    iget v6, p0, Lg;->b:I
+    iget v6, p0, Lg;->b_I:I
 
     sub-int/2addr v5, v6
 
-    invoke-virtual {v0, v3, v4, v5, p2}, Lh;->b([BIIZ)V
+    invoke-virtual {v0, v3, v4, v5, p2}, Lh;->b_V([BIIZ)V
 
-    iget v0, p0, Lg;->c:I
+    iget v0, p0, Lg;->c_I:I
 
-    iput v0, p0, Lg;->b:I
+    iput v0, p0, Lg;->b_I:I
 
     move v0, v2
 
     goto :goto_3
 
     :cond_e
-    iget v3, p0, Lg;->c:I
+    iget v3, p0, Lg;->c_I:I
 
     const v4, 0xfefa
 
     if-le v3, v4, :cond_f
 
-    invoke-direct {p0}, Lg;->c()V
+    invoke-direct {p0}, Lg;->c_V()V
 
     :cond_f
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     if-lt v3, v8, :cond_14
 
-    invoke-direct {p0}, Lg;->b()I
+    invoke-direct {p0}, Lg;->b_I()I
 
     move-result v3
 
     if-eqz v3, :cond_14
 
-    iget v4, p0, Lg;->e:I
+    iget v4, p0, Lg;->e_I:I
 
     if-eq v4, v9, :cond_14
 
-    iget v4, p0, Lg;->c:I
+    iget v4, p0, Lg;->c_I:I
 
     sub-int/2addr v4, v3
 
@@ -1074,80 +1074,80 @@
 
     if-gt v4, v5, :cond_14
 
-    invoke-direct {p0, v3}, Lg;->a(I)Z
+    invoke-direct {p0, v3}, Lg;->a_Z(I)Z
 
     move-result v3
 
     if-eqz v3, :cond_14
 
-    iget-object v3, p0, Lg;->a:Lh;
+    iget-object v3, p0, Lg;->a_h:Lh;
 
-    iget v4, p0, Lg;->c:I
+    iget v4, p0, Lg;->c_I:I
 
-    iget v5, p0, Lg;->o:I
+    iget v5, p0, Lg;->o_I:I
 
     sub-int/2addr v4, v5
 
-    iget v5, p0, Lg;->a:I
+    iget v5, p0, Lg;->a_I:I
 
-    invoke-virtual {v3, v4, v5}, Lh;->a(II)Z
+    invoke-virtual {v3, v4, v5}, Lh;->a_Z(II)Z
 
     move-result v3
 
-    iget v4, p0, Lg;->d:I
+    iget v4, p0, Lg;->d_I:I
 
-    iget v5, p0, Lg;->a:I
+    iget v5, p0, Lg;->a_I:I
 
     sub-int/2addr v4, v5
 
-    iput v4, p0, Lg;->d:I
+    iput v4, p0, Lg;->d_I:I
 
-    iget v4, p0, Lg;->a:I
+    iget v4, p0, Lg;->a_I:I
 
-    iget v5, p0, Lg;->g:I
+    iget v5, p0, Lg;->g_I:I
 
     if-gt v4, v5, :cond_13
 
-    iget v4, p0, Lg;->d:I
+    iget v4, p0, Lg;->d_I:I
 
     if-lt v4, v8, :cond_13
 
     :goto_5
-    iget v4, p0, Lg;->a:I
+    iget v4, p0, Lg;->a_I:I
 
     add-int/lit8 v4, v4, -0x1
 
-    iput v4, p0, Lg;->a:I
+    iput v4, p0, Lg;->a_I:I
 
     if-lez v4, :cond_10
 
-    iget v4, p0, Lg;->c:I
+    iget v4, p0, Lg;->c_I:I
 
     add-int/lit8 v4, v4, 0x1
 
-    iput v4, p0, Lg;->c:I
+    iput v4, p0, Lg;->c_I:I
 
-    invoke-direct {p0}, Lg;->b()I
+    invoke-direct {p0}, Lg;->b_I()I
 
     goto :goto_5
 
     :cond_10
-    iget v4, p0, Lg;->c:I
+    iget v4, p0, Lg;->c_I:I
 
     add-int/lit8 v4, v4, 0x1
 
-    iput v4, p0, Lg;->c:I
+    iput v4, p0, Lg;->c_I:I
 
     :cond_11
     :goto_6
-    iput v9, p0, Lg;->a:I
+    iput v9, p0, Lg;->a_I:I
 
     :goto_7
     if-nez v3, :cond_12
 
-    iget-object v3, p0, Lg;->a:Lh;
+    iget-object v3, p0, Lg;->a_h:Lh;
 
-    invoke-virtual {v3}, Lh;->a()Z
+    invoke-virtual {v3}, Lh;->a_Z()Z
 
     move-result v3
 
@@ -1156,30 +1156,30 @@
     :cond_12
     if-eqz p2, :cond_15
 
-    iget v0, p0, Lg;->d:I
+    iget v0, p0, Lg;->d_I:I
 
     if-nez v0, :cond_15
 
     move v0, v1
 
     :goto_8
-    iget-object v3, p0, Lg;->a:Lh;
+    iget-object v3, p0, Lg;->a_h:Lh;
 
-    iget-object v4, p0, Lg;->a:[B
+    iget-object v4, p0, Lg;->a_Bs:[B
 
-    iget v5, p0, Lg;->b:I
+    iget v5, p0, Lg;->b_I:I
 
-    iget v6, p0, Lg;->c:I
+    iget v6, p0, Lg;->c_I:I
 
-    iget v7, p0, Lg;->b:I
+    iget v7, p0, Lg;->b_I:I
 
     sub-int/2addr v6, v7
 
-    invoke-virtual {v3, v4, v5, v6, v0}, Lh;->b([BIIZ)V
+    invoke-virtual {v3, v4, v5, v6, v0}, Lh;->b_V([BIIZ)V
 
-    iget v3, p0, Lg;->c:I
+    iget v3, p0, Lg;->c_I:I
 
-    iput v3, p0, Lg;->b:I
+    iput v3, p0, Lg;->b_I:I
 
     if-nez v0, :cond_16
 
@@ -1188,48 +1188,48 @@
     goto/16 :goto_3
 
     :cond_13
-    iget v4, p0, Lg;->c:I
+    iget v4, p0, Lg;->c_I:I
 
-    iget v5, p0, Lg;->a:I
+    iget v5, p0, Lg;->a_I:I
 
     add-int/2addr v4, v5
 
-    iput v4, p0, Lg;->c:I
+    iput v4, p0, Lg;->c_I:I
 
-    iget v4, p0, Lg;->d:I
+    iget v4, p0, Lg;->d_I:I
 
     if-lt v4, v9, :cond_11
 
-    invoke-virtual {p0}, Lg;->b()V
+    invoke-virtual {p0}, Lg;->b_V()V
 
     goto :goto_6
 
     :cond_14
-    iget-object v3, p0, Lg;->a:Lh;
+    iget-object v3, p0, Lg;->a_h:Lh;
 
-    iget-object v4, p0, Lg;->a:[B
+    iget-object v4, p0, Lg;->a_Bs:[B
 
-    iget v5, p0, Lg;->c:I
+    iget v5, p0, Lg;->c_I:I
 
     aget-byte v4, v4, v5
 
     and-int/lit16 v4, v4, 0xff
 
-    invoke-virtual {v3, v4}, Lh;->a(I)Z
+    invoke-virtual {v3, v4}, Lh;->a_Z(I)Z
 
     move-result v3
 
-    iget v4, p0, Lg;->c:I
+    iget v4, p0, Lg;->c_I:I
 
     add-int/lit8 v4, v4, 0x1
 
-    iput v4, p0, Lg;->c:I
+    iput v4, p0, Lg;->c_I:I
 
-    iget v4, p0, Lg;->d:I
+    iget v4, p0, Lg;->d_I:I
 
     add-int/lit8 v4, v4, -0x1
 
-    iput v4, p0, Lg;->d:I
+    iput v4, p0, Lg;->d_I:I
 
     goto :goto_7
 
@@ -1249,7 +1249,7 @@
     goto/16 :goto_3
 
     :pswitch_2
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     if-ge v3, v10, :cond_18
 
@@ -1260,26 +1260,26 @@
     goto/16 :goto_3
 
     :cond_18
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     if-ge v3, v10, :cond_19
 
     if-eqz v0, :cond_25
 
     :cond_19
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     if-nez v3, :cond_1b
 
-    iget-boolean v0, p0, Lg;->a:Z
+    iget-boolean v0, p0, Lg;->a_Z:Z
 
     if-eqz v0, :cond_1a
 
-    iget-object v0, p0, Lg;->a:Lh;
+    iget-object v0, p0, Lg;->a_h:Lh;
 
-    iget-object v3, p0, Lg;->a:[B
+    iget-object v3, p0, Lg;->a_Bs:[B
 
-    iget v4, p0, Lg;->c:I
+    iget v4, p0, Lg;->c_I:I
 
     add-int/lit8 v4, v4, -0x1
 
@@ -1287,62 +1287,62 @@
 
     and-int/lit16 v3, v3, 0xff
 
-    invoke-virtual {v0, v3}, Lh;->a(I)Z
+    invoke-virtual {v0, v3}, Lh;->a_Z(I)Z
 
     :cond_1a
-    iput-boolean v2, p0, Lg;->a:Z
+    iput-boolean v2, p0, Lg;->a_Z:Z
 
-    iget-object v0, p0, Lg;->a:Lh;
+    iget-object v0, p0, Lg;->a_h:Lh;
 
-    iget-object v3, p0, Lg;->a:[B
+    iget-object v3, p0, Lg;->a_Bs:[B
 
-    iget v4, p0, Lg;->b:I
+    iget v4, p0, Lg;->b_I:I
 
-    iget v5, p0, Lg;->c:I
+    iget v5, p0, Lg;->c_I:I
 
-    iget v6, p0, Lg;->b:I
+    iget v6, p0, Lg;->b_I:I
 
     sub-int/2addr v5, v6
 
-    invoke-virtual {v0, v3, v4, v5, p2}, Lh;->b([BIIZ)V
+    invoke-virtual {v0, v3, v4, v5, p2}, Lh;->b_V([BIIZ)V
 
-    iget v0, p0, Lg;->c:I
+    iget v0, p0, Lg;->c_I:I
 
-    iput v0, p0, Lg;->b:I
+    iput v0, p0, Lg;->b_I:I
 
     move v0, v2
 
     goto/16 :goto_3
 
     :cond_1b
-    iget v3, p0, Lg;->c:I
+    iget v3, p0, Lg;->c_I:I
 
     const v4, 0xfefa
 
     if-lt v3, v4, :cond_1c
 
-    invoke-direct {p0}, Lg;->c()V
+    invoke-direct {p0}, Lg;->c_V()V
 
     :cond_1c
-    iget v3, p0, Lg;->o:I
+    iget v3, p0, Lg;->o_I:I
 
-    iget v4, p0, Lg;->a:I
+    iget v4, p0, Lg;->a_I:I
 
-    iget v5, p0, Lg;->d:I
+    iget v5, p0, Lg;->d_I:I
 
     if-lt v5, v8, :cond_1e
 
-    invoke-direct {p0}, Lg;->b()I
+    invoke-direct {p0}, Lg;->b_I()I
 
     move-result v5
 
-    iget v6, p0, Lg;->e:I
+    iget v6, p0, Lg;->e_I:I
 
     if-eq v6, v9, :cond_1e
 
     if-eqz v5, :cond_1e
 
-    iget v6, p0, Lg;->c:I
+    iget v6, p0, Lg;->c_I:I
 
     sub-int/2addr v6, v5
 
@@ -1350,29 +1350,29 @@
 
     if-gt v6, v7, :cond_1e
 
-    invoke-direct {p0, v5}, Lg;->a(I)Z
+    invoke-direct {p0, v5}, Lg;->a_Z(I)Z
 
     move-result v5
 
     if-eqz v5, :cond_1e
 
-    iget v5, p0, Lg;->a:I
+    iget v5, p0, Lg;->a_I:I
 
     const/4 v6, 0x5
 
     if-gt v5, v6, :cond_1e
 
-    iget v5, p0, Lg;->e:I
+    iget v5, p0, Lg;->e_I:I
 
     if-eq v5, v1, :cond_1d
 
-    iget v5, p0, Lg;->a:I
+    iget v5, p0, Lg;->a_I:I
 
     if-ne v5, v8, :cond_1e
 
-    iget v5, p0, Lg;->c:I
+    iget v5, p0, Lg;->c_I:I
 
-    iget v6, p0, Lg;->o:I
+    iget v6, p0, Lg;->o_I:I
 
     sub-int/2addr v5, v6
 
@@ -1381,83 +1381,83 @@
     if-le v5, v6, :cond_1e
 
     :cond_1d
-    iput v9, p0, Lg;->a:I
+    iput v9, p0, Lg;->a_I:I
 
     :cond_1e
     if-lt v4, v8, :cond_21
 
-    iget v5, p0, Lg;->a:I
+    iget v5, p0, Lg;->a_I:I
 
     if-gt v5, v4, :cond_21
 
-    iget-object v5, p0, Lg;->a:Lh;
+    iget-object v5, p0, Lg;->a_h:Lh;
 
-    iget v6, p0, Lg;->c:I
+    iget v6, p0, Lg;->c_I:I
 
     add-int/lit8 v6, v6, -0x1
 
     sub-int v3, v6, v3
 
-    invoke-virtual {v5, v3, v4}, Lh;->a(II)Z
+    invoke-virtual {v5, v3, v4}, Lh;->a_Z(II)Z
 
     add-int/lit8 v3, v4, -0x2
 
     :cond_1f
-    iget v4, p0, Lg;->c:I
+    iget v4, p0, Lg;->c_I:I
 
     add-int/lit8 v4, v4, 0x1
 
-    iput v4, p0, Lg;->c:I
+    iput v4, p0, Lg;->c_I:I
 
-    iget v4, p0, Lg;->d:I
+    iget v4, p0, Lg;->d_I:I
 
     add-int/lit8 v4, v4, -0x1
 
-    iput v4, p0, Lg;->d:I
+    iput v4, p0, Lg;->d_I:I
 
-    iget v4, p0, Lg;->d:I
+    iget v4, p0, Lg;->d_I:I
 
     if-lt v4, v8, :cond_20
 
-    invoke-direct {p0}, Lg;->b()I
+    invoke-direct {p0}, Lg;->b_I()I
 
     :cond_20
     add-int/lit8 v3, v3, -0x1
 
     if-gtz v3, :cond_1f
 
-    iget v3, p0, Lg;->c:I
+    iget v3, p0, Lg;->c_I:I
 
     add-int/lit8 v3, v3, 0x1
 
-    iput v3, p0, Lg;->c:I
+    iput v3, p0, Lg;->c_I:I
 
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     add-int/lit8 v3, v3, -0x1
 
-    iput v3, p0, Lg;->d:I
+    iput v3, p0, Lg;->d_I:I
 
-    iput-boolean v2, p0, Lg;->a:Z
+    iput-boolean v2, p0, Lg;->a_Z:Z
 
-    iput v9, p0, Lg;->a:I
+    iput v9, p0, Lg;->a_I:I
 
     :goto_9
-    iget-object v3, p0, Lg;->a:Lh;
+    iget-object v3, p0, Lg;->a_h:Lh;
 
-    invoke-virtual {v3}, Lh;->a()Z
+    invoke-virtual {v3}, Lh;->a_Z()Z
 
     move-result v3
 
     if-eqz v3, :cond_18
 
-    iget v0, p0, Lg;->c:I
+    iget v0, p0, Lg;->c_I:I
 
-    iget v3, p0, Lg;->b:I
+    iget v3, p0, Lg;->b_I:I
 
     sub-int/2addr v0, v3
 
-    iget-boolean v3, p0, Lg;->a:Z
+    iget-boolean v3, p0, Lg;->a_Z:Z
 
     if-eqz v3, :cond_26
 
@@ -1468,30 +1468,30 @@
     :goto_a
     if-eqz p2, :cond_23
 
-    iget v0, p0, Lg;->d:I
+    iget v0, p0, Lg;->d_I:I
 
     if-nez v0, :cond_23
 
-    iget-boolean v0, p0, Lg;->a:Z
+    iget-boolean v0, p0, Lg;->a_Z:Z
 
     if-nez v0, :cond_23
 
     move v0, v1
 
     :goto_b
-    iget-object v4, p0, Lg;->a:Lh;
+    iget-object v4, p0, Lg;->a_h:Lh;
 
-    iget-object v5, p0, Lg;->a:[B
+    iget-object v5, p0, Lg;->a_Bs:[B
 
-    iget v6, p0, Lg;->b:I
+    iget v6, p0, Lg;->b_I:I
 
-    invoke-virtual {v4, v5, v6, v3, v0}, Lh;->b([BIIZ)V
+    invoke-virtual {v4, v5, v6, v3, v0}, Lh;->b_V([BIIZ)V
 
-    iget v4, p0, Lg;->b:I
+    iget v4, p0, Lg;->b_I:I
 
     add-int/2addr v3, v4
 
-    iput v3, p0, Lg;->b:I
+    iput v3, p0, Lg;->b_I:I
 
     if-nez v0, :cond_24
 
@@ -1500,15 +1500,15 @@
     goto/16 :goto_3
 
     :cond_21
-    iget-boolean v3, p0, Lg;->a:Z
+    iget-boolean v3, p0, Lg;->a_Z:Z
 
     if-eqz v3, :cond_22
 
-    iget-object v3, p0, Lg;->a:Lh;
+    iget-object v3, p0, Lg;->a_h:Lh;
 
-    iget-object v4, p0, Lg;->a:[B
+    iget-object v4, p0, Lg;->a_Bs:[B
 
-    iget v5, p0, Lg;->c:I
+    iget v5, p0, Lg;->c_I:I
 
     add-int/lit8 v5, v5, -0x1
 
@@ -1516,22 +1516,22 @@
 
     and-int/lit16 v4, v4, 0xff
 
-    invoke-virtual {v3, v4}, Lh;->a(I)Z
+    invoke-virtual {v3, v4}, Lh;->a_Z(I)Z
 
     :cond_22
-    iput-boolean v1, p0, Lg;->a:Z
+    iput-boolean v1, p0, Lg;->a_Z:Z
 
-    iget v3, p0, Lg;->c:I
+    iget v3, p0, Lg;->c_I:I
 
     add-int/lit8 v3, v3, 0x1
 
-    iput v3, p0, Lg;->c:I
+    iput v3, p0, Lg;->c_I:I
 
-    iget v3, p0, Lg;->d:I
+    iget v3, p0, Lg;->d_I:I
 
     add-int/lit8 v3, v3, -0x1
 
-    iput v3, p0, Lg;->d:I
+    iput v3, p0, Lg;->d_I:I
 
     goto :goto_9
 
@@ -1570,20 +1570,20 @@
     .end packed-switch
 .end method
 
-.method final b()V
+.method final b_V()V
     .locals 3
 
-    iget-object v0, p0, Lg;->a:[B
+    iget-object v0, p0, Lg;->a_Bs:[B
 
-    iget v1, p0, Lg;->c:I
+    iget v1, p0, Lg;->c_I:I
 
     aget-byte v0, v0, v1
 
     shl-int/lit8 v0, v0, 0x5
 
-    iget-object v1, p0, Lg;->a:[B
+    iget-object v1, p0, Lg;->a_Bs:[B
 
-    iget v2, p0, Lg;->c:I
+    iget v2, p0, Lg;->c_I:I
 
     add-int/lit8 v2, v2, 0x1
 
@@ -1591,7 +1591,7 @@
 
     xor-int/2addr v0, v1
 
-    iput v0, p0, Lg;->n:I
+    iput v0, p0, Lg;->n_I:I
 
     return-void
 .end method

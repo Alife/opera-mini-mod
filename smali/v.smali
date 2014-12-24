@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public final a:I
+.field public final a_I:I
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     invoke-direct {p0, p2, p3}, Lo;-><init>(Ljava/io/InputStream;Ll;)V
 
-    iput p4, p0, Lv;->a:I
+    iput p4, p0, Lv;->a_I:I
 
     return-void
 .end method
@@ -22,7 +22,7 @@
 .method public final available()I
     .locals 2
 
-    iget v0, p0, Lv;->a:I
+    iget v0, p0, Lv;->a_I:I
 
     const/4 v1, -0x1
 
@@ -42,11 +42,11 @@
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lv;->a:I
+    iget v0, p0, Lv;->a_I:I
 
-    iget-object v1, p0, Lv;->a:Ll;
+    iget-object v1, p0, Lv;->a_l:Ll;
 
-    invoke-virtual {v1}, Ll;->a()I
+    invoke-virtual {v1}, Ll;->a_I()I
 
     move-result v1
 

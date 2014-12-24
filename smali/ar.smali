@@ -3,25 +3,25 @@
 
 
 # static fields
-.field public static e:I
+.field public static e_I:I
 
-.field public static f:I
+.field public static f_I:I
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public a:Ljava/io/Reader;
+.field public a_Reader:Ljava/io/Reader;
 
-.field public a:Z
+.field public a_Z:Z
 
-.field public a:[C
+.field public a_Cs:[C
 
-.field public b:I
+.field public b_I:I
 
-.field public c:I
+.field public c_I:I
 
-.field public d:I
+.field public d_I:I
 
 
 # direct methods
@@ -30,11 +30,11 @@
 
     const/16 v0, 0x2000
 
-    sput v0, Lar;->e:I
+    sput v0, Lar;->e_I:I
 
     const/16 v0, 0x50
 
-    sput v0, Lar;->f:I
+    sput v0, Lar;->f_I:I
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 .method public constructor <init>(Ljava/io/Reader;)V
     .locals 1
 
-    sget v0, Lar;->e:I
+    sget v0, Lar;->e_I:I
 
     invoke-direct {p0, p1, v0}, Lar;-><init>(Ljava/io/Reader;I)V
 
@@ -58,11 +58,11 @@
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lar;->c:I
+    iput v0, p0, Lar;->c_I:I
 
-    iput v1, p0, Lar;->d:I
+    iput v1, p0, Lar;->d_I:I
 
-    iput-boolean v1, p0, Lar;->a:Z
+    iput-boolean v1, p0, Lar;->a_Z:Z
 
     if-gtz p2, :cond_0
 
@@ -75,20 +75,20 @@
     throw v0
 
     :cond_0
-    iput-object p1, p0, Lar;->a:Ljava/io/Reader;
+    iput-object p1, p0, Lar;->a_Reader:Ljava/io/Reader;
 
     new-array v0, p2, [C
 
-    iput-object v0, p0, Lar;->a:[C
+    iput-object v0, p0, Lar;->a_Cs:[C
 
-    iput v1, p0, Lar;->a:I
+    iput v1, p0, Lar;->a_I:I
 
-    iput v1, p0, Lar;->b:I
+    iput v1, p0, Lar;->b_I:I
 
     return-void
 .end method
 
-.method private a(Z)Ljava/lang/String;
+.method private a_String(Z)Ljava/lang/String;
     .locals 11
 
     const/4 v3, 0x0
@@ -106,7 +106,7 @@
     monitor-enter v7
 
     :try_start_0
-    iget-object v0, p0, Lar;->a:Ljava/io/Reader;
+    iget-object v0, p0, Lar;->a_Reader:Ljava/io/Reader;
 
     if-nez v0, :cond_0
 
@@ -129,7 +129,7 @@
 
     :cond_0
     :try_start_1
-    iget-boolean v0, p0, Lar;->a:Z
+    iget-boolean v0, p0, Lar;->a_Z:Z
 
     if-eqz v0, :cond_2
 
@@ -141,18 +141,18 @@
     move-object v0, v3
 
     :goto_1
-    iget v5, p0, Lar;->b:I
+    iget v5, p0, Lar;->b_I:I
 
-    iget v6, p0, Lar;->a:I
+    iget v6, p0, Lar;->a_I:I
 
     if-lt v5, v6, :cond_1
 
-    invoke-direct {p0}, Lar;->a()V
+    invoke-direct {p0}, Lar;->a_V()V
 
     :cond_1
-    iget v5, p0, Lar;->b:I
+    iget v5, p0, Lar;->b_I:I
 
-    iget v6, p0, Lar;->a:I
+    iget v6, p0, Lar;->a_I:I
 
     if-lt v5, v6, :cond_4
 
@@ -191,37 +191,37 @@
     if-eqz v4, :cond_5
 
     :try_start_2
-    iget-object v4, p0, Lar;->a:[C
+    iget-object v4, p0, Lar;->a_Cs:[C
 
-    iget v5, p0, Lar;->b:I
+    iget v5, p0, Lar;->b_I:I
 
     aget-char v4, v4, v5
 
     if-ne v4, v9, :cond_5
 
-    iget v4, p0, Lar;->b:I
+    iget v4, p0, Lar;->b_I:I
 
     add-int/lit8 v4, v4, 0x1
 
-    iput v4, p0, Lar;->b:I
+    iput v4, p0, Lar;->b_I:I
 
     :cond_5
     const/4 v4, 0x0
 
-    iput-boolean v4, p0, Lar;->a:Z
+    iput-boolean v4, p0, Lar;->a_Z:Z
 
-    iget v4, p0, Lar;->b:I
+    iget v4, p0, Lar;->b_I:I
 
     move v6, v4
 
     move v4, v2
 
     :goto_3
-    iget v5, p0, Lar;->a:I
+    iget v5, p0, Lar;->a_I:I
 
     if-ge v6, v5, :cond_b
 
-    iget-object v4, p0, Lar;->a:[C
+    iget-object v4, p0, Lar;->a_Cs:[C
 
     aget-char v4, v4, v6
 
@@ -235,9 +235,9 @@
     move v4, v1
 
     :goto_4
-    iget v8, p0, Lar;->b:I
+    iget v8, p0, Lar;->b_I:I
 
-    iput v6, p0, Lar;->b:I
+    iput v6, p0, Lar;->b_I:I
 
     if-eqz v4, :cond_9
 
@@ -245,24 +245,24 @@
 
     new-instance v0, Ljava/lang/String;
 
-    iget-object v1, p0, Lar;->a:[C
+    iget-object v1, p0, Lar;->a_Cs:[C
 
     sub-int v2, v6, v8
 
     invoke-direct {v0, v1, v8, v2}, Ljava/lang/String;-><init>([CII)V
 
     :goto_5
-    iget v1, p0, Lar;->b:I
+    iget v1, p0, Lar;->b_I:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, p0, Lar;->b:I
+    iput v1, p0, Lar;->b_I:I
 
     if-ne v5, v10, :cond_7
 
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lar;->a:Z
+    iput-boolean v1, p0, Lar;->a_Z:Z
 
     :cond_7
     monitor-exit v7
@@ -270,7 +270,7 @@
     goto :goto_2
 
     :cond_8
-    iget-object v1, p0, Lar;->a:[C
+    iget-object v1, p0, Lar;->a_Cs:[C
 
     sub-int v2, v6, v8
 
@@ -287,12 +287,12 @@
 
     new-instance v0, Ljava/lang/StringBuffer;
 
-    sget v4, Lar;->f:I
+    sget v4, Lar;->f_I:I
 
     invoke-direct {v0, v4}, Ljava/lang/StringBuffer;-><init>(I)V
 
     :cond_a
-    iget-object v4, p0, Lar;->a:[C
+    iget-object v4, p0, Lar;->a_Cs:[C
 
     sub-int v5, v6, v8
 
@@ -319,22 +319,22 @@
     goto :goto_3
 .end method
 
-.method private a()V
+.method private a_V()V
     .locals 5
 
     const/4 v0, 0x0
 
-    iget v1, p0, Lar;->c:I
+    iget v1, p0, Lar;->c_I:I
 
     if-gez v1, :cond_2
 
     :cond_0
     :goto_0
-    iget-object v1, p0, Lar;->a:Ljava/io/Reader;
+    iget-object v1, p0, Lar;->a_Reader:Ljava/io/Reader;
 
-    iget-object v2, p0, Lar;->a:[C
+    iget-object v2, p0, Lar;->a_Cs:[C
 
-    iget-object v3, p0, Lar;->a:[C
+    iget-object v3, p0, Lar;->a_Cs:[C
 
     array-length v3, v3
 
@@ -350,17 +350,17 @@
 
     add-int/2addr v1, v0
 
-    iput v1, p0, Lar;->a:I
+    iput v1, p0, Lar;->a_I:I
 
-    iput v0, p0, Lar;->b:I
+    iput v0, p0, Lar;->b_I:I
 
     :cond_1
     return-void
 
     :cond_2
-    iget v1, p0, Lar;->b:I
+    iget v1, p0, Lar;->b_I:I
 
-    iget v2, p0, Lar;->c:I
+    iget v2, p0, Lar;->c_I:I
 
     sub-int/2addr v1, v2
 
@@ -368,33 +368,33 @@
 
     const/4 v1, -0x2
 
-    iput v1, p0, Lar;->c:I
+    iput v1, p0, Lar;->c_I:I
 
-    iput v0, p0, Lar;->d:I
+    iput v0, p0, Lar;->d_I:I
 
     goto :goto_0
 
     :cond_3
-    iget-object v2, p0, Lar;->a:[C
+    iget-object v2, p0, Lar;->a_Cs:[C
 
     array-length v2, v2
 
     if-ltz v2, :cond_4
 
-    iget-object v2, p0, Lar;->a:[C
+    iget-object v2, p0, Lar;->a_Cs:[C
 
-    iget v3, p0, Lar;->c:I
+    iget v3, p0, Lar;->c_I:I
 
-    iget-object v4, p0, Lar;->a:[C
+    iget-object v4, p0, Lar;->a_Cs:[C
 
     invoke-static {v2, v3, v4, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iput v0, p0, Lar;->c:I
+    iput v0, p0, Lar;->c_I:I
 
     :goto_1
-    iput v1, p0, Lar;->a:I
+    iput v1, p0, Lar;->a_I:I
 
-    iput v1, p0, Lar;->b:I
+    iput v1, p0, Lar;->b_I:I
 
     move v0, v1
 
@@ -403,27 +403,27 @@
     :cond_4
     new-array v2, v0, [C
 
-    iget-object v3, p0, Lar;->a:[C
+    iget-object v3, p0, Lar;->a_Cs:[C
 
-    iget v4, p0, Lar;->c:I
+    iget v4, p0, Lar;->c_I:I
 
     invoke-static {v3, v4, v2, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iput-object v2, p0, Lar;->a:[C
+    iput-object v2, p0, Lar;->a_Cs:[C
 
-    iput v0, p0, Lar;->c:I
+    iput v0, p0, Lar;->c_I:I
 
     goto :goto_1
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
+.method public final a_String()Ljava/lang/String;
     .locals 1
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lar;->a(Z)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lar;->a_String(Z)Ljava/lang/String;
 
     move-result-object v0
 
@@ -438,7 +438,7 @@
     monitor-enter v1
 
     :try_start_0
-    iget-object v0, p0, Lar;->a:Ljava/io/Reader;
+    iget-object v0, p0, Lar;->a_Reader:Ljava/io/Reader;
 
     if-nez v0, :cond_0
 
@@ -448,17 +448,17 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lar;->a:Ljava/io/Reader;
+    iget-object v0, p0, Lar;->a_Reader:Ljava/io/Reader;
 
     invoke-virtual {v0}, Ljava/io/Reader;->close()V
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lar;->a:Ljava/io/Reader;
+    iput-object v0, p0, Lar;->a_Reader:Ljava/io/Reader;
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lar;->a:[C
+    iput-object v0, p0, Lar;->a_Cs:[C
 
     monitor-exit v1
     :try_end_0

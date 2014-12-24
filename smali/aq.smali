@@ -3,29 +3,29 @@
 
 
 # virtual methods
-.method public abstract a()J
+.method public abstract a_J()J
 .end method
 
-.method public abstract a()Ljava/lang/String;
+.method public abstract a_String()Ljava/lang/String;
 .end method
 
-.method public abstract a()V
+.method public abstract a_V()V
 .end method
 
-.method public abstract a(I)V
+.method public abstract a_V(I)V
 .end method
 
-.method public abstract a(J)V
+.method public abstract a_V(J)V
 .end method
 
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;)V
+.method public abstract a_V(Ljava/lang/String;Ljava/lang/String;)V
 .end method
 
-.method public abstract a(Z)V
+.method public abstract a_V(Z)V
 .end method
 
-.method public abstract a()Z
+.method public abstract a_Z()Z
 .end method
 
-.method public abstract b(J)V
+.method public abstract b_V(J)V
 .end method

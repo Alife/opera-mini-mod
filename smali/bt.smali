@@ -3,55 +3,55 @@
 
 
 # static fields
-.field public static a:I
+.field public static a_I:I
 
-.field public static a:J
+.field public static a_J:J
 
-.field public static a:[Ljava/lang/Object;
+.field public static a_Objects:[Ljava/lang/Object;
 
-.field public static b:I
+.field public static b_I:I
 
-.field public static b:[Ljava/lang/Object;
+.field public static b_Objects:[Ljava/lang/Object;
 
-.field public static c:[Ljava/lang/Object;
+.field public static c_Objects:[Ljava/lang/Object;
 
-.field public static d:[Ljava/lang/Object;
+.field public static d_Objects:[Ljava/lang/Object;
 
-.field public static e:[Ljava/lang/Object;
+.field public static e_Objects:[Ljava/lang/Object;
 
 
 # instance fields
-.field public a:Lbi;
+.field public a_bi:Lbi;
 
-.field public final a:Lcb;
+.field public final a_cb:Lcb;
 
-.field public a:Ljava/util/Timer;
+.field public a_Timer:Ljava/util/Timer;
 
-.field public a:Ljava/util/Vector;
+.field public a_Vector:Ljava/util/Vector;
 
-.field public a:Z
+.field public a_Z:Z
 
-.field public final a:[I
+.field public final a_Is:[I
 
-.field public b:Lbi;
+.field public b_bi:Lbi;
 
-.field public b:Z
+.field public b_Z:Z
 
-.field public c:I
+.field public c_I:I
 
-.field public c:Z
+.field public c_Z:Z
 
-.field public d:I
+.field public d_I:I
 
-.field public e:I
+.field public e_I:I
 
-.field public f:I
+.field public f_I:I
 
-.field public f:[Ljava/lang/Object;
+.field public f_Objects:[Ljava/lang/Object;
 
-.field public g:I
+.field public g_I:I
 
-.field public h:I
+.field public h_I:I
 
 
 # direct methods
@@ -60,7 +60,7 @@
 
     const-wide/16 v0, 0x320
 
-    sput-wide v0, Lbt;->a:J
+    sput-wide v0, Lbt;->a_J:J
 
     return-void
 .end method
@@ -70,46 +70,46 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lbt;->a:Lcb;
+    iput-object p1, p0, Lbt;->a_cb:Lcb;
 
     const/4 v0, 0x4
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lbt;->a:[I
+    iput-object v0, p0, Lbt;->a_Is:[I
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lbt;->c:I
+    iput v0, p0, Lbt;->c_I:I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lbt;->f:[Ljava/lang/Object;
+    iput-object v0, p0, Lbt;->f_Objects:[Ljava/lang/Object;
 
-    invoke-virtual {p0}, Lbt;->a()V
+    invoke-virtual {p0}, Lbt;->a_V()V
 
-    sget-object v0, Lbt;->a:[Ljava/lang/Object;
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Lbt;->b:[Ljava/lang/Object;
+    sget-object v0, Lbt;->a_Objects:[Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lbt;->c:[Ljava/lang/Object;
+    sget-object v0, Lbt;->b_Objects:[Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lbt;->d:[Ljava/lang/Object;
+    sget-object v0, Lbt;->c_Objects:[Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lbt;->e:[Ljava/lang/Object;
+    sget-object v0, Lbt;->d_Objects:[Ljava/lang/Object;
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lbt;->e_Objects:[Ljava/lang/Object;
 
     if-nez v0, :cond_2
 
     :cond_0
-    sget v0, Lbz;->aD:I
+    sget v0, Lbz;->aD_I:I
 
     const/4 v1, 0x2
 
@@ -117,15 +117,15 @@
 
     const-string v0, "k"
 
-    invoke-static {v0}, Lbz;->a(Ljava/lang/String;)Lar;
+    invoke-static {v0}, Lbz;->a_ar(Ljava/lang/String;)Lar;
 
     move-result-object v0
 
-    invoke-static {v0}, Lbt;->a(Lar;)V
+    invoke-static {v0}, Lbt;->a_V(Lar;)V
 
     :cond_1
     :goto_0
-    sget v0, Lbz;->aD:I
+    sget v0, Lbz;->aD_I:I
 
     if-nez v0, :cond_2
 
@@ -133,31 +133,31 @@
 
     const-string v1, "[VKEY2]\n[L]\nqE1MwE2MeE3MrE4MtE5MyE6MuE7MiE8MoE9MpE0M\naE!MsE@MdE#MfE$MgE%MhE&MjE*MkE=MlE\\M;E:M\nSMzE_MxE\"McE\'MvE(MbE)MnE-MmE+MBM\nCMNMUM M,E<M.E>M/E?MRM\n[C]\n\u0439M\u0446M\u0443M\u043aM\u0435M\u043dM\u0433M\u0448M\u0449M\u0437M\u0445M\n\u0444M\u044bM\u0432M\u0430M\u043fM\u0440M\u043eM\u043bM\u0434M\u0436M\u044dM\nSM\u044fM\u0447M\u0441M\u043cM\u0438M\u0442M\u044cM\u0431M\u044eMBM\nLMNM M,M.M\u0451M\u044aMRM\n[U]\n\u00e5M\u00e4M\u00e1M\u00e0M\u00e3M\u00e2M\u00e9M\u00e8M\u00eaM\u00ebM\n\u00f6M\u00f3M\u00f2M\u00f4M\u00f8M\u00edM\u00ecM\u00eeM\u00efM\nSM\u00faM\u00f9M\u00fbM\u00fcM\u00f1M\u00fdM\u00e7MBM\nLMNMUM M\u00dfM\u00e6MRM\n[N]\n1M2M3M4M5M6M7M8M9M0M\n(M)M+M*M=M&M_M-M\'M/M\nYM\"M@M?M!M;M:M,MBM\nLMNM M%M#MRM\n[Y]\n\u00a7M$M\u00a3M\u00e2M\u00a5M\u00a4M<M>M[M]M\n{M}M^M\\M~M\u00aeM\u00a9M\u00a6M|M\nYM:)M;)M:(M:\'(M:oM:PM:$MBM\nLMNM M%)M:!MRM\n[/VKEY2]"
 
-    invoke-static {v1}, Lbz;->a(Ljava/lang/String;)[B
+    invoke-static {v1}, Lbz;->a_Bs(Ljava/lang/String;)[B
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
-    invoke-static {v0}, Lbz;->a(Ljava/io/InputStream;)Lar;
+    invoke-static {v0}, Lbz;->a_ar(Ljava/io/InputStream;)Lar;
 
     move-result-object v0
 
-    invoke-static {v0}, Lbt;->a(Lar;)V
+    invoke-static {v0}, Lbt;->a_V(Lar;)V
 
     :cond_2
-    invoke-static {p0}, Lbt;->a(Lbt;)V
+    invoke-static {p0}, Lbt;->a_V(Lbt;)V
 
-    iget v0, p0, Lbt;->g:I
+    iget v0, p0, Lbt;->g_I:I
 
     neg-int v0, v0
 
-    iput v0, p0, Lbt;->h:I
+    iput v0, p0, Lbt;->h_I:I
 
     return-void
 
     :cond_3
-    sget v0, Lbz;->aD:I
+    sget v0, Lbz;->aD_I:I
 
     const/4 v1, 0x1
 
@@ -165,7 +165,7 @@
 
     const-string v0, "kl"
 
-    invoke-static {v0}, Lbz;->f(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbz;->f_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -175,29 +175,29 @@
 
     const-string v1, "kl"
 
-    invoke-static {v1}, Lbz;->b(Ljava/lang/String;)[B
+    invoke-static {v1}, Lbz;->b_Bs(Ljava/lang/String;)[B
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
-    invoke-static {v0}, Lbz;->a(Ljava/io/InputStream;)Lar;
+    invoke-static {v0}, Lbz;->a_ar(Ljava/io/InputStream;)Lar;
 
     move-result-object v0
 
-    invoke-static {v0}, Lbt;->a(Lar;)V
+    invoke-static {v0}, Lbt;->a_V(Lar;)V
 
     goto :goto_0
 
     :cond_4
     const/4 v0, 0x0
 
-    sput v0, Lbz;->aD:I
+    sput v0, Lbz;->aD_I:I
 
     goto :goto_0
 .end method
 
-.method private static a(Ljava/lang/String;)C
+.method private static a_C(Ljava/lang/String;)C
     .locals 2
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -223,7 +223,7 @@
     goto :goto_0
 .end method
 
-.method private static a([[Ljava/lang/String;I)C
+.method private static a_C([[Ljava/lang/String;I)C
     .locals 2
 
     aget-object v0, p0, p1
@@ -232,14 +232,14 @@
 
     aget-object v0, v0, v1
 
-    invoke-static {v0}, Lbt;->a(Ljava/lang/String;)C
+    invoke-static {v0}, Lbt;->a_C(Ljava/lang/String;)C
 
     move-result v0
 
     return v0
 .end method
 
-.method private static a([I[[Ljava/lang/String;)I
+.method private static a_I([I[[Ljava/lang/String;)I
     .locals 3
 
     const/4 v0, 0x0
@@ -270,7 +270,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-static {p1, v1}, Lbt;->a([[Ljava/lang/String;I)Z
+    invoke-static {p1, v1}, Lbt;->a_Z([[Ljava/lang/String;I)Z
 
     move-result v2
 
@@ -290,10 +290,10 @@
     return v0
 .end method
 
-.method private a(I)V
+.method private a_V(I)V
     .locals 28
 
-    sget v2, Lbt;->a:I
+    sget v2, Lbt;->a_I:I
 
     move/from16 v0, p1
 
@@ -301,13 +301,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbt;->a:Ljava/util/Vector;
+    iget-object v2, v0, Lbt;->a_Vector:Ljava/util/Vector;
 
     if-eqz v2, :cond_1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lbt;->a:Ljava/util/Vector;
+    iget-object v2, v0, Lbt;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v2}, Ljava/util/Vector;->isEmpty()Z
 
@@ -325,11 +325,11 @@
     goto :goto_0
 
     :pswitch_0
-    sget-object v2, Lbt;->a:[Ljava/lang/Object;
+    sget-object v2, Lbt;->a_Objects:[Ljava/lang/Object;
 
     const/4 v3, 0x0
 
-    sput v3, Lbt;->b:I
+    sput v3, Lbt;->b_I:I
 
     move-object/from16 v16, v2
 
@@ -342,27 +342,27 @@
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lbt;->a:Ljava/util/Vector;
+    iput-object v2, v0, Lbt;->a_Vector:Ljava/util/Vector;
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lbt;->e:I
+    iget v2, v0, Lbt;->e_I:I
 
     add-int/lit8 v8, v2, 0x5
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lbt;->f:I
+    iget v2, v0, Lbt;->f_I:I
 
     add-int/lit8 v17, v2, -0x5
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lbt;->e:I
+    iget v2, v0, Lbt;->e_I:I
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lbt;->g:I
+    iget v3, v0, Lbt;->g_I:I
 
     add-int/2addr v2, v3
 
@@ -410,7 +410,7 @@
 
     if-ge v5, v9, :cond_3
 
-    invoke-static {v2, v5}, Lbt;->b([[Ljava/lang/String;I)Z
+    invoke-static {v2, v5}, Lbt;->b_Z([[Ljava/lang/String;I)Z
 
     move-result v9
 
@@ -424,39 +424,39 @@
     goto :goto_3
 
     :pswitch_1
-    sget-object v2, Lbt;->b:[Ljava/lang/Object;
+    sget-object v2, Lbt;->b_Objects:[Ljava/lang/Object;
 
     const/4 v3, 0x1
 
-    sput v3, Lbt;->b:I
+    sput v3, Lbt;->b_I:I
 
     move-object/from16 v16, v2
 
     goto :goto_1
 
     :pswitch_2
-    sget-object v2, Lbt;->c:[Ljava/lang/Object;
+    sget-object v2, Lbt;->c_Objects:[Ljava/lang/Object;
 
     move-object/from16 v16, v2
 
     goto :goto_1
 
     :pswitch_3
-    sget-object v2, Lbt;->d:[Ljava/lang/Object;
+    sget-object v2, Lbt;->d_Objects:[Ljava/lang/Object;
 
     move-object/from16 v16, v2
 
     goto :goto_1
 
     :pswitch_4
-    sget-object v2, Lbt;->e:[Ljava/lang/Object;
+    sget-object v2, Lbt;->e_Objects:[Ljava/lang/Object;
 
     move-object/from16 v16, v2
 
     goto :goto_1
 
     :cond_3
-    invoke-static {v4, v6}, Lbz;->a(II)I
+    invoke-static {v4, v6}, Lbz;->a_I(II)I
 
     move-result v4
 
@@ -518,7 +518,7 @@
 
     add-int/lit8 v9, v6, 0x1
 
-    invoke-static {v2, v8}, Lbt;->b([[Ljava/lang/String;I)Z
+    invoke-static {v2, v8}, Lbt;->b_Z([[Ljava/lang/String;I)Z
 
     move-result v6
 
@@ -560,7 +560,7 @@
 
     if-ge v10, v0, :cond_c
 
-    invoke-static {v2, v10}, Lbt;->a([[Ljava/lang/String;I)Z
+    invoke-static {v2, v10}, Lbt;->a_Z([[Ljava/lang/String;I)Z
 
     move-result v8
 
@@ -580,7 +580,7 @@
 
     add-int/lit8 v8, v10, -0x1
 
-    invoke-static {v2, v8}, Lbt;->a([[Ljava/lang/String;I)Z
+    invoke-static {v2, v8}, Lbt;->a_Z([[Ljava/lang/String;I)Z
 
     move-result v8
 
@@ -646,7 +646,7 @@
 
     move-object/from16 v0, v21
 
-    invoke-static {v0, v8}, Lbt;->a([I[[Ljava/lang/String;)I
+    invoke-static {v0, v8}, Lbt;->a_I([I[[Ljava/lang/String;)I
 
     move-result v8
 
@@ -676,7 +676,7 @@
 
     aget v8, v21, v8
 
-    invoke-static {v4, v8}, Lbz;->a(II)I
+    invoke-static {v4, v8}, Lbz;->a_I(II)I
 
     move-result v8
 
@@ -691,7 +691,7 @@
     :cond_e
     move-object/from16 v0, v21
 
-    invoke-static {v0, v2}, Lbt;->a([I[[Ljava/lang/String;)I
+    invoke-static {v0, v2}, Lbt;->a_I([I[[Ljava/lang/String;)I
 
     move-result v6
 
@@ -721,7 +721,7 @@
 
     if-ge v12, v0, :cond_12
 
-    invoke-static {v2, v12}, Lbt;->a([[Ljava/lang/String;I)Z
+    invoke-static {v2, v12}, Lbt;->a_Z([[Ljava/lang/String;I)Z
 
     move-result v13
 
@@ -803,7 +803,7 @@
 
     aget-object v23, v22, v11
 
-    invoke-static/range {v23 .. v23}, Lbt;->a(Ljava/lang/String;)C
+    invoke-static/range {v23 .. v23}, Lbt;->a_C(Ljava/lang/String;)C
 
     move-result v24
 
@@ -861,7 +861,7 @@
 
     add-int/lit8 v11, v15, 0x1
 
-    invoke-static {v2, v11}, Lbt;->a([[Ljava/lang/String;I)C
+    invoke-static {v2, v11}, Lbt;->a_C([[Ljava/lang/String;I)C
 
     move-result v11
 
@@ -949,7 +949,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lbt;->a:Ljava/util/Vector;
+    iget-object v10, v0, Lbt;->a_Vector:Ljava/util/Vector;
 
     const/16 v23, 0x2
 
@@ -1046,7 +1046,7 @@
     goto/16 :goto_5
 
     :cond_1d
-    sput p1, Lbt;->a:I
+    sput p1, Lbt;->a_I:I
 
     goto/16 :goto_0
 
@@ -1060,7 +1060,7 @@
     .end packed-switch
 .end method
 
-.method private static a(ILjava/util/Vector;)V
+.method private static a_V(ILjava/util/Vector;)V
     .locals 1
 
     const/4 v0, -0x1
@@ -1086,9 +1086,9 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    sput-object v0, Lbt;->a:[Ljava/lang/Object;
+    sput-object v0, Lbt;->a_Objects:[Ljava/lang/Object;
 
-    sget-object v0, Lbt;->a:[Ljava/lang/Object;
+    sget-object v0, Lbt;->a_Objects:[Ljava/lang/Object;
 
     invoke-virtual {p1, v0}, Ljava/util/Vector;->copyInto([Ljava/lang/Object;)V
 
@@ -1101,9 +1101,9 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    sput-object v0, Lbt;->b:[Ljava/lang/Object;
+    sput-object v0, Lbt;->b_Objects:[Ljava/lang/Object;
 
-    sget-object v0, Lbt;->b:[Ljava/lang/Object;
+    sget-object v0, Lbt;->b_Objects:[Ljava/lang/Object;
 
     invoke-virtual {p1, v0}, Ljava/util/Vector;->copyInto([Ljava/lang/Object;)V
 
@@ -1116,9 +1116,9 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    sput-object v0, Lbt;->c:[Ljava/lang/Object;
+    sput-object v0, Lbt;->c_Objects:[Ljava/lang/Object;
 
-    sget-object v0, Lbt;->c:[Ljava/lang/Object;
+    sget-object v0, Lbt;->c_Objects:[Ljava/lang/Object;
 
     invoke-virtual {p1, v0}, Ljava/util/Vector;->copyInto([Ljava/lang/Object;)V
 
@@ -1131,9 +1131,9 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    sput-object v0, Lbt;->d:[Ljava/lang/Object;
+    sput-object v0, Lbt;->d_Objects:[Ljava/lang/Object;
 
-    sget-object v0, Lbt;->d:[Ljava/lang/Object;
+    sget-object v0, Lbt;->d_Objects:[Ljava/lang/Object;
 
     invoke-virtual {p1, v0}, Ljava/util/Vector;->copyInto([Ljava/lang/Object;)V
 
@@ -1146,9 +1146,9 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    sput-object v0, Lbt;->e:[Ljava/lang/Object;
+    sput-object v0, Lbt;->e_Objects:[Ljava/lang/Object;
 
-    sget-object v0, Lbt;->e:[Ljava/lang/Object;
+    sget-object v0, Lbt;->e_Objects:[Ljava/lang/Object;
 
     invoke-virtual {p1, v0}, Ljava/util/Vector;->copyInto([Ljava/lang/Object;)V
 
@@ -1166,14 +1166,14 @@
     .end packed-switch
 .end method
 
-.method private static a(Lar;)V
+.method private static a_V(Lar;)V
     .locals 6
 
     const/4 v1, 0x0
 
     :cond_0
     :try_start_0
-    invoke-virtual {p0}, Lar;->a()Ljava/lang/String;
+    invoke-virtual {p0}, Lar;->a_String()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1195,7 +1195,7 @@
     invoke-direct {v2}, Ljava/util/Vector;-><init>()V
 
     :goto_0
-    invoke-virtual {p0}, Lar;->a()Ljava/lang/String;
+    invoke-virtual {p0}, Lar;->a_String()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1209,7 +1209,7 @@
 
     if-eqz v4, :cond_2
 
-    invoke-static {v0, v2}, Lbt;->a(ILjava/util/Vector;)V
+    invoke-static {v0, v2}, Lbt;->a_V(ILjava/util/Vector;)V
 
     invoke-virtual {v2}, Ljava/util/Vector;->removeAllElements()V
 
@@ -1226,7 +1226,7 @@
 
     if-eqz v4, :cond_3
 
-    invoke-static {v0, v2}, Lbt;->a(ILjava/util/Vector;)V
+    invoke-static {v0, v2}, Lbt;->a_V(ILjava/util/Vector;)V
 
     const/4 v0, 0x1
 
@@ -1243,13 +1243,13 @@
     const/4 v0, 0x0
 
     :try_start_1
-    sput v0, Lbz;->aD:I
+    sput v0, Lbz;->aD_I:I
 
-    invoke-static {}, Lbt;->e()V
+    invoke-static {}, Lbt;->e_V()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    invoke-static {p0}, Lbz;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lbz;->b_V(Ljava/lang/Object;)V
 
     :goto_1
     return-void
@@ -1264,7 +1264,7 @@
 
     if-eqz v4, :cond_4
 
-    invoke-static {v0, v2}, Lbt;->a(ILjava/util/Vector;)V
+    invoke-static {v0, v2}, Lbt;->a_V(ILjava/util/Vector;)V
 
     const/4 v0, 0x2
 
@@ -1278,7 +1278,7 @@
     :catchall_0
     move-exception v0
 
-    invoke-static {p0}, Lbz;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lbz;->b_V(Ljava/lang/Object;)V
 
     throw v0
 
@@ -1292,7 +1292,7 @@
 
     if-eqz v4, :cond_5
 
-    invoke-static {v0, v2}, Lbt;->a(ILjava/util/Vector;)V
+    invoke-static {v0, v2}, Lbt;->a_V(ILjava/util/Vector;)V
 
     const/4 v0, 0x3
 
@@ -1309,7 +1309,7 @@
 
     if-eqz v4, :cond_6
 
-    invoke-static {v0, v2}, Lbt;->a(ILjava/util/Vector;)V
+    invoke-static {v0, v2}, Lbt;->a_V(ILjava/util/Vector;)V
 
     const/4 v0, 0x4
 
@@ -1326,12 +1326,12 @@
 
     if-eqz v4, :cond_7
 
-    invoke-static {v0, v2}, Lbt;->a(ILjava/util/Vector;)V
+    invoke-static {v0, v2}, Lbt;->a_V(ILjava/util/Vector;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
 
-    invoke-static {p0}, Lbz;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lbz;->b_V(Ljava/lang/Object;)V
 
     goto :goto_1
 
@@ -1401,7 +1401,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lbt;->a(Ljava/lang/String;)[[Ljava/lang/String;
+    invoke-static {v3}, Lbt;->a_Stringss(Ljava/lang/String;)[[Ljava/lang/String;
 
     move-result-object v3
 
@@ -1413,45 +1413,45 @@
     goto/16 :goto_0
 
     :cond_8
-    invoke-static {p0}, Lbz;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lbz;->b_V(Ljava/lang/Object;)V
 
     goto/16 :goto_1
 .end method
 
-.method public static a(Lbt;)V
+.method public static a_V(Lbt;)V
     .locals 2
 
     if-nez p0, :cond_0
 
     const/16 v0, 0x10
 
-    sget v1, Lca;->a:I
+    sget v1, Lca;->a_I:I
 
-    invoke-static {v0, v1}, Lca;->a(II)Lcg;
+    invoke-static {v0, v1}, Lca;->a_cg(II)Lcg;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v1, v0, Lcg;->a:Lcb;
+    iget-object v1, v0, Lcg;->a_cb:Lcb;
 
     if-eqz v1, :cond_0
 
-    iget-object v0, v0, Lcg;->a:Lcb;
+    iget-object v0, v0, Lcg;->a_cb:Lcb;
 
-    iget-object p0, v0, Lcb;->a:Lbt;
+    iget-object p0, v0, Lcb;->a_bt:Lbt;
 
     :cond_0
     if-eqz p0, :cond_1
 
-    sget v0, Lbz;->bk:I
+    sget v0, Lbz;->bk_I:I
 
     packed-switch v0, :pswitch_data_0
 
     const/4 v0, 0x0
 
     :goto_0
-    invoke-direct {p0, v0}, Lbt;->a(I)V
+    invoke-direct {p0, v0}, Lbt;->a_V(I)V
 
     :cond_1
     return-void
@@ -1474,7 +1474,7 @@
     .end packed-switch
 .end method
 
-.method private static a(Ljavax/microedition/lcdui/Graphics;IIIILjava/lang/String;Ljava/lang/String;IIIILjavax/microedition/lcdui/Image;I)V
+.method private static a_V(Ljavax/microedition/lcdui/Graphics;IIIILjava/lang/String;Ljava/lang/String;IIIILjavax/microedition/lcdui/Image;I)V
     .locals 9
 
     if-eqz p11, :cond_1
@@ -1498,13 +1498,13 @@
     return-void
 
     :cond_1
-    invoke-static {p5}, Lcc;->b(Ljava/lang/String;)Z
+    invoke-static {p5}, Lcc;->b_Z(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    invoke-static {p6}, Lcc;->b(Ljava/lang/String;)Z
+    invoke-static {p6}, Lcc;->b_Z(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -1514,7 +1514,7 @@
 
     move/from16 v1, p12
 
-    invoke-static {v0, p6, v1}, Lbz;->a(ILjava/lang/String;I)I
+    invoke-static {v0, p6, v1}, Lbz;->a_I(ILjava/lang/String;I)I
 
     move-result v2
 
@@ -1540,7 +1540,7 @@
 
     move/from16 v8, p12
 
-    invoke-static/range {v2 .. v8}, Lco;->a(Ljavax/microedition/lcdui/Graphics;ILjava/lang/String;IIII)V
+    invoke-static/range {v2 .. v8}, Lco;->a_V(Ljavax/microedition/lcdui/Graphics;ILjava/lang/String;IIII)V
 
     add-int v2, p2, p4
 
@@ -1548,7 +1548,7 @@
 
     move/from16 v1, p12
 
-    invoke-static {v0, v1}, Lbz;->e(II)I
+    invoke-static {v0, v1}, Lbz;->e_I(II)I
 
     move-result v3
 
@@ -1565,7 +1565,7 @@
 
     move/from16 v1, p12
 
-    invoke-static {v0, p5, v1}, Lbz;->a(ILjava/lang/String;I)I
+    invoke-static {v0, p5, v1}, Lbz;->a_I(ILjava/lang/String;I)I
 
     move-result v3
 
@@ -1587,7 +1587,7 @@
 
     move/from16 v8, p12
 
-    invoke-static/range {v2 .. v8}, Lco;->a(Ljavax/microedition/lcdui/Graphics;ILjava/lang/String;IIII)V
+    invoke-static/range {v2 .. v8}, Lco;->a_V(Ljavax/microedition/lcdui/Graphics;ILjava/lang/String;IIII)V
 
     goto :goto_0
 
@@ -1600,7 +1600,7 @@
 
     move/from16 v1, p12
 
-    invoke-static {v0, v1}, Lbz;->e(II)I
+    invoke-static {v0, v1}, Lbz;->e_I(II)I
 
     move-result v3
 
@@ -1611,10 +1611,10 @@
     goto :goto_1
 .end method
 
-.method private static a([[Ljava/lang/String;I)Z
+.method private static a_Z([[Ljava/lang/String;I)Z
     .locals 2
 
-    invoke-static {p0, p1}, Lbt;->a([[Ljava/lang/String;I)C
+    invoke-static {p0, p1}, Lbt;->a_C([[Ljava/lang/String;I)C
 
     move-result v0
 
@@ -1633,7 +1633,7 @@
     goto :goto_0
 .end method
 
-.method private static a(Ljava/lang/String;)[[Ljava/lang/String;
+.method private static a_Stringss(Ljava/lang/String;)[[Ljava/lang/String;
     .locals 7
 
     const/4 v5, 0x2
@@ -1644,7 +1644,7 @@
 
     const/16 v0, 0x4d
 
-    invoke-static {p0, v2, v0}, Lcc;->a(Ljava/lang/String;IC)[Ljava/lang/String;
+    invoke-static {p0, v2, v0}, Lcc;->a_Strings(Ljava/lang/String;IC)[Ljava/lang/String;
 
     move-result-object v3
 
@@ -1675,7 +1675,7 @@
 
     const/16 v5, 0x45
 
-    invoke-static {v4, v2, v5}, Lcc;->a(Ljava/lang/String;IC)[Ljava/lang/String;
+    invoke-static {v4, v2, v5}, Lcc;->a_Strings(Ljava/lang/String;IC)[Ljava/lang/String;
 
     move-result-object v4
 
@@ -1740,23 +1740,23 @@
     return-object v0
 .end method
 
-.method private b(I)V
+.method private b_V(I)V
     .locals 1
 
-    sget v0, Lbt;->a:I
+    sget v0, Lbt;->a_I:I
 
     if-eq p1, v0, :cond_0
 
-    invoke-direct {p0, p1}, Lbt;->a(I)V
+    invoke-direct {p0, p1}, Lbt;->a_V(I)V
 
     :cond_0
     return-void
 .end method
 
-.method private static b([[Ljava/lang/String;I)Z
+.method private static b_Z([[Ljava/lang/String;I)Z
     .locals 2
 
-    invoke-static {p0, p1}, Lbt;->a([[Ljava/lang/String;I)C
+    invoke-static {p0, p1}, Lbt;->a_C([[Ljava/lang/String;I)C
 
     move-result v0
 
@@ -1775,87 +1775,87 @@
     goto :goto_0
 .end method
 
-.method public static e()V
+.method public static e_V()V
     .locals 1
 
     const/4 v0, 0x0
 
-    sput-object v0, Lbt;->a:[Ljava/lang/Object;
+    sput-object v0, Lbt;->a_Objects:[Ljava/lang/Object;
 
-    sput-object v0, Lbt;->b:[Ljava/lang/Object;
+    sput-object v0, Lbt;->b_Objects:[Ljava/lang/Object;
 
-    sput-object v0, Lbt;->c:[Ljava/lang/Object;
+    sput-object v0, Lbt;->c_Objects:[Ljava/lang/Object;
 
-    sput-object v0, Lbt;->d:[Ljava/lang/Object;
+    sput-object v0, Lbt;->d_Objects:[Ljava/lang/Object;
 
-    sput-object v0, Lbt;->e:[Ljava/lang/Object;
+    sput-object v0, Lbt;->e_Objects:[Ljava/lang/Object;
 
     return-void
 .end method
 
-.method private f()V
+.method private f_V()V
     .locals 2
 
     const/4 v1, 0x0
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lbt;->c:Z
+    iput-boolean v0, p0, Lbt;->c_Z:Z
 
-    iget-object v0, p0, Lbt;->b:Lbi;
+    iget-object v0, p0, Lbt;->b_bi:Lbi;
 
-    invoke-static {v0}, Lbz;->a(Ljava/util/TimerTask;)V
+    invoke-static {v0}, Lbz;->a_V(Ljava/util/TimerTask;)V
 
-    iput-object v1, p0, Lbt;->b:Lbi;
+    iput-object v1, p0, Lbt;->b_bi:Lbi;
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Timer;
+    iget-object v0, p0, Lbt;->a_Timer:Ljava/util/Timer;
 
-    invoke-static {v0}, Lbz;->a(Ljava/util/Timer;)V
+    invoke-static {v0}, Lbz;->a_V(Ljava/util/Timer;)V
 
-    iput-object v1, p0, Lbt;->a:Ljava/util/Timer;
+    iput-object v1, p0, Lbt;->a_Timer:Ljava/util/Timer;
 
     return-void
 .end method
 
-.method private g()V
+.method private g_V()V
     .locals 2
 
-    sget v0, Lbt;->b:I
+    sget v0, Lbt;->b_I:I
 
-    invoke-direct {p0, v0}, Lbt;->b(I)V
+    invoke-direct {p0, v0}, Lbt;->b_V(I)V
 
-    sget v0, Lbt;->b:I
+    sget v0, Lbt;->b_I:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    invoke-static {}, Lcb;->n()V
+    invoke-static {}, Lcb;->n_V()V
 
     :goto_0
     return-void
 
     :cond_0
-    invoke-static {}, Lcb;->q()V
+    invoke-static {}, Lcb;->q_V()V
 
     goto :goto_0
 .end method
 
 
 # virtual methods
-.method public final a()I
+.method public final a_I()I
     .locals 2
 
-    iget v0, p0, Lbt;->e:I
+    iget v0, p0, Lbt;->e_I:I
 
-    iget v1, p0, Lbt;->h:I
+    iget v1, p0, Lbt;->h_I:I
 
     sub-int/2addr v0, v1
 
     return v0
 .end method
 
-.method public final a()V
+.method public final a_V()V
     .locals 6
 
     const/4 v5, 0x3
@@ -1866,80 +1866,80 @@
 
     const/4 v2, 0x0
 
-    iput v2, p0, Lbt;->d:I
+    iput v2, p0, Lbt;->d_I:I
 
-    sget v0, Lce;->k:I
+    sget v0, Lce;->k_I:I
 
-    iput v0, p0, Lbt;->f:I
+    iput v0, p0, Lbt;->f_I:I
 
-    sget v0, Lce;->l:I
+    sget v0, Lce;->l_I:I
 
     shr-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lbt;->e:I
+    iput v0, p0, Lbt;->e_I:I
 
-    sget v0, Lce;->l:I
+    sget v0, Lce;->l_I:I
 
-    invoke-static {}, Lbz;->e()I
+    invoke-static {}, Lbz;->e_I()I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    iget v1, p0, Lbt;->e:I
+    iget v1, p0, Lbt;->e_I:I
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lbt;->g:I
+    iput v0, p0, Lbt;->g_I:I
 
-    iget-object v0, p0, Lbt;->a:[I
+    iget-object v0, p0, Lbt;->a_Is:[I
 
     aget v0, v0, v3
 
-    iget v1, p0, Lbt;->e:I
+    iget v1, p0, Lbt;->e_I:I
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lbt;->a:[I
+    iget-object v0, p0, Lbt;->a_Is:[I
 
     aget v0, v0, v4
 
-    iget v1, p0, Lbt;->f:I
+    iget v1, p0, Lbt;->f_I:I
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lbt;->a:[I
+    iget-object v0, p0, Lbt;->a_Is:[I
 
     aget v0, v0, v5
 
-    iget v1, p0, Lbt;->g:I
+    iget v1, p0, Lbt;->g_I:I
 
     if-eq v0, v1, :cond_1
 
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iput-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
-    iget-object v0, p0, Lbt;->a:[I
+    iget-object v0, p0, Lbt;->a_Is:[I
 
     aput v2, v0, v2
 
-    iget-object v0, p0, Lbt;->a:[I
+    iget-object v0, p0, Lbt;->a_Is:[I
 
-    iget v1, p0, Lbt;->e:I
+    iget v1, p0, Lbt;->e_I:I
 
     aput v1, v0, v3
 
-    iget-object v0, p0, Lbt;->a:[I
+    iget-object v0, p0, Lbt;->a_Is:[I
 
-    iget v1, p0, Lbt;->f:I
+    iget v1, p0, Lbt;->f_I:I
 
     aput v1, v0, v4
 
-    iget-object v0, p0, Lbt;->a:[I
+    iget-object v0, p0, Lbt;->a_Is:[I
 
-    iget v1, p0, Lbt;->g:I
+    iget v1, p0, Lbt;->g_I:I
 
     aput v1, v0, v5
 
@@ -1947,7 +1947,7 @@
     return-void
 .end method
 
-.method public final a(II)V
+.method public final a_V(II)V
     .locals 6
 
     const/16 v5, 0x20
@@ -1956,11 +1956,11 @@
 
     const/4 v4, 0x1
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->isEmpty()Z
 
@@ -1973,25 +1973,25 @@
     return-void
 
     :cond_1
-    sget v0, Lbz;->bX:I
+    sget v0, Lbz;->bX_I:I
 
     if-ne v0, v4, :cond_2
 
-    sget v0, Lbz;->bY:I
+    sget v0, Lbz;->bY_I:I
 
-    invoke-static {v0}, Lce;->c(I)V
+    invoke-static {v0}, Lce;->c_V(I)V
 
     :cond_2
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
-    invoke-virtual {v0}, Lce;->r()V
+    invoke-virtual {v0}, Lce;->r_V()V
 
-    invoke-direct {p0}, Lbt;->f()V
+    invoke-direct {p0}, Lbt;->f_V()V
 
     move v2, v3
 
     :goto_1
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -1999,7 +1999,7 @@
 
     if-ge v2, v0, :cond_0
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0, v2}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -2011,13 +2011,13 @@
 
     check-cast v1, [I
 
-    invoke-static {v1, p1, p2}, Lbz;->a([III)Z
+    invoke-static {v1, p1, p2}, Lbz;->a_Z([III)Z
 
     move-result v1
 
     if-eqz v1, :cond_9
 
-    iput v2, p0, Lbt;->c:I
+    iput v2, p0, Lbt;->c_I:I
 
     aget-object v0, v0, v4
 
@@ -2025,7 +2025,7 @@
 
     aget-object v0, v0, v3
 
-    invoke-static {v0}, Lbt;->a(Ljava/lang/String;)C
+    invoke-static {v0}, Lbt;->a_C(Ljava/lang/String;)C
 
     move-result v0
 
@@ -2035,22 +2035,22 @@
 
     if-ne v0, v1, :cond_5
 
-    iget-object v1, p0, Lbt;->a:Lcb;
+    iget-object v1, p0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v1}, Lcb;->b()I
+    invoke-virtual {v1}, Lcb;->b_I()I
 
     move-result v1
 
     if-ne v1, v4, :cond_5
 
     :cond_3
-    sget-object v1, Lce;->a:Lce;
+    sget-object v1, Lce;->a_ce:Lce;
 
-    invoke-virtual {v1, v0, v4}, Lce;->a(IZ)V
+    invoke-virtual {v1, v0, v4}, Lce;->a_V(IZ)V
 
     :cond_4
     :goto_2
-    invoke-static {}, Lce;->v()V
+    invoke-static {}, Lce;->v_V()V
 
     goto :goto_0
 
@@ -2059,27 +2059,27 @@
 
     if-ne v0, v1, :cond_6
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
     const/4 v1, -0x8
 
-    invoke-virtual {v0, v1, v4}, Lce;->a(IZ)V
+    invoke-virtual {v0, v1, v4}, Lce;->a_V(IZ)V
 
     goto :goto_2
 
     :cond_6
     if-le v0, v5, :cond_4
 
-    iget-object v0, p0, Lbt;->b:Lbi;
+    iget-object v0, p0, Lbt;->b_bi:Lbi;
 
     if-nez v0, :cond_7
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Timer;
+    iget-object v0, p0, Lbt;->a_Timer:Ljava/util/Timer;
 
     if-eqz v0, :cond_8
 
     :cond_7
-    invoke-direct {p0}, Lbt;->f()V
+    invoke-direct {p0}, Lbt;->f_V()V
 
     :cond_8
     new-instance v0, Lbi;
@@ -2088,23 +2088,23 @@
 
     invoke-direct {v0, v1}, Lbi;-><init>(I)V
 
-    iput-object v0, p0, Lbt;->b:Lbi;
+    iput-object v0, p0, Lbt;->b_bi:Lbi;
 
-    iget-object v0, p0, Lbt;->b:Lbi;
+    iget-object v0, p0, Lbt;->b_bi:Lbi;
 
-    iput-object p0, v0, Lbi;->a:Lbt;
+    iput-object p0, v0, Lbi;->a_bt:Lbt;
 
     new-instance v0, Ljava/util/Timer;
 
     invoke-direct {v0}, Ljava/util/Timer;-><init>()V
 
-    iput-object v0, p0, Lbt;->a:Ljava/util/Timer;
+    iput-object v0, p0, Lbt;->a_Timer:Ljava/util/Timer;
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Timer;
+    iget-object v0, p0, Lbt;->a_Timer:Ljava/util/Timer;
 
-    iget-object v1, p0, Lbt;->b:Lbi;
+    iget-object v1, p0, Lbt;->b_bi:Lbi;
 
-    sget-wide v2, Lbt;->a:J
+    sget-wide v2, Lbt;->a_J:J
 
     invoke-virtual {v0, v1, v2, v3}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
 
@@ -2118,18 +2118,18 @@
     goto :goto_1
 .end method
 
-.method public final a(Ljavax/microedition/lcdui/Graphics;)V
+.method public final a_V(Ljavax/microedition/lcdui/Graphics;)V
     .locals 29
 
     move-object/from16 v0, p0
 
-    iget-boolean v5, v0, Lbt;->b:Z
+    iget-boolean v5, v0, Lbt;->b_Z:Z
 
     if-nez v5, :cond_1
 
     move-object/from16 v0, p0
 
-    iget v5, v0, Lbt;->h:I
+    iget v5, v0, Lbt;->h_I:I
 
     if-nez v5, :cond_1
 
@@ -2137,36 +2137,36 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v5, v0, Lbt;->b:Z
+    iput-boolean v5, v0, Lbt;->b_Z:Z
 
-    sget-object v5, Lce;->a:Lce;
+    sget-object v5, Lce;->a_ce:Lce;
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lbt;->a:Lcb;
+    iget-object v6, v0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v5, v6}, Lce;->a(Lcb;)V
+    invoke-virtual {v5, v6}, Lce;->a_V(Lcb;)V
 
     :cond_0
     :goto_0
     return-void
 
     :cond_1
-    invoke-virtual/range {p0 .. p0}, Lbt;->a()V
+    invoke-virtual/range {p0 .. p0}, Lbt;->a_V()V
 
-    sget v5, Lbt;->a:I
-
-    move-object/from16 v0, p0
-
-    invoke-direct {v0, v5}, Lbt;->a(I)V
+    sget v5, Lbt;->a_I:I
 
     move-object/from16 v0, p0
 
-    iget v5, v0, Lbt;->e:I
+    invoke-direct {v0, v5}, Lbt;->a_V(I)V
 
     move-object/from16 v0, p0
 
-    iget v6, v0, Lbt;->h:I
+    iget v5, v0, Lbt;->e_I:I
+
+    move-object/from16 v0, p0
+
+    iget v6, v0, Lbt;->h_I:I
 
     sub-int v8, v5, v6
 
@@ -2174,15 +2174,15 @@
 
     move-object/from16 v0, p0
 
-    iget v6, v0, Lbt;->f:I
+    iget v6, v0, Lbt;->f_I:I
 
     move-object/from16 v0, p0
 
-    iget v7, v0, Lbt;->g:I
+    iget v7, v0, Lbt;->g_I:I
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v5, v8, v6, v7}, Lco;->b(Ljavax/microedition/lcdui/Graphics;IIII)V
+    invoke-static {v0, v5, v8, v6, v7}, Lco;->b_V(Ljavax/microedition/lcdui/Graphics;IIII)V
 
     const/4 v6, 0x0
 
@@ -2190,21 +2190,21 @@
 
     move-object/from16 v0, p0
 
-    iget v9, v0, Lbt;->f:I
+    iget v9, v0, Lbt;->f_I:I
 
     move-object/from16 v0, p0
 
-    iget v5, v0, Lbt;->g:I
+    iget v5, v0, Lbt;->g_I:I
 
     add-int/lit8 v10, v5, 0x1
 
-    sget-object v5, Lco;->a:[I
+    sget-object v5, Lco;->a_Is:[I
 
     const/16 v11, 0x52
 
     aget v11, v5, v11
 
-    sget-object v5, Lco;->a:[I
+    sget-object v5, Lco;->a_Is:[I
 
     const/16 v12, 0x53
 
@@ -2214,9 +2214,9 @@
 
     move-object/from16 v5, p1
 
-    invoke-static/range {v5 .. v13}, Lco;->a(Ljavax/microedition/lcdui/Graphics;[IIIIIIII)V
+    invoke-static/range {v5 .. v13}, Lco;->a_V(Ljavax/microedition/lcdui/Graphics;[IIIIIIII)V
 
-    sget-object v5, Lco;->a:[I
+    sget-object v5, Lco;->a_Is:[I
 
     const/16 v6, 0x54
 
@@ -2232,7 +2232,7 @@
 
     move-object/from16 v0, p0
 
-    iget v7, v0, Lbt;->f:I
+    iget v7, v0, Lbt;->f_I:I
 
     add-int/lit8 v8, v8, 0x1
 
@@ -2244,7 +2244,7 @@
 
     const v6, 0xffffff
 
-    sget-object v7, Lco;->a:[I
+    sget-object v7, Lco;->a_Is:[I
 
     const/16 v8, 0x59
 
@@ -2261,7 +2261,7 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lbt;->a:Ljava/util/Vector;
+    iget-object v5, v0, Lbt;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v5}, Ljava/util/Vector;->size()I
 
@@ -2273,7 +2273,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lbt;->a:Ljava/util/Vector;
+    iget-object v5, v0, Lbt;->a_Vector:Ljava/util/Vector;
 
     move/from16 v0, v18
 
@@ -2299,7 +2299,7 @@
 
     move-object/from16 v0, p0
 
-    iget v8, v0, Lbt;->h:I
+    iget v8, v0, Lbt;->h_I:I
 
     sub-int v25, v7, v8
 
@@ -2321,7 +2321,7 @@
 
     aget-object v7, v5, v7
 
-    invoke-static {v7}, Lbt;->a(Ljava/lang/String;)C
+    invoke-static {v7}, Lbt;->a_C(Ljava/lang/String;)C
 
     move-result v10
 
@@ -2335,7 +2335,7 @@
 
     aget-object v7, v5, v7
 
-    invoke-static {v7}, Lbt;->a(Ljava/lang/String;)C
+    invoke-static {v7}, Lbt;->a_C(Ljava/lang/String;)C
 
     move-result v7
 
@@ -2348,7 +2348,7 @@
 
     if-ne v10, v11, :cond_c
 
-    sget-object v7, Lce;->a:[Ljavax/microedition/lcdui/Image;
+    sget-object v7, Lce;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/16 v11, 0x49
 
@@ -2368,13 +2368,13 @@
     :goto_4
     const/4 v14, 0x1
 
-    sget-object v9, Lco;->a:[I
+    sget-object v9, Lco;->a_Is:[I
 
     const/16 v11, 0x5a
 
     aget v13, v9, v11
 
-    sget-object v9, Lco;->a:[I
+    sget-object v9, Lco;->a_Is:[I
 
     const/16 v11, 0x5b
 
@@ -2382,9 +2382,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v9, v0, Lbt;->a:Lcb;
+    iget-object v9, v0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v9}, Lcb;->f()Z
+    invoke-virtual {v9}, Lcb;->f_Z()Z
 
     move-result v9
 
@@ -2392,9 +2392,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v9, v0, Lbt;->a:Lcb;
+    iget-object v9, v0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v9}, Lcb;->g()Z
+    invoke-virtual {v9}, Lcb;->g_Z()Z
 
     move-result v9
 
@@ -2406,7 +2406,7 @@
     :goto_5
     move-object/from16 v0, p0
 
-    iget v15, v0, Lbt;->c:I
+    iget v15, v0, Lbt;->c_I:I
 
     const/4 v11, 0x0
 
@@ -2429,7 +2429,7 @@
 
     if-ne v10, v11, :cond_3
 
-    sget v11, Lbt;->a:I
+    sget v11, Lbt;->a_I:I
 
     const/4 v15, 0x2
 
@@ -2440,7 +2440,7 @@
 
     if-ne v10, v11, :cond_4
 
-    sget v11, Lbt;->a:I
+    sget v11, Lbt;->a_I:I
 
     const/4 v15, 0x4
 
@@ -2457,13 +2457,13 @@
 
     if-ne v10, v0, :cond_9
 
-    sget v11, Lbt;->a:I
+    sget v11, Lbt;->a_I:I
 
     const/4 v15, 0x3
 
     if-eq v11, v15, :cond_5
 
-    sget v17, Lbt;->a:I
+    sget v17, Lbt;->a_I:I
 
     const/4 v11, 0x0
 
@@ -2487,15 +2487,15 @@
 
     move-object/from16 v0, p0
 
-    iget-object v11, v0, Lbt;->a:Lcb;
+    iget-object v11, v0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v11}, Lcb;->g()Z
+    invoke-virtual {v11}, Lcb;->g_Z()Z
 
     move-result v11
 
     if-eqz v11, :cond_7
 
-    sget-object v8, Lce;->a:[Ljavax/microedition/lcdui/Image;
+    sget-object v8, Lce;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/16 v11, 0x4b
 
@@ -2504,7 +2504,7 @@
     :cond_7
     move-object/from16 v0, p0
 
-    iget-boolean v0, v0, Lbt;->c:Z
+    iget-boolean v0, v0, Lbt;->c_Z:Z
 
     move/from16 v16, v0
 
@@ -2542,20 +2542,20 @@
 
     const/4 v11, 0x1
 
-    sget-object v12, Lco;->a:[I
+    sget-object v12, Lco;->a_Is:[I
 
     const/16 v13, 0x5b
 
     aget v13, v12, v13
 
-    sget-object v12, Lco;->a:[I
+    sget-object v12, Lco;->a_Is:[I
 
     const/16 v16, 0x5a
 
     aget v12, v12, v16
 
     :cond_8
-    sget-boolean v16, Lbz;->bF:Z
+    sget-boolean v16, Lbz;->bF_Z:Z
 
     if-eqz v16, :cond_9
 
@@ -2571,11 +2571,11 @@
 
     move-object/from16 v0, p0
 
-    iput-object v10, v0, Lbt;->f:[Ljava/lang/Object;
+    iput-object v10, v0, Lbt;->f_Objects:[Ljava/lang/Object;
 
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lbt;->f:[Ljava/lang/Object;
+    iget-object v10, v0, Lbt;->f_Objects:[Ljava/lang/Object;
 
     new-instance v16, Ljava/lang/Integer;
 
@@ -2591,7 +2591,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lbt;->f:[Ljava/lang/Object;
+    iget-object v10, v0, Lbt;->f_Objects:[Ljava/lang/Object;
 
     new-instance v16, Ljava/lang/Integer;
 
@@ -2607,7 +2607,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lbt;->f:[Ljava/lang/Object;
+    iget-object v10, v0, Lbt;->f_Objects:[Ljava/lang/Object;
 
     new-instance v16, Ljava/lang/Integer;
 
@@ -2623,7 +2623,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lbt;->f:[Ljava/lang/Object;
+    iget-object v10, v0, Lbt;->f_Objects:[Ljava/lang/Object;
 
     new-instance v16, Ljava/lang/Integer;
 
@@ -2643,7 +2643,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lbt;->f:[Ljava/lang/Object;
+    iget-object v5, v0, Lbt;->f_Objects:[Ljava/lang/Object;
 
     const/4 v6, 0x4
 
@@ -2669,20 +2669,20 @@
 
     if-eqz v7, :cond_22
 
-    sget-object v5, Lco;->a:[I
+    sget-object v5, Lco;->a_Is:[I
 
     const/16 v6, 0x57
 
     aget v11, v5, v6
 
-    sget-object v5, Lco;->a:[I
+    sget-object v5, Lco;->a_Is:[I
 
     const/16 v6, 0x58
 
     aget v12, v5, v6
 
     :goto_8
-    sget-boolean v5, Lbz;->ef:Z
+    sget-boolean v5, Lbz;->ef_Z:Z
 
     if-eqz v5, :cond_23
 
@@ -2700,7 +2700,7 @@
 
     move-object/from16 v5, p1
 
-    invoke-static/range {v5 .. v13}, Lco;->a(Ljavax/microedition/lcdui/Graphics;[IIIIIIII)V
+    invoke-static/range {v5 .. v13}, Lco;->a_V(Ljavax/microedition/lcdui/Graphics;[IIIIIIII)V
 
     const v5, 0x303030
 
@@ -3140,7 +3140,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v5, v6, v7, v8}, Lco;->b(Ljavax/microedition/lcdui/Graphics;IIII)V
+    invoke-static {v0, v5, v6, v7, v8}, Lco;->b_V(Ljavax/microedition/lcdui/Graphics;IIII)V
 
     add-int/lit8 v8, v26, 0x1
 
@@ -3156,9 +3156,9 @@
 
     move/from16 v10, v23
 
-    invoke-static/range {v5 .. v11}, Lco;->b(Ljavax/microedition/lcdui/Graphics;IIIIIZ)V
+    invoke-static/range {v5 .. v11}, Lco;->b_V(Ljavax/microedition/lcdui/Graphics;IIIIIZ)V
 
-    invoke-static/range {p1 .. p1}, Lco;->c(Ljavax/microedition/lcdui/Graphics;)V
+    invoke-static/range {p1 .. p1}, Lco;->c_V(Ljavax/microedition/lcdui/Graphics;)V
 
     :cond_a
     :goto_9
@@ -3172,7 +3172,7 @@
 
     move/from16 v4, v27
 
-    invoke-static {v0, v1, v2, v3, v4}, Lco;->b(Ljavax/microedition/lcdui/Graphics;IIII)V
+    invoke-static {v0, v1, v2, v3, v4}, Lco;->b_V(Ljavax/microedition/lcdui/Graphics;IIII)V
 
     const/16 v17, 0x2
 
@@ -3194,9 +3194,9 @@
 
     move/from16 v13, v21
 
-    invoke-static/range {v5 .. v17}, Lbt;->a(Ljavax/microedition/lcdui/Graphics;IIIILjava/lang/String;Ljava/lang/String;IIIILjavax/microedition/lcdui/Image;I)V
+    invoke-static/range {v5 .. v17}, Lbt;->a_V(Ljavax/microedition/lcdui/Graphics;IIIILjava/lang/String;Ljava/lang/String;IIIILjavax/microedition/lcdui/Image;I)V
 
-    invoke-static/range {p1 .. p1}, Lco;->c(Ljavax/microedition/lcdui/Graphics;)V
+    invoke-static/range {p1 .. p1}, Lco;->c_V(Ljavax/microedition/lcdui/Graphics;)V
 
     add-int/lit8 v5, v18, 0x1
 
@@ -3214,7 +3214,7 @@
 
     if-ne v10, v8, :cond_d
 
-    sget-object v7, Lce;->a:[Ljavax/microedition/lcdui/Image;
+    sget-object v7, Lce;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/16 v8, 0x4a
 
@@ -3239,7 +3239,7 @@
 
     if-ne v10, v8, :cond_e
 
-    sget-object v7, Lce;->a:[Ljavax/microedition/lcdui/Image;
+    sget-object v7, Lce;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/16 v8, 0x4c
 
@@ -3264,7 +3264,7 @@
 
     if-ne v10, v8, :cond_f
 
-    sget-object v7, Lce;->a:[Ljavax/microedition/lcdui/Image;
+    sget-object v7, Lce;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/16 v8, 0x48
 
@@ -3289,7 +3289,7 @@
 
     if-ne v10, v8, :cond_10
 
-    sget-object v7, Lce;->a:[Ljavax/microedition/lcdui/Image;
+    sget-object v7, Lce;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/16 v8, 0x48
 
@@ -3314,7 +3314,7 @@
 
     if-ne v10, v8, :cond_11
 
-    sget-object v7, Lce;->a:[Ljavax/microedition/lcdui/Image;
+    sget-object v7, Lce;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/16 v8, 0x4e
 
@@ -3339,7 +3339,7 @@
 
     if-ne v10, v8, :cond_12
 
-    sget-object v7, Lce;->a:[Ljavax/microedition/lcdui/Image;
+    sget-object v7, Lce;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/16 v8, 0x4a
 
@@ -3387,9 +3387,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lbt;->a:Lcb;
+    iget-object v7, v0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v7}, Lcb;->b()I
+    invoke-virtual {v7}, Lcb;->b_I()I
 
     move-result v7
 
@@ -3397,9 +3397,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lbt;->a:Lcb;
+    iget-object v7, v0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v7}, Lcb;->a()I
+    invoke-virtual {v7}, Lcb;->a_I()I
 
     move-result v7
 
@@ -3410,7 +3410,7 @@
     :cond_14
     const/4 v7, 0x0
 
-    invoke-static {v7}, Lbz;->e(I)Ljava/lang/String;
+    invoke-static {v7}, Lbz;->e_String(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -3429,7 +3429,7 @@
     goto/16 :goto_4
 
     :cond_15
-    sget-object v7, Lce;->a:[Ljavax/microedition/lcdui/Image;
+    sget-object v7, Lce;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/16 v8, 0x4d
 
@@ -3452,9 +3452,9 @@
     :cond_16
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lbt;->a:Lcb;
+    iget-object v8, v0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v8}, Lcb;->f()Z
+    invoke-virtual {v8}, Lcb;->f_Z()Z
 
     move-result v8
 
@@ -3462,9 +3462,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lbt;->a:Lcb;
+    iget-object v8, v0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v8}, Lcb;->g()Z
+    invoke-virtual {v8}, Lcb;->g_Z()Z
 
     move-result v8
 
@@ -3475,7 +3475,7 @@
 
     if-eq v10, v8, :cond_18
 
-    invoke-static {v10}, Lcc;->b(C)C
+    invoke-static {v10}, Lcc;->b_C(C)C
 
     move-result v10
 
@@ -3483,7 +3483,7 @@
 
     if-eq v7, v8, :cond_18
 
-    invoke-static {v7}, Lcc;->b(C)C
+    invoke-static {v7}, Lcc;->b_C(C)C
 
     move-result v7
 
@@ -3551,13 +3551,13 @@
     :cond_1e
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lbt;->f:[Ljava/lang/Object;
+    iget-object v6, v0, Lbt;->f_Objects:[Ljava/lang/Object;
 
     const/4 v10, 0x4
 
     move-object/from16 v0, p0
 
-    iget-boolean v0, v0, Lbt;->c:Z
+    iget-boolean v0, v0, Lbt;->c_Z:Z
 
     move/from16 v16, v0
 
@@ -3591,7 +3591,7 @@
 
     aget-object v5, v5, v9
 
-    invoke-static {v5}, Lcc;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Lcc;->e_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -3627,7 +3627,7 @@
 
     aget-object v5, v5, v9
 
-    invoke-static {v5}, Lcc;->e(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Lcc;->e_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -3657,13 +3657,13 @@
     goto/16 :goto_7
 
     :cond_22
-    sget-object v5, Lco;->a:[I
+    sget-object v5, Lco;->a_Is:[I
 
     const/16 v6, 0x55
 
     aget v11, v5, v6
 
-    sget-object v5, Lco;->a:[I
+    sget-object v5, Lco;->a_Is:[I
 
     const/16 v6, 0x56
 
@@ -3686,7 +3686,7 @@
 
     move-object/from16 v5, p1
 
-    invoke-static/range {v5 .. v13}, Lco;->a(Ljavax/microedition/lcdui/Graphics;[IIIIIIII)V
+    invoke-static/range {v5 .. v13}, Lco;->a_V(Ljavax/microedition/lcdui/Graphics;[IIIIIIII)V
 
     if-lez v17, :cond_24
 
@@ -3700,7 +3700,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v5, v6, v7, v8}, Lco;->b(Ljavax/microedition/lcdui/Graphics;IIII)V
+    invoke-static {v0, v5, v6, v7, v8}, Lco;->b_V(Ljavax/microedition/lcdui/Graphics;IIII)V
 
     const/4 v11, 0x1
 
@@ -3716,12 +3716,12 @@
 
     move/from16 v10, v23
 
-    invoke-static/range {v5 .. v11}, Lco;->b(Ljavax/microedition/lcdui/Graphics;IIIIIZ)V
+    invoke-static/range {v5 .. v11}, Lco;->b_V(Ljavax/microedition/lcdui/Graphics;IIIIIZ)V
 
-    invoke-static/range {p1 .. p1}, Lco;->c(Ljavax/microedition/lcdui/Graphics;)V
+    invoke-static/range {p1 .. p1}, Lco;->c_V(Ljavax/microedition/lcdui/Graphics;)V
 
     :cond_24
-    sget-object v5, Lce;->a:[Ljavax/microedition/lcdui/Image;
+    sget-object v5, Lce;->a_Images:[Ljavax/microedition/lcdui/Image;
 
     const/16 v6, 0x6a
 
@@ -3745,9 +3745,9 @@
 
     move/from16 v10, v27
 
-    invoke-static/range {v5 .. v12}, Lco;->a(Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;IIIIII)V
+    invoke-static/range {v5 .. v12}, Lco;->a_V(Ljavax/microedition/lcdui/Graphics;Ljavax/microedition/lcdui/Image;IIIIII)V
 
-    sget-object v5, Lco;->a:[I
+    sget-object v5, Lco;->a_Is:[I
 
     const/16 v6, 0x54
 
@@ -3848,17 +3848,17 @@
     goto/16 :goto_9
 
     :cond_25
-    invoke-static/range {p1 .. p1}, Lco;->c(Ljavax/microedition/lcdui/Graphics;)V
+    invoke-static/range {p1 .. p1}, Lco;->c_V(Ljavax/microedition/lcdui/Graphics;)V
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lbt;->f:[Ljava/lang/Object;
+    iget-object v5, v0, Lbt;->f_Objects:[Ljava/lang/Object;
 
     if-eqz v5, :cond_0
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lbt;->f:[Ljava/lang/Object;
+    iget-object v7, v0, Lbt;->f_Objects:[Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -3920,7 +3920,7 @@
 
     move-object/from16 v0, p0
 
-    iget v11, v0, Lbt;->f:I
+    iget v11, v0, Lbt;->f_I:I
 
     if-le v5, v11, :cond_26
 
@@ -3935,7 +3935,7 @@
 
     move-object/from16 v5, p1
 
-    invoke-static/range {v5 .. v11}, Lco;->b(Ljavax/microedition/lcdui/Graphics;IIIIIZ)V
+    invoke-static/range {v5 .. v11}, Lco;->b_V(Ljavax/microedition/lcdui/Graphics;IIIIIZ)V
 
     add-int/lit8 v11, v6, 0x1
 
@@ -3949,7 +3949,7 @@
 
     const v10, 0xffffff
 
-    sget-object v15, Lco;->a:[I
+    sget-object v15, Lco;->a_Is:[I
 
     const/16 v16, 0x59
 
@@ -3963,7 +3963,7 @@
 
     move-object/from16 v10, p1
 
-    invoke-static/range {v10 .. v16}, Lco;->b(Ljavax/microedition/lcdui/Graphics;IIIIIZ)V
+    invoke-static/range {v10 .. v16}, Lco;->b_V(Ljavax/microedition/lcdui/Graphics;IIIIIZ)V
 
     move-object/from16 v0, v17
 
@@ -3978,13 +3978,13 @@
     move-object v10, v5
 
     :goto_b
-    sget-object v5, Lco;->a:[I
+    sget-object v5, Lco;->a_Is:[I
 
     const/16 v11, 0x5a
 
     aget v13, v5, v11
 
-    sget-object v5, Lco;->a:[I
+    sget-object v5, Lco;->a_Is:[I
 
     const/16 v11, 0x5a
 
@@ -4011,7 +4011,7 @@
 
     move-object/from16 v5, p1
 
-    invoke-static/range {v5 .. v17}, Lbt;->a(Ljavax/microedition/lcdui/Graphics;IIIILjava/lang/String;Ljava/lang/String;IIIILjavax/microedition/lcdui/Image;I)V
+    invoke-static/range {v5 .. v17}, Lbt;->a_V(Ljavax/microedition/lcdui/Graphics;IIIILjava/lang/String;Ljava/lang/String;IIIILjavax/microedition/lcdui/Image;I)V
 
     goto/16 :goto_0
 
@@ -4026,20 +4026,20 @@
     goto :goto_c
 .end method
 
-.method public final a(II)Z
+.method public final a_Z(II)Z
     .locals 9
 
     const/4 v7, 0x0
 
-    iget v8, p0, Lbt;->h:I
+    iget v8, p0, Lbt;->h_I:I
 
-    iget v0, p0, Lbt;->h:I
+    iget v0, p0, Lbt;->h_I:I
 
-    iget-object v1, p0, Lbt;->a:Lcb;
+    iget-object v1, p0, Lbt;->a_cb:Lcb;
 
-    iget-object v1, v1, Lcb;->a:Lcg;
+    iget-object v1, v1, Lcb;->a_cg:Lcg;
 
-    iget v1, v1, Lcg;->o:I
+    iget v1, v1, Lcg;->o_I:I
 
     int-to-long v3, v1
 
@@ -4049,13 +4049,13 @@
 
     move v2, p2
 
-    invoke-static/range {v0 .. v7}, Lbz;->a(IIIJJZ)I
+    invoke-static/range {v0 .. v7}, Lbz;->a_I(IIIJJZ)I
 
     move-result v0
 
-    iput v0, p0, Lbt;->h:I
+    iput v0, p0, Lbt;->h_I:I
 
-    iget v0, p0, Lbt;->h:I
+    iget v0, p0, Lbt;->h_I:I
 
     if-eq v8, v0, :cond_0
 
@@ -4065,36 +4065,36 @@
     return v7
 .end method
 
-.method public final b()I
+.method public final b_I()I
     .locals 1
 
-    iget v0, p0, Lbt;->g:I
+    iget v0, p0, Lbt;->g_I:I
 
     return v0
 .end method
 
-.method public final b()V
+.method public final b_V()V
     .locals 1
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lbt;->c:Z
+    iput-boolean v0, p0, Lbt;->c_Z:Z
 
-    invoke-static {}, Lce;->v()V
+    invoke-static {}, Lce;->v_V()V
 
     return-void
 .end method
 
-.method public final b(II)V
+.method public final b_V(II)V
     .locals 3
 
     const/4 v2, 0x0
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->isEmpty()Z
 
@@ -4110,7 +4110,7 @@
     move v1, v2
 
     :goto_1
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -4118,7 +4118,7 @@
 
     if-ge v1, v0, :cond_3
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -4130,17 +4130,17 @@
 
     check-cast v0, [I
 
-    invoke-static {v0, p1, p2}, Lbz;->a([III)Z
+    invoke-static {v0, p1, p2}, Lbz;->a_Z([III)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    iget v0, p0, Lbt;->c:I
+    iget v0, p0, Lbt;->c_I:I
 
     if-eq v0, v1, :cond_0
 
-    invoke-virtual {p0, p1, p2}, Lbt;->a(II)V
+    invoke-virtual {p0, p1, p2}, Lbt;->a_V(II)V
 
     goto :goto_0
 
@@ -4152,43 +4152,43 @@
     goto :goto_1
 
     :cond_3
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
-    invoke-virtual {v0}, Lce;->r()V
+    invoke-virtual {v0}, Lce;->r_V()V
 
-    invoke-direct {p0}, Lbt;->f()V
+    invoke-direct {p0}, Lbt;->f_V()V
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lbt;->c:I
+    iput v0, p0, Lbt;->c_I:I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lbt;->f:[Ljava/lang/Object;
+    iput-object v0, p0, Lbt;->f_Objects:[Ljava/lang/Object;
 
-    invoke-static {}, Lce;->v()V
+    invoke-static {}, Lce;->v_V()V
 
     goto :goto_0
 .end method
 
-.method public final b(II)Z
+.method public final b_Z(II)Z
     .locals 2
 
     if-ltz p1, :cond_0
 
-    iget v0, p0, Lbt;->f:I
+    iget v0, p0, Lbt;->f_I:I
 
     add-int/lit8 v0, v0, 0x0
 
     if-gt p1, v0, :cond_0
 
-    iget v0, p0, Lbt;->e:I
+    iget v0, p0, Lbt;->e_I:I
 
     if-lt p2, v0, :cond_0
 
-    iget v0, p0, Lbt;->e:I
+    iget v0, p0, Lbt;->e_I:I
 
-    iget v1, p0, Lbt;->g:I
+    iget v1, p0, Lbt;->g_I:I
 
     add-int/2addr v0, v1
 
@@ -4205,7 +4205,7 @@
     goto :goto_0
 .end method
 
-.method public final c()V
+.method public final c_V()V
     .locals 10
 
     const/4 v9, 0x2
@@ -4218,17 +4218,17 @@
 
     const/4 v2, 0x1
 
-    iget-boolean v5, p0, Lbt;->c:Z
+    iget-boolean v5, p0, Lbt;->c_Z:Z
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
-    invoke-virtual {v0}, Lce;->r()V
+    invoke-virtual {v0}, Lce;->r_V()V
 
-    invoke-direct {p0}, Lbt;->f()V
+    invoke-direct {p0}, Lbt;->f_V()V
 
-    iget-object v0, p0, Lbt;->a:Lbi;
+    iget-object v0, p0, Lbt;->a_bi:Lbi;
 
-    invoke-static {v0}, Lbz;->a(Ljava/util/TimerTask;)V
+    invoke-static {v0}, Lbz;->a_V(Ljava/util/TimerTask;)V
 
     new-instance v0, Lbi;
 
@@ -4236,31 +4236,31 @@
 
     invoke-direct {v0, v4}, Lbi;-><init>(I)V
 
-    iput-object v0, p0, Lbt;->a:Lbi;
+    iput-object v0, p0, Lbt;->a_bi:Lbi;
 
-    iget-object v0, p0, Lbt;->a:Lbi;
+    iget-object v0, p0, Lbt;->a_bi:Lbi;
 
-    iget-object v4, p0, Lbt;->a:Lcb;
+    iget-object v4, p0, Lbt;->a_cb:Lcb;
 
-    iget-object v4, v4, Lcb;->a:Lcg;
+    iget-object v4, v4, Lcb;->a_cg:Lcg;
 
-    iput-object v4, v0, Lbi;->a:Lcg;
+    iput-object v4, v0, Lbi;->a_cg:Lcg;
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
-    iget-object v0, v0, Lce;->a:Ljava/util/Timer;
+    iget-object v0, v0, Lce;->a_Timer:Ljava/util/Timer;
 
-    iget-object v4, p0, Lbt;->a:Lbi;
+    iget-object v4, p0, Lbt;->a_bi:Lbi;
 
     const-wide/16 v6, 0x1f4
 
     invoke-virtual {v0, v4, v6, v7}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->isEmpty()Z
 
@@ -4268,13 +4268,13 @@
 
     if-nez v0, :cond_0
 
-    iget v0, p0, Lbt;->c:I
+    iget v0, p0, Lbt;->c_I:I
 
     if-eq v0, v8, :cond_0
 
-    iget v0, p0, Lbt;->c:I
+    iget v0, p0, Lbt;->c_I:I
 
-    iget-object v4, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v4, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
     invoke-virtual {v4}, Ljava/util/Vector;->size()I
 
@@ -4287,9 +4287,9 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lbt;->a:Ljava/util/Vector;
+    iget-object v0, p0, Lbt;->a_Vector:Ljava/util/Vector;
 
-    iget v4, p0, Lbt;->c:I
+    iget v4, p0, Lbt;->c_I:I
 
     invoke-virtual {v0, v4}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -4329,7 +4329,7 @@
 
     if-ne v1, v4, :cond_10
 
-    iget-object v4, p0, Lbt;->a:Lcb;
+    iget-object v4, p0, Lbt;->a_cb:Lcb;
 
     if-eqz v5, :cond_f
 
@@ -4350,12 +4350,12 @@
     :goto_3
     aget-object v0, v0, v1
 
-    invoke-virtual {v4, v3, v3, v0, v2}, Lcb;->a(IILjava/lang/String;Z)V
+    invoke-virtual {v4, v3, v3, v0, v2}, Lcb;->a_V(IILjava/lang/String;Z)V
 
     :goto_4
-    iput v8, p0, Lbt;->c:I
+    iput v8, p0, Lbt;->c_I:I
 
-    sget-object v0, Lce;->a:Lce;
+    sget-object v0, Lce;->a_ce:Lce;
 
     invoke-virtual {v0}, Lce;->repaint()V
 
@@ -4364,7 +4364,7 @@
     :cond_2
     aget-object v4, v0, v3
 
-    invoke-static {v4}, Lbt;->a(Ljava/lang/String;)C
+    invoke-static {v4}, Lbt;->a_C(Ljava/lang/String;)C
 
     move-result v4
 
@@ -4384,9 +4384,9 @@
 
     if-ne v4, v6, :cond_5
 
-    invoke-direct {p0, v3}, Lbt;->b(I)V
+    invoke-direct {p0, v3}, Lbt;->b_V(I)V
 
-    invoke-static {}, Lcb;->q()V
+    invoke-static {}, Lcb;->q_V()V
 
     goto :goto_4
 
@@ -4395,9 +4395,9 @@
 
     if-ne v4, v6, :cond_6
 
-    invoke-direct {p0, v2}, Lbt;->b(I)V
+    invoke-direct {p0, v2}, Lbt;->b_V(I)V
 
-    invoke-static {}, Lcb;->n()V
+    invoke-static {}, Lcb;->n_V()V
 
     goto :goto_4
 
@@ -4406,18 +4406,18 @@
 
     if-ne v4, v6, :cond_8
 
-    sget v0, Lbt;->a:I
+    sget v0, Lbt;->a_I:I
 
     if-eq v0, v1, :cond_7
 
-    invoke-direct {p0, v1}, Lbt;->b(I)V
+    invoke-direct {p0, v1}, Lbt;->b_V(I)V
 
-    invoke-static {}, Lcb;->m()V
+    invoke-static {}, Lcb;->m_V()V
 
     goto :goto_4
 
     :cond_7
-    invoke-direct {p0}, Lbt;->g()V
+    invoke-direct {p0}, Lbt;->g_V()V
 
     goto :goto_4
 
@@ -4426,7 +4426,7 @@
 
     if-ne v4, v6, :cond_a
 
-    sget v0, Lbt;->a:I
+    sget v0, Lbt;->a_I:I
 
     const/4 v2, 0x4
 
@@ -4435,7 +4435,7 @@
     const/4 v0, 0x4
 
     :goto_5
-    invoke-direct {p0, v0}, Lbt;->b(I)V
+    invoke-direct {p0, v0}, Lbt;->b_V(I)V
 
     goto :goto_4
 
@@ -4449,16 +4449,16 @@
 
     if-ne v4, v1, :cond_c
 
-    sget v0, Lbt;->a:I
+    sget v0, Lbt;->a_I:I
 
     if-eq v0, v9, :cond_b
 
-    invoke-direct {p0, v9}, Lbt;->b(I)V
+    invoke-direct {p0, v9}, Lbt;->b_V(I)V
 
     goto :goto_4
 
     :cond_b
-    invoke-direct {p0}, Lbt;->g()V
+    invoke-direct {p0}, Lbt;->g_V()V
 
     goto :goto_4
 
@@ -4467,17 +4467,17 @@
 
     if-ne v4, v1, :cond_11
 
-    iget-object v1, p0, Lbt;->a:Lcb;
+    iget-object v1, p0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v1}, Lcb;->b()I
+    invoke-virtual {v1}, Lcb;->b_I()I
 
     move-result v1
 
     if-eqz v1, :cond_d
 
-    iget-object v1, p0, Lbt;->a:Lcb;
+    iget-object v1, p0, Lbt;->a_cb:Lcb;
 
-    invoke-virtual {v1}, Lcb;->a()I
+    invoke-virtual {v1}, Lcb;->a_I()I
 
     move-result v1
 
@@ -4501,11 +4501,11 @@
     goto/16 :goto_3
 
     :cond_10
-    iget-object v0, p0, Lbt;->a:Lcb;
+    iget-object v0, p0, Lbt;->a_cb:Lcb;
 
     const/4 v4, 0x0
 
-    invoke-virtual {v0, v1, v3, v4, v2}, Lcb;->a(IILjava/lang/String;Z)V
+    invoke-virtual {v0, v1, v3, v4, v2}, Lcb;->a_V(IILjava/lang/String;Z)V
 
     goto/16 :goto_4
 
@@ -4515,12 +4515,12 @@
     goto/16 :goto_2
 .end method
 
-.method public final d()V
+.method public final d_V()V
     .locals 1
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lbt;->f:[Ljava/lang/Object;
+    iput-object v0, p0, Lbt;->f_Objects:[Ljava/lang/Object;
 
     return-void
 .end method

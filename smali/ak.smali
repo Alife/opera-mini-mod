@@ -3,9 +3,9 @@
 
 
 # static fields
-.field public static a:Laj;
+.field public static a_aj:Laj;
 
-.field public static a:Ljava/util/Hashtable;
+.field public static a_Hashtable:Ljava/util/Hashtable;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lak;->a:Ljava/util/Hashtable;
+    sput-object v0, Lak;->a_Hashtable:Ljava/util/Hashtable;
 
     return-void
 .end method
@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;I)Lal;
+.method public static a_al(Ljava/lang/String;I)Lal;
     .locals 2
 
     const-string v0, "file:///"
@@ -42,40 +42,40 @@
 
     const-string v0, "file:///"
 
-    invoke-static {v0, p0}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     :cond_0
-    sget v0, Lbz;->D:I
+    sget v0, Lbz;->D_I:I
 
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_1
 
-    sget-boolean v0, Lbz;->aF:Z
+    sget-boolean v0, Lbz;->aF_Z:Z
 
     if-eqz v0, :cond_1
 
-    invoke-static {p0}, Lcc;->k(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcc;->k_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     :cond_1
-    sget-object v0, Lak;->a:Laj;
+    sget-object v0, Lak;->a_aj:Laj;
 
     invoke-static {p0, p1}, Ljavax/microedition/io/Connector;->open(Ljava/lang/String;I)Ljavax/microedition/io/Connection;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Laj;->a(Ljavax/microedition/io/Connection;)Lal;
+    invoke-virtual {v0, v1}, Laj;->a_al(Ljavax/microedition/io/Connection;)Lal;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static a()Ljava/lang/String;
+.method public static a_String()Ljava/lang/String;
     .locals 4
 
     const-string v0, "~"
@@ -96,27 +96,27 @@
 
     const-string v2, ".tmp"
 
-    invoke-static {v0, v1, v2}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Lcc;->a_String(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static a(Ljava/lang/String;Z)Ljava/lang/String;
+.method public static a_String(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 4
 
     const/16 v3, 0x2f
 
     const/4 v2, 0x0
 
-    invoke-static {p0}, Lcc;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcc;->i_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     if-nez p1, :cond_1
 
-    sget-object v1, Lbm;->d:Ljava/lang/String;
+    sget-object v1, Lbm;->d_String:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -124,20 +124,20 @@
 
     if-lez v1, :cond_0
 
-    invoke-static {}, Lbm;->v()V
+    invoke-static {}, Lbm;->v_V()V
 
-    sget-object v0, Lbm;->d:Ljava/lang/String;
+    sget-object v0, Lbm;->d_String:Ljava/lang/String;
 
     :goto_0
-    invoke-static {}, Lak;->a()Ljava/lang/String;
+    invoke-static {}, Lak;->a_String()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcc;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcc;->b_String(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    sget-object v1, Lak;->a:Ljava/util/Hashtable;
+    sget-object v1, Lak;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v0, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -178,19 +178,19 @@
     goto :goto_0
 .end method
 
-.method public static a()Ljava/util/Enumeration;
+.method public static a_Enumeration()Ljava/util/Enumeration;
     .locals 1
 
-    sget-object v0, Lak;->a:Laj;
+    sget-object v0, Lak;->a_aj:Laj;
 
-    invoke-virtual {v0}, Laj;->a()Ljava/util/Enumeration;
+    invoke-virtual {v0}, Laj;->a_Enumeration()Ljava/util/Enumeration;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static a(Ljava/lang/String;I)Ljavax/microedition/io/Connection;
+.method public static a_Connection(Ljava/lang/String;I)Ljavax/microedition/io/Connection;
     .locals 2
 
     const/4 v1, 0x3
@@ -203,7 +203,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {p0, v1}, Lam;->a(Ljava/lang/String;I)Ljavax/microedition/io/Connection;
+    invoke-static {p0, v1}, Lam;->a_Connection(Ljava/lang/String;I)Ljavax/microedition/io/Connection;
 
     move-result-object v0
 
@@ -218,64 +218,64 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/lang/String;Ljava/lang/String;)Ljavax/microedition/io/Connection;
+.method public static a_Connection(Ljava/lang/String;Ljava/lang/String;)Ljavax/microedition/io/Connection;
     .locals 1
 
     const/4 v0, 0x3
 
-    invoke-static {p0, p1, v0}, Lak;->a(Ljava/lang/String;Ljava/lang/String;I)Ljavax/microedition/io/Connection;
+    invoke-static {p0, p1, v0}, Lak;->a_Connection(Ljava/lang/String;Ljava/lang/String;I)Ljavax/microedition/io/Connection;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static a(Ljava/lang/String;Ljava/lang/String;I)Ljavax/microedition/io/Connection;
+.method public static a_Connection(Ljava/lang/String;Ljava/lang/String;I)Ljavax/microedition/io/Connection;
     .locals 1
 
-    invoke-static {p0}, Lcc;->b(Ljava/lang/String;)Z
+    invoke-static {p0}, Lcc;->b_Z(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-static {p0}, Lcc;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcc;->i_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcc;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcc;->f_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     :cond_0
-    invoke-static {p1}, Lcc;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, Lcc;->b_Z(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    invoke-static {p1}, Lcc;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcc;->i_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     :cond_1
     const-string v0, "file:///"
 
-    invoke-static {v0, p0, p1}, Lcc;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p0, p1}, Lcc;->a_String(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0, p2}, Lam;->a(Ljava/lang/String;I)Ljavax/microedition/io/Connection;
+    invoke-static {v0, p2}, Lam;->a_Connection(Ljava/lang/String;I)Ljavax/microedition/io/Connection;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static a()V
+.method public static a_V()V
     .locals 7
 
-    sget-object v0, Lak;->a:Ljava/util/Hashtable;
+    sget-object v0, Lak;->a_Hashtable:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->elements()Ljava/util/Enumeration;
 
@@ -308,7 +308,7 @@
 
     const/4 v5, 0x0
 
-    invoke-static/range {v0 .. v5}, Lbm;->a(Ljava/lang/String;ZZZLjava/lang/Runnable;Laq;)Z
+    invoke-static/range {v0 .. v5}, Lbm;->a_Z(Ljava/lang/String;ZZZLjava/lang/Runnable;Laq;)Z
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -323,20 +323,20 @@
     return-void
 .end method
 
-.method public static a(Laj;)V
+.method public static a_V(Laj;)V
     .locals 0
 
-    sput-object p0, Lak;->a:Laj;
+    sput-object p0, Lak;->a_aj:Laj;
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;)V
+.method public static a_V(Ljava/lang/String;)V
     .locals 2
 
-    sget-object v0, Lak;->a:Ljava/util/Hashtable;
+    sget-object v0, Lak;->a_Hashtable:Ljava/util/Hashtable;
 
-    invoke-static {p0}, Lcc;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcc;->i_String(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -345,12 +345,12 @@
     return-void
 .end method
 
-.method public static a()[Ljava/lang/String;
+.method public static a_Strings()[Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lak;->a:Laj;
+    sget-object v0, Lak;->a_aj:Laj;
 
-    invoke-virtual {v0}, Laj;->a()[Ljava/lang/String;
+    invoke-virtual {v0}, Laj;->a_Strings()[Ljava/lang/String;
 
     move-result-object v0
 

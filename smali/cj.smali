@@ -3,19 +3,19 @@
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
-.field public a:Lcg;
+.field public a_cg:Lcg;
 
-.field public a:Ljavax/microedition/lcdui/Image;
+.field public a_Image:Ljavax/microedition/lcdui/Image;
 
-.field public a:[I
+.field public a_Is:[I
 
-.field public a:[Ljavax/microedition/lcdui/Image;
+.field public a_Images:[Ljavax/microedition/lcdui/Image;
 
-.field public b:I
+.field public b_I:I
 
-.field public c:I
+.field public c_I:I
 
 
 # direct methods
@@ -39,18 +39,18 @@
 
 
 # virtual methods
-.method public final a(Lcg;)Ljavax/microedition/lcdui/Image;
+.method public final a_Image(Lcg;)Ljavax/microedition/lcdui/Image;
     .locals 2
 
     if-eqz p1, :cond_0
 
-    iget v0, p1, Lcg;->m:I
+    iget v0, p1, Lcg;->m_I:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcj;->a:Lcg;
+    iget-object v0, p0, Lcj;->a_cg:Lcg;
 
     invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -58,7 +58,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcj;->a:Ljavax/microedition/lcdui/Image;
+    iget-object v0, p0, Lcj;->a_Image:Ljavax/microedition/lcdui/Image;
 
     :goto_0
     return-object v0

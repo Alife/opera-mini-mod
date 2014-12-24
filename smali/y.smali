@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field public b:I
+.field public b_I:I
 
-.field public c:I
+.field public c_I:I
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     const/4 v0, -0x1
 
-    iput v0, p0, Ly;->b:I
+    iput v0, p0, Ly;->b_I:I
 
     return-void
 .end method
@@ -28,25 +28,25 @@
 
     const/4 v0, -0x1
 
-    iput v0, p0, Ly;->b:I
+    iput v0, p0, Ly;->b_I:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(I)V
+.method public b_V(I)V
     .locals 0
 
-    iput p1, p0, Ly;->b:I
+    iput p1, p0, Ly;->b_I:I
 
     return-void
 .end method
 
-.method public c()I
+.method public c_I()I
     .locals 1
 
-    iget v0, p0, Ly;->b:I
+    iget v0, p0, Ly;->b_I:I
 
     return v0
 .end method

@@ -3,42 +3,42 @@
 
 
 # static fields
-.field public static final a:I
+.field public static final a_I:I
 
-.field public static a:Laz;
+.field public static a_az:Laz;
 
 
 # instance fields
-.field public a:J
+.field public a_J:J
 
-.field public a:Ljava/lang/Object;
+.field public a_Object:Ljava/lang/Object;
 
-.field public a:Ljava/util/Timer;
+.field public a_Timer:Ljava/util/Timer;
 
-.field public final b:I
+.field public final b_I:I
 
-.field public final b:J
+.field public final b_J:J
 
-.field public b:Ljava/lang/Object;
+.field public b_Object:Ljava/lang/Object;
 
-.field public c:I
+.field public c_I:I
 
-.field public c:Ljava/lang/Object;
+.field public c_Object:Ljava/lang/Object;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    invoke-static {}, Laz;->a()I
+    invoke-static {}, Laz;->a_I()I
 
     move-result v0
 
-    sput v0, Laz;->a:I
+    sput v0, Laz;->a_I:I
 
     const/4 v0, 0x0
 
-    sput-object v0, Laz;->a:Laz;
+    sput-object v0, Laz;->a_az:Laz;
 
     return-void
 .end method
@@ -50,19 +50,19 @@
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
-    iput p1, p0, Laz;->c:I
+    iput p1, p0, Laz;->c_I:I
 
-    iput p1, p0, Laz;->b:I
+    iput p1, p0, Laz;->b_I:I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Laz;->a:J
+    iput-wide v0, p0, Laz;->a_J:J
 
-    iput-wide p2, p0, Laz;->b:J
+    iput-wide p2, p0, Laz;->b_J:J
 
-    sget v0, Laz;->a:I
+    sget v0, Laz;->a_I:I
 
     const/4 v1, 0x5
 
@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Laz;->a:Ljava/lang/Object;
+    iput-object v0, p0, Laz;->a_Object:Ljava/lang/Object;
 
     const/4 v0, 0x3
 
@@ -84,7 +84,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Laz;->b:Ljava/lang/Object;
+    iput-object v0, p0, Laz;->b_Object:Ljava/lang/Object;
 
     const/4 v0, 0x4
 
@@ -92,15 +92,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Laz;->c:Ljava/lang/Object;
+    iput-object v0, p0, Laz;->c_Object:Ljava/lang/Object;
 
     new-instance v0, Ljava/util/Timer;
 
     invoke-direct {v0}, Ljava/util/Timer;-><init>()V
 
-    iput-object v0, p0, Laz;->a:Ljava/util/Timer;
+    iput-object v0, p0, Laz;->a_Timer:Ljava/util/Timer;
 
-    iget-object v0, p0, Laz;->a:Ljava/util/Timer;
+    iget-object v0, p0, Laz;->a_Timer:Ljava/util/Timer;
 
     const-wide/16 v4, 0x64
 
@@ -110,12 +110,12 @@
 
     :cond_0
     :goto_0
-    invoke-direct {p0}, Laz;->b()V
+    invoke-direct {p0}, Laz;->b_V()V
 
     return-void
 
     :cond_1
-    sget v0, Laz;->a:I
+    sget v0, Laz;->a_I:I
 
     if-eqz v0, :cond_0
 
@@ -123,9 +123,9 @@
 
     invoke-direct {v0}, Ljava/util/Timer;-><init>()V
 
-    iput-object v0, p0, Laz;->a:Ljava/util/Timer;
+    iput-object v0, p0, Laz;->a_Timer:Ljava/util/Timer;
 
-    iget-object v0, p0, Laz;->a:Ljava/util/Timer;
+    iget-object v0, p0, Laz;->a_Timer:Ljava/util/Timer;
 
     const-wide/16 v4, 0x7d0
 
@@ -136,12 +136,12 @@
     goto :goto_0
 .end method
 
-.method private static a()I
+.method private static a_I()I
     .locals 2
 
     const-string v0, "com.siemens.mp.game.Light"
 
-    invoke-static {v0}, Lbz;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbz;->a_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -155,7 +155,7 @@
     :cond_0
     const-string v0, "com.siemens.mp.lcdui.Graphics"
 
-    invoke-static {v0}, Lbz;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbz;->a_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -168,7 +168,7 @@
     :cond_1
     const-string v0, "com.nokia.mid.ui.DeviceControl"
 
-    invoke-static {v0}, Lbz;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbz;->a_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -181,7 +181,7 @@
     :cond_2
     const-string v0, "com.motorola.funlight.FunLight"
 
-    invoke-static {v0}, Lbz;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbz;->a_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -194,7 +194,7 @@
     :cond_3
     const-string v0, "com.motorola.multimedia.Lighting"
 
-    invoke-static {v0}, Lbz;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbz;->a_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -207,7 +207,7 @@
     :cond_4
     const-string v0, "com.samsung.util.LCDLight"
 
-    invoke-static {v0}, Lbz;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbz;->a_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -229,7 +229,7 @@
     :cond_5
     const-string v0, "mmpp.media.BackLight"
 
-    invoke-static {v0}, Lbz;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lbz;->a_Z(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -267,35 +267,35 @@
     goto :goto_0
 .end method
 
-.method public static a()V
+.method public static a_V()V
     .locals 2
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
     const/4 v1, 0x0
 
-    iput v1, v0, Laz;->c:I
+    iput v1, v0, Laz;->c_I:I
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
-    invoke-direct {v0}, Laz;->b()V
+    invoke-direct {v0}, Laz;->b_V()V
 
     :cond_0
     return-void
 .end method
 
-.method public static a(IJ)V
+.method public static a_V(IJ)V
     .locals 1
 
     const/4 v0, 0x1
 
-    invoke-static {v0}, Laz;->a(Z)V
+    invoke-static {v0}, Laz;->a_V(Z)V
 
-    invoke-static {}, Laz;->b()Z
+    invoke-static {}, Laz;->b_Z()Z
 
     move-result v0
 
@@ -308,17 +308,17 @@
 
     invoke-direct {v0, p0, p1, p2}, Laz;-><init>(IJ)V
 
-    sput-object v0, Laz;->a:Laz;
+    sput-object v0, Laz;->a_az:Laz;
 
     return-void
 .end method
 
-.method public static a(Z)V
+.method public static a_V(Z)V
     .locals 3
 
     const/4 v2, 0x0
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
     if-nez v0, :cond_0
 
@@ -328,36 +328,36 @@
     :cond_0
     if-eqz p0, :cond_1
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
     const/4 v1, 0x0
 
-    iput v1, v0, Laz;->c:I
+    iput v1, v0, Laz;->c_I:I
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
-    invoke-direct {v0}, Laz;->b()V
+    invoke-direct {v0}, Laz;->b_V()V
 
     :cond_1
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
-    iget-object v0, v0, Laz;->a:Ljava/util/Timer;
+    iget-object v0, v0, Laz;->a_Timer:Ljava/util/Timer;
 
-    invoke-static {v0}, Lbz;->a(Ljava/util/Timer;)V
+    invoke-static {v0}, Lbz;->a_V(Ljava/util/Timer;)V
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
-    iput-object v2, v0, Laz;->a:Ljava/util/Timer;
+    iput-object v2, v0, Laz;->a_Timer:Ljava/util/Timer;
 
-    sput-object v2, Laz;->a:Laz;
+    sput-object v2, Laz;->a_az:Laz;
 
     goto :goto_0
 .end method
 
-.method public static a()Z
+.method public static a_Z()Z
     .locals 1
 
-    sget v0, Laz;->a:I
+    sget v0, Laz;->a_I:I
 
     if-eqz v0, :cond_0
 
@@ -372,13 +372,13 @@
     goto :goto_0
 .end method
 
-.method private b()V
+.method private b_V()V
     .locals 2
 
     monitor-enter p0
 
     :try_start_0
-    sget v0, Laz;->a:I
+    sget v0, Laz;->a_I:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -391,7 +391,7 @@
 
     :pswitch_0
     :try_start_1
-    iget v0, p0, Laz;->c:I
+    iget v0, p0, Laz;->c_I:I
 
     if-lez v0, :cond_0
 
@@ -415,7 +415,7 @@
     goto :goto_0
 
     :pswitch_1
-    iget v0, p0, Laz;->c:I
+    iget v0, p0, Laz;->c_I:I
 
     if-lez v0, :cond_1
 
@@ -431,14 +431,14 @@
     :pswitch_2
     const/4 v0, 0x0
 
-    iget v1, p0, Laz;->c:I
+    iget v1, p0, Laz;->c_I:I
 
     invoke-static {v0, v1}, Lcom/nokia/mid/ui/DeviceControl;->setLights(II)V
 
     goto :goto_0
 
     :pswitch_3
-    iget v0, p0, Laz;->c:I
+    iget v0, p0, Laz;->c_I:I
 
     if-lez v0, :cond_2
 
@@ -452,7 +452,7 @@
     goto :goto_0
 
     :pswitch_4
-    iget v0, p0, Laz;->c:I
+    iget v0, p0, Laz;->c_I:I
 
     mul-int/lit16 v0, v0, 0xff
 
@@ -474,7 +474,7 @@
 
     invoke-interface {v1, v0}, Lcom/motorola/funlight/Region;->setColor(I)I
 
-    iget-object v0, p0, Laz;->a:Ljava/lang/Object;
+    iget-object v0, p0, Laz;->a_Object:Ljava/lang/Object;
 
     check-cast v0, Lcom/motorola/funlight/Region;
 
@@ -482,7 +482,7 @@
 
     invoke-interface {v0, v1}, Lcom/motorola/funlight/Region;->setColor(I)I
 
-    iget-object v0, p0, Laz;->b:Ljava/lang/Object;
+    iget-object v0, p0, Laz;->b_Object:Ljava/lang/Object;
 
     check-cast v0, Lcom/motorola/funlight/Region;
 
@@ -490,7 +490,7 @@
 
     invoke-interface {v0, v1}, Lcom/motorola/funlight/Region;->setColor(I)I
 
-    iget-object v0, p0, Laz;->c:Ljava/lang/Object;
+    iget-object v0, p0, Laz;->c_Object:Ljava/lang/Object;
 
     check-cast v0, Lcom/motorola/funlight/Region;
 
@@ -501,13 +501,13 @@
     goto :goto_0
 
     :pswitch_5
-    iget v0, p0, Laz;->c:I
+    iget v0, p0, Laz;->c_I:I
 
     if-lez v0, :cond_3
 
     const v0, 0xfffffff
 
-    invoke-static {v0}, Lcom/samsung/util/LCDLight;->on(I)V
+    invoke-static {v0}, Lcom/samsung/util/LCDLight;->on_V(I)V
 
     goto :goto_0
 
@@ -517,13 +517,13 @@
     goto :goto_0
 
     :pswitch_6
-    iget v0, p0, Laz;->c:I
+    iget v0, p0, Laz;->c_I:I
 
     if-lez v0, :cond_4
 
     const v0, 0xfffffff
 
-    invoke-static {v0}, Lmmpp/media/BackLight;->on(I)V
+    invoke-static {v0}, Lmmpp/media/BackLight;->on_V(I)V
 
     goto :goto_0
 
@@ -533,11 +533,11 @@
     goto :goto_0
 
     :pswitch_7
-    iget v0, p0, Laz;->c:I
+    iget v0, p0, Laz;->c_I:I
 
     if-lez v0, :cond_5
 
-    sget-object v0, Lce;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v0, Lce;->a_Display:Ljavax/microedition/lcdui/Display;
 
     const v1, 0x7fffffff
 
@@ -546,7 +546,7 @@
     goto/16 :goto_0
 
     :cond_5
-    sget-object v0, Lce;->a:Ljavax/microedition/lcdui/Display;
+    sget-object v0, Lce;->a_Display:Ljavax/microedition/lcdui/Display;
 
     const/4 v1, 0x0
 
@@ -571,68 +571,68 @@
     .end packed-switch
 .end method
 
-.method public static b(Z)V
+.method public static b_V(Z)V
     .locals 7
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    iput-wide v1, v0, Laz;->a:J
+    iput-wide v1, v0, Laz;->a_J:J
 
     if-eqz p0, :cond_0
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
     const-wide/16 v1, 0x7d0
 
-    sget-object v3, Laz;->a:Laz;
+    sget-object v3, Laz;->a_az:Laz;
 
-    iget-wide v3, v3, Laz;->a:J
+    iget-wide v3, v3, Laz;->a_J:J
 
-    sget-object v5, Laz;->a:Laz;
+    sget-object v5, Laz;->a_az:Laz;
 
-    iget-wide v5, v5, Laz;->b:J
+    iget-wide v5, v5, Laz;->b_J:J
 
     sub-long/2addr v3, v5
 
     add-long/2addr v1, v3
 
-    iput-wide v1, v0, Laz;->a:J
+    iput-wide v1, v0, Laz;->a_J:J
 
     :cond_0
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
-    sget-object v1, Laz;->a:Laz;
+    sget-object v1, Laz;->a_az:Laz;
 
-    iget v1, v1, Laz;->b:I
+    iget v1, v1, Laz;->b_I:I
 
-    iput v1, v0, Laz;->c:I
+    iput v1, v0, Laz;->c_I:I
 
-    sget-object v0, Laz;->a:Laz;
+    sget-object v0, Laz;->a_az:Laz;
 
-    invoke-direct {v0}, Laz;->b()V
+    invoke-direct {v0}, Laz;->b_V()V
 
     :cond_1
     return-void
 .end method
 
-.method public static b()Z
+.method public static b_Z()Z
     .locals 2
 
-    sget v0, Laz;->a:I
+    sget v0, Laz;->a_I:I
 
     const/4 v1, 0x3
 
     if-eq v0, v1, :cond_0
 
-    sget v0, Laz;->a:I
+    sget v0, Laz;->a_I:I
 
     const/4 v1, 0x5
 
@@ -655,17 +655,17 @@
 .method public final run()V
     .locals 5
 
-    iget v0, p0, Laz;->c:I
+    iget v0, p0, Laz;->c_I:I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    iget-wide v3, p0, Laz;->a:J
+    iget-wide v3, p0, Laz;->a_J:J
 
     sub-long/2addr v1, v3
 
-    iget-wide v3, p0, Laz;->b:J
+    iget-wide v3, p0, Laz;->b_J:J
 
     cmp-long v1, v1, v3
 
@@ -673,19 +673,19 @@
 
     const/4 v1, 0x0
 
-    iput v1, p0, Laz;->c:I
+    iput v1, p0, Laz;->c_I:I
 
     :cond_0
-    iget v1, p0, Laz;->c:I
+    iget v1, p0, Laz;->c_I:I
 
     if-nez v1, :cond_1
 
-    iget v1, p0, Laz;->c:I
+    iget v1, p0, Laz;->c_I:I
 
     if-eq v0, v1, :cond_2
 
     :cond_1
-    invoke-direct {p0}, Laz;->b()V
+    invoke-direct {p0}, Laz;->b_V()V
 
     :cond_2
     return-void

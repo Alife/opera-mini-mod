@@ -13,10 +13,10 @@
 
 
 # virtual methods
-.method public a(Ljavax/microedition/io/Connection;)Lal;
+.method public a_al(Ljavax/microedition/io/Connection;)Lal;
     .locals 1
 
-    sget v0, Lbz;->D:I
+    sget v0, Lbz;->D_I:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -66,10 +66,10 @@
     .end packed-switch
 .end method
 
-.method public a()Ljava/util/Enumeration;
+.method public a_Enumeration()Ljava/util/Enumeration;
     .locals 2
 
-    sget v0, Lbz;->D:I
+    sget v0, Lbz;->D_I:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -80,7 +80,7 @@
     return-object v0
 
     :pswitch_1
-    sget v0, Lbz;->ay:I
+    sget v0, Lbz;->ay_I:I
 
     const/4 v1, 0x2
 
@@ -88,7 +88,7 @@
 
     new-instance v0, Lbv;
 
-    invoke-static {}, Lat;->a()[Ljava/lang/String;
+    invoke-static {}, Lat;->a_Strings()[Ljava/lang/String;
 
     move-result-object v1
 
@@ -111,7 +111,7 @@
     goto :goto_0
 
     :pswitch_3
-    invoke-static {}, Lau;->b()Ljava/util/Enumeration;
+    invoke-static {}, Lau;->b_Enumeration()Ljava/util/Enumeration;
 
     move-result-object v0
 
@@ -134,10 +134,10 @@
     .end packed-switch
 .end method
 
-.method public a()[Ljava/lang/String;
+.method public a_Strings()[Ljava/lang/String;
     .locals 4
 
-    sget v0, Lbz;->D:I
+    sget v0, Lbz;->D_I:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -148,7 +148,7 @@
     return-object v0
 
     :pswitch_1
-    invoke-static {}, Lat;->a()[Ljava/lang/String;
+    invoke-static {}, Lat;->a_Strings()[Ljava/lang/String;
 
     move-result-object v0
 
@@ -159,14 +159,14 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lbm;->a(Ljava/util/Enumeration;)[Ljava/lang/String;
+    invoke-static {v0}, Lbm;->a_Strings(Ljava/util/Enumeration;)[Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
     :pswitch_3
-    invoke-static {}, Lau;->a()[Ljava/lang/String;
+    invoke-static {}, Lau;->a_Strings()[Ljava/lang/String;
 
     move-result-object v0
 
@@ -177,7 +177,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lbm;->a(Ljava/util/Enumeration;)[Ljava/lang/String;
+    invoke-static {v0}, Lbm;->a_Strings(Ljava/util/Enumeration;)[Ljava/lang/String;
 
     move-result-object v1
 

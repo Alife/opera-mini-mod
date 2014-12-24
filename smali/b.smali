@@ -3,11 +3,11 @@
 
 
 # static fields
-.field public static a:[I
+.field public static a_Is:[I
 
 
 # instance fields
-.field public a:I
+.field public a_I:I
 
 
 # direct methods
@@ -59,7 +59,7 @@
     goto :goto_0
 
     :cond_2
-    sput-object v3, Lb;->a:[I
+    sput-object v3, Lb;->a_Is:[I
 
     return-void
 .end method
@@ -71,19 +71,19 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lb;->a:I
+    iput v0, p0, Lb;->a_I:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()J
+.method public final a_J()J
     .locals 4
 
     const-wide v0, 0xffffffffL
 
-    iget v2, p0, Lb;->a:I
+    iget v2, p0, Lb;->a_I:I
 
     int-to-long v2, v2
 
@@ -92,32 +92,32 @@
     return-wide v0
 .end method
 
-.method public final a()V
+.method public final a_V()V
     .locals 1
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lb;->a:I
+    iput v0, p0, Lb;->a_I:I
 
     return-void
 .end method
 
-.method public final a([B)V
+.method public final a_V([B)V
     .locals 2
 
     const/4 v0, 0x0
 
     array-length v1, p1
 
-    invoke-virtual {p0, p1, v0, v1}, Lb;->a([BII)V
+    invoke-virtual {p0, p1, v0, v1}, Lb;->a_V([BII)V
 
     return-void
 .end method
 
-.method public final a([BII)V
+.method public final a_V([BII)V
     .locals 4
 
-    iget v0, p0, Lb;->a:I
+    iget v0, p0, Lb;->a_I:I
 
     xor-int/lit8 v0, v0, -0x1
 
@@ -126,7 +126,7 @@
 
     if-ltz p3, :cond_0
 
-    sget-object v2, Lb;->a:[I
+    sget-object v2, Lb;->a_Is:[I
 
     add-int/lit8 v1, p2, 0x1
 
@@ -149,7 +149,7 @@
     :cond_0
     xor-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lb;->a:I
+    iput v0, p0, Lb;->a_I:I
 
     return-void
 .end method
