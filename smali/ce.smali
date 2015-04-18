@@ -34600,6 +34600,8 @@
 .method public final commandAction(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V
     .locals 9
 
+	invoke-static {p1, p2}, Lorg/microemu/android/MEmulator;->commandAction(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V   
+    
     const/16 v8, 0x9
 
     const/4 v3, 0x1
@@ -35790,6 +35792,8 @@
 .method public final commandAction(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Item;)V
     .locals 5
 
+	invoke-static {v0, v1}, Lorg/microemu/android/MEmulator;->commandAction(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Item;)V
+    
     const/4 v4, 0x0
 
     invoke-static {p0}, Lbz;->a_V(Ljavax/microedition/lcdui/Displayable;)V

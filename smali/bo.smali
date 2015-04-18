@@ -3802,6 +3802,8 @@
 .method public final commandAction(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V
     .locals 1
 
+	invoke-static {p1, p2}, Lorg/microemu/android/MEmulator;->commandAction(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V   
+    
     iget-boolean v0, p0, Lbo;->r_Z:Z
 
     if-eqz v0, :cond_0

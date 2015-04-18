@@ -16296,6 +16296,8 @@
 .method public final commandAction(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V
     .locals 6
 
+	invoke-static {p1, p2}, Lorg/microemu/android/MEmulator;->commandAction(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V   
+    
     const/16 v5, 0xa
 
     const/4 v4, 0x0
